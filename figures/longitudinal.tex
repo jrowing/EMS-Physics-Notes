@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt,oneside]{article}
+\usepackage[usenames,svgnames]{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{2pt}%
+
+\renewcommand*\rmdefault{ppl}
+
+\tikzset{>=stealth', pil/.style={ ->, thick, shorten <=2pt, shorten >=2pt,} }
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\pgfmathsetmacro{\noe}{6}
+
+\foreach \t in {0,0.1,...,14}{
+	\pgfmathsetmacro{\np}{pow({1+cos((\t-2)*pi/2.5 r)}, 4)*\noe/4}
+	\foreach \idx in {0,1,...,\np} {
+		\draw[fill] (\t+rnd*0.1-0.05,rnd*1.8) circle (0.025);	% wave 1
+	}
+}
+\draw[<->,thick] (7,2.4) -- (12,2.4) node[midway,above]{{\footnotesize one wavelength}};
+\draw[->,thick] (1,2.4) -- (4,2.4) node[midway,above]{{\footnotesize wave motion}};
+\node[below] at (2,-.2) {{\footnotesize compression}};
+\node[below] at (7,-.2) {{\footnotesize compression}};
+\node[below] at (12,-.2) {{\footnotesize compression}};
+\node[below] at (4.5,-.2) {{\footnotesize rarefaction}};
+\node[below] at (9.5,-.2) {{\footnotesize rarefaction}};
+\end{tikzpicture}
+
+\end{document}
