@@ -155,7 +155,7 @@ electromagnetic radiation incident upon a metal can cause emission of electrons 
 \footnote{Photoelectric effect was first observed in 1887 by \emph{Heinrich Hertz}, who found electrodes illuminated with ultraviolet light create electric sparks. In school labs, one can shine ultraviolet radiation from a mercury lamp onto a zinc plate to cause photo-emission.}
 emitted electrons are called \keypoint{photoelectrons}
 
-simply put, conduction electrons in metal gain additional energy by absorbing the incoming radiation, if this energy is sufficient for electrons to overcome the electrostatic attraction from the positive metal ions, they break free from the metal surface
+simply put, conduction electrons in metal gain additional energy by absorbing the incoming radiation, if this energy is sufficient for electrons to overcome the electrostatic attraction from the positive metal ions, they break free from the metal surface.
 
 \begin{figure}
 	\centering
@@ -333,13 +333,13 @@ Einstein's revolutionary idea: when radiation delivers energy to matter, the tra
 	a \keypoint{photon}\index{photon} is a packet (\emph{quanta}) of electromagnetic energy
 \end{ilight}
 
-\cmt energy of one photon is given by: $\boxed{E=hf}$, where $h=6.63\times10^{-34} \text{ J s}$ is the \keypoint{Planck constant}\index{Planck constant}
+\cmt energy of one photon is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{E=hf}\end{empheq}, where $h=6.63\times10^{-34} \text{ J s}$ is the \keypoint{Planck constant}\index{Planck constant}
 
 since $E \propto f$, higher/lower radiation frequency means greater/smaller photon energies
 
 \cmt wave equation $c=\lambda f$ relates frequency $f$ of an electromagnetic wave to its wavelength $\lambda$
 
-so energy of one photon is also given by: $\boxed{E=\frac{hc}{\lambda}}$
+so energy of one photon is also given by: \begin{empheq}[box=\tcbhighmath]{equation*}{E=\frac{hc}{\lambda}}\end{empheq}
 
 since $E \propto \frac{1}{\lambda}$, longer/shorter wavelength means lower/greater photon energies
 
@@ -353,19 +353,21 @@ but $f$ and $\lambda$ are both introduced to describe a wave, not a particle
 
 total energy incident on a given area per unit time determines the radiation intensity
 
-so intensity depends on the product of the number of photons arriving per unit time and energy of each photon: $ \boxed{I \propto nhf}$, or more precisely, $I = \frac{nhf}{A}$
+so intensity depends on the product of the number of photons arriving per unit time and energy of each photon: $ \tcbhighmath{I \propto nhf}$, or more precisely, \begin{empheq}[box=\tcbhighmath]{equation*}I = \frac{nhf}{A}\end{empheq}
 
 \cmt when considering energy of a photon, \keypoint{electronvolt} is a useful energy unit
 
 one electronvolt (1 eV) is work needed to make an electron travel through a p.d. of 1 V
 
-conversion between electronvolt and joule is: $\boxed{1 \text{ eV} = 1.60\times10^{-19} \text{ J}}$
+conversion between electronvolt and joule is: \begin{empheq}[box=\tcbhighmath]{equation*}{1 \text{ eV} = 1.60\times10^{-19} \text{ J}}\end{empheq}
 
 \example{A laser emits red light of 650 nm at a power rating of 2.0 mW. (a) What is the energy carried by one photon? (b) How many photons are emitted per second?}\label{ex-redlaser}
 
-\sol energy of one photon: $E = \frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times3.0\times10^8}{650 \times10^{-9}} \approx 3.06\times10^{-19} \text{ J}$
+\begin{soln}
+    
+energy of one photon: $E = \frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times3.0\times10^8}{650 \times10^{-9}} \approx 3.06\times10^{-19} \text{ J}$
 
-\eqyskip number of photons: $N = \frac{\text{total energy output from laser}}{\text{energy of one photon}} = \frac{2.0\times10^{-3}}{3.06\times10^{-19}} \approx 6.54\times10^{15}$ \eoe
+\eqyskip number of photons: $N = \frac{\text{total energy output from laser}}{\text{energy of one photon}} = \frac{2.0\times10^{-3}}{3.06\times10^{-19}} \approx 6.54\times10^{15}$ \end{soln}
 
 \question{Calculate the energy, in eV, of a photon of light of wavelength 440 nm.}
 
@@ -388,7 +390,8 @@ if photon energy is greater than $\Phi$, electrons break free from metal
 
 excess energy, if any, would become kinetic energy of the free electron
 
-this is summarised in \keypoint{Einstein's photoelectric equation}\index{photoelectric effect!photoelectric equation}: $\boxed{hf = \Phi + E_{k,\tmax}}$
+this is summarised in \keypoint{Einstein's photoelectric equation}\index{photoelectric effect!photoelectric equation}: 
+\begin{empheq}[box=\tcbhighmath]{equation*}{hf = \Phi + E_{k,\tmax}}\end{empheq}
 
 \cmt note that we are talking about \emph{maximum} K.E. of emitted electrons
 
@@ -398,7 +401,7 @@ for electrons to be released from \emph{below} the surface, they require more en
 
 \cmt at critical condition, incoming photon has just enough energy to release electron
 
-so at threshold frequency\index{photoelectric effect!threshold frequency} $f_0$, photon energy equals work function: $\boxed{hf_0 = \Phi}$
+so at threshold frequency\index{photoelectric effect!threshold frequency} $f_0$, photon energy equals work function: \begin{empheq}[box=\tcbhighmath]{equation*}{hf_0 = \Phi}\end{empheq}
 
 \cmt experimental observations mentioned in \S\ref{ch-photoelectricity} can now be understood
 
@@ -417,9 +420,11 @@ so at threshold frequency\index{photoelectric effect!threshold frequency} $f_0$,
 
 \example{Given that work function energy of gold is 4.9 eV. Find the longest wavelength of electromagnetic wave that could release electrons from gold.}
 
-\sol threshold frequency: $f_0 = \frac{\Phi}{h} = \frac{4.9\times1.60\times10^{-19}}{6.63\times10^{-34}} \approx 1.18\times10^{18} \text{ Hz}$
+\begin{soln}
+    
+ threshold frequency: $f_0 = \frac{\Phi}{h} = \frac{4.9\times1.60\times10^{-19}}{6.63\times10^{-34}} \approx 1.18\times10^{18} \text{ Hz}$
 
-threshold wavelength: $\lambda_0 = \frac{c}{f_0} = \frac{3.00\times10^8}{1.18\times10^{15}} \approx 2.54\times10^{-7} \text{ m} \,$ (ultraviolet light) \eoe
+threshold wavelength: $\lambda_0 = \frac{c}{f_0} = \frac{3.00\times10^8}{1.18\times10^{15}} \approx 2.54\times10^{-7} \text{ m} \,$ (ultraviolet light) \end{soln}
 
 \question{Sodium has a work function of $3.8\times 10^{-19} \text{ J}$. (a) Find the threshold frequecy for sodium. (b) If a light of 500 nm is incident on sodium, determine whether electrons can be emitted from the surface.}
 
@@ -491,7 +496,7 @@ in photoelectric effect, photons can knock electrons out of a metal, this sugges
 
 earliest experimental evidence of photon momentum was came from \emph{Arthur Compton} in 1923, who studied the scattering of X-ray photons by electrons in substances\footnote{Arthur Compton was awarded the Nobel Physics Prize in 1929 for the discovery of this scattering effect, now known as \emph{Compton scattering}.}
 
-it can be shown\footnote{This derives from Einstein's theory of \emph{special relativity}, which states that energy and momentum are related by the equation: $E^2 = m_0^2 c^4 + p^2 c^2$. Photons have zero rest mass, i.e., $m_0=0$. This relativistic relation becomes $E=pc$ for photons. Now recall photon energy is given by $E=hf$. Rearrange the terms, we can show: $p = \frac{hf}{c} = \frac{h}{\lambda}$.} that photon momentum is given by: $\boxed{p = \frac{h}{\lambda}}$
+it can be shown\footnote{This derives from Einstein's theory of \emph{special relativity}, which states that energy and momentum are related by the equation: $E^2 = m_0^2 c^4 + p^2 c^2$. Photons have zero rest mass, i.e., $m_0=0$. This relativistic relation becomes $E=pc$ for photons. Now recall photon energy is given by $E=hf$. Rearrange the terms, we can show: $p = \frac{hf}{c} = \frac{h}{\lambda}$.} that photon momentum is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{p = \frac{h}{\lambda}}\end{empheq}
 
 \cmt photon momentum a \emph{relativistic} momentum, as photons move at speed of light
 
@@ -503,25 +508,20 @@ forces generated by radiation pressure are negligible under everyday circumstanc
 
 \example{A beam of light has wavelength 600 nm, cross-sectional area $0.16 \text{ cm}^2$ and power 5.0 mW. The beam is normally incident onto a surface and is completely absorbed. Calculate, for a time of 1.0 s, (a) the number of photons incident onto the surface, (b) the change of total momentum of the photons, (c) the light pressure on the surface.}
 
-\sol energy of one photon: $E= \frac{hc}{\lambda} = \frac{6.63\times10^{-34} \times 3.0\times10^8}{600\times10^{-9}} \approx 3.32 \times 10^{-19} \text{ J}$ 1.5083
+\begin{soln}
+    
+ energy of one photon: $E= \frac{hc}{\lambda} = \frac{6.63\times10^{-34} \times 3.0\times10^8}{600\times10^{-9}} \approx 3.32 \times 10^{-19} \text{ J}$ 1.5083
 
-\eqyskip 
 
 number of photons arriving in 1.0 s: $N = \frac{5.0\times10^{-3} \times 1.0}{3.32 \times 10^{-19}} \approx 1.51\times10^{16}$
 
-\eqyskip
-
 momentum for one photon: $p = \frac{h}{\lambda} = \frac{6.63\times10^{-34}}{600\times10^{-9}} \approx 1.11 \times 10^{-27} \text{ kg m s}^{-1}$
-
-\eqyskip
 
 change of total momentum: $\Delta P = Np = 1.51\times10^{16} \times 1.11 \times 10^{-27} \approx 1.67 \times 10^{-11} \text{ kg m s}^{-1}$
 
-\eqyskip
-
 average force due to these photons: $F = \frac{\Delta P}{\Delta t} = \frac{1.67 \times 10^{-11}}{1.0} \approx 1.67 \times 10^{-11} \text{ N}$
 
-light pressure on surface: $p = \frac{F}{A} = \frac{1.67 \times 10^{-11}}{0.16 \times 10^{-4}} \approx 1.04 \times 10^{-6} \text{ Pa}$ \eoe
+light pressure on surface: $p = \frac{F}{A} = \frac{1.67 \times 10^{-11}}{0.16 \times 10^{-4}} \approx 1.04 \times 10^{-6} \text{ Pa}$ \end{soln}
 
 \question{A laser of power $P$ is incident normally on a spot of area $A$, show that the pressure caused by the beam can be given by: $p = \frac{P}{cA}$.}
 
@@ -539,36 +539,29 @@ inspired by photon theory, which shows electromagnetic waves have a particulate 
 wave characteristic of a particle can be represented by a wavelength
 
 \begin{ilight}
-	\keypoint{de Broglie wavelength}\index{de Broglie wavelength} of a matter particle is given by: $\boxed{\lambda = \frac{h}{p}}$, where $p=mv$ is the particle's momentum
+	\keypoint{de Broglie wavelength}\index{de Broglie wavelength} of a matter particle is given by:\begin{empheq}[box=\tcbhighmath]{equation*}{\lambda = \frac{h}{p}}\end{empheq}, where $p=mv$ is the particle's momentum
 \end{ilight}
 
 \example{What is the wavelength of a human of 70 kg walking at around $2.0\mps$?}
 
-\sol $\lambda = \frac{h}{mv} = \frac{6.63\times10^{-34}}{75\times 2} \approx 4.7\times 10^{-36} \text{ m}$
+\begin{soln}
+    $\lambda = \frac{h}{mv} = \frac{6.63\times10^{-34}}{75\times 2} \approx 4.7\times 10^{-36} \text{ m}$
 
 this wavelength is too small compared with any obstacle we encounter in everyday lives
 
-so human bodies do not exhibit noticeable wave behaviour \eoe
+so human bodies do not exhibit noticeable wave behaviour \end{soln} 
 
 \example{An electron is accelerated from rest through a potential difference of 50 V. What is the de Broglie wavelength of this electron?}
-
+\begin{soln}
 K.E. of electron equals change in electric P.E., so
+$\frac{1}{2}mv^2 = qV \RA v = \sqrt{\frac{2qV}{m}} = \sqrt{\frac{2\times1.60\times 10^{-19} \times 50}{9.11\times10^{-31}}} \approx 4.19\times10^6 \mps$
 
-{
-	
-	\centering
-	
-	$\frac{1}{2}mv^2 = qV \RA v = \sqrt{\frac{2qV}{m}} = \sqrt{\frac{2\times1.60\times 10^{-19} \times 50}{9.11\times10^{-31}}} \approx 4.19\times10^6 \mps$
-	
-}
-
-\eqyskip
 
 wavelength of electron: $\lambda = \frac{h}{mv} = \frac{6.63\times10^{-34}}{9.11\times10^{-31}\times 4.19\times10^6} \approx 1.74 \times10^{-10} \text{ m}$
 
 this wavelength is comparable to scale of atomic spacing (also around $10^{-10}\text{ m}$)
 
-so these electron can be \emph{diffracted} by solid crystals \eoe
+so these electron can be \emph{diffracted} by solid crystals\end{soln}
 
 \question{An $\alpha$-particle is moving with a kinetic energy of $2.4\times10^{-15} \text{ J}$. Find its speed, and hence find its de Broglie wavelength.}
 
@@ -600,7 +593,7 @@ they showed experimentally electrons could be diffracted\index{electron diffract
 	\node[twoline] at (-1.8,0.5) {electron\\beam};
 	\end{tikzpicture}
 	
-	\caption*{electron diffraction experiment}
+	\caption{electron diffraction experiment}
 \end{figure}
 
 \cmt electron diffraction experiment shows that particles do have wave-like properties
@@ -683,7 +676,7 @@ let's look at the hydrogen atom -- the simplest possible atom in nature
 	\shade [ball color = green] (65:3.4096) circle (0.15) node[above right]{\scriptsize electron};
 	\end{tikzpicture}
 	
-	\caption*{the hydrogen atom}
+	\caption{the hydrogen atom}
 \end{marginfigure}
 
 electrostatic attraction by proton provides centripetal force for electron to move in circles
@@ -748,7 +741,7 @@ substitute the allowed orbital radius, we find an expression for electron energy
 	
 	\centering
 	
-	$\boxed{E_n = -\frac{R_E}{n^2}} \quad \text{where }\, R_E = \frac{m_e e^4}{8 h^2 \epsilon_0^2} \approx 2.18\times10^{-18} \text{ J} \approx 13.6 \text{ eV}$
+	\begin{empheq}[box=\tcbhighmath]{equation*}{E_n = -\frac{R_E}{n^2}} \end{empheq} $\text{where }\, R_E = \frac{m_e e^4}{8 h^2 \epsilon_0^2} \approx 2.18\times10^{-18} \text{ J} \approx 13.6 \text{ eV}$
 	
 }
 
@@ -778,7 +771,7 @@ these allowed values of energies are called \keypoint{energy levels}\index{energ
 	\draw(0.1,0) --++ (-0.2,0) node[left]{$0$};
 	\end{tikzpicture}
 	
-	\caption*{electron energy levels of some atom}		
+	\caption{electron energy levels of some atom}		
 \end{marginfigure}
 
 \cmt \emph{quantisation} means an electron can have only specific values of energy in an atom
@@ -838,7 +831,7 @@ electron transition is associated with emission or absorption of photon with the
 		\end{center}
 	\end{minipage}
 	
-	\caption*{emission and absorption of photons as a result of electron transitions}
+	\caption{emission and absorption of photons as a result of electron transitions}
 \end{figure}
 
 
@@ -878,7 +871,7 @@ this means photons emitted only have specific wavelengths, or specific frequenci
 
 so a collection of sharp and bright lines are seen in emission spectrum
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}
 	\draw [fill] (0,0) rectangle (12,2);
@@ -888,8 +881,8 @@ so a collection of sharp and bright lines are seen in emission spectrum
 	\draw [ultra thick, blue] (2,0) -- (2,2);
 	\end{tikzpicture}
 	
-	\caption*{emission spectrum of the hydrogen atom}
-\end{figure}
+	\caption{emission spectrum of the hydrogen atom}
+\end{figure*}
 
 \cmt emission spectrum is a \emph{discrete} spectrum, also called a \emph{line} spectrum
 
@@ -929,7 +922,7 @@ so we would observe a set of \emph{dark lines} appearing in a background of cont
 	\foreach \x  in {1.9,4.4,5.9,7.6,8.2,9.9,11.4}
 	\draw [very thick] (\x,0) -- (\x,2);
 	\end{tikzpicture}
-	\caption*{absorption spectrum for some element}
+	\caption{absorption spectrum for some element}
 \end{figure}
 
 \cmt absorption spectrum is also a \emph{discrete} spectrum, or a \emph{line} spectrum
@@ -971,10 +964,10 @@ so they would still appear dark compared with those unaffected wavelengths
 	\draw(0.1,-0.1) --++ (-0.2,0) node[left]{$E_5=-0.54 \text{ eV}$};
 	\end{tikzpicture}		
 	
-	\caption*{energy levels of the hydrogen atom}
+	\caption{energy levels of the hydrogen atom}
 \end{figure}
 
-\sol energy of photon emitted equals change of electron energy level: $\frac{hc}{\lambda} = \Delta E$, or $\lambda = \frac{hc}{\Delta E}$
+\begin{soln} energy of photon emitted equals change of electron energy level: $\frac{hc}{\lambda} = \Delta E$, or $\lambda = \frac{hc}{\Delta E}$
 
 transition with least/greatest energy change gives rise to longest/shortest wavelength, so
 
@@ -982,18 +975,15 @@ transition with least/greatest energy change gives rise to longest/shortest wave
 	
 \eqyskip 
 	
-\eqskip $E_5 \to E_1 \ra  \lambda_\tmin = \frac{hc}{E_5-E_1} = \frac{6.63\times10^{-34}\times3.0\times10^8}{(13.6-0.54)\times1.60\times10^{-19}} \approx 9.5\times10^{-8} \text{ m} \quad$ (ultraviolet) \eoe
+\eqskip $E_5 \to E_1 \ra  \lambda_\tmin = \frac{hc}{E_5-E_1} = \frac{6.63\times10^{-34}\times3.0\times10^8}{(13.6-0.54)\times1.60\times10^{-19}} \approx 9.5\times10^{-8} \text{ m} \quad$ (ultraviolet) \end{soln}
 	
 
-\example{The emission spectrum of the hydrogen atom consists of a number of wavelengths in the visible spectrum. Given that the visible spectrum consists of light of wavelengths within the range from 380 nm to 740 nm, also use data in Example \ref{ex-hydrogen}, find the energies of visible photons that can be produced by transitions between the energy levels shown.}
+\example{The emission spectrum of the hydrogen atom consists of a number of wavelengths in the visible spectrum. Given that the visible spectrum consists of light of wavelengths within the range from 380 nm to 740 nm, also use data in Example \ref{ex-hydrogen}, find the energies of visible photons that can be produced by transitions between the energy levels shown.}\sidenote{The H$_\alpha$ line is the brightest hydrogen line in the visible range. It plays an important role in astronomy, as it can be used to study a star's surface temperature, the velocity of a distant stellar object, etc.}
 
-\sol let's first find the range of energies, in eV, for visible photons
+\begin{soln} let's first find the range of energies, in eV, for visible photons
 
 \eqskip $E_\tmax = \frac{hc}{\lambda_\tmin} = \frac{6.63\times10^{-34}\times 3.0 \times10^8}{380\times10^{-9}} \approx 5.23\times10^{-19} \text{ J} = \frac{5.23\times10^{-19}}{1.60\times10^{-19}} \text{ eV} \approx 3.27 \text{ eV}$
-
-\eqyskip 
-
-\eqskip $E_\tmin = \frac{hc}{\lambda_\tmax} = \frac{6.63\times10^{-34}\times 3.0 \times10^8}{740\times10^{-9}} \approx 2.69\times10^{-19} \text{ J} = \frac{2.69\times10^{-19}}{1.60\times10^{-19}} \text{ eV} \approx 1.68 \text{ eV}$
+ $E_\tmin = \frac{hc}{\lambda_\tmax} = \frac{6.63\times10^{-34}\times 3.0 \times10^8}{740\times10^{-9}} \approx 2.69\times10^{-19} \text{ J} = \frac{2.69\times10^{-19}}{1.60\times10^{-19}} \text{ eV} \approx 1.68 \text{ eV}$
 
 we shall find the combinations of electron energy levels such that their difference fall within the range between 1.68 eV and 3.27 eV, by trial and error, we find three possible combinations:
 
@@ -1005,17 +995,19 @@ we shall find the combinations of electron energy levels such that their differe
 	\item[(3)] $E_5 \to E_2 \ra 3.40 - 0.85 = 2.85 \text{ eV}$
 \end{compactenum}
 
-these emisssion lines are called H$_\alpha$ (656 nm), H$_\beta$ (486 nm) and H$_\gamma$ (435 nm) lines\footnote{The H$_\alpha$ line is the brightest hydrogen line in the visible range. It plays an important role in astronomy, as it can be used to study a star's surface temperature, the velocity of a distant stellar object, etc.}
+these emisssion lines are called H$_\alpha$ (656 nm), H$_\beta$ (486 nm) and H$_\gamma$ (435 nm) lines
 
-they are three of the four the hydrogen emission lines that are visible to human eyes\footnote{These lines belong to a family of the spectral lines of the hydrogen atom, known as the \emph{Balmer lines}, named after Johann Balmer. Balmer discovered an empirical equation to predict the series in 1885, but the reason why the equation worked was eventually clarified by Neils Bohr with the atomic model which now bears his name. We now understand the Balmer lines correspond to emissions of photons by electrons jumping to the second level from higher energy states.} \eoe
+they are three of the four the hydrogen emission lines that are visible to human eyes \end{soln}\sidenote{These lines belong to a family of the spectral lines of the hydrogen atom, known as the \emph{Balmer lines}, named after Johann Balmer. Balmer discovered an empirical equation to predict the series in 1885, but the reason why the equation worked was eventually clarified by Neils Bohr with the atomic model which now bears his name. We now understand the Balmer lines correspond to emissions of photons by electrons jumping to the second level from higher energy states.}
 
 
 
 \example{A white light is incident on a cloud of cool hydrogen gas. In the emergent spectrum, a dark line is observed at a wavelength of 435 nm. Determine the energy change that gives rise to this dark line.}
 
-\sol photon absorbed: $E = \frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times 3.0 \times10^8}{435\times10^{-9}} \approx 4.57\times10^{-19} \text{ J} = \frac{4.57\times10^{-19}}{1.60\times10^{-19}} \text{ eV} \approx 2.86 \text{ eV}$
+\begin{soln}
+    
+ photon absorbed: $E = \frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times 3.0 \times10^8}{435\times10^{-9}} \approx 4.57\times10^{-19} \text{ J} = \frac{4.57\times10^{-19}}{1.60\times10^{-19}} \text{ eV} \approx 2.86 \text{ eV}$
 
-note that $3.40 - 0.54 = 2.86 \text{ eV}$, so this dark line is due to the electron transition: $E_2 \to E_5$ \eoe
+note that $3.40 - 0.54 = 2.86 \text{ eV}$, so this dark line is due to the electron transition: $E_2 \to E_5$ \end{soln}
 
 \question{If we only consider the electron energy levels given in Example \ref{ex-hydrogen}, how many different wavelengths can be detected in the emission spectrum of the hydrogen atom ?}
 
@@ -1032,7 +1024,7 @@ note that $3.40 - 0.54 = 2.86 \text{ eV}$, so this dark line is due to the elect
 	\draw[thick,->] (0,-8) -- (0,-1) node[above]{\footnotesize{energy/$10^{-19}\text{ J}$}};	
 	\end{tikzpicture}		
 	
-	\caption*{energy levels of the helium atom}
+	\caption{energy levels of the helium atom}
 	\vspace*{-15pt}
 \end{marginfigure}
 
@@ -1225,11 +1217,13 @@ so resistance of semiconductor decreases at higher temperature
 
 \example{Silicon has a band gap $E_g \approx 1.1 \text{ eV}$. State and explain whether it becomes conducting when exposed to red light of $600 \text{ nm}$.}
 
-\sol energy of radiation: $E=\frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times3.0\times10^8}{600\times10^{-9}} \approx 3.32\times10^{-19} \text{ J} \approx 2.1 \text{ eV} > E_g$
+\begin{soln}
+    
+ energy of radiation: $E=\frac{hc}{\lambda} = \frac{6.63\times10^{-34}\times3.0\times10^8}{600\times10^{-9}} \approx 3.32\times10^{-19} \text{ J} \approx 2.1 \text{ eV} > E_g$
 
 this energy is sufficient to make valence electrons in silicon to cross band gap
 
-silicon now possesses conducting electrons and holes therefore becomes conducting \eoe
+silicon now possesses conducting electrons and holes therefore becomes conducting \end{soln}
 
 \question{Use band theory to explain why an LDR (light-dependent resistor) has a very high resistance in the dark, but its resistance drops dramatically when being exposed to light.}
 

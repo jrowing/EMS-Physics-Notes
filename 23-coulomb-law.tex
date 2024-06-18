@@ -7,7 +7,7 @@
 charged objects will attract or repel one another through the electric force
 
 \begin{ilight}
-	\keypoint{Coulomb's law}\index{Coulomb's law} states that the electric force between two electrically charged particles is proportional to their charges and inversely proportional to the square of their separation: $\boxed{F = \frac{Qq}{4\pi\epsilon_0 r^2}}$
+	\keypoint{Coulomb's law}\index{Coulomb's law} states that the electric force between two electrically charged particles is proportional to their charges and inversely proportional to the square of their separation: $\tcbhighmath{F = \frac{Qq}{4\pi\epsilon_0 r^2}}$
 \end{ilight}
 
 $\epsilon_0 = 8.85 \times 10^{-12} \text{ C}^2 \text{ N}^{-1} \text{ m}^{-2}$ is the \emph{permittivity of free space}
@@ -30,9 +30,10 @@ for opposite charges (one positive and one negative), $Q_1Q_2<0 \ra F<0 \ra$  \e
 
 \example{The hydrogen atom has a radius of about 53 pm. Estimate the electric force between the proton and the orbiting electron.}
 
-\solc\begin{equation*}
+\begin{soln}\begin{equation*}
 	F = \frac{Q_p Q_e}{\ec r^2} = 8.99\times10^9 \times \frac{(1.60\times10^{-19})^2}{(53\times10^{-12})^2} \approx 8.2 \times 10^{-8} \text{ N} 
 \end{equation*}
+\end{soln}
 
 \question{Two protons are separated by a distance $r$. Find the ratio of the electric force to the gravitational force between them.}
 
@@ -63,7 +64,7 @@ You might have noticed that Coulomb's law for electrostatic forces and Newton's 
 \rcyskip
 
 \begin{ilight}
-	\keypoint{electric field strength}\index{electric field!electric field strength} is defined as electric force per unit positive charge: $\boxed{E=\frac{F}{q}}$
+	\keypoint{electric field strength}\index{electric field!electric field strength} is defined as electric force per unit positive charge: $\tcbhighmath{E=\frac{F}{q}}$
 \end{ilight}
 
 \cmt unit of $E$: $[E]=\text{N C}^{-1} = \text{V m}^{-1}$\footnote{You will later find in \S\ref{field-strength-potential} the deeper reason why $\text{V m}^{-1}$ is also a reasonable unit for field strength.}
@@ -72,7 +73,7 @@ You might have noticed that Coulomb's law for electrostatic forces and Newton's 
 
 a small test charge $q$ at distance $r$ is acted by a force: $F = \frac{Qq}{\ec r^2}$
 
-field strength at this point: $ E = \frac{F}{q} \RA \boxed{E=\frac{Q}{\ec r^2}}$
+field strength at this point: $ E = \frac{F}{q} \RA \tcbhighmath{E=\frac{Q}{\ec r^2}}$
 
 the field is produced by $Q$, so field strength only depends on the source $Q$
 
@@ -98,17 +99,16 @@ for negative source ($Q<0$): field points towards the source
 \cmt electric force on a charge $q$ can be found if field strength $E$ is known
 
 magnitude of electric force: $F=Eq$
-
 direction of force: same direction as $E$ if $q>0$, but opposite to $E$ if $q<0$
 
 
 \example{A \emph{Van de Graaff generator} produces sparks when its surface electric field strength $4.0 \times 10^4 \Vpcm$. If the diameter of the sphere is $40 \text{ cm}$, what is the charge on it?}
 	
-\solc 
+\begin{soln} 
 \begin{equation*}
-	E = \frac{Q}{4\pi\epsilon_0 r^2} \RA Q=4\pi\epsilon_0 Er^2 = 4\pi \times 8.85\times 10^{-12} \times 4.0 \times 10^6 \times 0.20^2 \approx 1.8 \times 10^{-5} \text{ C} 
+	Q=4\pi\epsilon_0 Er^2 = 4\pi \times 8.85\times 10^{-12} \times 4.0 \times 10^6 \times 0.20^2 \approx 1.8 \times 10^{-5} \text{ C} 
 \end{equation*}
-
+\end{soln}
 
 
 \example{Two identical metal spheres of radius $20 \text{ cm}$ carry charges $+2.0 \text{ $\mu$C}$ and $-1.0 \text{ $\mu$C}$ respectively. There is a $60 \text{ cm}$ gap between them. (a) Find the electric field strength midway along the line joining their centres. (b) A dust particle carrying a charge of $-1.3\times10^{-8} \text{ C}$ is at this position. Find the electric force it experiences.}
@@ -127,9 +127,9 @@ direction of force: same direction as $E$ if $q>0$, but opposite to $E$ if $q<0$
 	\end{tikzpicture}
 \end{figure}
 	
-\sol field strengths due to the two spheres are in same direction
+\begin{soln} field strengths due to the two spheres are in same direction
 \begin{equation*}
-E = E_1 + E_2 = \frac{1}{\ec}\left( \frac{Q_1}{r_1^2} + \frac{Q_2}{r_2^2} \right) = 8.99 \times 10^9 \times \left( \frac{2.0\times 10^{-6}}{0.25^2} + \frac{1.0\times 10^{-6}}{0.25^2}\right) \approx 4.32\times 10^5 \NpC
+E = E_1 + E_2 = 8.99 \times 10^9 \times \left( \frac{2.0\times 10^{-6}}{0.25^2} + \frac{1.0\times 10^{-6}}{0.25^2}\right) \approx 4.32\times 10^5 \NpC
 \end{equation*}
 
 field strength points to the right
@@ -138,7 +138,7 @@ force on dust particle: $F = Eq = 4.32\times 10^5 \times 1.4\times10^{-8} \appro
 
 dust particle is negatively-charged means force is opposite to field strength
 
-so force on dust particle acts to the left \eoe
+so force on dust particle acts to the left \end{soln}
 
 \question{When the charge on the Van de Graaff generator is $4.0\times10^{-7} \text{ C}$, the electric field strength at the sphere's surface is $2.4 \times 10^6 \Vpm$. Determine the additional charge added to the sphere if the field strength at the surface becomes $3.0 \times 10^6 \Vpm$.}
 
@@ -171,7 +171,7 @@ field lines always tend to leave positive charge, and end up at negative charges
 
 field lines appear to start from or converge towards centre of the sphere
 
-so charged spheres act like point charges \eoe
+so charged spheres act like point charges.
 
 \newpage
 
@@ -188,11 +188,11 @@ so charged spheres act like point charges \eoe
 	\end{tikzpicture}
 \end{center}
 
-\vspace*{-6pt} field lines are \emph{parallel} and equally spaced, so this is a \emph{uniform} electric field \eoe
+\vspace*{-6pt} field lines are \emph{parallel} and equally spaced, so this is a \emph{uniform} electric field 
 
 \example{Field pattern due to two charges of equal magnitude.}
 
-\begin{center}
+\begin{figure*}
 	\noindent\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			\includegraphics[width=7.2cm]{f-lines-eq-ch.pdf}
@@ -209,12 +209,9 @@ so charged spheres act like point charges \eoe
 			\end{equation*}
 		\end{center}	
 	\end{minipage}
-\end{center}
+\end{figure*}
 
-
-
-
-\subsection{potential \& potential energy }
+\section{potential \& potential energy }
 
 \subsection{electric potential energy}
 \label{sec:electric-potential}
@@ -252,7 +249,7 @@ work done by electric force: $W=\int^r_\infty F dr = \int^r_\infty \frac{Qq}{\ec
 
 since $\Delta E_p=-W$, we find: $E_p(r) - E_p(_\infty) = \frac{Qq}{\ec r}$
 
-but $E_p(_\infty) = 0$,  so electric P.E. between two charges $Q$ and $q$ is $\boxed{E_p(r) = \frac{Qq}{\ec r}}$
+but $E_p(_\infty) = 0$,  so electric P.E. between two charges $Q$ and $q$ is $\tcbhighmath{E_p(r) = \frac{Qq}{\ec r}}$
 
 \cmt as $r \to \infty$, $E_p \to 0$, this agrees with our definition for zero P.E. point
 
@@ -277,7 +274,7 @@ sign of P.E. is hidden in polarities of charges
 
 \example{To gain information about the gold nucleus ($_{\phantom{0}79}^{197}\text{Au}$), we fire $\alpha$-particles ($_2^4\alpha$) towards a thin gold foil. The size of a typical nucleus is about $10^{-14}$m, what is the minimum initial speed for $\alpha$-particles so that radius of gold nucleus can be determined?}
 	
-\sol as $\alpha$-particle approaches the nucleus, it slows down due to the repulsive interaction
+\begin{soln} as $\alpha$-particle approaches the nucleus, it slows down due to the repulsive interaction
 
 kinetic energy decreases and electric potential energy increases
 
@@ -292,9 +289,11 @@ $\text{K.E. loss} = \text{P.E. gain} \RA \frac{1}{2}mu^2 - \underbrace{\frac{1}{
 }
 
 \begin{equation*}
-	\frac{1}{2}\times4\times1.66\times10^{-27}\times u^2 = \frac{79\times1.60\times10^{-19}\times2\times1.60\times10^{-19}}{4\pi\times8.85\times10^{-12}\times10^{-14}} \RA
-	u\approx 3.3\times10^7\mps 
+	\frac{1}{2}\times4\times1.66\times10^{-27}\times u^2 = \frac{79\times1.60\times10^{-19}\times2\times1.60\times10^{-19}}{4\pi\times8.85\times10^{-12}\times10^{-14}} \end{equation*}
+ \begin{equation*} 
+ \RA	u\approx 3.3\times10^7\mps 
 \end{equation*}
+\end{soln}
 
 \question{A metal sphere of radius 20 cm carries a charge of $5.0\times10^{-7}$ C. A proton is sent towards the sphere at a speed of $1.8\times10^6 \mps$. Can the proton reach the surface of the sphere?}
 
@@ -312,7 +311,7 @@ electric potential can be thought as the electric potential energy per unit char
 
 \cmt unit: $[V] = \text{ J C}^{-1} = \text{V}$
 
-\cmt electric potential due to an isolated source $Q$: $V = \frac{E_p}{q} = \frac{\frac{Qq}{\ec r}}{q} \RA \boxed{V = \frac{Q}{4\pi\epsilon_0 r}}$
+\cmt electric potential due to an isolated source $Q$: $V = \frac{E_p}{q} = \frac{\frac{Qq}{\ec r}}{q} \RA \tcbhighmath{V = \frac{Q}{4\pi\epsilon_0 r}}$
 
 \cmt potential at infinity vanishes: $V_\infty = 0$
 
@@ -330,10 +329,11 @@ to find combined potential due to multiple charges, add up contributions of each
 	
 Find the final speed of the electron.}
 
-\sol gain in K.E. = change in electric P.E. $\RA \frac{1}{2}mv^2 = q\Delta V$
+\begin{soln} gain in K.E. = change in electric P.E. $\RA \frac{1}{2}mv^2 = q\Delta V$
 \eqyskip\begin{equation*}
 	v = \sqrt{\frac{2q\Delta V}{m}} = \sqrt{\frac{2\time 1.60\times10^{-19}\times600}{9.11\times10^{-31}}} \approx 1.45\times10^7 \mps 
 \end{equation*}
+\end{soln}
 
 \example{Two small metal spheres $A$ and $B$ are in a vacuum. Sphere $A$ has charge $+20$ pC and sphere $B$ has charge $+84$ pC. The arrangement is shown below.}
 
@@ -355,9 +355,8 @@ Find the final speed of the electron.}
 
 (b) Find the work done to move an $\alpha$-particle from $P$ to $M$.
 
-\sol combined electric potential: $V = V_A + V_B = \frac{1}{\ec}\left(\frac{Q_A}{r_A} + \frac{Q_B}{r_B} \right)$
+\begin{soln} combined electric potential: $V = V_A + V_B = \frac{1}{\ec}\left(\frac{Q_A}{r_A} + \frac{Q_B}{r_B} \right)$
 
-\eqyskip
 
 at $P$: $V_P = 8.99\times10^9 \times \left( \frac{+20 \times 10^{-12}}{0.030} + \frac{+84 \times 10^{-12}}{0.070} \right) \approx 16.8 \text{ V}$
 
@@ -365,7 +364,7 @@ at $P$: $V_P = 8.99\times10^9 \times \left( \frac{+20 \times 10^{-12}}{0.030} + 
 
 at $M$: $V_M = 8.99\times10^9 \times \left( \frac{+20 \times 10^{-12}}{0.050} + \frac{+84 \times 10^{-12}}{0.050} \right) \approx 18.7 \text{ V}$
 
-from $P$ to $M$: $W = \Delta E_p = q\Delta V = q(V_M- V_P) = 2\times1.60\times10^{-19}\times(18.7-16.8) \approx 6.2\times10^{-19} \text{ J}$ \eoe
+from $P$ to $M$: $W = \Delta E_p = q\Delta V = q(V_M- V_P) = 2\times1.60\times10^{-19}\times(18.7-16.8) \approx 6.2\times10^{-19} \text{ J}$ \end{soln}
 
 \example{$A$ and $B$ are two positively-charged spheres of radius 1.0 cm. A proton $P$ initially at rest on the surface of $A$ moves along the line joining the centres of the two spheres. The variation with distance $x$ from the centre of $A$ of electric potential $V$ at point $P$ is given.}\label{ex-V-of-two-pcs}
 
@@ -388,17 +387,26 @@ from $P$ to $M$: $W = \Delta E_p = q\Delta V = q(V_M- V_P) = 2\times1.60\times10
 
 (b) Find the speed when the proton reaches surface of $B$.
 
-\sol increase in K.E. = loss in P.E., so: $\frac{1}{2}mv^2 - 0 = q\Delta V \RA \frac{1}{2}mv^2 = q(V_A - V_P)$
+\begin{soln}
+    
+increase in K.E. = loss in P.E., so: $\frac{1}{2}mv^2 - 0 = q\Delta V \RA \frac{1}{2}mv^2 = q(V_A - V_P)$
 
 maximum speed when $\Delta V$ is maximum, or $V_P = 107 \text{ V}$ becomes minimum (at $x = 7.2$ cm)
 \begin{equation*}
-	\frac{1}{2}\times1.67\times10^{-27}\times v^2_\tmax = 1.60\times10^{-19} \times (460-107) \RA v_\tmax \approx 2.60\times10^5 \mps
+	\frac{1}{2}\times1.67\times10^{-27}\times v^2_\tmax = 1.60\times10^{-19} \times (460-107) 
+ \end{equation*}
+ \begin{equation*}
+ \RA v_\tmax \approx 2.60\times10^5 \mps
 \end{equation*}
 
 at surface of $B$, $V_P = 260 \text{ V}$ (at $x=11.0$ cm)
 \begin{equation*}
-\frac{1}{2}\times1.67\times10^{-27}\times v^2_B = 1.60\times10^{-19} \times (460-260) \RA v_B \approx 1.96\times10^5 \mps 
+\frac{1}{2}\times1.67\times10^{-27}\times v^2_B = 1.60\times10^{-19} \times (460-260) 
+ \end{equation*}
+ \begin{equation*}
+\RA v_B \approx 1.96\times10^5 \mps 
 \end{equation*}
+\end{soln}
 
 \question{Electrical breakdown occurs when electric field strength at surface of a metal sphere exceeds $5.0 \times 10^6 \NpC$. Given that the radius of the sphere is 16 cm. What is the electric potential at the surface when electrical breakdown occurs?}
 
@@ -433,8 +441,6 @@ i.e., equipotential lines are \emph{contour lines} of equal electric potential
 	\end{tikzpicture}
 \end{center}
 
-\newpage 
-
 \cmt for uniform fields, equipotential lines are a set of \emph{parallel} straight lines
 
 \begin{center}
@@ -457,7 +463,7 @@ moving along an equipotential line requires no work done
 
 \example{Field lines and equipotential lines due to two charges of various magnitudes}
 
-\begin{center}
+\begin{figure*}
 	\noindent\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			\includegraphics[width=7cm]{f-all-eq-ch.pdf}
@@ -468,9 +474,9 @@ moving along an equipotential line requires no work done
 			\includegraphics[width=7cm]{f-all-op-ch.pdf}
 		\end{center}
 	\end{minipage}
-\end{center}
+\end{figure*}
 
-\begin{center}	
+\begin{figure*}	
 	\noindent\begin{minipage}{0.48\textwidth}
 		\begin{center}	
 			\includegraphics[width=7cm]{Q2p.pdf}
@@ -481,9 +487,9 @@ moving along an equipotential line requires no work done
 			\includegraphics[width=7cm]{Q4n.pdf}
 		\end{center}
 	\end{minipage}
-\end{center}
+\end{figure*}
 
-\begin{center}	
+\begin{figure*}	
 	\noindent\begin{minipage}{0.48\textwidth}	
 		\begin{center}	
 			\includegraphics[width=7cm]{Q5p.pdf}
@@ -494,7 +500,7 @@ moving along an equipotential line requires no work done
 			\includegraphics[width=7cm]{Q12n.pdf}
 		\end{center}	
 	\end{minipage}
-\end{center}
+\end{figure*}
 
 
 
@@ -505,6 +511,8 @@ moving along an equipotential line requires no work done
 both gravitational and electric force are described by inverse square law, so it follows that the mathematical language for both theories are very similar
 
 \cmt physical quantities that describe gravitational/electric fields
+\cmt comparing gravitational field with electric field
+\footnote{Note that there is no negative mass, gravitational force always interacts attractively. This is the fundamental difference between gravitational fields and electric fields.}
 
 \begin{center}
 	\begin{tabular}{|c|c|c|}
@@ -514,9 +522,6 @@ both gravitational and electric force are described by inverse square law, so it
 		effect of source mass/charge & field $g$/$E$ & potential $\varphi$/$V$ \\ \hline
 	\end{tabular}
 \end{center}
-
-\cmt comparing gravitational field with electric field
-\footnote{Note that there is no negative mass, gravitational force always interacts attractively. This is the fundamental difference between gravitational fields and electric fields.}
 
 \begin{center}
 {\renewcommand{\arraystretch}{1.28}
@@ -577,7 +582,8 @@ moreover, there shall be no potential difference between any two points inside t
 \example{Consider the electric field due to a metal sphere of radius $R$ carrying charge $Q$. Plot the variation with the distance $r$ from sphere's centre of the field strength, and the variation with $r$ of the electric potential.}\label{ex-metal-sphere}
 
 
-\sol charge $Q$ is uniformly spread out on \emph{surface} of sphere
+\begin{soln}
+charge $Q$ is uniformly spread out on \emph{surface} of sphere
 
 viewed from \emph{outside}, the sphere appears to have all of its charge concentrated at the centre
 
@@ -587,9 +593,9 @@ electric field strength at distance $r$ from sphere's centre is: $E = \frac{Q}{\
 
 electric potential at distance $r$ from sphere's centre is: $V=\frac{Q}{4\pi\epsilon_0r}$ for $r>R$
 
-\emph{inside} the sphere, i.e., for $r<R$, we have $E=0$, and $V=\frac{Q}{\ec R} = \text{const}$ \eoe
+\emph{inside} the sphere, i.e., for $r<R$, we have $E=0$, and $V=\frac{Q}{\ec R} = \text{const}$ \end{soln}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\noindent\begin{minipage}{0.45\linewidth}
 		\centering
@@ -618,8 +624,8 @@ electric potential at distance $r$ from sphere's centre is: $V=\frac{Q}{4\pi\eps
 
 	\end{minipage}
 
-\caption*{Example \ref{ex-metal-sphere}: field strength and potential due to a charged metal sphere}
-\end{figure}
+\caption{Example \ref{ex-metal-sphere}: field strength and potential due to a charged metal sphere}
+\end{figure*}
 
 
 \question{State whether the two spheres in Example \ref{ex-V-of-two-pcs} are conductors. State what feature of the potential graph supports your answer.}
@@ -638,7 +644,7 @@ $\Delta V = \frac{\Delta E_p}{q} \xlongequal{\Delta E_p=-W} - \frac{\Delta W}{q}
 
 }
 
-\eqyskip as change in displacement $\Delta r \to 0$, we have $\boxed{E = - \frac{\dd V}{\dd r}}$
+\eqyskip as change in displacement $\Delta r \to 0$, we have $\tcbhighmath{E = - \frac{\dd V}{\dd r}}$
 
 therefore we have the following theorem:
 
@@ -659,7 +665,7 @@ $\Delta V= \int \dd V \xlongequal{E = -\dd V/\dd r}  \int (-)E \dd r =  -\int E 
 
 }
 
-\eqyskip this gives the inverse relation: $\boxed{\Delta V = -\int E \dd r}$
+\eqyskip this gives the inverse relation: $\tcbhighmath{\Delta V = -\int E \dd r}$
 \footnote{These equations are correct if the charge is moving in the parallel direction to the field, i.e., the motion is along the field lines. But an object can move in all directions in the field. More rigorously, if we take the vector nature of electric field into account, we should write $\Delta V = - \int \mathbf{E}\cdot\dd\mathbf{r}$, and $\mathbf{E} = - \frac{\partial V}{\partial \mathbf{r}}$. \piste}
 
 \cmt given a $V$-$r$ graph, gradient of curve gives field strength
@@ -692,9 +698,9 @@ force always acts in a direction to lower the potential energy of an object
 	\end{tikzpicture}
 \end{figure}
 
-\sol draw tangent to the graph at $r=5.0\text{ cm}$ (red line), gradient of tangent gives field strength:
+\begin{soln} draw tangent to the graph at $r=5.0\text{ cm}$ (red line), gradient of tangent gives field strength:
 
-$ \text{gradient} = \frac{\Delta V}{\Delta r} = \frac{(1.5-6.5)\times 10^3}{(8.0-2.0)\times10^{-2}} \approx  -8.3\times10^4 \Vpm \RA E = -\frac{\Delta V}{\Delta r} = 8.3\times10^4 \Vpm $ \eoe 
+$ \text{gradient} = \frac{\Delta V}{\Delta r} = \frac{(1.5-6.5)\times 10^3}{(8.0-2.0)\times10^{-2}} \approx  -8.3\times10^4 \Vpm \RA E = -\frac{\Delta V}{\Delta r} = 8.3\times10^4 \Vpm $ \end{soln} 
 
 \newpage
 
@@ -718,9 +724,9 @@ $ \text{gradient} = \frac{\Delta V}{\Delta r} = \frac{(1.5-6.5)\times 10^3}{(8.0
 	\end{tikzpicture}
 \end{figure}
 
-\sol greatest force means greatest field strength, which means maximum potential gradient 
+\begin{soln} greatest force means greatest field strength, which means maximum potential gradient 
 
-largest gradient of $V$-$x$ curve at $x=1$ cm, so greatest force at $x=1$ cm \eoe
+largest gradient of $V$-$x$ curve at $x=1$ cm, so greatest force at $x=1$ cm \end{soln}
 
 \example{electric field due to an isolated point charge}
 

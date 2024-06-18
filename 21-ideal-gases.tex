@@ -53,7 +53,7 @@ we introduce \keypoint{amount of substance}\index{amount of substance} to measur
 
 this number is called \keypoint{Avogadro constant}\index{Avogadro constant}: $N_A = 6.02\times10^{23} \text{ mol}^{-1}$ \footnote{In 2018, IUPAC suggested a new definition of the mole, which is defined to contain exactly 6.02$\times$10$^{23}$ particles. This new definition fixed numerical value of the Avogadro constant, and emphasized that the quantity `amount of substance' is concerned with counting number of particles rather than measuring the mass of a sample.}
 
-conversion between number of molecules and amount of substance: $\boxed{N=nN_A}$
+conversion between number of molecules and amount of substance: $\tcbhighmath{N=nN_A}$
 
 \cmt it is useful to introduce the notion of molar mass $M$
 
@@ -71,9 +71,9 @@ conversion between number of molecules and amount of substance: $\boxed{N=nN_A}$
 
 \example{Find the number of molecules in 160 grams of argon-40 gas.}
 
-\sol amount of gas: $n=\frac{m}{M} = \frac{160 \text{ g}}{40 \text{ g mol}^{-1}} = 4.0 \text{ mol}$
+\begin{soln} amount of gas: $n=\frac{m}{M} = \frac{160 \text{ g}}{40 \text{ g mol}^{-1}} = 4.0 \text{ mol}$
 
-number of gas molecules: $N = n N_A = 4.0 \text{ mol} \times 6.02\times10^{23} \text{ mol}^{-1} \approx 2.41 \times 10^{24}$ \eoe
+number of gas molecules: $N = n N_A = 4.0 \text{ mol} \times 6.02\times10^{23} \text{ mol}^{-1} \approx 2.41 \times 10^{24}$ \end{soln}
 
 \question{Find the mass of a sample of uranium-235 that contains $6.0\times10^{20}$ atoms.}
 	
@@ -91,13 +91,13 @@ contributions from many molecules give rise to a pressure
 
 \example{If a gas is heated with its volume fixed, how does the pressure change?}
 
-\sol at higher temperature, gas molecules move faster
+\begin{soln}At higher temperature, gas molecules move faster
 
 they will collide \emph{harder} and produce a greater force upon each collision
 
 they will also collide more \emph{frequently} with the container
 
-so pressure of the gas will increase \eoe
+so pressure of the gas will increase \end{soln}
 
 \question{If you pump gas into a bicycle tyre, state and explain how the pressure changes.}
 
@@ -112,7 +112,7 @@ so pressure of the gas will increase \eoe
 \rcyskip
 
 \begin{ilight}
-	a gas that satisfies the equation $\boxed{pV=nRT}$ or $\boxed{pV=NkT}$ at any pressure $p$, any volume $V$, and thermodynamic temperature $T$ is called an \keypoint{ideal gas}\index{ideal gas}
+	a gas that satisfies the equation $\tcbhighmath{pV=nRT}$ or $\tcbhighmath{pV=NkT}$ at any pressure $p$, any volume $V$, and thermodynamic temperature $T$ is called an \keypoint{ideal gas}\index{ideal gas}
 \end{ilight}
 
 \keypoint{molar gas constant}: $R=8.31 \text{ J mol}^{-1}\text{ K}^{-1}$
@@ -121,7 +121,7 @@ so pressure of the gas will increase \eoe
 
 values of $R$ and $k$ apply for any ideal gas, i.e., they are \emph{universal} constants
 
-\cmt recall conversion between number of molecules and amount of substance: $\boxed{N=nN_A}$
+\cmt recall conversion between number of molecules and amount of substance: $\tcbhighmath{N=nN_A}$
 
 we have relation between the constants: $R = kN_A$, or $k=\frac{R}{N_A}$
 
@@ -129,7 +129,7 @@ we have relation between the constants: $R = kN_A$, or $k=\frac{R}{N_A}$
 
 thermodynamic temperature is measured in kelvins (K), so it is also called the \emph{Kelvin scale}\footnote{We will discuss in details about Kelvin scale in \S\ref{s-temp-scale} and \S\ref{s-abs-zero}.}
 
-conversion between Kelvin temperature and Celsius temperature: $\boxed{T_K (\text{K}) \text{ } \autorightleftharpoons{\footnotesize -273}{\footnotesize +273} \text{ } T_C (\OC)}$
+conversion between Kelvin temperature and Celsius temperature: $\tcbhighmath{T_K (\text{K}) \text{ } \autorightleftharpoons{\footnotesize -273}{\footnotesize +273} \text{ } T_C (\OC)}$
 
 \subsection*{real gases}
 
@@ -147,36 +147,31 @@ so ideal gas approximation can be used with good accuracy for most of our applic
 
 \example{A sealed cylinder of volume of 0.050 m$^3$ contains 75 g of air. The molar mass of air is 29 g mol$^{-1}$. (a) Find the air pressure when its temperature is $30^\circ$C. (b) The gas is allowed to expand with its pressure fixed. Find the temperature of the gas when the volume doubles.}
 
-\sol amount of gas: $n=\frac{m}{M} = \frac{75}{29} \approx 2.59 \text{ mol}$
-
-\eqyskip
+\begin{soln}
+    
+amount of gas: $n=\frac{m}{M} = \frac{75}{29} \approx 2.59 \text{ mol}$
 
 pressure at $30^\circ$C: $p = \frac{nRT_1}{V_1} = \frac{2.59\times8.31\times(30+273)}{0.050} \approx 1.30\times10^5 \text{ Pa}$
 
-\eqyskip
 
-pressure fixed, so $V \propto T \RA \frac{T_2}{T_1} = \frac{V_2}{V_1} = 2 \RA T_2 = 2\times (30+273) = 606 \text{ K} = 333^\circ\text{C}$ \eoe
+pressure fixed, so $V \propto T \RA \frac{T_2}{T_1} = \frac{V_2}{V_1} = 2 \RA T_2 = 2\times (30+273) = 606 \text{ K} = 333^\circ\text{C}$ \end{soln}
 
 \example{A gas cylinder holding 5000 cm$^3$ of air at a temperature of 27 $^\circ$C and a pressure of $6.0\times10^5 \text{ Pa}$ is used to fill balloons. Each balloon contains 1000 cm$^3$ of air at 27 $^\circ$C and $1.0\times10^5$ Pa when filled. (a) Find the initial amount of gas in the cylinder. (b) Find the number of balloons that can be filled.}
 
-\sol initial amount of gas in cylinder: $n_0 = \frac{p_0 V}{RT} = \frac{9.0\times10^5\times5000\times10^{-6}}{8.31\times(27+273)} \approx 1.203 \text{ mol}$
+\begin{soln} initial amount of gas in cylinder: $n_0 = \frac{p_0 V}{RT} = \frac{9.0\times10^5\times5000\times10^{-6}}{8.31\times(27+273)} \approx 1.203 \text{ mol}$
 
-\eqyskip
+final amount of gas in cylinder: $n_\text{remain} = \frac{pV}{RT} = \frac{1.0\times10^5\times5000\times10^{-6}}{8.31\times(27+273)} \approx 0.201 \text{ mol}$
 
-final amount of gas in cylinder: $n_\text{remain} = \frac{pV}{RT} = \frac{1.0\times10^5\times5000\times10^{-6}}{8.31\times(27+273)} \approx 0.201 \text{ mol}$\footnote{Air will leave the cylinder to fill balloons only if pressure inside the cylinder is higher than pressure of the balloon. When the two pressures become equal, no more balloons can be filled, there will be some air remain in cylinder.}
-
-\eqyskip
+Air will leave the cylinder to fill balloons only if pressure inside the cylinder is higher than pressure of the balloon. When the two pressures become equal, no more balloons can be filled, there will be some air remain in cylinder...
 
 amount of gas in each balloon: $n_\text{b} = \frac{pV_b}{RT} = \frac{1.0\times10^5\times1000\times10^{-6}}{8.31\times(27+273)} \approx 0.040 \text{ mol}$
 
-\eqyskip
-
-number of balloons: $N = \frac{n_0 - n_\text{remain}}{n_\text{b}} = \frac{1.203-0.201}{0.040} \approx 25$ \eoe
+number of balloons: $N = \frac{n_0 - n_\text{remain}}{n_\text{b}} = \frac{1.203-0.201}{0.040} \approx 25$ \end{soln}
 
 \example{A storage cylinder has a volume of $5.0\times10^{-4}\text{ m}^3$. The gas is at a temperature
 	of 300 K and a pressure of $4.0 \times 10^6$ Pa.	(a) Find the number of molecules in the cylinder. (b) The gas molecules slowly leak from the cylinder at a rate of $1.6 \times 10^{16} \text{ s}^{-1}$. Find the time, in days, after which the pressure will reduce by 5.0\%.}
 
-\sol initial number of molecules: $N_0 = \frac{p_0V}{kT} = \frac{4.0\times10^6\times 5.0\times10^{-4}}{1.38\times10^{-23}\times300}\approx 4.83\times10^{23}$
+\begin{soln} initial number of molecules: $N_0 = \frac{p_0V}{kT} = \frac{4.0\times10^6\times 5.0\times10^{-4}}{1.38\times10^{-23}\times300}\approx 4.83\times10^{23}$
 
 \eqyskip
 
@@ -184,7 +179,7 @@ volume fixed, so $N \propto p \RA \frac{\Delta N}{N_0} = \frac{\Delta p}{p_0} = 
 
 number of molecules escaped: $\Delta N = 0.05\times4.83\times10^{23} \approx 2.42 \times10^{22}$
 
-time needed: $t = \frac{2.42 \times10^{22}}{1.6 \times 10^{16}} \approx 1.51 \times 10^6 \text{ s} \approx 17.4 \text{ days}$ \eoe
+time needed: $t = \frac{2.42 \times10^{22}}{1.6 \times 10^{16}} \approx 1.51 \times 10^6 \text{ s} \approx 17.4 \text{ days}$ \end{soln}
 
 \newpage %%%%
 
@@ -197,7 +192,7 @@ time needed: $t = \frac{2.42 \times10^{22}}{1.6 \times 10^{16}} \approx 1.51 \ti
 
 historically, the ideal gas law was first stated by \emph{\'Emile Clapeyron} in 1834:
 
-for a fixed amount of gas, $\boxed{\frac{PV}{T} = \text{const}}$
+for a fixed amount of gas, $\tcbhighmath{\frac{PV}{T} = \text{const}}$
 
 his work was based on the empirical Boyle's law, Charles's law, and Gay-Lussac's law
 
@@ -224,7 +219,7 @@ if temperature $T$ remains constant, then
 
 \centering
 
-$\boxed{pV=\text{const}}$, or $\boxed{p \propto \frac{1}{V}}$
+$\tcbhighmath{pV=\text{const}}$, or $\tcbhighmath{p \propto \frac{1}{V}}$
 
 } 
 
@@ -261,7 +256,7 @@ Charles's law was discovered by \emph{Jacques Charles} in 1787, based on experim
 	\end{tikzpicture}
 \end{figure}
 
-if pressure $p$ remains constant, then: $\boxed{\frac{V}{T}=\text{const}}$, or $\boxed{V \propto T}$
+if pressure $p$ remains constant, then: $\tcbhighmath{\frac{V}{T}=\text{const}}$, or $\tcbhighmath{V \propto T}$
 
 i.e., volume $V$ of gas is directly proportional to its temperature $T$
 
@@ -309,7 +304,7 @@ if volume $V$ remains constant, then
 	
 	\centering
 	
-	$\boxed{\frac{p}{T}=\text{const}}$, or $\boxed{p \propto T}$
+	$\tcbhighmath{\frac{p}{T}=\text{const}}$, or $\tcbhighmath{p \propto T}$
 	
 } 
 
@@ -356,7 +351,9 @@ volume of molecules is negligible compared to volume occupied by gas
 
 \example{A mass of 20 g helium-4 at a temperature of 37$^\circ$C has a pressure of $1.2\times10^5 \text{ Pa}$. Each helium-4 atom has a diameter of 280 pm. (a) Find the volume occupied by the gas and the volume of atoms in this gas. (b) Compare the two volumes, suggest whether this gas can be considered as an ideal gas.}
 
-\sol number of helium molecules: $N = nN_A = \frac{m}{M} \times N_A = \frac{20}{4.0} \times 6.02\times10^{23} \approx 3.01\times10^{24} $
+\begin{soln}
+    
+number of helium molecules: $N = nN_A = \frac{m}{M} \times N_A = \frac{20}{4.0} \times 6.02\times10^{23} \approx 3.01\times10^{24} $
 
 \eqyskip
 
@@ -368,7 +365,7 @@ volume of one atom: $V_\text{atom} = \frac{4}{3}\pi r^3 = \frac{4}{3} \pi\times(
 
 volume of all atoms: $V_\text{atoms} = N V_\text{atom} = 3.01\times10^{24} \times 1.15\times10^{-29} \text{ m}^3 \approx 3.46 \times 10^{-5} \text{ m}^{3}$
 
-$V_\text{gas} \gg V_\text{atoms}$, so this gas can approximate to an ideal gas \eoe
+$V_\text{gas} \gg V_\text{atoms}$, so this gas can approximate to an ideal gas \end{soln}
 
 
 \subsection{pressure (quantitative view)}
@@ -433,7 +430,7 @@ generalisation to $N$ molecules moving in 3-D
 \end{compactitem}
 
 
-therefore we find the pressure of an ideal gas is given by: $\boxed{p = \frac{Nm\avg{v^2}}{3V}}$
+therefore we find the pressure of an ideal gas is given by: $\tcbhighmath{p = \frac{Nm\avg{v^2}}{3V}}$
 
 \cmt $\avg{v^2}$ is the \emph{mean square velocity} of gas molecules
 
@@ -447,7 +444,7 @@ we cannot tell exact velocity of a specific molecule, but can only tell mean val
 
 then $Nm$ gives total mass of the gas, and $\frac{Nm}{V}$ gives gas density $\rho$
 
-we can rewrite the pressure formula as: $\boxed{p=\frac{1}{3}\rho \avg{v^2}}$ 
+we can rewrite the pressure formula as: $\tcbhighmath{p=\frac{1}{3}\rho \avg{v^2}}$ 
 
 (pressure depends only on density and mean square speed of molecules)
 
@@ -477,11 +474,11 @@ we now have two equations for ideal gases:
 
 compare the two equations: $pV=\frac{1}{3}Nm\avg{v^2}=NkT \RA m\avg{v^2}=3kT$
 
-\emph{mean kinetic energy} of a single molecule in a gas is: $\boxed{\avg{E_k}=\frac{1}{2}m\avg{v^2}=\frac{3}{2}kT}$
+\emph{mean kinetic energy} of a single molecule in a gas is: $\tcbhighmath{\avg{E_k}=\frac{1}{2}m\avg{v^2}=\frac{3}{2}kT}$
 
 mean K.E. of ideal gas molecules is \emph{proportional} to its thermodynamic temperature
 
-\cmt useful relation for molecular speeds: $\boxed{v_\text{rms}^2 \propto T}$
+\cmt useful relation for molecular speeds: $\tcbhighmath{v_\text{rms}^2 \propto T}$
 
 recall our statement in \S\ref{s-gas-intro}, higher temperature means higher speed for molecules
 
@@ -511,7 +508,7 @@ though all molecules have same K.E., heavier molecules will move more slowly
 
 \example{Air consists of oxygen (O$_2$, molar mass $32\text{ g mol}^{-1}$) and nitrogen (N$_2$, molar mass $28\text{ g mol}^{-1}$). (a) Calculate the mean translational kinetic energy of these molecules at 300 K. (b) Estimate the typical speed for each type of the molecule.}
 
-\sol mean K.E. of single molecule: $\avg{E_k} = \frac{3}{2}kT = \frac{3}{2} \times 1.38\times10^{-23} \times 300 \approx 6.21\times 10^{-21} \text{ J}$
+\begin{soln} mean K.E. of single molecule: $\avg{E_k} = \frac{3}{2}kT = \frac{3}{2} \times 1.38\times10^{-23} \times 300 \approx 6.21\times 10^{-21} \text{ J}$
 
 {
 	
@@ -527,11 +524,11 @@ for oxygen molecule: $v_\text{O$_2$} \approx  \sqrt{\frac{3\times8.31\times300}{
 
 \eqyskip
 
-for nitrogen molecule: $v_\text{N$_2$} \approx  \sqrt{\frac{3\times8.31\times300}{0.028}} \approx 517 \mps$ \eoe
+for nitrogen molecule: $v_\text{N$_2$} \approx  \sqrt{\frac{3\times8.31\times300}{0.028}} \approx 517 \mps$ \end{soln}
 
 \example{A cylinder container initially holds a gas of helium-4 at a temperature of 54\OC. (a) Find the mean square speed of these helium atoms. (b) If the temperature is raised to 540\OC, find the r.m.s. speed of the atoms.}
 
-\sol mass of one helium-4 atom: $m=4\text{u} = 4\times 1.66\times10^{-27} \approx 6.64\times10^{-27} \text{ kg}$
+\begin{soln} mass of one helium-4 atom: $m=4\text{u} = 4\times 1.66\times10^{-27} \approx 6.64\times10^{-27} \text{ kg}$
 
 at 54\OC: $\, \frac{1}{2}m\avg{v^2} = \frac{3}{2}kT \RA \avg{v^2} = \frac{3kT}{m} = \frac{3\times1.38\times10^{-23}\times(54+273)}{6.64\times10^{-27}} \approx 2.04 \times 10^6 \text{ m}^2 \text{ s}^{-2}$
 
@@ -541,7 +538,7 @@ note relation between $v$ and $T$: $\, \avg{v^2} \propto T \RA \frac{\avg{v^{\pr
 
 \eqyskip 
 
-at 540\OC: $\, v'_\text{rms} = \sqrt{\frac{540+273}{54+273}} \times \sqrt{2.04 \times 10^6} \approx 2.25 \times 10^3 \mps$ \eoe
+at 540\OC: $\, v'_\text{rms} = \sqrt{\frac{540+273}{54+273}} \times \sqrt{2.04 \times 10^6} \approx 2.25 \times 10^3 \mps$ \end{soln}
 
 
 \question{A fixed mass of gas expands to twice its volume at constant temperature. (a) How does its pressure change? (b) How does mean kinetic energy change?}

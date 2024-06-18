@@ -17,7 +17,7 @@ processor produces an output voltage to drive \keypoint{output devices} to indic
 		\begin{circuitikz}[european resistors]
 		\draw[thick] (0,0) to [thR,l_=$R_T$] (3,0);
 	\end{circuitikz}
-	\caption*{electric symbol for thermistor}
+	\caption{electric symbol for thermistor}
 	
 	\vspace*{\baselineskip}
 	\begin{tikzpicture}[scale=0.8]
@@ -52,7 +52,7 @@ at low temperature, electrons are bound to atoms and cannot move freely; at high
 		\draw[thick] (0,0) to [R,l_=LDR] (3,0);
 	\end{circuitikz}
 	
-	\caption*{electric symbol for LDR}
+	\caption{electric symbol for LDR}
 	
 	\vspace*{\baselineskip}
 	\begin{tikzpicture}[scale=0.84]
@@ -94,7 +94,7 @@ in bright, typical resistance of LDR $\approx10^2\sim10^3$ $\Omega$
 	\draw (3,2.1) --++ (-1,1.6) node[above,twoline]{plastic\\sheet};
 	\end{tikzpicture}
 	
-	\caption*{structure of a strain gauge}
+	\caption{structure of a strain gauge}
 \end{marginfigure}
 
 to measure width of a narrow crack, a device called \keypoint{strain gauge}\index{strain gauge} is widely used in industry
@@ -156,14 +156,14 @@ so piezo-electric transducer is also found in \emph{microphones}
 		\begin{circuitikz}
 			\draw (0,0) to[mic] ++(0,1.8);
 		\end{circuitikz}
-		\caption*{symbol for a microphone}
+		\caption{symbol for a microphone}
 	\end{minipage}
 	\begin{minipage}{0.45\textwidth}
 		\centering
 		\begin{circuitikz}
 			\draw (0,0) to[loudspeaker] ++(0,-1.8);
 		\end{circuitikz}
-		\caption*{symbol for a loudspeaker}
+		\caption{symbol for a loudspeaker}
 	\end{minipage}
 \end{figure}
 
@@ -240,7 +240,7 @@ for example, potential at $X$ is essentially equal to voltage $V_2$
 
 \example{For the sensing circuit shown, suggest how the output voltage changes as light level increases.}\label{ex-light-sensor}
 
-\sol intensity of light increases, resistance of LDR decreases
+\begin{soln} intensity of light increases, resistance of LDR decreases
 
 current in circuit increases, p.d. across $R_0$ increases
 
@@ -248,7 +248,7 @@ so p.d. across LDR becomes smaller, $V_\text{out}$ would decrease
 
 from $V_\text{out} = \frac{\text{LDR}}{\text{LDR} + R_0}V_0$, one can also see $V_\text{out}$ decreases when resistance of LDR becomes lower
 
-so $V_\text{out}$ decreases as light intensity increases \eoe
+so $V_\text{out}$ decreases as light intensity increases \end{soln}
 
 \question{In Example \ref{ex-light-sensor}, if the fixed resistor has $R_0 = 8.0$ k$\Omega$, and the LDR is in an environment such that it has a resistance of $12$ k$\Omega$. The voltage supply $V_0 = +15 \text{ V}$. Find $V_\text{out}$.}
 
@@ -270,7 +270,7 @@ to amplify small input into large output signals, we need \keypoint{operational 
 		(opamp.down) -- ++ (0,-.8) node[right] {$-V_S$}
 		(opamp.up) -- ++ (0,.8) node[right] {$+V_S$};
 	\end{circuitikz}
-	\caption*{circuit symbol for op-amp}
+	\caption{circuit symbol for op-amp}
 	\vspace{-15pt}
 \end{marginfigure}
 
@@ -289,7 +289,7 @@ op-amp is building block for many electronic devices
 	\item[--] $V_\text{out}$: output voltage
 \end{compactitem}
 
-\cmt output voltage of op-amp is given by: $\boxed{V_\text{out}= G_0(V_+ - V_-)}$
+\cmt output voltage of op-amp is given by: $\tcbhighmath{V_\text{out}= G_0(V_+ - V_-)}$
 
 $G_0$ is value of amplification of an open-loop\footnote{It is called an open loop in the sense that there is no loop linking $V_\text{out}$ to input terminals of the op-amp.} amplifier, called \keypoint{open-loop gain}
 
@@ -417,7 +417,7 @@ it switches over to $-9$ V at some critical temperature then stays at $-9$ V unt
 	\end{minipage}
 \end{figure}
 	
-\sol potential at non-inverting input: $V_+ = \frac{4.0}{4.0+6.0}\times(+5) = +2\text{ V}$
+\begin{soln} potential at non-inverting input: $V_+ = \frac{4.0}{4.0+6.0}\times(+5) = +2\text{ V}$
 
 potential at inverting input is equal to input voltage: $V_-=V_\text{in}$
 
@@ -425,7 +425,7 @@ for $V_\text{in}$ greater than +2 V, $V_->V_+$, then $V_\text{out}=-9\text{ V}$
 
 for $V_\text{in}$ less than +2 V, $V_-<V_+$, then $V_\text{out}=+9\text{ V}$
 
-variation of $V_\text{out}$ can then be plotted, which shows the form of a square wave \eoe
+variation of $V_\text{out}$ can then be plotted, which shows the form of a square wave \end{soln}
 
 \section{negative feedback}
 
@@ -477,7 +477,7 @@ a feedback network is also called a \emph{closed loop}
 		\node[blue,above] at (0,2.5) {$\beta V_\text{out}$};
 	\end{circuitikz}
 
-\caption*{negative feedback mechanism}
+\caption{negative feedback mechanism}
 \end{figure}
 
 let's look into the effect of introducing negative feedback into the amplifier circuit\footnote{Discussions in this section are not required by the syllabus. If you do not have the appetite, you may just skip to the conclusions.}
@@ -556,10 +556,10 @@ one type of widely-used amplifier circuit is called \keypoint{inverting amplifie
 	\draw[-triangle 60] (-2,1.2) -- ++(0,.1) node[right]{$I_\text{f}$};
 \end{circuitikz}
 	
-\caption*{inverting amplifier}
+\caption{inverting amplifier}
 \end{figure}
 
-$V_\text{out}$ is related to $V_\text{in}$ by $\boxed{V_\text{out} = \left(-\frac{R_\text{f}}{R_\text{in}}\right)V_\text{in} }$, where gain of the amplifier is $G=\frac{V_\text{out}}{V_\text{in}} = -\frac{R_\text{f}}{R_\text{in}}$
+$V_\text{out}$ is related to $V_\text{in}$ by $\tcbhighmath{V_\text{out} = \left(-\frac{R_\text{f}}{R_\text{in}}\right)V_\text{in} }$, where gain of the amplifier is $G=\frac{V_\text{out}}{V_\text{in}} = -\frac{R_\text{f}}{R_\text{in}}$
 	
 to show this relation, we need two approximations
 
@@ -599,7 +599,7 @@ another type of common amplifier circuit is called \keypoint{non-inverting ampli
 		\draw[-triangle 60] (-2,-1) -- ++(0,.1) node[left]{$i$};
 	\end{circuitikz}
 	
-	\caption*{non-inverting amplifier}
+	\caption{non-inverting amplifier}
 \end{figure}
 
 for this circuit, $V_\text{out}$ is given by: $\boxed{V_\text{out} = \left(1 + \frac{R_\text{f}}{R_0}\right)V_\text{in}}$, where overall gain $G=\frac{V_\text{out}}{V_\text{in}} = 1 + \frac{R_\text{f}}{R_0}$
@@ -673,11 +673,11 @@ if we find $V_\text{out}$ greater than supply voltage from a calculation, true $
 	\end{circuitikz}
 \end{figure}
 
-\sol overall gain of the amplifier: $G=-\frac{R_2}{R_1} = -\frac{50\text{k}}{10\text{k}}=-5.0$
+\begin{soln} overall gain of the amplifier: $G=-\frac{R_2}{R_1} = -\frac{50\text{k}}{10\text{k}}=-5.0$
 
 for $V_\text{in} = +1.0$ V: $V_\text{out}=(-5.0)\times(+1.0)=-5.0 \text{ V}$
 
-for $V_\text{in} = -4.0$ V: $V_\text{out}=(-5.0)\times(-4.0)=+20 \text{ V}$, output becomes saturated, so $V_\text{out}=+10 \text{ V}$ \eoe
+for $V_\text{in} = -4.0$ V: $V_\text{out}=(-5.0)\times(-4.0)=+20 \text{ V}$, output becomes saturated, so $V_\text{out}=+10 \text{ V}$ \end{soln}
 
 
 \newpage
@@ -697,11 +697,11 @@ for $V_\text{in} = -4.0$ V: $V_\text{out}=(-5.0)\times(-4.0)=+20 \text{ V}$, out
 	\end{circuitikz}
 \end{figure}
 
-\sol overall gain of the amplifier: $G=1+\frac{R_1}{R_2} = 1+\frac{48\text{k}}{6.0\text{k}}=9.0$
+\begin{soln} overall gain of the amplifier: $G=1+\frac{R_1}{R_2} = 1+\frac{48\text{k}}{6.0\text{k}}=9.0$
 
 for $V_\text{in} = +0.5$ V: $V_\text{out}=9.0\times(+0.5)=+4.5 \text{ V}$
 
-for $V_\text{in} = -3.0$ V: $V_\text{out}=9.0\times(-3.0)=-27 \text{ V}$, output becomes saturated, so $V_\text{out}=-10 \text{ V}$ \eoe
+for $V_\text{in} = -3.0$ V: $V_\text{out}=9.0\times(-3.0)=-27 \text{ V}$, output becomes saturated, so $V_\text{out}=-10 \text{ V}$ \end{soln}
 
 
 \example{An amplifier circuit incorporating an ideal op-amp is shown.}
@@ -726,7 +726,7 @@ Initially, the thermistor has a resistance of $20\,k\Omega$. (a) Find the gain o
 
 \newpage
 
-\solc \begin{compactitem}
+\begin{soln} \begin{itemize}
 	\item[(a)] this is an inverting amplifier (there is negative feedback loop and $V_\text{out}$ is fed into $V_-$)
 	
 	resistance of feedback loop: $R_\text{f} = \left(\frac{1}{20\text{k}} + \frac{1}{20\text{k}}\right)^{-1} = 10 \, \text{k}\Omega$
@@ -748,9 +748,9 @@ Initially, the thermistor has a resistance of $20\,k\Omega$. (a) Find the gain o
 	\item[(d)] gain of amplifier after removal of thermistor: $G' = - \frac{R'_\text{f}}{R_\text{in}} = - \frac{20\text{k}}{2.0\text{k}} \RA G' = -10$
 	
 	new output voltage can be computed: $V'_\text{out} = G'V_\text{in} = (-10)\times(-1.0) = +10 \text{ V}$
-	
-	but voltage supply to op-amp is $\pm 8 \text{ V}$, op-amp saturates, so $V'_\text{out} = +8 \text{ V}$ \eoe
-\end{compactitem}
+		but voltage supply to op-amp is $\pm 8 \text{ V}$, op-amp saturates, so $V'_\text{out} = +8 \text{ V}$ 
+\end{itemize}
+\end{soln}
 
 \example{A circuit incorporating an ideal op-amp is shown below. The two fixed resistors have $R_1=36$ k$\Omega$ and $R_2=9.0$ k$\Omega$. Variation of $V_\text{in}$ from a voltage source is shown with the blue curve. On the same graph, plot how $V_\text{out}$ varies with time.}
 
@@ -792,13 +792,13 @@ Initially, the thermistor has a resistance of $20\,k\Omega$. (a) Find the gain o
 	\end{minipage}
 \end{figure}
 
-\sol this is a non-inverting amplifier, whose voltage gain is: $G=1+\frac{R_1}{R_2} = 1+\frac{36\text{k}}{9.0\text{k}}=+5.0$
+\begin{soln} this is a non-inverting amplifier, whose voltage gain is: $G=1+\frac{R_1}{R_2} = 1+\frac{36\text{k}}{9.0\text{k}}=+5.0$
 
 so $V_\text{out}=+5.0\times V_\text{in}$, with which we attempt to plot $V_\text{out}$ as the red dotted curve
 
 but $V_\text{out}$ will saturate at voltage of power supply, which is $\pm 12$ V
 
-taking this into account, we can plot the true $V_\text{out}$ as the red solid curve \eoe
+taking this into account, we can plot the true $V_\text{out}$ as the red solid curve \end{soln}
 
 
 
@@ -817,10 +817,10 @@ taking this into account, we can plot the true $V_\text{out}$ as the red solid c
 
 a \keypoint{diode}\index{diode} is a device that only allows current to flow in one direction
 
-%am ideal diode has zero resistance when forward-biased, current easily flows through it
-%\footnote{For practical diodes, when it is forward-biased, there exists a threshold voltage $V_0$ below which the diode does not conduct. For $V<V_0$, even the diode is connected in the correct direction, it stays off. But when $V>V_0$, resistance of diode drops to almost zero. There also exists a breaking voltage $V_\text{br}$. If p.d. across the diode is greater than $V_\text{br}$, the diode may break down.}
-%
-%when an ideal diode backward-biased, it has infinite resistance, no current can flow
+am ideal diode has zero resistance when forward-biased, current easily flows through it
+\footnote{For practical diodes, when it is forward-biased, there exists a threshold voltage $V_0$ below which the diode does not conduct. For $V<V_0$, even the diode is connected in the correct direction, it stays off. But when $V>V_0$, resistance of diode drops to almost zero. There also exists a breaking voltage $V_\text{br}$. If p.d. across the diode is greater than $V_\text{br}$, the diode may break down.}
+
+when an ideal diode backward-biased, it has infinite resistance, no current can flow
 
 
 \begin{marginfigure}
@@ -830,7 +830,7 @@ a \keypoint{diode}\index{diode} is a device that only allows current to flow in 
 		\draw[thick] (-1.5,0) to [leD-] (1.5,0);
 	\end{circuitikz}
 	
-	\caption*{electric symbol for an LED}
+	\caption{electric symbol for an LED}
 	
 	\vspace*{15pt}
 	\begin{circuitikz}[european resistors,scale=0.9]
@@ -888,7 +888,7 @@ current flowing in the coils of the electromagnet induces a magnetic field to at
 		\draw[thick] (0,-4) -- (5,-4) node[ground]{} -- (6,-4);
 	\end{circuitikz}
 
-	\caption*{output from processing units connected to a relay}	
+	\caption{output from processing units connected to a relay}	
 \end{figure}
 
 \cmt in practice, a relay is usually connected with two \emph{diodes} for the following reasons:
@@ -927,7 +927,7 @@ change in $x$ would cause change in output voltage from the processing units
 	\draw[thick, orange, domain=0.3:5,samples=36,smooth,variable=\x] plot (\x,{10/(\x+2)-0.8});
 	\foreach \x in {0.6,1.4,1.9,2.6,3.7,4.3} \draw[thick] (\x-0.06,{10/(\x+2)-0.86}) --++ (0.12,0.12) ++ (0,-0.12) --++ (-0.12,0.12);
 	\end{tikzpicture}
-	\caption*{example of a calibration curve}
+	\caption{example of a calibration curve}
 \end{marginfigure}
 
 for convenience, we would hope value of $x$ can be directly read off from a voltmeter, so we need associate a value of $V_\text{out}$ with a value for $x$

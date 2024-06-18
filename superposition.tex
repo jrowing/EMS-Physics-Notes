@@ -52,7 +52,7 @@ When two of more waves meet together, the resultant motion is a combination of t
 	
 	peaks of both waves must arrive with a time difference $\Delta t = \frac{1}{2}T, \, \frac{3}{2}T, \, \frac{5}{2}T, \cdots$
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\noindent\begin{minipage}{0.45\linewidth}
 		\centering
@@ -75,9 +75,13 @@ When two of more waves meet together, the resultant motion is a combination of t
 		\end{tikzpicture}
 	\end{minipage}\hfil
 	\caption{constructive and destructive superposition of two transvers waves}
-\end{figure}
+\end{figure*}
+\vspace{2cm}
+Note: longitudinal waves are often represented by transverse diagrams:
+\vspace{1cm}
+ 
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\noindent\begin{minipage}{0.5\linewidth}
 		\centering
@@ -87,9 +91,8 @@ When two of more waves meet together, the resultant motion is a combination of t
 		\centering
 		\includegraphics[width=.95\textwidth]{longitudinal-I.pdf}
 	\end{minipage}
-	\caption*{constructive and destructive superposition of two sound waves} 
-\end{figure}
-
+	\caption{constructive and destructive superposition of two sound waves} 
+\end{figure*}
 
 
 \subsection{path difference}
@@ -106,7 +109,7 @@ the difference between distances travelled by the two waves is the path differen
 
 \centering
 \vspace*{6pt}
-\begin{tcolorbox}[colframe=orange, colback=yellow!30, width=0.65\textwidth]
+\begin{tcolorbox}[colframe=red, colback=yellow!30, width=0.65\textwidth]
 	\setlength{\baselineskip}{\baselineskip}%
 	
 	\centering
@@ -159,7 +162,7 @@ in this case, peak of one wave meets the trough of the other
 	
 	\centering
 	\vspace*{6pt}
-	\begin{tcolorbox}[colframe=orange, colback=yellow!30, width=0.65\textwidth]
+	\begin{tcolorbox}[colframe=red, colback=yellow!30, width=0.65\textwidth]
 		\setlength{\baselineskip}{\baselineskip}%
 		
 		\centering
@@ -179,11 +182,11 @@ in this case, peak of one wave meets the trough of the other
 
 \newpage
 
-\cmt phase difference can be related to path difference by: $ \boxed{ \frac{\Delta \phi}{2\pi} = \frac{\Delta L}{\lambda} = \frac{\Delta t}{T} } $
+\cmt phase difference can be related to path difference by: \begin{empheq}[box=\tcbhighmath]{equation*}{ \frac{\Delta \phi}{2\pi} = \frac{\Delta L}{\lambda} = \frac{\Delta t}{T} } \end{empheq}
 
 \example{The diagrams below each shows the displacement of a particular point in two transverse waves. If both waves are travelling in the same direction with a wavelength of 30 cm, what is the phase difference and path difference between each wave?}
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\begin{minipage}{0.32\textwidth}
 		\centering
@@ -218,8 +221,8 @@ in this case, peak of one wave meets the trough of the other
 		
 		(c)
 	\end{minipage}
-%	\caption*{examples of phases differences between two waves}
-\end{figure}
+	\caption{examples of phases differences between two waves}
+\end{figure*}
 
 \begin{soln}
 (a) $\Delta t = \frac{1}{4}T \RA \Delta \phi = \frac{1}{4}\times 2\pi = \frac{1}{2}\pi, \quad \Delta L = \frac{1}{4} \lambda = \frac{1}{4}\times30 = 7.5 \text{ cm}$
@@ -268,14 +271,11 @@ when two (or more) waves of constant phase difference meet, stable regions of co
 
 
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\includegraphics[width=1\textwidth]{interference.pdf}
-	
-	constructive (solid lines) and destructive (dashed lines) interference 
-	
-	of waves produced from two coherent sources $A$ and $B$
-\end{figure}
+\caption{constructive (solid lines) and destructive (dashed lines) interference of waves produced from two coherent sources $A$ and $B$}
+\end{figure*}
 
 \cmt regions of constructive interference are often called \emph{maxima}
 
@@ -351,7 +351,7 @@ this requires \keypoint{coherent} wave sources, which means constant phase diffe
 	\draw[gray] (-0.38,-0.4) [out=-75 , in=180] to (0.1,-0.8) [out=0, in=210] to (1.3,-0.4);
 	\end{tikzpicture}
 	
-	\caption*{demonstrating interferece of water waves in a ripple tank}
+	\caption{demonstrating interferece of water waves in a ripple tank}
 \end{figure}
 
 
@@ -387,9 +387,9 @@ when they meet on a screen, interference pattern can be seen
 since this experiment is carried out with light, alternating bright and dark fringes are formed
 
 this is known as \emph{Thomas Young}'s \keypoint{double-slit experiment}
-\footnote{The nature of light has been argued since the history of human civilisation. It has been long debated whether light is a \emph{wave} or it is made of \emph{particles}. It was until the early 1800s when Thomas Young carried out the famous double-slit experiment that now bears his name, people became certain that light has wavelike properties. For a detailed review, check out the Wikipedia article: \url{https://en.wikipedia.org/wiki/Light}.}
+\footnote[][-4cm]{The nature of light has been argued since the history of human civilisation. It has been long debated whether light is a \emph{wave} or it is made of \emph{particles}. It was until the early 1800s when Thomas Young carried out the famous double-slit experiment that now bears his name, people became certain that light has wavelike properties. For a detailed review, check out the Wikipedia article: \url{https://en.wikipedia.org/wiki/Light}.}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=1.5, yscale=1.2]
 	% screen & fringes
@@ -411,8 +411,8 @@ this is known as \emph{Thomas Young}'s \keypoint{double-slit experiment}
 	\draw (30:6) ++ (0, 1.1) node[above] {screen};
 	\draw (30:2.5) ++ (0, 0.7) node[above] {double slit};
 	\end{tikzpicture}
-	\caption*{Young's double-slit interference experiment}
-\end{figure}
+	\caption{Young's double-slit interference experiment}
+\end{figure*}
 
 
 \cmt when waves from the two slits meet with path difference $\Delta L = 0, \, \lambda, \, 2\lambda, \cdots$, maxima is formed
@@ -538,7 +538,7 @@ passing light through even more slits also produces nice interference patterns
 
 \keypoint{diffraction grating} is such an apparatus, with hundreds or thousands of slits per mm\index{diffraction grating}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=1, yscale=0.84]
 	% screen & fringes
@@ -560,8 +560,8 @@ passing light through even more slits also produces nice interference patterns
 	\draw (30:7.5) ++ (0, 1.1) node[above] {screen};
 	\draw (30:2) ++ (0, 0.7) node[above, twoline] {diffraction\\grating};
 	\end{tikzpicture}
-	\caption*{multi-slit interference as light passes through a diffraction grating}
-\end{figure}
+	\caption{multi-slit interference as light passes through a diffraction grating}
+\end{figure*}
 
 \cmt compared to double-slit, maxima produced by diffraction grating are \emph{sharper} and \emph{brighter}
 
@@ -571,7 +571,7 @@ maxima are formed when waves from not two but many slits interfere constructivel
 
 where $d$ is the separation between adjacent slits, and light is incident \emph{normally}
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\noindent
 	\centering
 	\begin{minipage}{0.64\textwidth}
@@ -611,7 +611,7 @@ where $d$ is the separation between adjacent slits, and light is incident \emph{
 		\node[below] at (2,1) {$\Delta L = d\sin\theta$};
 		\end{tikzpicture}
 	\end{minipage}
-\end{figure}
+\end{figure*}
 
 \noindent\textbf{proof} for constructive interference, path difference between adjacent slits must satisfy: $\Delta L = n\lambda $
 
@@ -634,7 +634,7 @@ the value of $\frac{d}{\lambda}$ should be rounded \emph{down} to the nearest wh
 
 \cmt if white light is passed through diffraction gratings, \emph{dispersion} is observed
 
-\begin{figure}[!ht]
+\begin{figure*}[!ht]
 	\centering
 	\begin{tikzpicture}[scale=1.6]
 	% background
@@ -661,8 +661,8 @@ the value of $\frac{d}{\lambda}$ should be rounded \emph{down} to the nearest wh
 	\foreach \y in {0.36,0.32,...,-0.36} \draw (-0.1,\y) -- (0.1,\y);
 	\draw[fill=gray!20, opacity=0.7] (-0.1,-0.4) rectangle (0.1,0.4);
 	\end{tikzpicture}
-	\caption*{dispersion of white light through a diffraction grating}
-\end{figure}
+	\caption{dispersion of white light through a diffraction grating}
+\end{figure*}
 
 
 
@@ -734,7 +734,7 @@ forward-moving wave and backward-moving reflected wave combine to form stationar
 	when two waves of same frequency and same speed travel in opposite directions and meet together, they superpose to form stable regions of constructive and destructive interference, this forms a \keypoint{stationary wave}, also known as a \keypoint{standing wave}\index{stationary wave}
 \end{ilight}
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\noindent\begin{minipage}{0.25\linewidth}
 		\centering
@@ -793,11 +793,11 @@ forward-moving wave and backward-moving reflected wave combine to form stationar
 	\vspace*{0.75em} formation of a stationary wave (red) due to the superposition of one wave 
 	
 	travelling to the right (blue) and another wave travelling to the left (green)
-\end{figure}
+\end{figure*}
 
 from this one can visualise how the pattern of a stationary wave varies with time
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\begin{tikzpicture}[scale=0.7]
 	\foreach \amp in {-2,-1,1,2}
@@ -810,8 +810,8 @@ from this one can visualise how the pattern of a stationary wave varies with tim
 	\foreach \n in {-3,-2,...,3} \node at (\n*pi,0.7) {N};
 	\foreach \a in {-2.5,-1.5,...,2.5} \node at (\a*pi,2.25) {A};
 	\end{tikzpicture}
-	\caption*{variation of a stationary wave pattern with time}
-\end{figure}
+	\caption{variation of a stationary wave pattern with time}
+\end{figure*}
 
 \cmt there are points in the wave where destructive interference always occurs
 
@@ -843,7 +843,7 @@ with both ends fixed, the two ends are both nodes
 
 three patterns with the longest wavelengths and lowest frequencies are shown
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\noindent\begin{minipage}{0.3\linewidth}
 		\centering
@@ -869,7 +869,7 @@ three patterns with the longest wavelengths and lowest frequencies are shown
 		\node at (0,-2) {3rd harmonic};
 		\end{tikzpicture}
 	\end{minipage}\hfil
-\end{figure}
+\end{figure*}
 
 \cmt longest-wavelength mode is called the \emph{fundamental mode}, it also has lowest frequency
 
@@ -896,7 +896,7 @@ f_2 = 2f_1 \qquad f_3 = 3f_1 \qquad \cdots \qquad f_n=n f_1
 
 \example{\emph{Melde's experiment} demonstrates a stationary wave formed on a vibrating string using an oscillator set at a particular frequency. Given that the length of the string is 80 cm. (a) What is the wavelength of this wave? (b) If one wants to construct a stationary of longer wavelength, suggest what changes can be made?}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[scale=1.1]
 	\draw [thick,domain=0:10,samples=90,smooth] plot (\x,{.6*sin(\x*90)});
@@ -910,8 +910,8 @@ f_2 = 2f_1 \qquad f_3 = 3f_1 \qquad \cdots \qquad f_n=n f_1
 	\node at (0,-1.5) {oscillator};
 	\node[twoline, right] at (10.2, 0) {fixed\\point};
 	\end{tikzpicture}
-	\caption*{Melde's experiment: demonstration of stationary waves on a tense string}
-\end{figure}
+	\caption{Melde's experiment: demonstration of stationary waves on a tense string}
+\end{figure*}
 
 \begin{soln} five loops so five half-wavelengths $\RA L = \frac{5}{2}\lambda \RA \lambda = \frac{2}{5}L = \frac{2}{5} \times 80 \RA \lambda = 32\text{ cm}$
 
@@ -930,7 +930,7 @@ in this case, we have a node at one end and an anti-node at the other end
 
 again we give the three patterns with the longest wavelengths and lowest frequencies
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\noindent\begin{minipage}{0.3\linewidth}
 		\centering
@@ -957,7 +957,7 @@ again we give the three patterns with the longest wavelengths and lowest frequen
 		\end{tikzpicture}
 	\end{minipage}\hfil
 %	\caption{The three lowest frequency modes of wave patterns formed between one fixed end and one open end}
-\end{figure}
+\end{figure*}
 
 \cmt longest-wavelength/lowest-frequency mode is also called the \emph{fundamental mode}
 
@@ -1083,7 +1083,7 @@ speed of sound waves can be measured using stationary waves as follows
 		\draw [gray, dashed, domain=0:9,samples=80,smooth] plot (\x,{0.3*sin(\x*80)});
 		\draw [gray, dashed, domain=0:9,samples=80,smooth] plot (\x,{-0.3*sin(\x*80)});
 	\end{circuitikz}
-	\caption*{arrangement of apparatuses for setting up a stationary sound wave}
+	\caption{arrangement of apparatuses for setting up a stationary sound wave}
 \end{figure}
 
 \cmt to set up a stationary sound wave, we need two travelling waves in opposite directions
@@ -1157,7 +1157,7 @@ phase difference between any two points in a stationary wave is either 0 or $\pi
 
 
 	
-\subsection{end-of-chapter questions}
+\section{end-of-chapter questions}
 
 
 \subsection*{principle of superposition}

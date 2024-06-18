@@ -14,7 +14,7 @@ Wave is a way of transferring and storing \emph{energy} without the transport of
 
 wave motion is the propagation of disturbance from one place to another
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=1.2, yscale=0.95]
 	\draw [->] (0,-2) -- (0,2.4) node[midway,left]{$O$} node[above]{displacement};
@@ -27,8 +27,8 @@ wave motion is the propagation of disturbance from one place to another
 	}
 	\end{tikzpicture}
 	
-	\caption*{wave pattern at different times ($t_1<t_2<t_3<t_4$) as wave travels in space}
-\end{figure}
+	\caption{wave pattern at different times ($t_1<t_2<t_3<t_4$) as wave travels in space}
+\end{figure*}
 
 
 to describe the wave motion and particle vibrations, we can define the following quantities:
@@ -135,7 +135,7 @@ if a medium expands, we say this region is a \emph{rarefaction}
 
 \cmt wavelength of a longitudinal wave can be defined as compression-to-compression distance
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=1, yscale=1.7]
 	\foreach \x in {-0.75,-0.5,...,10.75}
@@ -143,9 +143,9 @@ if a medium expands, we say this region is a \emph{rarefaction}
 	\end{tikzpicture}
 	
 	all particles at their equilibrium position before a pressure wave is set up
-\end{figure}
+\end{figure*}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=1, yscale=1.7]
 	\foreach \x in {-0.75,-0.5,...,11} 
@@ -168,10 +168,8 @@ if a medium expands, we say this region is a \emph{rarefaction}
 		\draw[thick,red,<->] (1,-0.5) -- (5,-0.5) node[above,pos=0.55]{$\lambda$};
 	\end{tikzpicture}
 	
-	compression and rarefaction regions at different times ($t_1<t_2<t_3$)
-	
-	as a longitudinal pressure wave travels in space
-\end{figure}
+	\caption{compression and rarefaction regions at different times ($t_1<t_2<t_3$)	as a longitudinal pressure wave travels in space}
+\end{figure*}
 
 
 
@@ -194,11 +192,26 @@ the disturbance is transferred through the medium, forming a sound wave
 
 \cmt sound waves are longitudinal
 	
-\begin{figure}[htp]
-\centering
-	\includegraphics[width=0.95\textwidth]{longitudinal.pdf}
-	\caption*{disturbance of vibrating molecules in a sound wave}
-\end{figure}
+\begin{figure*}[ht]
+
+\begin{tikzpicture}[scale=1]
+\pgfmathsetmacro{\noe}{6}
+
+\foreach \t in {0,0.1,...,14}{
+	\pgfmathsetmacro{\np}{pow({1+cos((\t-2)*pi/2.5 r)}, 4)*\noe/4}
+	\foreach \idx in {0,1,...,\np} {
+		\draw[fill] (\t+rnd*0.1-0.05,rnd*1.8) circle (0.025);	% wave 1
+	}
+}
+\draw[<->,thick] (7,2.4) -- (12,2.4) node[midway,above]{{\footnotesize one wavelength}};
+\draw[->,thick] (1,2.4) -- (4,2.4) node[midway,above]{{\footnotesize wave motion}};
+\node[below] at (2,-.2) {{\footnotesize compression}};
+\node[below] at (7,-.2) {{\footnotesize compression}};
+\node[below] at (12,-.2) {{\footnotesize compression}};
+\node[below] at (4.5,-.2) {{\footnotesize rarefaction}};
+\node[below] at (9.5,-.2) {{\footnotesize rarefaction}};
+\end{tikzpicture}
+\end{figure*}
 
 \cmt propagation of sound waves require medium (air, water, steel, etc.)
 	
@@ -235,9 +248,8 @@ oscilloscope can be thought as an upgraded voltmeter showing how voltage varies 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics*[width=0.88\textwidth]{oscilloscope.pdf}
-	
-	the display and controls of a typical cathode-ray oscilloscope
+	\includegraphics{oscilloscope.pdf}
+	\caption{the display and controls of a typical cathode-ray oscilloscope}
 \end{figure}
 
 \cmt oscilloscope displays the variation of voltage ($y$-axis) with time ($x$-axis)
@@ -304,7 +316,7 @@ electric and magnetic fields then permeate through space, transferring energy an
 	
 vibration of electric fields and magnetic fields are both perpendicular to wave motion
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{tikzpicture}[xscale=0.72]
 	\draw[Green, thick, ->] (0,-2.1) -- (0,2.1) node[left, twoline] {electric\\field};
@@ -451,8 +463,8 @@ vibration of electric fields and magnetic fields are both perpendicular to wave 
 		(13.0218, -0.9564)
 		};
 	\end{tikzpicture}
-	\caption*{variation in electric and magnetic fields for an electromagnetic wave}
-\end{figure}
+	\caption{variation in electric and magnetic fields for an electromagnetic wave}
+\end{figure*}
 
 	
 \cmt all electromagnetic waves travel at a constant speed $c=3.0\times10^8\mps$ in free space
@@ -506,13 +518,14 @@ distribution of electromagnetic radiation according to wavelength or frequency i
 	\node[right] at (7.2, 0.8) {700 nm};
 	\node[right] at (7.2, -2.8) {400 nm};
 	\end{tikzpicture}
-	\caption*{the electromagnetic spectrum}
+	\caption{the electromagnetic spectrum}
 \end{figure*}
 
 \newpage
 
-\cmt the table below shows electromagnetic spectrum in somewhat more precise details \footnote{There are no precise accepted boundaries between different ranges in the electromagnetic spectrum. The boundaries are actually somewhat ambiguous. The ranges of different portions tend to overlap. For example, a large portion of the ranges of X-rays overlap with that of $\gamma$-rays, and microwaves are considered by many people as a subdivision of radio waves. Therefore, the values given here are merely supposed to give you some rough idea about the order of magnitudes for electromagnetic wavelengths and frequencies. So the point I want to make here is: do not take the borderlines too seriously.}
-
+\cmt the table below shows electromagnetic spectrum in somewhat more precise details \footnote[][-2cm]{There are no precise accepted boundaries between different ranges in the electromagnetic spectrum. The boundaries are actually somewhat ambiguous. The ranges of different portions tend to overlap. For example, a large portion of the ranges of X-rays overlap with that of $\gamma$-rays, and microwaves are considered by many people as a subdivision of radio waves. Therefore, the values given here are merely supposed to give you some rough idea about the order of magnitudes for electromagnetic wavelengths and frequencies. So the point I want to make here is: do not take the borderlines too seriously.}
+\vspace{3cm}
+\begin{figure*}
 \begin{center}
 	\begin{tabular}{|C{4cm}|C{4cm}|C{4cm}|}
 		\hline type of radiation & range of wavelength & range of frequency \\ 
@@ -526,6 +539,7 @@ distribution of electromagnetic radiation according to wavelength or frequency i
 		\hline
 	\end{tabular} 
 \end{center}
+\end{figure*}
 
 \cmt each type of electromagnetic waves has important applications in some area
 \footnote{The entries listed here only include a teeny-weeny part of the uses of electromagnetic radiation, somewhat based on my personal taste. I also included a handful of explanations for the examples that I found interesting (otherwise I would not choose them), as you will see a huge load of footnotes in the next few pages. You are encouraged to do some researches as well, I can guarantee that you will not be disappointed.}
@@ -744,7 +758,7 @@ direction along which vibration is allowed to pass is called the axis of the pol
 \cmt polarised light can be sent through a second polarising filter (sometimes called an \emph{analyser})
 
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
@@ -790,7 +804,7 @@ direction along which vibration is allowed to pass is called the axis of the pol
 		
 		and analyser are aligned in parallel
 	\end{minipage}
-\end{figure}
+\end{figure*}
 
 \cmt if polarised light of initial intensity $I_0$ has an angle $\theta$ to the axis of analyser
 
@@ -847,7 +861,7 @@ some examples of diffraction are
 
 a wave with longer wavelength usually diffracts more than a wave of shorter wavelength
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\begin{tikzpicture}[scale=1.25]
 	\draw[ultra thick] (0,2.4) -- (0,0.25) (0,-0.25) -- (0,-2.4);
@@ -862,126 +876,124 @@ a wave with longer wavelength usually diffracts more than a wave of shorter wave
 	}
 	\end{tikzpicture}
 	
-	diffraction of a wave as it passes through an aperture of width that is
+	\caption{diffraction of a wave as it passes through an aperture of width that is (a) close to the wavelength, (b) greater than the wavelength}
+\end{figure*}
+
+\newpage
+
+
+\subsection{Doppler effect}
+
+\begin{ilight}
+	relative motion between wave source and the observer causes a change in observed frequency, this is known as the \keypoint{Doppler effect}\index{Doppler effect}
+\end{ilight}
+
+\cmt any type of wave can exhibit Doppler effect
+
+\cmt when wave source moves towards observer, a higher frequency is observed
+
+when wave source moves away from observer, a lower frequency is observed
+
+\cmt Doppler effect also occurs if source is at rest but observer is in motion
+
+as long as there is \emph{radial} motion between source and observer, there is shift in frequency
+
+\cmt Doppler effect finds its use in many areas, some examples are
+
+\begin{compactitem}
+	\item[--] \emph{Doppler radars}: used to measure velocity of moving target (speeding cars, tennis balls, etc.)
 	
-	(a) close to the wavelength, (b) greater than the wavelength
-\end{figure}
-
-
-
-
-% \subsection{Doppler effect}
-
-% \begin{ilight}
-% 	relative motion between wave source and the observer causes a change in observed frequency, this is known as the \keypoint{Doppler effect}\index{Doppler effect}
-% \end{ilight}
-
-% \cmt any type of wave can exhibit Doppler effect
-
-% \cmt when wave source moves towards observer, a higher frequency is observed
-
-% when wave source moves away from observer, a lower frequency is observed
-
-% \cmt Doppler effect also occurs if source is at rest but observer is in motion
-
-% as long as there is \emph{radial} motion between source and observer, there is shift in frequency
-
-% \cmt Doppler effect finds its use in many areas, some examples are
-
-% \begin{compactitem}
-% 	\item[--] \emph{Doppler radars}: used to measure velocity of moving target (speeding cars, tennis balls, etc.)
+	\item[--] \emph{Doppler ultrasonography}: used to image blood flow in human bodies
 	
-% 	\item[--] \emph{Doppler ultrasonography}: used to image blood flow in human bodies
+	\item[--] \emph{astronomy}: used to study motion of stars and galaxies
+\end{compactitem}
+
+\newpage
+
+\subsection*{explanation for Doppler effect}
+
+suppose wave source is moving towards the observer at speed $v_s$
+
+at time $t=0$, the source emits a wavefront which travels at speed $v$
+
+\begin{figure*}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.95]
+	\draw[thick] (0,0) circle (0.2);
+	\draw[fill] (12,0.4) circle (0.2);
+	\draw[ultra thick] (12,0.2) -- (12,-0.1) -- (11.8,-0.6) (12,-0.1) -- (12.2,-0.6) (11.75,-0.1) -- (12,0.15) -- (12.25,-0.1);
+	\draw[blue,thick] (0.4, 0.62513) arc (10:-10:3.6);
+	\node at (0,-1) {source};
+	\node at (12,-1) {observer};
+	\end{tikzpicture}
+\end{figure*}
+
+after one period, wavefront travels forward by a distance of $vT$
+
+at same time, source moves forward by a distance of $v_s T$ and emits a new wavefront
+
+\begin{figure*}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.95]
+	\draw[thick,gray!80] (0,0) circle (0.2);
+	\draw[thick] (2,0) circle (0.2);
+	\draw[gray, ->] (0.3,0) -- (1.7,0);
+	\draw[fill] (12,0.4) circle (0.2);
+	\draw[ultra thick] (12,0.2) -- (12,-0.1) -- (11.8,-0.6) (12,-0.1) -- (12.2,-0.6) (11.75,-0.1) -- (12,0.15) -- (12.25,-0.1);
+	\draw[Green,thick] (2.4, 0.62513) arc (10:-10:3.6);
+	\draw[blue,thick] (6.4, 0.62513) arc (10:-10:3.6);
+	\draw[gray!80,dashed,thick] (0.4, 0.62513) arc (10:-10:3.6);
+	\node at (0,-1) {source};
+	\node at (12,-1) {observer};
+	\draw[<->] (2.55,-1.5) -- (6.5,-1.5) node[above, midway]{$\lambda'$};
+	\draw[<->] (0.5,-1.5) -- (2.45,-1.5) node[above, midway]{$v_s T$};
+	\draw[<->] (0.5,-2.4) -- (6.5,-2.4) node[above, midway]{$\lambda = vT$};
+	\end{tikzpicture}
+\end{figure*}
+
+if source is at rest, observer simply perceives a wavelength $\lambda = vT$
+
+now source is moving closer, a shorter wavelength $\lambda'$ is perceived
+
+since frequency is inversely proportional to wavelength, so higher frequency $f'$ is observed
+
+similar discussion follow for the case where source moves away from observer
+
+\cmt change in observed frequency is due to change in wavelength caused by relative motion
+
+if source moves towards/away from observer, apparent wavelength becomes shorter/longer
+
+\subsection*{Doppler effect equation}
+
+we are now ready to derive an equation for the shift of observed frequency
+
+quantitatively, we can write: $\lambda' = \lambda \mp v_s T \quad$ ("$-$"/"$+$" if source is moving closer/away)
+
+using $v = \lambda f$ and $f=\frac{1}{T}$, this becomes: $ \frac{v}{f'} = \frac{v}{f} \mp \frac{v_s}{f} $
+
+rearranging, one finds observed frequency is given by: $\boxed{f' = f\frac{v}{v \mp v_s}}$
+
+\example{A police car moving towards you at $16 \mps$ sirens at 500 Hz. Given that the speed of sound in air is $340\mps$, at what frequency do you hear the siren?}
+
+\solc\begin{equation*}
+	f' = f\frac{v}{v - v_s} = 500 \times \frac{340}{340-16} \RA f' \approx 525 \text{ Hz} 
+\end{equation*}
+
+\example{A star emits an $H_\alpha$ line of wavelength 656 nm. (a) What is the frequency of this $H_\alpha$ line? (b) An observer on earth detects a wavelength of 680 nm, what can we say about motion of the star? (c) Find the relative speed of the star with respect to the earth.}
+
+\sol original frequency of $H_\alpha$: $f = \frac{c}{\lambda} = \frac{3.00\times10^8}{656 \times 10^{-9}} \approx 4.57 \times 10^{14} \text{ Hz}$
+
+observed wavelength is longer (redshift), this means the star is moving away, or receding
+
+to find speed of star, we can consider observed frequency: $f' = \frac{c}{\lambda'} = f\frac{c}{c + v_s}$
+\begin{equation*}
+	\frac{3.00\times10^8}{680\times10^{-9}} = 4.57 \times 10^{14} \times \frac{3.00\times10^8}{3.00\times10^8 + v_s} \RA v_s \approx 1.10 \times 10^7 \mps
+\end{equation*}
 	
-% 	\item[--] \emph{astronomy}: used to study motion of stars and galaxies
-% \end{compactitem}
-
-% \newpage
-
-% \subsection*{explanation for Doppler effect}
-
-% suppose wave source is moving towards the observer at speed $v_s$
-
-% at time $t=0$, the source emits a wavefront which travels at speed $v$
-
-% \begin{figure}[ht]
-% 	\centering
-% 	\begin{tikzpicture}[scale=0.95]
-% 	\draw[thick] (0,0) circle (0.2);
-% 	\draw[fill] (12,0.4) circle (0.2);
-% 	\draw[ultra thick] (12,0.2) -- (12,-0.1) -- (11.8,-0.6) (12,-0.1) -- (12.2,-0.6) (11.75,-0.1) -- (12,0.15) -- (12.25,-0.1);
-% 	\draw[blue,thick] (0.4, 0.62513) arc (10:-10:3.6);
-% 	\node at (0,-1) {source};
-% 	\node at (12,-1) {observer};
-% 	\end{tikzpicture}
-% \end{figure}
-
-% after one period, wavefront travels forward by a distance of $vT$
-
-% at same time, source moves forward by a distance of $v_s T$ and emits a new wavefront
-
-% \begin{figure}[ht]
-% 	\centering
-% 	\begin{tikzpicture}[scale=0.95]
-% 	\draw[thick,gray!80] (0,0) circle (0.2);
-% 	\draw[thick] (2,0) circle (0.2);
-% 	\draw[gray, ->] (0.3,0) -- (1.7,0);
-% 	\draw[fill] (12,0.4) circle (0.2);
-% 	\draw[ultra thick] (12,0.2) -- (12,-0.1) -- (11.8,-0.6) (12,-0.1) -- (12.2,-0.6) (11.75,-0.1) -- (12,0.15) -- (12.25,-0.1);
-% 	\draw[Green,thick] (2.4, 0.62513) arc (10:-10:3.6);
-% 	\draw[blue,thick] (6.4, 0.62513) arc (10:-10:3.6);
-% 	\draw[gray!80,dashed,thick] (0.4, 0.62513) arc (10:-10:3.6);
-% 	\node at (0,-1) {source};
-% 	\node at (12,-1) {observer};
-% 	\draw[<->] (2.55,-1.5) -- (6.5,-1.5) node[above, midway]{$\lambda'$};
-% 	\draw[<->] (0.5,-1.5) -- (2.45,-1.5) node[above, midway]{$v_s T$};
-% 	\draw[<->] (0.5,-2.4) -- (6.5,-2.4) node[above, midway]{$\lambda = vT$};
-% 	\end{tikzpicture}
-% \end{figure}
-
-% if source is at rest, observer simply perceives a wavelength $\lambda = vT$
-
-% now source is moving closer, a shorter wavelength $\lambda'$ is perceived
-
-% since frequency is inversely proportional to wavelength, so higher frequency $f'$ is observed
-
-% similar discussion follow for the case where source moves away from observer
-
-% \cmt change in observed frequency is due to change in wavelength caused by relative motion
-
-% if source moves towards/away from observer, apparent wavelength becomes shorter/longer
-
-% \subsection*{Doppler effect equation}
-
-% we are now ready to derive an equation for the shift of observed frequency
-
-% quantitatively, we can write: $\lambda' = \lambda \mp v_s T \quad$ ("$-$"/"$+$" if source is moving closer/away)
-
-% using $v = \lambda f$ and $f=\frac{1}{T}$, this becomes: $ \frac{v}{f'} = \frac{v}{f} \mp \frac{v_s}{f} $
-
-% rearranging, one finds observed frequency is given by: $\boxed{f' = f\frac{v}{v \mp v_s}}$
-
-% \example{A police car moving towards you at $16 \mps$ sirens at 500 Hz. Given that the speed of sound in air is $340\mps$, at what frequency do you hear the siren?}
-
-% \solc\begin{equation*}
-% 	f' = f\frac{v}{v - v_s} = 500 \times \frac{340}{340-16} \RA f' \approx 525 \text{ Hz} 
-% \end{equation*}
-
-% \example{A star emits an $H_\alpha$ line of wavelength 656 nm. (a) What is the frequency of this $H_\alpha$ line? (b) An observer on earth detects a wavelength of 680 nm, what can we say about motion of the star? (c) Find the relative speed of the star with respect to the earth.}
-
-% \sol original frequency of $H_\alpha$: $f = \frac{c}{\lambda} = \frac{3.00\times10^8}{656 \times 10^{-9}} \approx 4.57 \times 10^{14} \text{ Hz}$
-
-% observed wavelength is longer (redshift), this means the star is moving away, or receding
-
-% to find speed of star, we can consider observed frequency: $f' = \frac{c}{\lambda'} = f\frac{c}{c + v_s}$
-% \begin{equation*}
-% 	\frac{3.00\times10^8}{680\times10^{-9}} = 4.57 \times 10^{14} \times \frac{3.00\times10^8}{3.00\times10^8 + v_s} \RA v_s \approx 1.10 \times 10^7 \mps
-% \end{equation*}
-	
-% alternatively, we can consider observed wavelength: $\lambda' = \lambda + v_s T$, or: $\Delta \lambda = \lambda' - \lambda = \frac{v_s}{f}$
-% \begin{equation*}
-% 	(680-656)\times10^{-9} = \frac{v_s}{4.57 \times 10^{14}} \RA  v_s \approx 1.10 \times 10^7 \mps 
-% \end{equation*}
+alternatively, we can consider observed wavelength: $\lambda' = \lambda + v_s T$, or: $\Delta \lambda = \lambda' - \lambda = \frac{v_s}{f}$
+\begin{equation*}
+	(680-656)\times10^{-9} = \frac{v_s}{4.57 \times 10^{14}} \RA  v_s \approx 1.10 \times 10^7 \mps 
+\end{equation*}
 
 
 

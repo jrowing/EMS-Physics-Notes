@@ -1,11 +1,10 @@
 \chapter{Capacitors}
 
-\subsection{capacitors: an introduction}
+\section{capacitors: an introduction}
 
 \subsection{capacitors}
 
 \begin{marginfigure}
-\centering
 \begin{tikzpicture}[scale=0.5]
 \coordinate (A1) at (0,0); 
 \coordinate (A2) at (0.5,0);
@@ -30,7 +29,6 @@
 \draw [thick] (3.6,4) -- ++ (1.5,1) node[right,align=center,execute at begin node=\setlength{\baselineskip}{1.2em}]{metal\\plate};
 \draw [thick] (1.5,0.5) -- ++ (1.2,-1) node[right]{dielectric};
 \end{tikzpicture}
-\vspace*{-20pt}
 \end{marginfigure}
 
 \keypoint{capacitors}\index{capacitor} are elementary electrical units widely used in electrical and electronic engineering
@@ -48,8 +46,6 @@ circuit symbol for a capacitor is
 \vspace*{\baselineskip}
 
 \begin{marginfigure}
-\vspace*{-20pt}
-\centering
 \begin{circuitikz}[european resistors]
 	\draw (2,-2) -- (-2,-2)  to[battery,l^=$\mathcal{E}$] (-2,2) -- (-0.5,2);
 	\draw (2,-2) -- (2,-2)  to[R,l_=$R$] (2,2) -- (0.5,2);
@@ -80,7 +76,7 @@ to describe ability of a capacitor to store charges, we define the notion of cap
 	\keypoint{(mutual) capacitance}\index{capacitance!mutual capacitance} of a parallel-plate capacitor is defined as the ratio of the charge stored on one plate to the potential difference across the two plates.
 \end{ilight}
 
-in a word equation: $\text{mutual capacitance } C = \frac{\text{charge on one plate }Q }{\text{p.d. } V \text{ across the plates}}$ $\quad \Rightarrow \quad$ $\boxed{C = \frac{Q}{V}}$
+in a word equation: $\text{mutual capacitance } C = \frac{\text{charge on one plate }Q }{\text{p.d. } V \text{ across the plates}}$ $\quad \Rightarrow \quad$ $\tcbhighmath{C = \frac{Q}{V}}$
 
 
 \cmt unit of capacitance: \keypoint{farad}\index{farad}
@@ -130,7 +126,7 @@ any object that can be electrically charged exhibits capacitance
 
 we define \keypoint{self-capacitance}\index{capacitance!self-capacitance} of an object as the amount of charge that must be added to increase per unit electrical potential
 
-in a word equation, $ \text{self capacitance }C=\frac{\text{charge of object }Q}{\text{electric potential of object }V} \RA \boxed{C=\frac{Q}{V}}$\footnote{For either mutual capacitance or self capacitance, defining equation $C=\frac{Q}{V}$ takes the same form, but you should keep in mind that $Q$ and $V$ represent different things in different contexts.}
+in a word equation, $ \text{self capacitance }C=\frac{\text{charge of object }Q}{\text{electric potential of object }V} \RA \tcbhighmath{C=\frac{Q}{V}}$\footnote{For either mutual capacitance or self capacitance, defining equation $C=\frac{Q}{V}$ takes the same form, but you should keep in mind that $Q$ and $V$ represent different things in different contexts.}
 
 \example{Self-capacitance of a charged metal sphere in a vacuum}
 
@@ -138,17 +134,18 @@ consider a metal sphere of radius $R$ and carries an electric charge of $Q$
 
 its electric potential: $V = \frac{Q}{\ec R}$
 
-self-capacitance of the sphere: $C_\text{sphere} = \frac{Q}{V} = Q \times \frac{\ec R}{Q} \RA \boxed{C_\text{sphere} = \ec R}$
+\begin{soln}
+self-capacitance of the sphere: $C_\text{sphere} = \frac{Q}{V} = Q \times \frac{\ec R}{Q} \RA \tcbhighmath{C_\text{sphere} = \ec R}$
 
-note that capacitance is only dependent on its geometrical property (radius $R$) \eoe
+note that capacitance is only dependent on its geometrical property (radius $R$) \end{soln}
 
 \example{A conducting sphere of radius 1.0 m is situated in free space. (a) Find its capacitance. (b) In order to raise its potential to 5000 V, find the amount of charge needed.}
 
-\sol capacitance of the sphere: $C = \ec R = 4\pi\times8.85\times10^{-12}\times 1.0 \approx 1.11\times10^{-10} \text{ F}$
+\begin{soln} capacitance of the sphere: $C = \ec R = 4\pi\times8.85\times10^{-12}\times 1.0 \approx 1.11\times10^{-10} \text{ F}$
 
 (here you can see farad being an impractically huge unit)
 
-charge on sphere: $Q = CV = 1.11\times10^{-10} \times 5000 \approx 5.56\times 10^{-7} \text{ C}$ \eoe
+charge on sphere: $Q = CV = 1.11\times10^{-10} \times 5000 \approx 5.56\times 10^{-7} \text{ C}$ \end{soln}
 
 \subsection*{analogy with ideal gases}
 
@@ -206,13 +203,13 @@ substitute $Q=CV$, energy stored in capacitor is\footnote{Rigorously speaking, t
 
 \centering
 
-$\boxed{W = \frac{1}{2}CV^2 = \frac{Q^2}{2C}}$
+$\tcbhighmath{W = \frac{1}{2}CV^2 = \frac{Q^2}{2C}}$
 
 } 
 
 \example{When the p.d. across a capacitor of $1.8\times10^{-4} \text{ F}$ is increased from 10 V to 20 V, how much additional energy is stored?}
 
-\sol energy change: $\Delta W = W_f - W_i = \frac{1}{2}CV_f^2 - \frac{1}{2}CV_i^2 = \frac{1}{2}\times 1.8\times10^{-4}\times(20^2-10^2) = 2.7\times10^{-2} \text{ J}$ \eoe
+\begin{soln}energy change: $\Delta W = W_f - W_i = \frac{1}{2}CV_f^2 - \frac{1}{2}CV_i^2 = \frac{1}{2}\times 1.8\times10^{-4}\times(20^2-10^2) = 2.7\times10^{-2} \text{ J}$ \end{soln}
 
 \question{A capacitor of 2500 $\muF$ is charged to a working voltage of 18 V. (a) What is the magnitude of positive charge on its plate? (b) What is the energy stored?}
 
@@ -259,7 +256,7 @@ $C_\text{total} = C_1 + C_2$
 }
 
 
-if three of more capacitors in parallel: $\boxed{C_\text{total} = C_1 + C_2 + C_3 + \cdots}$ $\quad$ $\boxed{Q_\text{total} = Q_1 + Q_2 + Q_3 + \cdots}$
+if three of more capacitors in parallel: $\tcbhighmath{C_\text{total} = C_1 + C_2 + C_3 + \cdots}$ $\quad$ $\tcbhighmath{Q_\text{total} = Q_1 + Q_2 + Q_3 + \cdots}$
 
 \cmt adding extra capacitor in parallel to a network, total capacitance will increase
 
@@ -267,7 +264,7 @@ explanation: when several capacitors connected in parallel, equivalent to a sing
 
 \example{A capacitor with capacitance $C_0$ is charged to a p.d. $V_0$. It is disconnected from the power supply, and then connected across an identical capacitor. Discuss the change in p.d., and change in energy stored in the system.}
 
-\sol initial charge $Q=C_0 V_0$, initial energy stored $W_0 = \frac{1}{2} C V_0^2$
+\begin{soln} initial charge $Q=C_0 V_0$, initial energy stored $W_0 = \frac{1}{2} C V_0^2$
 
 combined capacitance: $C= C_0 + C_0 = 2C_0$
 
@@ -278,7 +275,7 @@ charge shared between capacitors, the first capacitor loses half its charge and 
 
 final energy stored in system: $W = \frac{1}{2}CV^2 = \frac{1}{2} \times 2C_0 \times (\frac{1}{2}V_0)^2 = \frac{1}{4} C_0 V_0^2 \ra W = \frac{1}{2} W_0$
 
-half of stored energy is lost as heat when electrons flow between two capacitors \eoe
+half of stored energy is lost as heat when electrons flow between two capacitors \end{soln}
 
 
 \question{A capacitor $A$ of capacitance $C$ and a second capacitor $B$ of capacitance $3C$ are connected in parallel. If a voltage is applied across the network, what is the ratio of energy stored in $A$ to that in $B$? What about the ratio of electric charge?}
@@ -324,7 +321,7 @@ p.d. is shared: $V_\text{total} = V_1 + V_2$
 }
 
 
-if three of more capacitors in series: $\boxed{\frac{1}{C_\text{total}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots}$ $\quad$ $\boxed{V_\text{total} = V_1 + V_2 + V_3 + \cdots}$
+if three of more capacitors in series: $\tcbhighmath{\frac{1}{C_\text{total}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots}$ $\quad$ $\tcbhighmath{V_\text{total} = V_1 + V_2 + V_3 + \cdots}$
 
 \cmt adding extra capacitor in series to a network, total capacitance will decrease
 
@@ -333,14 +330,13 @@ explanation: when several capacitors connected in series, equivalent to a parall
 
 
 \example{For the circuit shown below, find the p.d. across each of the capacitor.}
-
-\begin{center}
+\begin{figure}
 	\begin{circuitikz}[european resistors,scale=0.9]
 		\draw (0,0) to[C,l_=$C_1{=}4.0\mu\text{F}$] (3,0) to[C,l_=$C_2{=}12\mu\text{F}$] (6,0) -- (6,3) to[battery,l_=$V{=}8.0\text{V}$] (0,3) -- (0,0);
 	\end{circuitikz}
-\end{center}
+\end{figure}
 
-\sol using result for combined capacitance, we have: $C_\text{total} = \left( \frac{1}{C_1} + \frac{1}{C_2} \right)^{-1} = \left( \frac{1}{4.0} + \frac{1}{12} \right)^{-1} = 3.0 \text{ }\mu\text{F}$
+\begin{soln} using result for combined capacitance, we have: $C_\text{total} = \left( \frac{1}{C_1} + \frac{1}{C_2} \right)^{-1} = \left( \frac{1}{4.0} + \frac{1}{12} \right)^{-1} = 3.0 \text{ }\mu\text{F}$
 
 charge for the network: $Q = C_\text{total} V_\text{total} = 3.0 \times 8.0 = 24 \mu\text{C}$
 
@@ -357,7 +353,7 @@ V_1 + V_2 = 8.0
 \left\{\begin{array}{l}
 V_1 = 6.0 \text{ V} \\
 V_2 = 2.0 \text{ V}
-\end{array}\right.$ \eoe
+\end{array}\right.$ \end{soln}
 
 
 
@@ -366,39 +362,37 @@ V_2 = 2.0 \text{ V}
 more complicated capacitor networks can be considered as a combination of some smaller networks with capacitors in parallel or in series
 
 \example{$C_1=C_2=C_3=C_4=10\muF$, calculate the capacitance of the network (a) and (b).}\label{ex-Cnet}
+\begin{soln}
 \begin{center}
-\begin{minipage}{0.4\linewidth}
-\begin{center}
+
+
 \begin{circuitikz}[european resistors,scale=0.65]
 \draw (0,0) -- (0,2) to[C,l^=$C_1$] (2,2) to[C,l^=$C_2$] (4,2) -- (4,0) to[C,l^=$C_3$] (0,0);
 \draw (-1,1) -- (0,1) (4,1) -- (5,1);
 \end{circuitikz}
-
 (a)
 \end{center}
-\end{minipage}
-\begin{minipage}{0.55\linewidth}
+
+
 \begin{center}
 \begin{circuitikz}[european resistors,scale=0.65]
 \draw (0,0) -- (0,2) to[C,l^=$C_2$] (3,2) -- (3,0) to[C,l^=$C_3$] (0,0);
 \draw (-3,1) to[C,l^=$C_1$] (0,1);
 \draw (3,1) to[C,l^=$C_4$] (6,1);
 \end{circuitikz}
-
 (b)
 \end{center}
-\end{minipage}
-\end{center}
 
-\begin{compactitem}
+\begin{itemize}
 \item[(a)] $C_{12} = \left( \frac{1}{C_1} + \frac{1}{C_2} \right)^{-1} = \left( \frac{1}{10} + \frac{1}{10} \right)^{-1} = 5.0 \muF$
 
 $C_\text{total} = C_{12} + C_3 = 5 + 10 = 15 \muF$
 
 \item[(b)] $C_{23} = C_2 + C_3 = 10 + 10 = 20 \muF$
 
-$C_\text{total} = \left( \frac{1}{C_1} + \frac{1}{C_{23}} + \frac{1}{C_4} \right)^{-1} = \left( \frac{1}{10} + \frac{1}{20} + \frac{1}{10} \right)^{-1} = 4.0 \muF$ \eoe
-\end{compactitem}
+$C_\text{total} = \left( \frac{1}{C_1} + \frac{1}{C_{23}} + \frac{1}{C_4} \right)^{-1} = \left( \frac{1}{10} + \frac{1}{20} + \frac{1}{10} \right)^{-1} = 4.0 \muF$ 
+\end{itemize}
+\end{soln}
 
 \example{Four identical capacitors are arranged as shown. Each capacitor can withstand a maximum p.d. of 12 V, what is the maximum safe p.d. to be applied between the terminals?}
 
@@ -414,13 +408,15 @@ $C_\text{total} = \left( \frac{1}{C_1} + \frac{1}{C_{23}} + \frac{1}{C_4} \right
 
 }
 
-\sol suppose charge on the leftmost capacitor is $Q$, then charge of rightmost capacitor is also $Q$
+\begin{soln}
+    
+suppose charge on the leftmost capacitor is $Q$, then charge of rightmost capacitor is also $Q$
 
 but for the two capacitors in parallel, charge is shared, so each has charge $\frac{Q}{2}$
 
 p.d. across the parallel network is half of the p.d. across the two capacitors near the ends
 
-so maximum p.d. across the terminals: $V_\tmax = 12 + 6 + 12 = 30 \text{ V}$ \eoe
+so maximum p.d. across the terminals: $V_\tmax = 12 + 6 + 12 = 30 \text{ V}$ \end{soln} 
 
 \question{Using at most four capacitors of $24 \muF$, design a network that has a combined capacitance of (a) $72 \muF$, (b) $8 \muF$, (c) $36 \muF$, and (d) $18 \muF$.}
 
@@ -432,7 +428,7 @@ so maximum p.d. across the terminals: $V_\tmax = 12 + 6 + 12 = 30 \text{ V}$ \eo
 as a quick review, we compare capacitor networks with resistor networks
 
 \begin{center}
-{\renewcommand{\arraystretch}{1.2}
+{\renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|}
 \hline
 & capacitors & resistors \\ \hline
@@ -508,7 +504,7 @@ in this section, we will investigate how the p.d. across a capacitor changes wit
 
 }
 			
-	simplify everything, we get: $\boxed{V_C = \mathcal{E} \left( 1 - \mathrm{e}^{-t/RC}\right)}$
+	simplify everything, we get: $\tcbhighmath{V_C = \mathcal{E} \left( 1 - \mathrm{e}^{-t/RC}\right)}$
 		
 \cmt p.d. of capacitor increases at a decreasing rate when it is being charged
 
@@ -556,15 +552,15 @@ when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops
 
 }
 			
-	simplify everything, we get: $\boxed{V_C = V_0 \mathrm{e}^{-t/RC} }$
+	simplify everything, we get: $\tcbhighmath{V_C = V_0 \mathrm{e}^{-t/RC} }$
 	
 \cmt p.d. of capacitor gradually drops to zero during discharging
 
 \cmt discharging current also gradually approaches zero
 		
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
-	\noindent\begin{minipage}{0.45\linewidth}
+ \begin{minipage}{0.45\linewidth}
 		\centering
 		\begin{tikzpicture}[xscale=0.9]
 		\draw[thick,<->] (0,4) node[left]{$V_C$} -- (0,3.2) node[left]{$\epsilon$} -- (0,0) -- (6,0) node[below]{$t$};
@@ -584,7 +580,7 @@ when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops
 		
 		discharging phase of capacitor
 	\end{minipage}
-\end{figure}
+\end{figure*}
 
 \subsection{time constant}
 

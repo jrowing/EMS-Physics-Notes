@@ -73,7 +73,7 @@ sign conventions for $\mathcal{E}$ and $V$ are illustrated below
 		\draw[<-] (2,-1.5) [out=150, in=30] to (0,-1.5);
 		\node at (1,-0.9) {loop};
 		\end{circuitikz}
-	\caption*{$+\mathcal{E}$}
+	\caption{$+\mathcal{E}$}
 	\end{minipage}\hfil
 	\begin{minipage}{0.24\textwidth}
 		\centering
@@ -82,7 +82,7 @@ sign conventions for $\mathcal{E}$ and $V$ are illustrated below
 			\draw[->] (2,-1.5) [out=150, in=30] to (0,-1.5);
 			\node at (1,-0.9) {loop};
 		\end{circuitikz}
-		\caption*{$-\mathcal{E}$}
+		\caption{$-\mathcal{E}$}
 	\end{minipage}\hfil
 	\begin{minipage}{0.24\textwidth}
 		\centering
@@ -92,7 +92,7 @@ sign conventions for $\mathcal{E}$ and $V$ are illustrated below
 			\draw[<-] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
 			\node at (1.5,-0.9) {loop};
 		\end{circuitikz}
-		\caption*{$V = +IR$}
+		\caption{$V = +IR$}
 	\end{minipage}\hfil
 	\begin{minipage}{0.24\textwidth}
 		\centering
@@ -102,7 +102,7 @@ sign conventions for $\mathcal{E}$ and $V$ are illustrated below
 			\draw[->] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
 			\node at (1.5,-0.9) {loop};
 		\end{circuitikz}
-		\caption*{$V = -IR$}
+		\caption{$V = -IR$}
 	\end{minipage}
 \end{figure}
 
@@ -150,7 +150,7 @@ sign conventions for $\mathcal{E}$ and $V$ are illustrated below
 	\vspace*{-16pt}
 \end{marginfigure}
 
-\example{The diagram shows a circuit where e.m.f. of the batteries and the values of resistance are all known. Write down the equations for the currents $I_1$, $I_2$ and $I_3$ using Kirchhoff's laws.}\footnote[1cm]{The solutions are: $I_1 = \frac{(R_2+R_3)\mathcal{E}_1 - R_3 \mathcal{E}_2}{(R_1 + R_3)(R_2+R_3) - R_3^2}$, $I_2 = \frac{(R_2+R_3)\mathcal{E}_2 - R_3 \mathcal{E}_1}{(R_1 + R_3)(R_2+R_3) - R_3^2}$, $I_3 = \frac{R_1 \mathcal{E}_2 + R_2 \mathcal{E}_1}{(R_1 + R_3)(R_2+R_3) - R_3^2}$}
+\example{The diagram shows a circuit where e.m.f. of the batteries and the values of resistance are all known. Write down the equations for the currents $I_1$, $I_2$ and $I_3$ using Kirchhoff's laws.}\footnote[][2cm]{The solutions are: $I_1 = \frac{(R_2+R_3)\mathcal{E}_1 - R_3 \mathcal{E}_2}{(R_1 + R_3)(R_2+R_3) - R_3^2}$, $I_2 = \frac{(R_2+R_3)\mathcal{E}_2 - R_3 \mathcal{E}_1}{(R_1 + R_3)(R_2+R_3) - R_3^2}$, $I_3 = \frac{R_1 \mathcal{E}_2 + R_2 \mathcal{E}_1}{(R_1 + R_3)(R_2+R_3) - R_3^2}$}
 
 \begin{soln} apply KCL for point $C$ or $F$: $ I_1 + I_2 = I_3 \quad  $ \hspace*{21pt} \ding{172}
 
@@ -183,7 +183,7 @@ we can derive formula for series and parallel resistors using Kirchhoff's laws
 	\draw[->] (1,0) -- (1.2,0) node[above]{$I$};
 	\foreach \x/\xlabel in {1.5/1,4/2,6.5/3} \draw[<->] (\x,-1) --++ (2,0) node[midway, above]{$V_\xlabel$};
 	\end{circuitikz}
-	\caption*{three resistors in series}
+	\caption{three resistors in series}
 \end{figure}
 
 take three series resistors as shown
@@ -220,7 +220,7 @@ in general, if there are $n$ resistors in series, then: \begin{empheq}[box=\tcbh
 		\draw[->] (-2.4,0) --++ (0.1,0) node[above]{$I$};
 		\draw[<->] (-1.2,-2.4) -- (1.2,-2.4) node[midway, above]{$V$};
 	\end{circuitikz}
-	\caption*{three resistors in parallel}
+	\caption{three resistors in parallel}
 	\vspace*{-16pt}
 \end{marginfigure}
 
@@ -410,7 +410,7 @@ the diagram below show how $P_\text{out}$ varies with $R$
 	\draw [->] (7,3.0) node[note]{$P_\text{out}$ decreases as current\\ decreases with load $R$} -- (7,2.0);
 	\draw [->] (4.5,0.8) node[note]{low $P_\text{out}$ for small external load $R$ \\ as large fraction of e.m.f. is lost on $r$} -- (0.3,0.8);
 	\end{tikzpicture}
-	\caption*{variation of output power $P_\text{out}$ from a power supply to an external resistor $R$}
+	\caption{variation of output power $P_\text{out}$ from a power supply to an external resistor $R$}
 \end{figure}
 
 \cmt when $R$ is small, only a small fraction of e.m.f. is output as terminal p.d.
@@ -473,7 +473,7 @@ since $V_R=\mathcal{E} - Ir$, data points should fall in a straight line
 	\draw [->] (1.6,1) node[note]{$V=\mathcal{E} - Ir$ \\$\text{gradient} = -r$\\$y\text{-intercept}=\mathcal{E}$} -- (2.8,1.6);
 	\draw [->] (3.5,3.0) node[note]{terminal p.d. tends to e.m.f. when \\connected to a high-resistance component} -- (0.4,3.0);
 	\end{tikzpicture}
-	\caption*{variation of terminal p.d across a battery against the current flowing through it}
+	\caption{variation of terminal p.d across a battery against the current flowing through it}
 \end{figure}
 
 

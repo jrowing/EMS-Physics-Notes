@@ -40,7 +40,7 @@ two radii subtending an arc of same length as radius form an angle of one \keypo
 angular velocity describes how fast an object moves along a circular path
 
 \begin{ilight}
-	\keypoint{angular velocity}\index{angular velocity} is defined as angular displacement swiped out per unit time: $\boxed{\omega = \frac{\Delta \theta}{\Delta t}}$
+	\keypoint{angular velocity}\index{angular velocity} is defined as angular displacement swiped out per unit time: $\tcbhighmath{\omega = \frac{\Delta \theta}{\Delta t}}$
 \end{ilight}
 
 \cmt unit of: $[\omega] = \radps$, also in radian measures
@@ -55,7 +55,7 @@ angular velocity and angular speed may be considered to be the same idea
 
 \cmt relation with linear velocity
 
-in interval $\Delta t$, distance moved along arc $\Delta s=v\Delta t=r \Delta\theta \RA \omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} \RA \boxed{v=\omega r}$
+in interval $\Delta t$, distance moved along arc $$\Delta s=v\Delta t=r \Delta\theta \RA \omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} \RA \tcbhighmath{v=\omega r}$$
 
 this relation between linear speed and angular speed holds at any instant
 
@@ -86,11 +86,11 @@ uniform linear motion: $s=vt$
 
 displacement $s \leftrightarrow \theta$, velocity $v \leftrightarrow \omega$
 
-for uniform circular motion, one has: $\boxed{\theta=\omega t}$
+for uniform circular motion, one has: $$\tcbhighmath{\theta=\omega t}$$
 
 \cmt time taken for one complete revolution is called \keypoint{period} $T$
 
-in one $T$, angle swiped is $2\pi$, so $\boxed{\omega=\frac{2\pi}{T}}$
+in one $T$, angle swiped is $2\pi$, so $$\tcbhighmath{\omega=\frac{2\pi}{T}}$$
 
 \cmt uniform circular motion is still \emph{accelerated} motion
 
@@ -102,10 +102,14 @@ in general, any object moving along circular path is accelerating
 
 \example{An object undergoes a uniform motion around a circular track of radius 2.5 m in 40 s, what is its angular speed and linear speed?}
 
-\solc
+\begin{soln}
+    
+
+
 \begin{equation*}
 	\omega = \frac{2\pi}{T} = \frac{2\pi}{40} \approx 0.157 \radps \qquad v = \omega r = 0.157 \times 2.5 \approx 0.39 \mps 
 \end{equation*}
+\end{soln}
 
 \question{What is the angular velocity of the minute hand of a clock?}
 
@@ -151,7 +155,7 @@ under small (infinitesimal) duration of time $\Delta t$\footnote{A more rigorous
 	
 	acceleration: $a = \frac{\Delta v}{\Delta t} \approx v \frac{\Delta \theta}{\Delta t} = v \omega \quad$ (as $\omega = \frac{\Delta \theta}{\Delta t}$)
 	
-	recall relation $v = \omega r$, we find centripetal acceleration: $\boxed{a_c = \frac{v^2}{r} = \omega^2 r}$\index{centripetal acceleration}
+	recall relation $v = \omega r$, we find centripetal acceleration: $$\tcbhighmath{a_c = \frac{v^2}{r} = \omega^2 r}$$\index{centripetal acceleration}
 
 \cmt direction of centripetal acceleration: always towards centre of circular path
 	
@@ -176,7 +180,7 @@ there must be a \emph{net force} on an object performing circular motion
 
 \cmt centripetal force causes centripetal acceleration
 
-using Newton's 2$^\text{nd}$ law: $\boxed{ F_c = m\frac{v^2}{r} = m\omega^2r}$
+using Newton's 2$^\text{nd}$ law: $$\tcbhighmath{ F_c = m\frac{v^2}{r} = m\omega^2r}$$
 
 \cmt $F_c$ is not a new force by nature, it can have a variety of origins
 
@@ -194,50 +198,52 @@ to change \emph{magnitude} of velocity, there requires a \emph{tangential} compo
 
 again the idea of tangential force is beyond the syllabus
 
-%\example{planet orbiting around a star}
-%\begin{center}
-%\begin{tikzpicture}[scale=0.8]
-%\shade [ball color = yellow] (0,0) circle (0.4);
-%\node at (0,-0.7){star};
-%\foreach \s in {0,30,60,...,330}
-%  \draw [orange, thick] (\s:0.5) -- ++(\s:0.1);
-%\draw [gray, thick, dashed] (0:2.5) arc [radius=2.5, start angle=0, end angle=360];
-%\shade [ball color = Cyan] (45:2.5) node[above right]{planet} circle (0.15);
-%\draw [purple, thick, ->] (45:2.5) -- ++(135:1.5) node[above]{$v$};
-%\draw [thick, ->, blue] (45:2.5) -- ++(225:1.35) node[above left]{gravity};
-%\end{tikzpicture}
-%\end{center}
-%gravity by the star provides centripetal force for the planet
-
+\example{planet orbiting around a star}
+\begin{soln}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\shade [ball color = yellow] (0,0) circle (0.4);
+\node at (0,-0.7){star};
+\foreach \s in {0,30,60,...,330}
+ \draw [orange, thick] (\s:0.5) -- ++(\s:0.1);
+\draw [gray, thick, dashed] (0:2.5) arc [radius=2.5, start angle=0, end angle=360];
+\shade [ball color = Cyan] (45:2.5) node[above right]{planet} circle (0.15);
+\draw [purple, thick, ->] (45:2.5) -- ++(135:1.5) node[above]{$v$};
+\draw [thick, ->, blue] (45:2.5) -- ++(225:1.35) node[above left]{gravity};
+\end{tikzpicture}
+\end{center}
+gravity by the star provides centripetal force for the planet
+\end{soln}
 
 
 \example{A rock is able to orbit around the earth near the earth's surface. Let's ignore air resistance for this question, so the rock is acted by weight only. Given that radius of the earth $R=6400$ km. (a) What is the orbital speed of the rock? (b) What is the orbital period?}
 	
-\sol weight of object provides centripetal force: $mg = \frac{mv^2}{R}$
+\begin{soln} weight of object provides centripetal force: $mg = \frac{mv^2}{R}$
 	
 orbital speed: $v = \sqrt{gR} = \sqrt{9.81\times6.4\times10^6} \approx 7.9\times10^3 \mps$
 
-period: $T = \frac{2\pi R}{v} = \frac{2\pi\times6.4\times10^6}{7.9\times10^3} \approx 5.1\times10^3 \text{ s} \approx 85 \text{ min}$ \eoe
+period: $T = \frac{2\pi R}{v} = \frac{2\pi\times6.4\times10^6}{7.9\times10^3} \approx 5.1\times10^3 \text{ s} \approx 85 \text{ min}$ \end{soln}
 
 \example{A turntable can rotate freely about a vertical axis through its centre. A small object is placed on the turntable at distance $d=40$ cm from the centre. The turntable is then set to rotate, and the angular speed of rotation is slowly increased. The coefficient of friction between the object and the turntable is $\mu = 0.30$. If the object does not slide off the turntable, find the maximum number of revolutions per minute.}
 
-\sol if object stays on turntable, friction provides the centripetal force required: $f = m\omega^2 d$
+\begin{soln}if object stays on turntable, friction provides the centripetal force required: $f = m\omega^2 d$
 
 increasing $\omega$ requires greater friction to provide centripetal force
 
 but maximum limiting friction possible is: $f_\text{lim}  = \mu N = \mu mg$, therefore
 \begin{equation*}
-f \leq f_\text{lim} \RA m\omega^2d \leq \mu mg \RA \omega^2 \leq \frac{\mu g}{d} \RA \omega_\tmax = \sqrt{\frac{0.30\times9.81}{0.40}} \approx 2.71 \radps
+f \leq f_\text{lim} \RA m\omega^2d \leq \mu mg \RA \omega^2 \leq \frac{\mu g}{d} \end{equation*}
+\begin{equation*}\RA \omega_\tmax = \sqrt{\frac{0.30\times9.81}{0.40}} \approx 2.71 \radps
 \end{equation*}
 
 period of revolution: $T_\tmin = \frac{2\pi}{\omega_\tmax} = \frac{2\pi}{2.71} \approx 2.32 \text{ s}$
 
-number of revolutions in one minute: $n_\tmax = \frac{t}{T_\tmin} = \frac{60}{2.32} \approx 25.9 $ \eoe
+number of revolutions in one minute: $n_\tmax = \frac{t}{T_\tmin} = \frac{60}{2.32} \approx 25.9 $ \end{soln}
 
 
 \example{Particle $P$ of mass $m=0.40$ kg is attached to one end of a light inextensible string of length $r=0.80$ m. The particle is whirled at a constant angular speed $\omega$ in a vertical plane. (a) Given that the string never becomes slack, find the minimum value of $\omega$. (b) Given instead that the string will break if the tension is greater than 20 N, find the maximum value of $\omega$.}
 
-\begin{figure}[ht]
+\begin{marginfigure}
 	\centering
 	\begin{tikzpicture}[scale=0.6]
 	\draw[dashed] (0,0) node[left]{$O$} circle(4);
@@ -250,9 +256,10 @@ number of revolutions in one minute: $n_\tmax = \frac{t}{T_\tmin} = \frac{60}{2.
 	\draw[thick,->] (45:5.1) arc (45:15:5.1);
 	\node at (30:5.4){$\omega$};
 	\end{tikzpicture}
-\end{figure}
+\end{marginfigure}
 
-\sol at top of circle (point $A$): $\, F_c = T_A + mg = m\omega^2 r \RA T_A = m\omega^2 r - mg$
+\begin{soln}
+     at top of circle (point $A$): $\, F_c = T_A + mg = m\omega^2 r \RA T_A = m\omega^2 r - mg$
 
 at bottom of circle (point $B$): $\, F_c = T_B - mg = m\omega^2 r \RA T_B = m\omega^2 r + mg$
 
@@ -271,7 +278,7 @@ m\omega^2 r + mg \leq T_\tmax \RA \omega^2 \leq \frac{T_\tmax}{m} - \frac{g}{r}
 \begin{equation*}
 	\omega_\tmax = \sqrt{\frac{T_\tmax}{m} - \frac{g}{r}} = \sqrt{\frac{20}{0.40} - \frac{9.81}{0.80}} \approx 6.1 \radps 
 \end{equation*}
-
+\end{soln}
 
 
 
@@ -293,7 +300,7 @@ m\omega^2 r + mg \leq T_\tmax \RA \omega^2 \leq \frac{T_\tmax}{m} - \frac{g}{r}
 \vspace*{5pt}
 \end{marginfigure}
 
-\sol vertical component of tension $T_y$ equals weight
+\begin{soln} vertical component of tension $T_y$ equals weight
 
 {
 	
@@ -321,7 +328,7 @@ by eliminating $T$ and $m$, one can find
 \begin{equation*}
 	v^2 = \frac{r\tan\theta}{g} = \frac{0.10\times\tan25^\circ}{9.81} \RA v \approx 0.069 \mps 
 \end{equation*}
-
+\end{soln}
 
 \example{A small ball of mass $m$ is attached to an inextensible string of length $l$.  The ball is held with the string taut and horizontal and is then released from rest.}
 
@@ -342,7 +349,7 @@ by eliminating $T$ and $m$, one can find
 
 When the ball reaches lowest point, find its speed and the tension in the string in terms of $m$ and $l$.
 
-\sol energy conservation: G.P.E. loss = K.E. gain
+\begin{soln} energy conservation: G.P.E. loss = K.E. gain
 \begin{equation*}
 	mgr = \frac{1}{2}mv^2 \quad \Rightarrow \quad v=\sqrt{2gr}
 \end{equation*}
@@ -351,7 +358,7 @@ at lowest point: $\, F_c = T- mg = m \frac{v^2}{r}$
 \begin{equation*}
 	T = mg + m\frac{v^2}{r} = mg + m\frac{2gr}{r} = 3mg 
 \end{equation*}
-
+\end{soln}
 \question{Suggest what provides centripetal force in the following cases. (a) An athlete running on a curved track. (b) An aeroplane banking at a constant altitude. (c) A satellite moving around the earth.}
 
 \question{A turntable that can rotate freely in a horizontal plane is covered by dry mud. When the angular speed of rotation is gradually increased, state and explain whether the mud near edge of the plate or near the mud will first leave the plate?}

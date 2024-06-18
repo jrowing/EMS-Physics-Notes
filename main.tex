@@ -81,7 +81,7 @@
 \usepackage{empheq}
 \usepackage[most]{tcolorbox}
 \usepackage{todonotes}
-
+\usepackage{pdfpages}
 \makeatother
 
 \titleformat{\chapter}
@@ -154,7 +154,7 @@
 \newcommand{\cmt}{}
 \newcommand{\piste}{{\fontencoding{U}\fontfamily{futs}\selectfont\char 49\relax}}
 
-\newcommand{\sol}{\noindent\hspace{2cm}\textcolor{Green}{\ding{52}} \hspace{2cm}}
+\newcommand{\sol}{\hspace{2cm}\textcolor{Green}{\ding{52}}}
 \newcommand{\solc}{\noindent\hspace{0.12em}\textcolor{Green}{\ding{52}} \hspace{0.2em} \vspace*{-\baselineskip}} 
 
 % highlight environment
@@ -337,33 +337,33 @@ The CC BY-NC-SA licence allows the work to be re-mixed, re-used, and re-shared s
 \include{momentum}
 \include{work-energy}
 \include{solids}
-%%\include{fluids}
+%\include{fluids}
 \include{waves}
 \include{superposition}
 \include{cosmology}
 \include{electrical-quantities}
 \include{current}
-%\include{electrostatics}
+\include{electrostatics}
 \include{particle-physics}
-% \include{18-circular-motion}
-% \include{19-gravitation}
-% \include{20-oscillation}
-% \include{21-ideal-gases}
-% \include{22-thermal-physics}
-% \include{23-coulomb-law}
-% \include{24-capacitance}
-% \include{25-magnetic-fields}
-% \include{27-electromagnetic-induction}
-% \include{28-alternating-currents}
-% \include{29-quantum-physics}
-% \include{30-nuclear-physics}
-% \include{31-electronics}
-% \include{32-medical-imaging} not on course
+\include{18-circular-motion}
+\include{19-gravitation}
+\include{20-oscillation}
+\include{21-ideal-gases}
+\include{22-thermal-physics}
+\include{23-coulomb-law}
+\include{24-capacitance}
+\include{25-magnetic-fields}
+\include{27-electromagnetic-induction}
+\include{28-alternating-currents}
+\include{29-quantum-physics}
+\include{30-nuclear-physics}
+\include{31-electronics}
+%\include{32-medical-imaging} not on course
 % \include{33-telecommunication} not on course
-% \include{practicals}
+\include{prac}
 %\include{ticklists}
 \setcounter{tocdepth}{10}
-\listoftodos
+% \listoftodos
 %\phantomsection
 %\cleardoublepage
 %\addcontentsline{toc}{section}{\indexname}

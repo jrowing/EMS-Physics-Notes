@@ -44,9 +44,9 @@ The seven\footnote{Luminous intensity is beyond the scope of the A-Level syllabu
 \end{soln}
 
 
-\subsection{metric prefixes}
+\subsection{Metric prefixes}
 
-prefixes are used to indicate multiples and sub-multiples of original units
+To save writing so many figures, prefixes are used to indicate multiples and sub-multiples of original units
 
 \begin{center}
 	\begin{tabular}{|C{1.8cm}|C{1.8cm}|C{1.8cm}||C{1.8cm}|C{1.8cm}|C{1.8cm}|}
@@ -71,25 +71,14 @@ prefixes are used to indicate multiples and sub-multiples of original units
 	
 	The atomic radius of oxygen is about 60 pm. 
 
-\subsection{dimensional analysis}
+\subsection{Dimensional analysis}
 
 \begin{ilight}
-	if an equation is correct, then the units on both sides must be the same
-	
-	such an equation with consistent units is said to be \keypoint{homogeneous}.
+	If an equation is correct, then the units on both sides must be the same. An equation with consistent units is said to be \keypoint{homogeneous}.
 \end{ilight}
 
-\emph{dimensional analysis} is widely used as a rough guide to check for the correctness of equations\index{dimensional analysis}
-
-there are times when the dependence of one physical quantity on various other quantities cannot not be seen easily, but it might give us helpful hints by merely investigating their units
-
-\cmt there are \emph{unit free}, or \emph{dimensionless} quantities that do not have units
-
-examples are real numbers (2, $\frac{4}{3}$, $\pi$, etc.), coefficient of friction ($\mu$), refraction index ($n$), etc.
-
-\cmt a correct equation must be homogeneous, but the converse may not be true
-
-possible problems include an incorrect coefficient, extra term, an incorrect sign, etc.
+\emph{Dimensional analysis} is widely used as a rough guide to check for the correctness of equations\index{dimensional analysis}. There are times when the dependence of one physical quantity on various other quantities cannot not be seen easily, but it might give us helpful hints by merely investigating their units.\\
+There are \emph{unit free}, or \emph{dimensionless} quantities that do not have units. Examples of these are real numbers (2, $\frac{4}{3}$, $\pi$, etc.), coefficient of friction ($\mu$), refractive index ($n$), etc. \footnote{Note a correct equation must be homogeneous, but the converse may not be true. Possible problems include an incorrect coefficient, extra term, an incorrect sign, etc.}
 
 \example{A ball falls in vacuum, all its gravitational potential energy converts into kinetic energy. This is expressed by the equation: $mgh = \frac{1}{2}mv^2$. Show that this equation is homogeneous.}
 \begin{soln}
@@ -144,9 +133,9 @@ this happens to be the correct formula for the wave speed on a string \end{soln}
 
 
 
-\subsection{scalars \& vectors}
+\subsection{Scalars \& Vectors}
 
-physical quantities come in two types: scalars and vectors
+Physical quantities come in two types: scalars and vectors.
 
 \begin{ilight}
 	a \keypoint{scalar} quantity has magnitude only
@@ -154,9 +143,8 @@ physical quantities come in two types: scalars and vectors
 	a \keypoint{vector} quantity has magnitude and direction
 \end{ilight}
 
-\cmt a scalar can be described by a single number
 
-examples of scalars are	time, distance, speed, mass, temperature, energy, density, volume, etc.
+In other words, a scalar can be described by a single number. Examples of scalars are	time, distance, speed, mass, temperature, energy, density, volume, etc.
 
 \begin{marginfigure}
 	\vspace{-10pt}
@@ -169,68 +157,19 @@ examples of scalars are	time, distance, speed, mass, temperature, energy, densit
 \end{marginfigure}
 
 
-\cmt a vector is usually represented by an arrow in a specific direction
+A vector, on the other hand, is usually represented by an arrow in a specific direction. A vector $\overrightarrow{p}$ pointing from $A$ to $B$ is shown. The length of the arrow shows the magnitude of the vector, the direction of the arrow gives the direction of the vector. Examples of vectors are	displacement, velocity, acceleration, force, field strength, etc.	
 
-a vector $\overrightarrow{p}$ pointing from $A$ to $B$ is shown
-
-length of the arrow shows the magnitude of the vector
-
-direction of the arrow gives the direction of the vector
-
-examples of vectors are	displacement, velocity, acceleration, force, field strength, etc.	
-
-\cmt scalar algebra is just ordinary algebra
-
-one can add and subtract scalar quantities in the same way as if they were ordinary numbers
-
-for example, a set of objects with mass $m_1$, $m_2$, $\cdots$, $m_n$ have a total mass of $M=m_1+m_2+\cdots+m_n$ 
-
-\cmt vector algebra is more complicated, since we need keep track of the direction \index{vector algebra}
+\subsection{Adding Vectors}
+Scalar algebra is just ordinary algebra - one can add and subtract scalar quantities in the same way as if they were ordinary numbers, for example, a set of objects with mass $m_1$, $m_2$, $\cdots$, $m_n$ have a total mass of $M=m_1+m_2+\cdots+m_n$ 
 
 
+Vector algebra on the other hand is more complicated, since we need keep track of the direction \index{vector algebra}
 
+Vectors can be added to form a \keypoint{resultant} vector - to deal with vector sums, we need take the directions of vectors into account.
 
+Let's consider the sum of two vectors $\overrightarrow{p_1}$ and $\overrightarrow{p_2}$:
 
-
-\subsection{multiplication of vectors}
-
-vectors can be multiplied by scalars
-\footnote{It is also possible to multiply vectors with vectors, and there are basically two ways of doing vector multiplication: the \emph{dot product} and the \emph{cross product}. Both vector products are useful in physics, but we will not go into the details. You may learn more about vector multiplication in the A-Level mathematics course.}
-
-when being multiplied by a scalar number, magnitude of the vector changes
-
-if this number is positive, the vector becomes longer or shorter, but still points in same direction
-
-if the number to be multiplied is negative, the operation reverses the vector's direction
-
-\example{Given a vector $\overrightarrow{p}$, the graphical representations of $2\overrightarrow{p}$, $\frac{1}{2}\overrightarrow{p}$, $-\overrightarrow{p}$, $-\frac{3}{2}\overrightarrow{p}$ are:}
-\begin{figure*}
-\begin{center}
-    
-
-	\begin{tikzpicture}[scale=.8]
-	\draw[->] (0,-2.5) node{$\overrightarrow{p}$} (-1,-1) -- (1,1);
-	\draw[->] (4,-2.5) node{$2\overrightarrow{p}$} (2,-2) -- (6,2);
-	\draw[->] (8,-2.5) node{$\frac{1}{2}\overrightarrow{p}$} (7.5,-.5) -- (8.5,.5);
-	\draw[->] (12,-2.5) node{$-\overrightarrow{p}$} (13,1) -- (11,-1);
-	\draw[->] (16,-2.5) node{$-\frac{3}{2}\overrightarrow{p}$} (17.5,1.5) -- (14.5,-1.5);
-	\end{tikzpicture}
- \end{center}
-\end{figure*}	
-\subsection{addition of vectors}
-
-vectors can be added to form a \keypoint{resultant} vector
-
-to deal with vector sums, we need take the directions of vectors into account
-
-let's consider the sum of two vectors $\overrightarrow{p_1}$ and $\overrightarrow{p_2}$
-
-resultant vector $\overrightarrow{p} = \overrightarrow{p_1} + \overrightarrow{p_2}$ lies on diagonal of the parallelogram subtended by $\overrightarrow{p_1}$ and $\overrightarrow{p_2}$
-
-this is called the \keypoint{parallelogram rule} for vector addition
-
-
-if the resultant of several vectors $\overrightarrow{p} = \overrightarrow{p_1} + \overrightarrow{p_2} + \cdots \overrightarrow{p_n}$ is to be found, one can join these vectors head-to-tail, the resultant is given by the arrow connecting the tail of $\overrightarrow{p_1}$ to the head of $\overrightarrow{p_n}$
+The resultant vector $\overrightarrow{p} = \overrightarrow{p_1} + \overrightarrow{p_2}$ lies on diagonal of the parallelogram subtended by $\overrightarrow{p_1}$ and $\overrightarrow{p_2}$, this is called the \keypoint{parallelogram rule} for vector addition. If the resultant of several vectors $\overrightarrow{p} = \overrightarrow{p_1} + \overrightarrow{p_2} + \cdots \overrightarrow{p_n}$ is to be found, one can join these vectors head-to-tail, the resultant is given by the arrow connecting the tail of $\overrightarrow{p_1}$ to the head of $\overrightarrow{p_n}$:
 
 \begin{figure}[ht]
 		\centering
@@ -253,11 +192,11 @@ if the resultant of several vectors $\overrightarrow{p} = \overrightarrow{p_1} +
 
 \example{A river flows from south to north with a speed of $2.0 \mps$ and the speed of a boat with respect to the water flow is $5.0 \mps$. (a) Suppose the boat leaves the west bank heading due east, what is the resultant velocity of the boat? (b) If the boat is to reach the exact opposite bank across the river, what is the resultant velocity and in what direction should the boat be headed?}
 
-\begin{soln} vector diagrams for the resultant velocity of the boat are illustrated below for part (a) boat heading due south:
+\begin{soln} Vector diagrams for the resultant velocity of the boat are illustrated below for part (a) boat heading due south:
 
-magnitude of resultant velocity: $v = \sqrt{v_b^2 + v_w^2} = \sqrt{5.0^2 +2.0^2} \approx 5.4 \mps$
+magnitude of resultant velocity: $v = \sqrt{v_b^2 + v_w^2} = \sqrt{5.0^2 +2.0^2} \approx 5.4 \mps$.
 
-in this case, the boat reaches opposite bank in shortest time but will drift downstream
+In this case, the boat reaches opposite bank in shortest time but will drift downstream.
 \end{soln}
 \begin{figure}
 		\centering
@@ -270,12 +209,8 @@ in this case, the boat reaches opposite bank in shortest time but will drift dow
 		
 \end{figure}		
 \begin{soln}
-and for part (b), the boat to hit the opposite bank:
-magnitude of resultant velocity: $v = \sqrt{v_b^2 + v_w^2} = \sqrt{5.0^2 -2.0^2} \approx 4.6 \mps$
-	
-	in this case, the boat reaches opposite bank in shortest distance
-	
-	but the boat is headed slightly upstream: $\theta = \sin^{-1} \frac{v_w}{v_b} = \sin^{-1}\frac{2.0}{5.0} \approx 24^\circ$
+For part (b), the boat is to hit the opposite bank:
+magnitude of resultant velocity: $v = \sqrt{v_b^2 + v_w^2} = \sqrt{5.0^2 -2.0^2} \approx 4.6 \mps$. in this case, the boat reaches opposite bank in shortest distance but the boat is headed slightly upstream: $\theta = \sin^{-1} \frac{v_w}{v_b} = \sin^{-1}\frac{2.0}{5.0} \approx 24^\circ$
 \end{soln}		
   
 \begin{figure}	
@@ -291,13 +226,32 @@ magnitude of resultant velocity: $v = \sqrt{v_b^2 + v_w^2} = \sqrt{5.0^2 -2.0^2}
 \end{figure}
 
 
+\subsection{Multiplication of vectors}
 
+Vectors can be multiplied by scalars easily, 
+\footnote{It is also possible to multiply vectors with vectors, but we'll not go this far in A-level Physics. There are basically two ways of doing vector multiplication: the \emph{dot product} and the \emph{cross product}. Both vector products are useful in physics, but we will not go into the details. You will learn more about vector multiplication in the A-Level mathematics course.\piste} when being multiplied by a scalar number, magnitude of the vector changes. If this number is positive, the vector becomes longer or shorter, but still points in same direction, if the number to be multiplied is negative, the operation reverses the vector's direction...
 
-\subsection{resolving vectors}
+\example{Given a vector $\overrightarrow{p}$, the graphical representations of $2\overrightarrow{p}$, $\frac{1}{2}\overrightarrow{p}$, $-\overrightarrow{p}$, $-\frac{3}{2}\overrightarrow{p}$ are:}
+\begin{figure*}
+\begin{center}
+    
 
-one can also resolve a single vector into two (or more) components
+	\begin{tikzpicture}[scale=.8]
+	\draw[->] (0,-2.5) node{$\overrightarrow{p}$} (-1,-1) -- (1,1);
+	\draw[->] (4,-2.5) node{$2\overrightarrow{p}$} (2,-2) -- (6,2);
+	\draw[->] (8,-2.5) node{$\frac{1}{2}\overrightarrow{p}$} (7.5,-.5) -- (8.5,.5);
+	\draw[->] (12,-2.5) node{$-\overrightarrow{p}$} (13,1) -- (11,-1);
+	\draw[->] (16,-2.5) node{$-\frac{3}{2}\overrightarrow{p}$} (17.5,1.5) -- (14.5,-1.5);
+	\end{tikzpicture}
+ \end{center}
+\end{figure*}	
+
+\subsection{Resolving vectors}
+
+Just as it's useful to combine two vectors into a resultant, one can also resolve a single vector into two (or more) components.
 \footnote{This depends on the number of dimensions of space we are working with.}
 
+Lets draw an arbitrary 2D vector and call it $\overrightarrow{p}$:
 \begin{figure}
 	\vspace{-18pt}
 	\begin{center}
@@ -313,25 +267,17 @@ one can also resolve a single vector into two (or more) components
 	\end{center}
 	\vspace{-25pt}
 \end{figure}
-
-let's place a general 2D vector $\overrightarrow{p}$ in Cartesian coordinates
-
-vector $\overrightarrow{p}$ can be split into two perpendicular components
+You can hopefully see here how the vector $\overrightarrow{p}$ can be split into two perpendicular components:
 
 \titem a horizontal component $p_x$
 
 \titem a vertical component $p_y$
 
-if $\overrightarrow{p}$ forms an angle $\theta$ to the $x$-axis, then:
-
-{
-	\centering
+Given that $\overrightarrow{p}$ forms an angle $\theta$ to the $x$-axis, then:
+$$p_x = p \cos \theta$$ $$p_y = p \sin \theta$$
+$$p = |\overrightarrow{p}| = \sqrt{p^2_x + p^2_y}$$,
+$$\quad\tan \theta = \frac{p_y}{p_x}$$
 	
-	$p_x = p \cos \theta, \quad p_y = p \sin \theta$
-	
-	$p = |\overrightarrow{p}| = \sqrt{p^2_x + p^2_y}, \quad\tan \theta = \frac{p_y}{p_x}$
-	
-}
 
 \newpage
 

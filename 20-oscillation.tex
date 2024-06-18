@@ -23,7 +23,7 @@ to describe motion of an oscillator, we define the following quantities:
 
 \cmt \keypoint{frequency} ($f$): number of oscillations per unit time
 
-frequency is related to period as: $\boxed{f=\frac{1}{T}}$
+frequency is related to period as: ${f=\frac{1}{T}}$
 
 \vspace*{\baselineskip}
 
@@ -44,7 +44,7 @@ amplitude $x_0$ and period $T$ are labelled on the graph
 \draw [thick,<->] (pi/2,0) --  (pi/2,2) node[right,midway]{$x_0$};
 \end{tikzpicture}
 
-\caption*{displacement-time graph for a typical oscillator}
+\caption{displacement-time graph for a typical oscillator}
 \end{figure}
 
 
@@ -108,7 +108,7 @@ $\Delta\phi$ is found in terms of fraction of an oscillation: $\Delta\phi = \fra
 \vspace*{-25pt}
 \end{marginfigure}
 
-\sol both have period $T=60$ ms
+\begin{soln} both have period $T=60$ ms
 
 frequency $f=\frac{1}{60\times10^{-3}} \approx 16.7$ Hz
 
@@ -119,7 +119,7 @@ one has $x_0=15$ cm, the other has $x_0=20$ cm
 time difference: $\Delta t = 20$ ms
 
 phase difference: $\Delta \phi = \frac{\Delta t}{T} \times 2\pi = \frac{20}{60} \times 2\pi = \frac{2\pi}{3} \text{ rad}$
-
+\end{soln}
 
 
 \subsection{acceleration \& restoring force}
@@ -152,7 +152,7 @@ simple harmonic motion provides a basis for the study of many complicated motion
 
 \subsection{equation of motion}
 
-defining equation for simple harmonics can be written as $\boxed{a=-\omega^2 x}$
+defining equation for simple harmonics can be written as: $$\tcbhighmath{a=-\omega^2 x}$$
 
 $\omega$ is some constant, so $a$ is proportional to $x$
 
@@ -160,13 +160,13 @@ the minus sign shows $a$ and $x$ are in opposite directions
 
 \vspace*{\baselineskip} 
 
-general solution to this this equation of motion\footnote{You probably know that acceleration can be written as the second derivative of displacement: $a=\frac{\dd^2 x}{\dd t^2}$, so $a=-\omega^2 x$ is equivalent to $\frac{\dd^2 x}{\dd t^2} + \omega^2 x = 0$, which a \emph{second-order differential equation}. If you do not know how to solve it, you may have the chance to study this in an advanced calculus course.} takes the form: $\boxed{x=x_0\sin(\omega t+\phi)}$
+general solution to this this equation of motion\footnote{You probably know that acceleration can be written as the second derivative of displacement: $a=\frac{\dd^2 x}{\dd t^2}$, so $a=-\omega^2 x$ is equivalent to $\frac{\dd^2 x}{\dd t^2} + \omega^2 x = 0$, which a \emph{second-order differential equation}. If you do not know how to solve it, you may have the chance to study this in an advanced calculus course.} takes the form: $$\tcbhighmath{x=x_0\sin(\omega t+\phi)}$$
 
 $x_0$ represents the amplitude, $\omega$ is called the angular frequency, $\phi$ is the phase angle
 
 \subsection*{angular frequency}
 
-\cmt \keypoint{angular frequency}\index{angular frequency}  satisfies the relation: $\boxed{\omega=\frac{2\pi}{T}=2\pi f}$
+\cmt \keypoint{angular frequency}\index{angular frequency}  satisfies the relation: $$\tcbhighmath{\omega=\frac{2\pi}{T}=2\pi f}$$
 
 \cmt unit of angular frequency: $[\omega] = \rad\cdot\text{s}^{-1}$
 
@@ -198,7 +198,8 @@ frequency of an free oscillatory system is called the \keypoint{natural frequenc
 	\vspace*{-5pt}
 \end{marginfigure}
 
-\sol angular frequency: $\omega = \frac{2\pi}{T} = \frac{2\pi}{0.80} = \frac{5\pi}{2}\pi \radps$
+\begin{soln}
+    angular frequency: $\omega = \frac{2\pi}{T} = \frac{2\pi}{0.80} = \frac{5\pi}{2}\pi \radps$
 
 initial displacement $x(0) = +x_0 = 6.0 \text{ cm}$
 
@@ -206,7 +207,7 @@ for displacement-time relation, we use cosine function
 \begin{equation*}
 x(t) = x_0 \cos\omega t \RA x = 6.0\cos\left(\frac{5\pi}{2} t\right) 
 \end{equation*}
-
+\end{soln}
 
 \example{A simple harmonic oscillator is initially at rest. At $t=0$, it is given an initial speed in the negative direction. Given that the frequency is 1.5 Hz and the amplitude is 5.0 cm, state an equation for its displacement-time relation.}
 
@@ -220,7 +221,7 @@ x(t) = x_0 \cos\omega t \RA x = 6.0\cos\left(\frac{5\pi}{2} t\right)
 	\end{tikzpicture}
 \end{marginfigure}
 
-\sol angular frequency: $\omega = 2\pi f = 2\pi\times1.5 = 3 \pi \radps$
+\begin{soln} angular frequency: $\omega = 2\pi f = 2\pi\times1.5 = 3 \pi \radps$
 
 initial displacement $x(0) = 0$
 
@@ -228,8 +229,9 @@ for displacement-time relation, we use sine function
 \begin{equation*}
 x(t) = - x_0 \cos\omega t \RA x = - 5.0\sin(3\pi t) 
 \end{equation*}
-	
-\subsection{examples of simple harmonics}
+\end{soln}
+
+\section{examples of simple harmonics}
 
 \subsection*{mass-spring oscillator}
 
@@ -269,7 +271,7 @@ a mass-spring oscillator system consists of a block of mass $m$ and an ideal spr
 		\draw [thick ] (-1.2,-0.4) node[below]{$-x$} -- (-1.2,-0.3);
 		\end{tikzpicture}
 		
-	\caption*{restoring force acting on the ideal mass-spring oscillator}
+	\caption{restoring force acting on the ideal mass-spring oscillator}
 \end{figure}
 
 when a spring is stretched or compressed by a mass, the spring develops a restoring force
@@ -291,7 +293,7 @@ so mass-spring oscillator executes simple harmonic motion
 
 \vspace*{\baselineskip}
 
-compare with $a=-\omega^2x \RA \omega^2 = \frac{k}{m} \RA \boxed{\omega = \sqrt{\frac{k}{m}}}$
+compare with $a=-\omega^2x \RA \omega^2 = \frac{k}{m} \RA \tcbhighmath{\omega = \sqrt{\frac{k}{m}}}$
 
 period of mass-spring oscillator: $T=\frac{2\pi}{\omega} \RA T =2\pi\sqrt{\frac{m}{k}}$
 
@@ -347,7 +349,7 @@ $a=-\omega^2x \RA \omega = \sqrt{\frac{g}{L}}$
 
 }
 	
-period for a simple pendulum: $\boxed{T= 2\pi\sqrt{\frac{L}{g}}}$
+period for a simple pendulum: $\tcbhighmath{T= 2\pi\sqrt{\frac{L}{g}}}$
 
 \cmt period and frequency of a pendulum are determined by length of the string $L$ only
 
@@ -375,7 +377,7 @@ from this displacement-time relation, we can find velocity and acceleration rela
 
 to find velocity-time relation, let's recall that velocity $v$ is rate of change of displacement $x$
 \begin{equation*}
-	v = \frac{\dd x}{\dd t} = \frac{\dd}{\dd t} x_0\sin(\omega t+\phi) \RA \boxed{v(t) = \omega x_0 \cos(\omega t+\phi)}
+	v = \frac{\dd x}{\dd t} = \frac{\dd}{\dd t} x_0\sin(\omega t+\phi) \RA \tcbhighmath{v(t) = \omega x_0 \cos(\omega t+\phi)}
 \end{equation*}
 
 by taking $v^2 + \omega^2 x^2$, the sine and cosine terms can be eliminated, we find:
@@ -383,9 +385,9 @@ by taking $v^2 + \omega^2 x^2$, the sine and cosine terms can be eliminated, we 
 	v^2 + \omega^2 x^2 = \omega^2 x_0^2 \cos^2(\cdots) + \omega^2 x_0^2 \sin^2(\cdots) = \omega^2 x_0^2
 \end{equation*}
 
-this gives velocity-displacement relation: $\boxed{v(x)=\pm \omega\sqrt{x_0^2 - x^2}}$
+this gives velocity-displacement relation: $\tcbhighmath{v(x)=\pm \omega\sqrt{x_0^2 - x^2}}$
 
-\cmt at equilibrium position $x=0$, speed is maximum: $\boxed{v_\tmax = \omega x_0}$ 
+\cmt at equilibrium position $x=0$, speed is maximum: $\tcbhighmath{v_\tmax = \omega x_0}$ 
 
 \cmt when $x=\pm x_0$, oscillator is momentarily at rest: $v=0$ 
 
@@ -393,7 +395,7 @@ this gives velocity-displacement relation: $\boxed{v(x)=\pm \omega\sqrt{x_0^2 - 
 
 acceleration-time relation is found by further taking rate of change of velocity $v$
 \begin{equation*}
-a = \frac{\dd v}{\dd t} = \frac{\dd}{\dd t} \omega x_0 \cos(\omega t+\phi) \RA \boxed{a(t) = - \omega^2 x_0 \sin(\omega t+\phi)}
+a = \frac{\dd v}{\dd t} = \frac{\dd}{\dd t} \omega x_0 \cos(\omega t+\phi) \RA \tcbhighmath{a(t) = - \omega^2 x_0 \sin(\omega t+\phi)}
 \end{equation*}
 
 this is actually unnecessary, if we compare this with $x(t)=x_0 \sin(\omega t+\phi)$, we have: $a=-\omega^2 x$
@@ -402,11 +404,11 @@ we have recovered the definition for simple harmonics
 
 (if $a \propto x$ and in opposite directions to $x$, then simple harmonic motion)
 
-so acceleration-displacement relation is given by the defining equation explicitly $\boxed{a(x) = -\omega^2 x} $
+so acceleration-displacement relation is given by the defining equation explicitly $\tcbhighmath{a(x) = -\omega^2 x} $
 
 \cmt at equilibrium position $x=0$, zero acceleration
 
-\cmt when $x=\pm x_0$, acceleration is greatest: $\boxed{a_\tmax = \omega^2 x_0}$ 
+\cmt when $x=\pm x_0$, acceleration is greatest: $\tcbhighmath{a_\tmax = \omega^2 x_0}$ 
 
 \vspace*{\baselineskip}
 
@@ -460,13 +462,13 @@ acceleration: $a=-\omega^2x = -\omega^2 x_0\sin\omega t$ & 0 & $-$max & 0 & $+$m
 
 \example{The motion of a simple pendulum is approximately simple harmonic. As the pendulum swings from one side to the other end, it moves through a distance of $6.0 \text{ cm}$ and the time taken is $1.0 \text{ s}$. (a) State the period and amplitude. (b) Find the greatest speed during the oscillation. (c) Find its speed when displacement $x=1.2\text{ cm}$.}
 
-\sol period: $T=2\times 1.0 = 2.0 \text{ s}$, and amplitude: $x_0 = \frac{1}{2}\times6.0 = 3.0 \text{ cm}$
+\begin{soln} period: $T=2\times 1.0 = 2.0 \text{ s}$, and amplitude: $x_0 = \frac{1}{2}\times6.0 = 3.0 \text{ cm}$
 
 angular frequency: $\omega = \frac{2\pi}{T} = \frac{2\pi}{2.0} = \pi \radps$
 
 greatest speed: $v_\tmax = \omega x_0 = \pi \times 3.0 \approx 9.4 \text{ cm s}^{-1}$
 
-speed at $1.2 \text{ cm}$: $v = \omega\sqrt{x_0^2 - x^2} = \pi \times \sqrt{3.0^2-1.2^2} \approx 8.6 \text{ cm s}^{-1}$ \eoe
+speed at $1.2 \text{ cm}$: $v = \omega\sqrt{x_0^2 - x^2} = \pi \times \sqrt{3.0^2-1.2^2} \approx 8.6 \text{ cm s}^{-1}$ \end{soln}
 
 
 
@@ -489,7 +491,8 @@ speed at $1.2 \text{ cm}$: $v = \omega\sqrt{x_0^2 - x^2} = \pi \times \sqrt{3.0^
 \end{marginfigure}
 
 
-\sol at $t=0$, $x=+x_0 \RA v=0\,$ (zero gradient)
+\begin{soln}
+at $t=0$, $x=+x_0 \RA v=0\,$ (zero gradient)
 
 from graph: amplitude $x_0 = 30 \text{ cm}$, period $T=4.0 \text{ s}$
 
@@ -499,7 +502,7 @@ greatest speed: $v_\tmax = \omega A =  \frac{\pi}{2} \times 30  \approx 47 \cmps
 
 at $t=1.0$ s, $x=0 \RA a=0$
 
- (equilibrium position so no acceleration) \eoe
+ (equilibrium position so no acceleration) \end{soln}
 
 \question{Assume the motion of a car engine piston is simple harmonic. The piston completes 3000 oscillations per minute. The amplitude of the oscillation is 4.0 cm. (a) Find the greatest speed. (b) Find the greatest acceleration.}
 
@@ -514,7 +517,7 @@ consider the \emph{ideal} mass-spring oscillator, its vibrational energy consist
 	\item[-] (elastic) potential energy in the spring: $E_p = \frac{1}{2} kx^2  \xlongequal{\omega = \sqrt{\frac{k}{m}}} \frac{1}{2}m\omega^2 x^2$
 \end{compactitem}
 
-total energy of the oscillator: $E = E_k + E_p \RA \boxed{E = \frac{1}{2}m\omega^2x_0^2}$
+total energy of the oscillator: $E = E_k + E_p \RA \tcbhighmath{E = \frac{1}{2}m\omega^2x_0^2}$
 
 \cmt although this formula is derived from the mass-spring model
 
@@ -534,7 +537,7 @@ $E_k$ and $E_p$ keep changing, one transfers into another, but total energy is \
 	E=E_{p,\tmax}=\frac{1}{2}kx_0^2 \xlongequal{\omega=\sqrt{\frac{k}{m}}} \frac{1}{2}m\omega^2x_0^2
 \end{equation*}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{minipage}{0.48\textwidth}
 	\begin{tikzpicture}[xscale=.7]
@@ -559,15 +562,15 @@ $E_k$ and $E_p$ keep changing, one transfers into another, but total energy is \
 		\end{center}
 	\end{minipage}
 
-	\caption*{vibrational energy of a mass-spring oscillator}
-\end{figure}
+	\caption{vibrational energy of a mass-spring oscillator}
+\end{figure*}
 
 \example{A block of mass 150 g at the end of a spring oscillates with a period of 0.80 s. The maximum displacement from its rest position is 12 cm. Find the energy of the vibration.}
 
-\solc\begin{equation*}
+\begin{soln}\begin{equation*}
 	E = \frac{1}{2}m\omega^2x_0^2 = \frac{1}{2}m\left(\frac{2\pi}{T}\right)^2x_0^2 = \frac{1}{2} \times 0.15 \times \frac{4\pi^2}{0.80^2}\times0.12^2 \approx 6.7\times10^{-2} \text{ J} 
 \end{equation*}
-
+\end{soln}
 \question{An oscillator is given an energy of 20 mJ and starts to oscillate, it reaches an amplitude of 8.0 cm. If we want to double the amplitude, find the vibrational energy required.}
 
 \subsection{damped oscillations}
@@ -689,11 +692,14 @@ oscillator will not stop moving back and forth after quite a few oscillations
 
 \example{An oscillator is composed of a block of mass $m=250$ g and a spring of $k=1.6$ N/cm. It is displaced by 5.0 cm from its rest position and set free. (a) What is its angular frequency? (b) what is the initial vibrational energy? (c) After a few oscillations, 40\% of its energy is lost due to damping. What is its new amplitude?}
 
-\sol angular frequency: $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.25}} \approx 25.3 \radps \,$
+\begin{soln}
+     angular frequency: $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0.25}} \approx 25.3 \radps \,$
 
-energy of oscillator: $E=\frac{1}{2}m\omega^2x_0^2 = \frac{1}{2} \times 0.25 \times 25.3^2 \times 0.050^2 = 0.20 \text{ J} $\footnote{An easier approach: $E = \frac{1}{2}kx_0^2 = \frac{1}{2} \times 160 \times 0.050^2 = 0.20 \text{ J}$.}
+energy of oscillator: $E=\frac{1}{2}m\omega^2x_0^2 = \frac{1}{2} \times 0.25 \times 25.3^2 \times 0.050^2 = 0.20 \text{ J} $
 
-since $E \propto x_0^2$, so: $\frac{E'}{E} = \frac{x^{\prime2}_0}{x_0^2} \RA  60\% = \frac{x^{\prime2}_0}{x_0^2} \RA x'_0 = \sqrt{0.6} x_0 = \sqrt{0.6} \times 5.0 \approx 3.9$ cm \eoe
+An easier approach: $E = \frac{1}{2}kx_0^2 = \frac{1}{2} \times 160 \times 0.050^2 = 0.20 \text{ J}$.
+
+since $E \propto x_0^2$, so: $\frac{E'}{E} = \frac{x^{\prime2}_0}{x_0^2} \RA  60\% = \frac{x^{\prime2}_0}{x_0^2} \RA x'_0 = \sqrt{0.6} x_0 = \sqrt{0.6} \times 5.0 \approx 3.9$ cm \end{soln}
 
 \question{A small toy boat of mass 360 g floats on surface of water. It is gently pushed down and then released. During the fist four complete cycles of its oscillation, its amplitude decreased from 5.0 cm to 2.0 cm in a time of 6.0 s. Find the energy loss.}
 
@@ -817,6 +823,6 @@ engineering systems are often deliberately damped to minimise resonance effect
 	\draw [thick,gray,dashed] (2,0) -- (2,2.9);
 	\end{tikzpicture}
 	
-	\caption*{resonance effect for various damping conditions}
+	\caption{resonance effect for various damping conditions}
 \end{figure}
 

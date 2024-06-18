@@ -290,7 +290,7 @@ assuming the object is subject to gravity only, the resultant force is simply it
 
 applying the Newton's second law, we have: $\fnet = W \RA ma = mg$
 
-so acceleration of the freely-falling object is\footnote[][-4cm]{In the derivation, the mass terms cancel out. Rigorously speaking, these are two different masses. One is the measure of inertia, and the other is a measure of gravitational force. It is experimentally found that the inertia mass and the gravitational mass are equal. The fact that the two masses are equal has profound reasons. We have shown here acceleration of free fall equals gravitational field strength, but Albert Einstein’s suggests that it is actually impossible to distinguish between a uniform acceleration and a uniform gravitational field. This idea lies at the heart of his \emph{general theory of relativity}: 
+so acceleration of the freely-falling object is\footnote[][-5cm]{In the derivation, the mass terms cancel out. Rigorously speaking, these are two different masses. One is the measure of inertia, and the other is a measure of gravitational force. It is experimentally found that the inertia mass and the gravitational mass are equal. The fact that the two masses are equal has profound reasons. We have shown here acceleration of free fall equals gravitational field strength, but Albert Einstein’s suggests that it is actually impossible to distinguish between a uniform acceleration and a uniform gravitational field. This idea lies at the heart of his \emph{general theory of relativity}: 
 \begin{empheq}[box=\tcbhighmath]{equation*}{a=g}\end{empheq}. Those who are interested in this topic are recommended to start from here and do some online researches.}
 
 \cmt this shows \keypoint{acceleration due to free fall} is simply equal to field strength $g$
@@ -362,7 +362,7 @@ i.e., speed will increase at a decreasing rate during the fall
 \end{equation*}
 	
 Rearrange the terms, we find: 
-\begin{equation*}v(t) = \frac{mg}{b} \left(1 - \ee^{-\frac{bt}{m}} \right)\end{equation*}
+\begin{equation*}v(t) = \frac{mg}{b} \left(1 - \ee^{-\frac{bt}{m}} \right)\end{equation*}}
 
 %$v$-$t$ graph for this process is shown on the next page
 
@@ -486,9 +486,18 @@ electrostatic repulsion between electron clouds of the atoms prevent them from p
 	\centering
 	\begin{tikzpicture}[scale=0.9]
 	\draw[thick] (-1,0) rectangle (1,3);
-	\draw[fill, gray] (0,1.5) circle(0.25);
-	\draw[ultra thick, gray] (0,1.5) -- (0,0.8) -- (-0.2,0) (0,0.8) -- (0.2,0);
-	\draw[ultra thick, gray] (0,1.25) -- (-0.3,0.6) (0,1.25) -- (0.3,0.6);
+	% \draw[fill, gray] (0,1.5) circle(0.25);
+	% \draw[ultra thick, gray] (0,1.5) -- (0,0.8) -- (-0.2,0) (0,0.8) -- (0.2,0);
+	% \draw[ultra thick, gray] (0,1.25) -- (-0.3,0.6) (0,1.25) -- (0.3,0.6);
+\def\H{2.0}     % human height
+  \draw[thick,fill=white] (0.72,\H+0.03) circle (0.15*\H) coordinate (H);
+ \draw[thick] (H)++(-90:0.15*\H) coordinate (N) to[out=-85,in=85]++ (0,-0.40*\H) coordinate (P);
+  \draw[thick,line cap=round] (N)++(-85:0.03) to[out=-110,in=90]++ (-0.08*\H,-0.4*\H);
+  \draw[thick,line cap=round] (N)++(-85:0.03) to[out=-60,in=-110]++ (0.15*\H,-0.12*\H)  to[out=70,in=-70]++ (-0.01*\H,0.24*\H);
+  \draw[thick] (P) to[out=-110,in=85] ($(H)+(-0.08*\H,-\H)$);
+  \draw[thick] (P) to[out=-80,in=108] ($(H)+(0.06*\H,-\H)$);
+
+  
 	\draw[blue,fill] (0,.9) circle(0.05);
 	\draw[thick,blue,->] (0,.9) --++ (0,-1.5) node[right,black]{$mg$};
 	\draw[thick,blue,->] (0,.9) --++ (0,1.5) node[left,black]{$R$};
@@ -746,7 +755,7 @@ as $\theta\to90^\circ$, slope becomes vertical, block would undergo free fall, s
 	
 	$\fnet = mg\sin\theta - f = ma$
 	
-	\eqyskip $a = \frac{2.0 \times 9.81\times\sin20^\circ - 5.0}{2.0} \approx 0.855 \mpss $
+$a = \frac{2.0 \times 9.81\times\sin20^\circ - 5.0}{2.0} \approx 0.855 \mpss $
 	
 }
 
@@ -928,7 +937,7 @@ equations of motion can be written down for each free-body diagram:
 \begin{align*}
 \text{for trailer:} & T - f_t = M_t a \RA T - 1800 = 500a\\
 \text{for tractor:} & F_D - f_v - T = M_v a \RA 9600 - 3600 - T = 1500a \\
-\text{for system:} & F_D - f_v - f_t = (M_v + M_t)a \RA 9600 - 3600 - 1800 = (1500 + 500)a \\
+\text{for system:} & F_D - f_v - f_t = (M_v + M_t)a \RA 9600 - 3600 - 1800 = 2000a \\
 \end{align*}
 
 solving simultaneous equations, we find

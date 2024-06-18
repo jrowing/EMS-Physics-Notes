@@ -31,7 +31,7 @@ for most cases in this course, we focus on a.c. that varies like a sine wave
 	
 \end{marginfigure}
 
-current: $\boxed{I = I_0 \sin \omega t}$ / voltage: $\boxed{V = V_0 \sin \omega t}$
+current: $\tcbhighmath{I = I_0 \sin \omega t}$ / voltage: $\tcbhighmath{V = V_0 \sin \omega t}$
 
 \cmt $I_0$, $V_0$ are called \emph{peak current} and \emph{peak voltage} (amplitudes of the a.c. signal)
 
@@ -78,7 +78,7 @@ so we see the necessity to introduce mean square values $\avg{I^2}$  and $\avg{V
 
 let's further introduce root mean square (r.m.s.) values: $I_\text{rms} = \sqrt{\avg{I^2}}$, and $V_\text{rms} = \sqrt{\avg{V^2}}$
 
-we can now write the mean power for a.c. as: $\boxed{\avg{P} = I^2_\text{rms} R = \frac{V^2_\text{rms}}{R}}$
+we can now write the mean power for a.c. as: $\tcbhighmath{\avg{P} = I^2_\text{rms} R = \frac{V^2_\text{rms}}{R}}$
 
 \begin{marginfigure}
 	\centering
@@ -109,7 +109,7 @@ we can now write the mean power for a.c. as: $\boxed{\avg{P} = I^2_\text{rms} R 
 
 $I_\text{rms} = \sqrt{\avg{I^2}} = \sqrt{12.5} \approx 3.54 \text{ A}$
 
-$\avg{P} = I_\text{rms}^2 R = 12.5 \times 120 = 1500 \text{ W}$ \eoe
+$\avg{P} = I_\text{rms}^2 R = 12.5 \times 120 = 1500 \text{ W}$ 
 
 \subsection{r.m.s. current \& r.m.s. voltage}
 
@@ -125,7 +125,7 @@ physically, r.m.s. value of an alternating current is defined as follows
 
 \eqyskip
 
-\cmt for \emph{sine waves}, r.m.s values are related to peak values by: $\boxed{I_\text{r.m.s} = \frac{1}{\sqrt{2}}I_0}$ and $\boxed{V_\text{r.m.s} = \frac{1}{\sqrt{2}}V_0}$
+\cmt for \emph{sine waves}, r.m.s values are related to peak values by: $\tcbhighmath{I_\text{r.m.s} = \frac{1}{\sqrt{2}}I_0}$ and $\tcbhighmath{V_\text{r.m.s} = \frac{1}{\sqrt{2}}V_0}$
 
 \begin{compactenum}
 	\item[proof:] total energy dissipation in one period is: $W_T = \int^T_0 P \dd  t$
@@ -146,7 +146,7 @@ physically, r.m.s. value of an alternating current is defined as follows
 	
 	now we have: $\avg{P} = I_\text{rms}^2 R = \frac{1}{2} I_0^2 R \RA I_\text{rms} = \frac{1}{\sqrt{2}} I_0$
 	
-	a similar calculation for voltage would show: $V_\text{rms} = \frac{1}{\sqrt{2}} V_0$  \eoe
+	a similar calculation for voltage would show: $V_\text{rms} = \frac{1}{\sqrt{2}} V_0$  
 \end{compactenum}
 
 \cmt it is worth pointing out that the $\tfrac{1}{\sqrt{2}}$-relation for r.m.s. values only holds for sine waves
@@ -163,7 +163,7 @@ for other waveforms, e.g., square waves or triangle waves, numerical constant is
 
 mean power output: $\avg{P} = \frac{V^2_\text{rms}}{R} = \frac{53.0^2}{30} \approx 93.8 \text{ W}$
 
-energy dissipation: $W = \avg{P} t = 93.8 \times 2.0 \times 60 \approx 1.13 \times 10^4 \text{ J}$ \eoe
+energy dissipation: $W = \avg{P} t = 93.8 \times 2.0 \times 60 \approx 1.13 \times 10^4 \text{ J}$ 
 
 \newpage
 
@@ -222,7 +222,7 @@ suppose the time base setting is $10$ ms/div, and the voltage gain is $5$ V/div.
 
 \eqskip period: $T = 3 \times 10 = 30 \text{ ms}$
 	
-\eqskip frequency $f = \frac{1}{T} = \frac{1}{30\times10^{-3}} \approx 33.3 \text{ Hz} $ \eoe
+\eqskip frequency $f = \frac{1}{T} = \frac{1}{30\times10^{-3}} \approx 33.3 \text{ Hz} $ 
 
 
 
@@ -304,7 +304,7 @@ assume no loss in magnetic flux, i.e., all field inside transformer's iron core
 
 from Faraday's law: $V_p = N_p \frac{\dd \phi}{\dd t}$, $V_s = N_s \frac{\dd \phi}{\dd t}$, where $N_p$, $N_s$ are number of turns of coils
 
-\eqyskip cancel out $\frac{\dd \phi}{\dd t}$, we find: $\boxed{ \frac{V_s}{V_p} = \frac{N_s}{N_p} }$
+\eqyskip cancel out $\frac{\dd \phi}{\dd t}$, we find: $\tcbhighmath{ \frac{V_s}{V_p} = \frac{N_s}{N_p} }$
 
 
 
@@ -315,7 +315,7 @@ if $N_p > N_s$, output voltage is decreased $\,\rightarrow\,$ \emph{step-down tr
 
 \cmt if transformer is 100\% efficient, then input power equals output power
 
-for ideal transformers: $\boxed{I_p V_p  = I_s V_s} $
+for ideal transformers: $\tcbhighmath{I_p V_p  = I_s V_s} $
 
 \cmt in practice, there always exists losses of energy from the transformer
 
@@ -338,13 +338,13 @@ transformer's core is made of a continuous loop of iron to minimise this effect
 
 \example{An ideal transformer has 200 turns on the primary coil and 5000 turns on the secondary	coil. The r.m.s. input voltage to the primary coil is 8.0 V. What is the \emph{peak} voltage across a resistor connected to the secondary coil?}
 
-\solc\begin{equation*}
+\begin{soln}\begin{equation*}
 \frac{V_{s,0}}{V_{p,0}} = \frac{N_s}{N_p} \RA 
 \frac{V_{s,0}}{\sqrt{2}V_{p,\text{rms}}} = \frac{N_s}{N_p} \RA
-\frac{V_{s,0}}{8.0\times\sqrt{2}} = \frac{5000}{200} \RA
+\frac{V_{s,0}}{8.0\times\sqrt{2}} = \RA
 V_{s,0} \approx 2830 \text{ V}   
 \end{equation*}
-
+\end{soln}
 \question{An ideal transformer has 6000 turns on its primary coil. It converts a mains supply of 220 V r.m.s. to an a.c. voltage with a peak value of 12.0 V. Find the number of turns on the secondary coil.}
 
 \question{If a \emph{steady} d.c. voltage is applied to the input of a simple transformer, what is the output voltage produced?}

@@ -2,9 +2,9 @@
 
 Kinematics is the study of motion. We will introduce three kinematic quantities, displacement, velocity and acceleration, and see how these terms are used to describe an object's motion.
 
-\section{kinematic quantities}
+\section{Kinematic quantities}
 
-\subsection{displacement \& distance}
+\subsection{Displacement \& Distance}
 
 In everyday language, we talk about the \keypoint{distance} travelled by an object, which usually refers to the length travelled by an object without considering in which direction it moves, to fully describe position of an object however, we also need specify where it is heading.
 
@@ -15,7 +15,7 @@ In everyday language, we talk about the \keypoint{distance} travelled by an obje
  Displacement is the \emph{straight-line} distance pointing from starting point towards end point -even if actual path taken is curved, ie it is a vector quantity, while distance is a scalar. Displacement is always the straight-line distance. Displacement and distance are measured in metres, or any reasonable length units.
 
 
- \begin{figure}[!ht]
+ \begin{figure*}[!ht]
 	\centering
 	\begin{tikzpicture}[scale=1]
 %	\draw[step=0.5] (0,0) grid (5,5);
@@ -28,14 +28,14 @@ In everyday language, we talk about the \keypoint{distance} travelled by an obje
 	\end{tikzpicture}
 	
 	\caption{difference between displacement and distance}
-\end{figure}
+\end{figure*}
 
 
 \example{An athlete is running around a circular track of radius 60 m. When he completes one lap, what is the distance moved out? What about his displacement?}
 
 \begin{soln}
     
-distance moved is the perimeter of the circle: $s = 2\pi r = 2\pi\times 60 \approx 380 \text{ m}$
+Distance moved is the perimeter of the circle: $s = 2\pi r = 2\pi\times 60 \approx 380 \text{ m}$
 
 athlete returns to same starting point after one lap, so displacement is zero
 \end{soln}
@@ -79,87 +79,60 @@ Velocity is a vector quantity which follows from the fact that displacement is a
 
 In the case of vector quantities in one dimension, \emph{linear} motion, we always assign a direction and indicate this with positive and negative signs. A negative velocity implies motion in the opposite direction to positive.
 
-defining equation $v=\frac{\Delta s}{\Delta t}$ gives the \emph{average} value for velocity or speed over an interval $\Delta t$
+Defining equation $v=\frac{\Delta s}{\Delta t}$ gives the \emph{average} value for velocity or speed over an interval $\Delta t$ more precisely: \begin{empheq}[box=\tcbhighmath]{equation*}{\text{average velocity} = \frac{\text{total displacement}}{\text{time taken}}}\end{empheq} and... \begin{empheq}[box=\tcbhighmath]{equation*}{\text{average speed} = \frac{\text{total distance}}{\text{time taken}}}\end{empheq}
 
-more precisely: \begin{empheq}[box=\tcbhighmath]{equation*}{\text{average velocity} = \frac{\text{total displacement}}{\text{time taken}}}\end{empheq}, and \begin{empheq}[box=\tcbhighmath]{equation*}{\text{average speed} = \frac{\text{total distance}}{\text{time taken}}}\end{empheq}
+This should be distinguished from the notion of \emph{instantaneous velocity}instantaneous velocity; defined as the rate of change in displacement at a particular instant.
 
-\eqyskip this should be distinguished from the notion of \emph{instantaneous velocity}
-
-instantaneous velocity is defined as the rate of change in displacement at a particular instant
-
-if we take a very short interval $\Delta t$, as $\Delta t \to 0$, average velocity tends to instantaneous velocity
-
-this is expressed in a compact differential form: $v = \lim_{\Delta t \to 0} \frac{\Delta s}{\Delta t} \ra$ \begin{empheq}[box=\tcbhighmath]{equation*}{v=\frac{\dd s}{\dd t}} \end{empheq}
+If we take a very short interval $\Delta t$, as $\Delta t \to 0$, average velocity tends to instantaneous velocity, this is expressed in a compact differential form: $v = \lim_{\Delta t \to 0} \frac{\Delta s}{\Delta t} \ra$ \begin{empheq}[box=\tcbhighmath]{equation*}{v=\frac{\dd s}{\dd t}} \end{empheq}
 
 
 \newpage
 
-
-\cmt it is also common to use \keypoint{speed} to describe how fast an object moves
-
-speed is defined as the change of the distance travelled per unit time
-
-velocity can be thought as speed in a particular direction
-
-
+It is also common to use \keypoint{speed} to describe how fast an object moves, the speed is defined as the change of the distance travelled per unit time. Velocity can be thought as speed in a particular direction.
 
 \example{A cyclist travels a distance of 3.0 km in 20 minutes. She rests for 15 minutes. She then covers a further distance of 5.1 km in a time of 40 minutes. Calculate the average speed of the cyclist in m s$^{-1}$: (a) during the first 20 minutes of the journey, (b) for the whole journey.}
 
-\begin{soln} for the first 20 minutes: $ v = \frac{3.0\times10^3}{20 \times 60} = 2.5 \mps$
+\begin{soln} For the first 20 minutes: $ v = \frac{3.0\times10^3}{20 \times 60} = 2.5 \mps$
 
-\eqyskip for whole journey: $v = \frac{(3.0+0+5.1)\times10^3}{(20+15+40)\times60} = 1.8 \mps $ 
+\eqyskip For whole journey: $v = \frac{(3.0+0+5.1)\times10^3}{(20+15+40)\times60} = 1.8 \mps $ 
 \end{soln}
 
 \example{A man walks along a straight road for a distance of 800 m in 5.0 minutes. He then turns around, and walks along the same road for a distance of 280 m in 3.0 minutes. What is the average speed and the average velocity of this man during the 8.0 minutes?}
 
-\begin{soln} $\text{total distance travelled} = 800 + 280 = 1080 \text{m}$, so average speed: $v = \frac{1080}{8.0\times60} = 2.25 \mps$
+\begin{soln} $\text{Total distance travelled} = 800 + 280 = 1080 \text{m}$, so average speed: $v = \frac{1080}{8.0\times60} = 2.25 \mps$
 
 \eqyskip  $\text{change of displacement} = 800 + (-280) = 520 \text{m}$, so average velocity: $v = \frac{520}{8.0\times60} \approx 1.08 \mps$ \end{soln}
 
 \example{A maglev train travels at an average speed of $60\mps$ from the city centre to the airport, and at $40\mps$ on its return journey over the same distance. What is the average speed of the round-trip? What about the average velocity?}
 
-\begin{soln} suppose the distance between airport and city centre is $S$
+\begin{soln} Suppose the distance between airport and city centre is $S$.
 
-average speed: $v = \frac{2S}{t_1 + t_2} = \frac{2S}{\frac{S}{60} + \frac{S}{40}} = 48 \mps$
+Average speed: $v = \frac{2S}{t_1 + t_2} = \frac{2S}{\frac{S}{60} + \frac{S}{40}} = 48 \mps$
 
-for a round-trip, train returns to same staring position
-
-change in displacement is zero, so average velocity is zero \end{soln} 
+For a round-trip, train returns to same staring position so change in displacement is zero. Average velocity is therefore \emph{Zero} \end{soln} 
 
 
+\subsection{Acceleration}
 
-\subsection{acceleration}
-
-velocity of a moving object may change, i.e., objects can speed up, slow down or make turns
+The velocity of a moving object may change, i.e., objects can speed up, slow down \textbf{or make turns}
 
 \begin{ilight}
-	\centering change in velocity per unit time is defined as the \keypoint{acceleration}\index{acceleration}: \begin{empheq}[box=\tcbhighmath]{equation*}{a = \frac{\Delta v}{\Delta t}}\end{empheq}
+	\centering Change in velocity per unit time is defined as the \keypoint{acceleration}\index{acceleration}: \begin{empheq}[box=\tcbhighmath]{equation*}{a = \frac{\Delta v}{\Delta t}}\end{empheq}
 \end{ilight}
 
-\cmt unit of measurement for acceleration: $[a]= \mpss$
+\titem{unit of measurement for acceleration: $[a]= \mpss$}
 
-\cmt acceleration is a vector quantity, it has both magnitude and direction
+Acceleration\footnote{Joe often writes this as "$Accl^{n}$" on the board. Useful shorthand that!} is a vector quantity, it has both magnitude and direction. Because of vector nature of velocity, change in velocity must also have direction. When we're considering \emph{linear} motion, we usually pick direction of initial velocity as positive direction, often left to right.
 
-this is because of vector nature of velocity, change in velocity must also have direction
+\titem $a>0$ would imply acceleration in the normal sense, i.e., motion with an increasing speed.
 
-\cmt for \emph{linear} motion, one usually pick direction of initial velocity as positive direction
+\titem $a<0$ would imply deceleration, i.e., motion with a decreasing speed.
 
-$a>0$ would imply acceleration in the normal sense, i.e., motion with an increasing speed
+When velocity changes, it could be change in magnitude or/and change in direction\footnote{Acceleration of an object can be considered as the combination of two components. One component is known as the \emph{normal} acceleration or the \emph{centripetal} acceleration, which is at right angle to the velocity and is responsible for the change in direction of motion. The other component is called the \emph{tangential} acceleration, which is parallel to the direction of motion and causes change in magnitude of object's velocity. You will learn more about these in further mechanics.} for example, for an object moving along a curved path, its velocity is constantly changing direction, so it must have a non-zero acceleration. An acceleration of Zero on the other hand would imply no change in speed and no change in direction of motion.
 
-$a<0$ would imply deceleration, i.e., motion with a decreasing speed
+The defining equation, which gives average acceleration over time interval $\Delta t$ is: $$a = \frac{\Delta v}{\Delta t}$$ 
 
-\cmt when velocity changes, it could be change in magnitude or/and change in direction
-\footnote{Acceleration of an object can be considered as the combination of two components. One component is known as the \emph{normal} acceleration or the \emph{centripetal} acceleration, which is at right angle to the velocity and is responsible for the change in direction of motion. The other component is called the \emph{tangential} acceleration, which is parallel to the direction of motion and causes change in magnitude of object's velocity. You will learn more about these in further mechanics.}
-
-for example, for an object moving along a curved path, its velocity is constantly changing direction, so it must have a non-zero acceleration
-
-no acceleration would imply no change in speed and no change in direction of motion
-
-\cmt defining equation $a = \frac{\Delta v}{\Delta t}$ gives average acceleration over time interval $\Delta t$
-
-we can likewise introduce \emph{instantaneous acceleration} as the rate of change in velocity
-
-taking the limit where the time interval $\Delta t \to 0$. we have: $a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} \ra$ \begin{empheq}[box=\tcbhighmath]{equation*}{a=\frac{\dd v}{\dd t}} \end{empheq}
+We can likewise introduce \emph{instantaneous acceleration} as the rate of change in velocity. Taking the limit where the time interval $\Delta t \to 0$. we have: $a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} \ra$ \begin{empheq}[box=\tcbhighmath]{equation*}{a=\frac{\dd v}{\dd t}} \end{empheq}
 
 \example{A ball hits a barrier at right angles with a speed of $15 \mps$. It makes contact with the barrier for 30 ms and then rebounds with a speed of $12 \mps$. What is the average acceleration during the time of contact?}
 
@@ -170,19 +143,65 @@ average acceleration: $a = \frac{\Delta v}{\Delta t} = \frac{27}{30 \times 10^{-
 
 
 
-\subsection{motion graphs}
+\subsection{Motion graphs}
 
-how one quantity changes with another quantity can be visually shown on a \emph{graph}
-
-changes in displacement, velocity or acceleration over time can be shown on \emph{motion graphs}\index{motion graphs}
-
-as we will see, $s$-$t$ graph, $v$-$t$ graph and $a$-$t$ graphs are closely interrelated to one another
+how one quantity changes with another quantity can be visually shown on a \emph{graph}, changes in displacement, velocity or acceleration over time can be shown on \emph{motion graphs}\index{motion graphs}. As we will see, $s$-$t$ graph, $v$-$t$ graph and $a$-$t$ graphs are closely interrelated to one another.
 
 \subsection{displacement-time graphs}
 
-a displacement-time graph shows an object's position at any given time
+A displacement-time graph shows an object's position at any given time:
 
-\cmt gradient of tangent gives rate of change in displacement
+\colorlet{myblue}{blue!70!black}
+\colorlet{mydarkblue}{blue!40!black}
+\colorlet{mygreen}{green!60!black}
+\colorlet{myred}{red!65!black}
+\colorlet{mypurple}{red!50!blue!95!black!75}
+\tikzstyle{wave}=[myblue,thick]
+\tikzstyle{xline}=[very thick,myblue]
+\tikzstyle{vline}=[very thick,mygreen]
+\tikzstyle{aline}=[very thick,mypurple]
+\tikzstyle{mydashed}=[mydarkblue,dashed]
+
+\def\tick#1#2{\draw[thick] (#1) ++ (#2:0.1) --++ (#2-180:0.2)}
+\def\tlabel{$t\,\left[\text{s}\right]$}
+\def\vlabel{$d\,\left[\text{m}\right]$}
+\def\alabel{$a\,\left[\si{m/s^2}\right]$}
+
+\begin{figure}
+    \centering
+    \def\xmax{5.5} % maximum x axis (time)
+\def\ymax{3.0} % maximum y axis (velocity)
+\def\tmax{16} % maximum time on x axis
+\begin{tikzpicture}
+  \def\vmax{10} % maximum velocity on x axis
+  \def\xscale{\xmax/\tmax}
+  \def\yscale{\ymax/\vmax}
+  
+  % GRID
+  \foreach \t in {0,2,...,\tmax}{
+    \draw[black!80,dotted] (\t*\xscale,0) --++ (0,\vmax*\yscale+0.3);
+    \tick{\t*\xscale,0}{90} node[below=0,scale=0.77] {\t};
+  }
+  \foreach \v in {0,2,...,\vmax}{
+    \draw[black!80,dotted] (0,\v*\yscale) --++ (\tmax*\xscale+0.3,0);
+    \tick{0,\v*\yscale}{0} node[left=0,scale=0.77] {\v};
+  }
+  
+  % AXES
+  \draw[->,thick]
+    (0,0) -- (\xmax+0.5,0) node[midway,below=1] {\tlabel};
+  \draw[->,thick]
+    (0,0) -- (0,\ymax+0.5) node[midway,rotate=90,above=0.8] {\vlabel};
+  
+  % GRAPH
+  \draw[vline,line cap=round,xscale=\xscale,yscale=\yscale]
+    (0,0) -- (2,8) -- (8,8) -- (12,4) -- (16,4);
+  
+\end{tikzpicture}
+    \caption{A generic displacement-time graph}
+    \label{fig:enter-label}
+\end{figure}
+The gradient of the graph (or the tangent) gives rate of change in displacement.
 
 but this is instantaneous velocity, which can be given by $v = \frac{\dd s}{\dd t}$, so we have:
 
@@ -332,10 +351,10 @@ total area of these rectangles approximates area bounded by the $v$-$t$ curve an
 		
 		area under $v$-$t$ graph
 	\end{minipage}
-	\caption*{calculating change in displacement by finding the area under velocity-time graph}\label{fig:area_of_vt}
+	\caption{calculating change in displacement by finding the area under velocity-time graph}\label{fig:area_of_vt}
 \end{figure*}
 
-\begin{marginfigure}
+\begin{marginfigure}[2cm]
 	\vspace*{0pt}
 	\centering
 	\begin{tikzpicture}[scale=1.15]
@@ -393,7 +412,7 @@ relationships between displacement, velocity and acceleration graphs are summari
 	\draw[->] (velocity.north east) to [bend left] node[midway,above]{gradient of tangent} node[midway,below]{$a=\frac{\dd v}{\dd t}$} (acceleration.north west);
 	\draw[<-] (velocity.south east) to [bend right] node[midway,below]{area under curve} node[midway,above]{$\Delta v=\int a\dd t$} (acceleration.south west);
 	\end{tikzpicture}
-%	\caption*{relationships between motion graphs}
+%	\caption{relationships between motion graphs}
 \end{figure*}
 
 \example{Given the displacement-time graph as shown, check yourself that this $s$-$t$ graph leads to the velocity-time graph and the acceleration-time graph shown.}
@@ -483,7 +502,7 @@ the equations of motion are straightforward: $\, \boxed{a=0} \qquad \boxed{s=vt}
 		\draw[very thick,blue] (0,0.01) -- (3.6,0.01);
 		\end{tikzpicture}
 	\end{minipage}
-	\caption*{motion graphs for linear motion at constant velocity}
+	\caption{motion graphs for linear motion at constant velocity}
 \end{figure*}
 
 
@@ -514,7 +533,7 @@ the second simplest type of motion is a linear motion with acceleration $a=\text
 		\draw[very thick,blue] (0,2.5) -- (3.6,2.5);
 		\end{tikzpicture}
 	\end{minipage}
-	\caption*{motion graphs for linear motion at uniform acceleration}\label{fig:const_a_graph}
+	\caption{motion graphs for linear motion at uniform acceleration}\label{fig:const_a_graph}
 \end{figure*}
 
 \subsection{equations of motion}
@@ -761,7 +780,7 @@ as a consequence, a projectile would follows a \emph{parabolic} path as it trave
 
 let's consider a projectile launched at initial velocity $u$ at angle $\theta$ to the horizontal
 
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\begin{tikzpicture}[scale=.9]
 	\draw[->] (0,-1) -- (0,4.2) node[left]{$y$};
@@ -786,7 +805,7 @@ let's consider a projectile launched at initial velocity $u$ at angle $\theta$ t
 	\node at (30:0.7) {$\theta$};
 	\end{tikzpicture}
 	\caption{components of the velocity of a projectile at different points along its path}
-\end{figure}
+\end{figure*}
 
 \cmt horizontally, projectile maintains a constant velocity, so
 \begin{equation*}
@@ -878,7 +897,7 @@ optimal angle should be neither be too large nor too small, which can be shown t
 	\draw [thick,blue,domain=0:5,samples=16,smooth,variable=\x,graphlabel={[above]{$75^\circ$}}] plot (\x,{3.732*\x-\x*\x/1.34});
 	\draw [thick,blue,domain=0:5,samples=16,smooth,variable=\x,graphlabel={[above]{$15^\circ$}}] plot (\x,{0.268*\x-\x*\x/18.66});
 	\end{tikzpicture}
-	\caption*{trajectories of projectiles launched at the same speed but different angles}\label{fig:projectile_range}
+	\caption{trajectories of projectiles launched at the same speed but different angles}\label{fig:projectile_range}
 \end{figure*}
 
 

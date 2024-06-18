@@ -1,6 +1,182 @@
 \chapter{Cosmology}
 
 \section{Stephan's law}
-\todo{add stephan's law}
-\subsection{Wein's law}
-\todo{add wein's law}
+An objects luminosity depends on two factors:
+Its surface temperature
+Its surface area
+The relationship between these is known as Stefan's Law or the Stefan-Boltzmann Law, which states:
+The total energy emitted by a black body per unit area per second is proportional to the fourth power of the absolute temperature of the body
+
+So Stefan's Law shows that the luminosity of a star is directly proportional:
+\begin{itemize}
+    \item To its radius $L \propto r^2$
+    \item To its surface area $L \propto 4 \pi r^2$
+    \item To its surface absolute temperature $L \propto T^4$
+\end{itemize}
+
+
+Stefan's Law equation is given by:
+\begin{equation*}
+    L = 4 \pi r2\sigma T^{4}
+\end{equation*}
+
+Where:
+L = luminosity of the star (W)\\
+r = radius of the star\\
+$\sigma$ = the Stefan-Boltzmann constant\\
+T = surface temperature of the star (K)\\
+The surface area of a star (or other spherical object) can be calculated using: $A = 4\pi r^2$\\
+Where r = radius of the star
+
+\example{The surface temperature of Proxima Centuri, the nearest star to Earth, is $3000$K and its luminosity is $6.506 \times 10^{23} $W.
+
+Calculate the radius of Proxima Centuri in kilometres and show your working clearly.}
+\begin{soln}
+List the known quantities: 
+
+Surface temperature, $T = 3000 K$\\
+Luminosity, $L = 6.506 \times 10^{23} $W\\
+Stefan's constant, $\sigma = 5.67 \times 10^{-8} W m^{-2} K^{-4}$\\
+Write down Stefan's Law \& sub in values\\
+The radius of Proximal Centuri is 106 200 km (4 s.f.)
+\end{soln}
+\section{Wein's law}
+
+\subsection{Black Body Radiator}
+An ideal black body radiator is one that absorbs and emits all wavelengths.\\
+A black body is a theoretical object, however, stars are the best approximation there is.\\
+The radiation emitted from a black body has a characteristic spectrum that is determined by the temperature alone.
+% CUSTOM COLORS
+% See https://tikz.net/blackbody_color/
+\definecolor{1000K}{rgb}{1,0.0337,0}
+\definecolor{2000K}{rgb}{1,0.2647,0.0033}
+\definecolor{3000K}{rgb}{1,0.4870,0.1411}
+\definecolor{4000K}{rgb}{1,0.6636,0.3583}
+\definecolor{5000K}{rgb}{1,0.7992,0.6045}
+\definecolor{6000K}{rgb}{1,0.9019,0.8473}
+\definecolor{8000K}{rgb}{0.7874,0.8187,1}
+\definecolor{10000K}{rgb}{0.6268,0.7039,1}
+\pgfdeclareverticalshading{rainbow}{100bp}{
+  color(0bp)=(red); color(25bp)=(red); color(35bp)=(yellow);
+  color(45bp)=(green); color(55bp)=(cyan); color(65bp)=(blue);
+  color(75bp)=(violet); color(100bp)=(violet)
+}
+\colorlet{myred}{red!70!black}
+\colorlet{mygreen}{green!70!black}
+\colorlet{mydarkgreen}{green!55!black}
+\pgfmathdeclarefunction{planck}{2}{%
+  \pgfmathparse{1.191042972e26/(#1^5)/(exp(0.01439e9/(#1*#2))-1)}%
+}
+\pgfmathdeclarefunction{rayleighjeans}{2}{%
+  \pgfmathparse{8.278160269e18*#2/(#1^4)}%
+}
+\pgfmathdeclarefunction{wien}{2}{%
+  \pgfmathparse{1.191042972e26/(#1^5)*exp(-0.01439e9/(#1*#2))}%
+}
+\pgfmathdeclarefunction{lampeak}{1}{% % Wien's displacement law
+  \pgfmathparse{2.898e6/#1}%
+}
+\begin{figure*}
+
+\begin{tikzpicture}[scale=1.5]
+  \def\N{60}
+  \def\xmax{3100}
+  \def\ymax{1.36e10}
+  \def\tick#1#2{\draw[thick] (#1+.01*\ymax) -- (#1-.01*\ymax) node[below=-.5pt,scale=0.75] {#2};}
+  \begin{axis}[
+      every axis plot/.style={
+        mark=none,samples=\N,domain=5:\xmax,smooth},
+      xmin=(-.05*\xmax), xmax=(1.05*\xmax),
+      ymin=(-.08*\ymax), ymax=(1.08*\ymax),
+      restrict y to domain=0:\ymax,
+      axis lines=middle,
+      axis line style=thick,
+      %enlargelimits=upper, % extend the axes a bit to the right and top
+      tick style={black,thick},
+      ticklabel style={scale=0.8},
+      %xtick style={draw=none},xticklabels=none,
+      max space between ticks=26,
+      xlabel={Wavelength $\lambda$ [nm]},
+      ylabel={Power $P$ [kW/sr\,m$^2$\,nm]},
+      xlabel style={at={(rel axis cs:0.5,0)},below=-1pt,font=\small},
+      ylabel style={at={(rel axis cs:-0.11,0.5)},rotate=90},
+      width=9cm, height=7cm,
+      %clip=false
+      tick scale binop=\times,
+      every y tick scale label/.style={at={(rel axis cs:0,1)},anchor=south}]
+    ]
+    
+    % RAINBOW
+    \shade[shading=rainbow,shading angle=90,opacity=0.5] (380,0) rectangle (740,\ymax);
+    \node[above=-1pt,scale=0.8] at (200,\ymax) {\strut UV}; % 10 - 400 nm
+    \node[above=-1pt,scale=0.8] at (570,\ymax) {\strut optical}; % 380 - 740 nm
+    \node[above=-1pt,scale=0.8] at (920,\ymax) {\strut IR}; % 740 - 1050 nm
+    
+    % PLANCK
+    \addplot[very thick,red]    {planck(x,3000)};
+    \addplot[very thick,orange] {planck(x,4000)};
+    \addplot[very thick,samples=3*\N,blue] {planck(x,5000)};
+    %\addplot[dashed,thick,red,domain=1000:4000]    {rayleighjeans(x,3000)};
+    %\addplot[dashed,thick,orange,domain=1000:4000] {rayleighjeans(x,4000)};
+    %\addplot[dashed,thick,blue,domain=1000:4000]   {rayleighjeans(x,5000)};
+    %\addplot[dashed,thick,red,domain=1000:4000]    {wien(x,3000)};
+    %\addplot[dashed,thick,orange,domain=1000:4000] {wien(x,4000)};
+    %\addplot[dashed,thick,blue,domain=1000:4000]   {wien(x,5000)};
+    
+    %% MAXIMUM (Wien's displacement law)
+    \addplot[mygreen,thin,variable=T,domain=2500:6000]({lampeak(T)},{planck(lampeak(T),T)});
+    
+    % LABELS
+    \node[above=0pt,scale=0.75,red] at (1150,{planck(1150,3000)}) {3000K};
+    \node[above right=-1pt,scale=0.75,orange!80!black] at (740,{planck(740,4000)}){4000K};
+    \node[above right=-1pt,scale=0.75,blue] at (800,{planck(800,5000)}) {5000K};
+    
+    %% TICKS
+    %\tick{500,0}{500}
+    %\tick{1000,0}{1000}
+    %\tick{1500,0}{1500}
+    %\tick{2000,0}{2000}
+    %\tick{2500,0}{2500}
+    %\tick{3000,0}{3000}
+  \end{axis}
+\end{tikzpicture}
+\end{figure*}
+
+The intensity-wavelength graph shows how thermodynamic temperature links to the peak wavelength for three different bodies.
+
+\subsection {Wien's Displacement Law}
+Wien’s displacement law relates the observed wavelength of light from an object to its surface temperature, it states:
+The black body radiation curve for different temperatures peaks at a wavelength that is inversely proportional to the temperature
+
+This relation can be written as:
+
+\begin{equation*}
+    \lambda_{\mathrm{max}}=\frac{W}{T}
+\end{equation*}
+
+Where:\\
+$\lambda_{\mathrm{max}}$ = the maximum wavelength emitted by an object at the peak intensity (m) \\
+T = the surface temperature of an object (K) \\
+Wien's constant is $W=2.9\times 10^{-3} mK $
+
+This equation shows that the higher the temperature of a body, the shorter the wavelength at the peak intensity. Hotter objects tend to be white or blue, and cooler objects tend to be red or yellow.//
+
+
+\example{
+The spectrum of the star Rigel in the constellation of Orion peaks at a wavelength of 263 nm, while the spectrum of the star Betelgeuse peaks at a wavelength of 828 nm.
+Determine which of these two stars, Betelgeuse or Rigel, is cooler.}
+\begin{soln}
+List the known quantities
+Maximum emission wavelength of Rigel = 263 nm = 263 × 10-9 m
+Maximum emission wavelength of Betelgeuse = 828 × 10-9 m
+
+$$T = \frac{2.9e-3}{\lambda_{max}}$$
+Calculate the surface temperature of each star:
+$$\text{Rigel: }T=\frac{2.9e{-3}}{263e{-9}}=11026 = 11 000K$$
+
+$$\text{Betelgeuse: }T=\frac{2.9e{-3}}{828e{-9}}=3502 = 3500K$$
+
+Step 4: Write a concluding sentence
+
+Betelgeuse has a surface temperature of 3500 K, therefore, it is much cooler than Rigel
+\end{soln}

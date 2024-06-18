@@ -5,7 +5,7 @@
 \rcyskip
 
 \begin{ilight}
-	\keypoint{magnetic flux} is defined as the product of a closed area and the magnetic flux density going through it at right angles: $\boxed{\phi=BA\cos\theta}$\index{magnetic field!magnetic flux}
+	\keypoint{magnetic flux} is defined as the product of a closed area and the magnetic flux density going through it at right angles: $\tcbhighmath{\phi=BA\cos\theta}$\index{magnetic field!magnetic flux}
 \end{ilight}
 
 \begin{marginfigure}
@@ -27,7 +27,7 @@
 
 \cmt if magnetic field is perpendicular to the area
 
-magnetic flux simply becomes: $\boxed{\phi=BA}$
+magnetic flux simply becomes: $\tcbhighmath{\phi=BA}$
 
 \cmt for a coil with $N$ turns, total magnetic flux is
 
@@ -35,7 +35,7 @@ magnetic flux simply becomes: $\boxed{\phi=BA}$
 
 \centering
 
-$\boxed{\Phi = N\phi = NBA}$
+$\tcbhighmath{\Phi = N\phi = NBA}$
 
 }
 
@@ -77,20 +77,20 @@ we will study in what conditions voltages and currents could be induced, and how
 \rcyskip
 
 \begin{ilight}
-	\keypoint{Faraday's law}\index{Faraday's law} states that induced e.m.f./voltage is proportional to rate of change in magnetic flux (linkage): $\boxed{\mathcal{E} \propto \frac{\Delta \Phi}{\Delta t}}$
+	\keypoint{Faraday's law}\index{Faraday's law} states that induced e.m.f./voltage is proportional to rate of change in magnetic flux (linkage): $\tcbhighmath{\mathcal{E} \propto \frac{\Delta \Phi}{\Delta t}}$
 \end{ilight}
 
 \cmt Faraday's law gives the \emph{magnitude} of the induced e.m.f.
 
 the key here is the \emph{change} in flux: as long as flux changes, e.m.f. will be induced
 
-\cmt if $\mathcal{E}$, $\Phi$, $t$ are all given in SI units, this proportional relation becomes an identity: $\boxed{\mathcal{E} = \frac{\Delta \Phi}{\Delta t}}$
+\cmt if $\mathcal{E}$, $\Phi$, $t$ are all given in SI units, this proportional relation becomes an identity: $\tcbhighmath{\mathcal{E} = \frac{\Delta \Phi}{\Delta t}}$
 
 \example{A coil of 80 turns is wound tightly around a solenoid with a cross-sectional area of 35 cm$^2$. The flux density at the centre of the solenoid is 75 mT. (a) What is the flux linkage in the coil? (b) The current in the solenoid is \emph{reversed} in direction in a time of 0.40 s, what is the average e.m.f. induced?}
 
-\sol flux linkage: $\Phi = NBA = 80 \times 75\times10^{-2} \times 35 \times 10^{-4} = 0.21 \text{ Wb}$
+\begin{soln} flux linkage: $\Phi = NBA = 80 \times 75\times10^{-2} \times 35 \times 10^{-4} = 0.21 \text{ Wb}$
 
-average e.m.f. induced: $\mathcal{E} = \frac{\Delta \Phi}{\Delta t} = \frac{(+\Phi)-(-\Phi)}{\Delta t} = \frac{2\times 0.21}{0.40} = 1.05 \text{ V}$ \eoe
+average e.m.f. induced: $\mathcal{E} = \frac{\Delta \Phi}{\Delta t} = \frac{(+\Phi)-(-\Phi)}{\Delta t} = \frac{2\times 0.21}{0.40} = 1.05 \text{ V}$ \end{soln}
 
 \subsection{Lenz's law}
 
@@ -139,7 +139,7 @@ if the change in flux is caused by motion, then magnetic force on/by the induced
 \noindent (a) What is average induced e.m.f. in the coil? (b) What is average induced current through resistor $R$? (c) In which direction does this current flow?
 
 
-\sol change in flux linkage: $\Delta \Phi = NBA - 0 = 200\times0.40\times\pi \times 0.050^2 \approx 0.628 \text{ Wb}$
+\begin{soln} change in flux linkage: $\Delta \Phi = NBA - 0 = 200\times0.40\times\pi \times 0.050^2 \approx 0.628 \text{ Wb}$
 
 average e.m.f. induced: $\mathcal{E} = \frac{\Delta \Phi}{\Delta t} = \frac{0.628}{2.0} \approx 0.314 \text{ V}$
 
@@ -151,7 +151,7 @@ according to Lenz's law, field due to induced current acts to the left to oppose
 
 alternatively, left side of the coil should behave as a north pole to oppose motion of magnet
 
-use right-hand rule, we find induced current flows through $R$ to the right
+use right-hand rule, we find induced current flows through $R$ to the right\end{soln}
 
 \question{If the magnet is now pulled away from the coil, state ad explain the direction of the induced current.}
 
@@ -176,9 +176,9 @@ use right-hand rule, we find induced current flows through $R$ to the right
 \noindent (a) What is the induced current through resistor? (b) In which direction does this current flow? (c) For the rod to travel at constant speed, what is magnitude of external force required?
 
 
-\sol change of flux in time interval $\Delta t$ is: $\Delta \phi = \Delta (BA) = B \Delta A = BL v\Delta t$
+\begin{soln} change of flux in time interval $\Delta t$ is: $\Delta \phi = \Delta (BA) = B \Delta A = BL v\Delta t$
 
-e.m.f. induced: $\mathcal{E} = \frac{\Delta \phi}{\Delta t} \ra \boxed{\mathcal{E} = BLv}$
+e.m.f. induced: $\mathcal{E} = \frac{\Delta \phi}{\Delta t} \ra \tcbhighmath{\mathcal{E} = BLv}$
 
 \eqyskip induced current: $I = \frac{\mathcal{E}}{R} = \frac{BLv}{R} = \frac{0.80\times0.45\times3.0}{6.0} = 0.18A$
 
@@ -188,7 +188,7 @@ using Fleming's left-hand rule, we find induce current flows in anti-clockwise d
 
 if rod travels at constant speed, then equilibrium between external push and magnetic force
 
-external force required: $F_\text{ext} = F_B = BIL = 0.80 \times 0.18 \times 0.45 \approx  0.065 \text{ N}$ \eoe
+external force required: $F_\text{ext} = F_B = BIL = 0.80 \times 0.18 \times 0.45 \approx  0.065 \text{ N}$ \end{soln}
 
 \question{In Example \ref{ex-cuttingFL}, can you find alternative arguments to determine the direction of the current induced as the rod cuts through the magnetic field?}
 
@@ -216,7 +216,7 @@ coil picks up induced e.m.f. proportional to \emph{rate of change} in flux: $\ma
 \question{A Hall probe is placed near one end of a solenoid that carries a varying current as shown in the graph. (a) Sketch the variation of Hall voltage with time. (b) If Hall probe is replaced by a small coil parallel to the solenoid's end, sketch the variation of the voltage induced in the coil.}
 
 
-\subsection{applications of electromagnetic induction}
+\section{applications of electromagnetic induction}
 
 \subsection{magnetic braking}
 
