@@ -4,7 +4,7 @@
 
 %%
 % Book metadata
-\title{EMS Physics Notes \\ $\alpha$ Release}
+\title{EMS Physics Notes \\ $\beta$ Release}
 \author[Joe Rowing]{Joe Rowing}
 \publisher{Exeter Mathematics School}
 
@@ -268,10 +268,68 @@
 \newcommand{\docmsg}[2]{\bigskip\begin{fullwidth}\noindent\ttfamily#1\end{fullwidth}\medskip\par\noindent#2}
 \newcommand{\docfilehook}[2]{\texttt{#1}\index{file hooks!#2}\index{#1@\texttt{#1}}}
 \newcommand{\doccounter}[1]{\texttt{#1}\index{#1 counter@\texttt{#1} counter}}
+%%%%% code boxes
+\tcbuselibrary{minted,breakable,xparse,skins}
+
+\definecolor{bg}{gray}{0.95}
+\DeclareTCBListing{mintedbox}{O{}m!O{}}{%
+  breakable=true,
+  listing engine=minted,
+  listing only,
+  minted language=#2,
+  minted style=default,
+  minted options={%
+    linenos,
+    gobble=0,
+    breaklines=true,
+    breakafter=,,
+    fontsize=\small,
+    numbersep=8pt,
+    #1},
+  boxsep=0pt,
+  left skip=0pt,
+  right skip=0pt,
+  left=25pt,
+  right=0pt,
+  top=3pt,
+  bottom=3pt,
+  arc=5pt,
+  leftrule=0pt,
+  rightrule=0pt,
+  bottomrule=2pt,
+  toprule=2pt,
+  colback=bg,
+  colframe=orange!70,
+  enhanced,
+  overlay={%
+    \begin{tcbclipinterior}
+    \fill[orange!20!white] (frame.south west) rectangle ([xshift=20pt]frame.north west);
+    \end{tcbclipinterior}},
+  #3}
+
 
 % Generates the index
 \usepackage{makeidx}
 \makeindex
+
+\makeatletter
+% Paragraph indentation and separation for normal text
+\renewcommand{\@tufte@reset@par}{%
+  \setlength{\RaggedRightParindent}{0pc}%
+  \setlength{\JustifyingParindent}{0pc}%
+  \setlength{\parindent}{0pt}%
+  \setlength{\parskip}{0pt}%
+}
+\@tufte@reset@par
+
+% Paragraph indentation and separation for marginal text
+\renewcommand{\@tufte@margin@par}{%
+  \setlength{\RaggedRightParindent}{0pc}%
+  \setlength{\JustifyingParindent}{0pc}%
+  \setlength{\parindent}{0pc}%
+  \setlength{\parskip}{0pt}%
+}
+\makeatother
 
 \begin{document}
 
@@ -360,7 +418,9 @@ The CC BY-NC-SA licence allows the work to be re-mixed, re-used, and re-shared s
 \include{31-electronics}
 %\include{32-medical-imaging} not on course
 % \include{33-telecommunication} not on course
+\include{jupyter}
 \include{prac}
+
 %\include{ticklists}
 \setcounter{tocdepth}{10}
 % \listoftodos
