@@ -140,6 +140,8 @@ The radiation emitted from a black body has a characteristic spectrum that is de
     %\tick{3000,0}{3000}
   \end{axis}
 \end{tikzpicture}
+\caption{Different temperature stars and their spectral output}
+ \forceversofloat
 \end{figure*}
 
 The intensity-wavelength graph shows how thermodynamic temperature links to the peak wavelength for three different bodies.
@@ -180,3 +182,70 @@ Step 4: Write a concluding sentence
 
 Betelgeuse has a surface temperature of 3500 K, therefore, it is much cooler than Rigel
 \end{soln}
+
+
+\section{End-of-chapter questions}
+
+One of the hottest stard known is HD93129A in the Carina nebula. It's continuous spectrum is shown;
+
+\begin{figure*}
+
+\begin{tikzpicture}[scale=1.5]
+  \def\N{60}
+  \def\xmax{1500}
+  \def\ymax{4.5e12}
+  \def\tick#1#2{\draw[thick] (#1+.01*\ymax) -- (#1-.01*\ymax) node[below=-.5pt,scale=0.75] {#2};}
+  \begin{axis}[
+      every axis plot/.style={
+        mark=none,samples=\N,domain=5:\xmax,smooth},
+      xmin=(-.05*\xmax), xmax=(1.05*\xmax),
+      ymin=(-.08*\ymax), ymax=(1.08*\ymax),
+      restrict y to domain=0:\ymax,
+      axis lines=middle,
+      axis line style=thick,
+      %enlargelimits=upper, % extend the axes a bit to the right and top
+      tick style={black,thick},
+      ticklabel style={scale=0.8},
+      %xtick style={draw=none},xticklabels=none,
+      max space between ticks=26,
+      xlabel={Wavelength $\lambda$ [nm]},
+      ylabel={Power $P$ [kW/sr\,m$^2$\,nm]},
+      xlabel style={at={(rel axis cs:0.5,0)},below=-1pt,font=\small},
+      ylabel style={at={(rel axis cs:-0.11,0.5)},rotate=90},
+      width=9cm, height=7cm,
+      %clip=false
+      tick scale binop=\times,
+      every y tick scale label/.style={at={(rel axis cs:0,1)},anchor=south}]
+    ]
+    
+    % RAINBOW
+   
+    % PLANCK
+    % \addplot[very thick,red]    {planck(x,3000)};
+    % \addplot[very thick,orange] {planck(x,4000)};
+    \addplot[very thick,samples=3*\N,blue] {wien(x,15000)};
+    %\addplot[dashed,thick,red,domain=1000:4000]    {rayleighjeans(x,3000)};
+    %\addplot[dashed,thick,orange,domain=1000:4000] {rayleighjeans(x,4000)};
+    %\addplot[dashed,thick,blue,domain=1000:4000]   {rayleighjeans(x,5000)};
+    %\addplot[dashed,thick,red,domain=1000:4000]    {wien(x,3000)};
+    %\addplot[dashed,thick,orange,domain=1000:4000] {wien(x,4000)};
+    %\addplot[dashed,thick,blue,domain=1000:4000]   {wien(x,5000)};
+    
+    %% MAXIMUM (Wien's displacement law)
+   % \addplot[mygreen,thin,variable=T,domain=2500:6000]({lampeak(T)},{planck(lampeak(T),T)});
+    
+    % LABELS
+    %\node[above=0pt,scale=0.75,red] at (1150,{planck(1150,3000)}) {3000K};
+    %\node[above right=-1pt,scale=0.75,orange!80!black] at (740,{planck(740,4000)}){4000K};
+    %\node[above right=-1pt,scale=0.75,blue] at (800,{planck(800,5000)}) {5000K};
+    
+    %% TICKS
+    %\tick{500,0}{500}
+    %\tick{1000,0}{1000}
+    %\tick{1500,0}{1500}
+    %\tick{2000,0}{2000}
+    %\tick{2500,0}{2500}
+    %\tick{3000,0}{3000}
+  \end{axis}
+\end{tikzpicture}
+\end{figure*}

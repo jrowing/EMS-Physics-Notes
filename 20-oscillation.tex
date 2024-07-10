@@ -1,35 +1,26 @@
 
-\chapter{oscillations}
+\chapter{Oscillations}
 \begin{ilight}
-	\keypoint{oscillation} refers to a repetitive back and forth motion about its \emph{equilibrium position}
+	\keypoint{Oscillation} refers to a repetitive back and forth motion about its \emph{equilibrium position}
 \end{ilight}
 
-the equilibrium position is a point where all forces on oscillator are balanced
+The equilibrium position is a point where all forces on oscillator are balanced, release an object from its equilibrium position from rest, and it will stay at rest. Examples of oscillation includes pendulum of a clock, vibrating string, swing, etc.
 
-release an object from its equilibrium position from rest, it will stay at rest
+\subsection{Amplitude, period, frequency}
 
-examples of oscillation includes pendulum of a clock, vibrating string, swing, etc.
+To describe motion of an oscillator, we define the following quantities:
 
+\keypoint{Displacement} ($x$): distance from the equilibrium position.
 
-\subsection{amplitude, period, frequency}
+\keypoint{Amplitude} ($x_0$)\index{amplitude}: maximum displacement from the equilibrium position.
 
-to describe motion of an oscillator, we define the following quantities:
+\keypoint{Period} ($T$): time for one complete oscillation.
 
-\cmt \keypoint{displacement} ($x$): distance from the equilibrium position
-
-\cmt \keypoint{amplitude} ($x_0$)\index{amplitude}: maximum displacement from the equilibrium position
-
-\cmt \keypoint{period} ($T$): time for one complete oscillation
-
-\cmt \keypoint{frequency} ($f$): number of oscillations per unit time
-
-frequency is related to period as: ${f=\frac{1}{T}}$
+\keypoint{Frequency} ($f$): number of oscillations per unit time, frequency is related to period as: ${f=\frac{1}{T}}$
 
 \vspace*{\baselineskip}
 
-displacement $x$ varies with time $t$ repetitively, for which we can plot an $x$-$t$ graph
-
-amplitude $x_0$ and period $T$ are labelled on the graph
+Displacement $x$ varies with time $t$ repetitively, for which we can plot an $x$-$t$ graph, amplitude $x_0$ and period $T$ are labelled on the graph:
 
 
 \begin{figure}[ht]
@@ -48,16 +39,14 @@ amplitude $x_0$ and period $T$ are labelled on the graph
 \end{figure}
 
 
-\subsection{phase angle}
-the point that an oscillator has reached within a complete cycle is called \keypoint{phase angle}\index{phase angle} ($\phi$)
+\subsection{Phase angle}
+The point that an oscillator has reached within a complete cycle is called \keypoint{phase angle}\index{phase angle} ($\phi$)
 
 \cmt unit of phase angle: $[\phi] = \text{rad}$
 
-it looks like an angle, but better think of it as a number telling fraction of a complete cycle
+It looks like an angle, but better think of it as a number telling fraction of a complete cycle.
 
-\cmt we use \keypoint{phase difference} $\Delta\phi$ to compare how much one oscillator is ahead of another
-
-$\Delta\phi$ is found in terms of fraction of an oscillation: $\Delta\phi = \frac{\Delta t}{T} \times 2\pi $ (also measured in radians)
+We use \keypoint{phase difference} $\Delta\phi$ to compare how much one oscillator is ahead of another $\Delta\phi$ is found in terms of fraction of an oscillation: $\Delta\phi = \frac{\Delta t}{T} \times 2\pi $ (also measured in radians)
 
 
 
@@ -122,51 +111,37 @@ phase difference: $\Delta \phi = \frac{\Delta t}{T} \times 2\pi = \frac{20}{60} 
 \end{soln}
 
 
-\subsection{acceleration \& restoring force}
-for any oscillatory motion, consider its velocity and acceleration at various positions
+\subsection{Acceleration \& restoring force}
+For any oscillatory motion, consider its velocity and acceleration at various positions, its acceleration must be always pointing towards the equilibrium position. Resultant force always acts in the direction to restore the system back to its equilibrium point, this net force is known as the \keypoint{restoring force}\index{restoring force}. If at equilibrium position, then no acceleration or restoring force is present.
 
-its acceleration must be always pointing towards the equilibrium position
-
-resultant force always acts in the direction to restore the system back to its equilibrium point, this net force is known as the \keypoint{restoring force}\index{restoring force}
-
-if at equilibrium position, then no acceleration or restoring force
-
-
-
-
-
-\subsection{simple harmonic oscillation}
+\subsection{Simple harmonic oscillation}
 
 \begin{ilight}
-	if an oscillator has an acceleration always proportional to its displacement from the equilibrium position, and acceleration is in opposite direction to displacement, then the oscillator is performing \keypoint{simple harmonic motion}\index{simple harmonic motion}
+	If an oscillator has an acceleration always proportional to its displacement from the equilibrium position, and acceleration is in opposite direction to displacement, then the oscillator is performing \keypoint{simple harmonic motion}.\index{simple harmonic motion}
 \end{ilight}
 
-many phenomena can be approximated by simple harmonics
+Many phenomena can be approximated by simple harmonics, examples are motion of a pendulum, molecular vibrations, etc.
 
-examples are motion of a pendulum, molecular vibrations, etc.
-
-complicated motions can be decomposed into a set of simple harmonics
-
-simple harmonic motion provides a basis for the study of many complicated motions
+Complicated motions can be decomposed into a set of simple harmonics. Simple harmonic motion provides a basis for the study of many complicated motions.
 \footnote{This can be done through a mathematical technique known as \emph{Fourier analysis}. For example, a uniform circular motion can be considered as the combination of two simple harmonic motion in $x$- and $y$-directions.}
 
-\subsection{equation of motion}
+\subsection{Equation of motion}
 
-defining equation for simple harmonics can be written as: $$\tcbhighmath{a=-\omega^2 x}$$
+Defining equation for simple harmonics can be written as: $$\tcbhighmath{a=-\omega^2 x}$$
 
 $\omega$ is some constant, so $a$ is proportional to $x$
 
-the minus sign shows $a$ and $x$ are in opposite directions
+The minus sign shows $a$ and $x$ are in opposite directions
 
 \vspace*{\baselineskip} 
 
-general solution to this this equation of motion\footnote{You probably know that acceleration can be written as the second derivative of displacement: $a=\frac{\dd^2 x}{\dd t^2}$, so $a=-\omega^2 x$ is equivalent to $\frac{\dd^2 x}{\dd t^2} + \omega^2 x = 0$, which a \emph{second-order differential equation}. If you do not know how to solve it, you may have the chance to study this in an advanced calculus course.} takes the form: $$\tcbhighmath{x=x_0\sin(\omega t+\phi)}$$
+The general solution to this this equation of motion\footnote{You probably know that acceleration can be written as the second derivative of displacement: $a=\frac{\dd^2 x}{\dd t^2}$, so $a=-\omega^2 x$ is equivalent to $\frac{\dd^2 x}{\dd t^2} + \omega^2 x = 0$, which a \emph{second-order differential equation}. If you do not know how to solve it, you may have the chance to study this in an advanced calculus course.} takes the form: $$\tcbhighmath{x=x_0\sin(\omega t+\phi)}$$
 
 $x_0$ represents the amplitude, $\omega$ is called the angular frequency, $\phi$ is the phase angle
 
-\subsection*{angular frequency}
+\subsection*{Angular frequency}
 
-\cmt \keypoint{angular frequency}\index{angular frequency}  satisfies the relation: $$\tcbhighmath{\omega=\frac{2\pi}{T}=2\pi f}$$
+\cmt \keypoint{Angular frequency}\index{angular frequency}  satisfies the relation: $$\tcbhighmath{\omega=\frac{2\pi}{T}=2\pi f}$$
 
 \cmt unit of angular frequency: $[\omega] = \rad\cdot\text{s}^{-1}$
 
@@ -176,14 +151,10 @@ if an object is set to oscillate \emph{freely} with no external force, its perio
 
 frequency of an free oscillatory system is called the \keypoint{natural frequency}
 
-\subsection*{phase angle}
+\subsection*{Phase}
 
 
-\cmt phase angle $\phi$ is dependent on \emph{initial conditions} (e.g. initial position and initial speed at $t=0$?)
-
-\cmt in many cases, phase angle term can be avoided if a suitable trigonometric function is chosen
-
-
+Phase $\phi$ is dependent on \emph{initial conditions} (e.g. initial position and initial speed at $t=0$?), in many cases, phase angle term can be avoided if a suitable trigonometric function is chosen.
 
 \example{A simple harmonic oscillator is displaced by 6.0 cm from its rest position and let go at $t=0$. Given that the period of this system is 0.80 s, state an equation for its displacement-time relation.}
 
@@ -231,11 +202,11 @@ x(t) = - x_0 \cos\omega t \RA x = - 5.0\sin(3\pi t)
 \end{equation*}
 \end{soln}
 
-\section{examples of simple harmonics}
+\section{Examples of simple harmonic oscillators}
 
-\subsection*{mass-spring oscillator}
+\subsection*{Mass-spring oscillator}
 
-a mass-spring oscillator system consists of a block of mass $m$ and an ideal spring
+A mass-spring oscillator system consists of a block of mass $m$ and an ideal spring
 
 \begin{figure}[ht]
 	\centering
@@ -271,47 +242,35 @@ a mass-spring oscillator system consists of a block of mass $m$ and an ideal spr
 		\draw [thick ] (-1.2,-0.4) node[below]{$-x$} -- (-1.2,-0.3);
 		\end{tikzpicture}
 		
-	\caption{restoring force acting on the ideal mass-spring oscillator}
+	\caption{Restoring force acting on the ideal mass-spring oscillator}
 \end{figure}
 
-when a spring is stretched or compressed by a mass, the spring develops a restoring force
+When a spring is stretched or compressed by a mass, the spring develops a restoring force, the magnitude of this force obeys \emph{Hooke's law}: $F=kx$. The direction of this force is in opposite direction to displacement $x$.
 
-magnitude of this force obeys \emph{Hooke's law}: $F=kx$ 
-
-direction of this force is in opposite direction to displacement $x$
-
-take vector nature of force into account, we find
+Taking the vector nature of force into account, we find:
 \begin{equation*}
 	\fnet = ma \RA -kx = ma \RA a=-\frac{k}{m}x
 \end{equation*}
 
-spring constant $k$ and mass $m$ are constants, so $a \propto x$
-
-negative sign shows $a$ and $x$ are in opposite directions
-
-so mass-spring oscillator executes simple harmonic motion
+Spring constant $k$ and mass $m$ are constants, so $a \propto x$. The negative sign shows $a$ and $x$ are in opposite directions so mass-spring oscillator executes simple harmonic motion.
 
 \vspace*{\baselineskip}
 
-compare with $a=-\omega^2x \RA \omega^2 = \frac{k}{m} \RA \tcbhighmath{\omega = \sqrt{\frac{k}{m}}}$
+Compare with: $$a=-\omega^2x \RA \omega^2 = \frac{k}{m} \RA \tcbhighmath{\omega = \sqrt{\frac{k}{m}}}$$
 
-period of mass-spring oscillator: $T=\frac{2\pi}{\omega} \RA T =2\pi\sqrt{\frac{m}{k}}$
+The period of mass-spring oscillator: $$T=\frac{2\pi}{\omega} \RA T =2\pi\sqrt{\frac{m}{k}}$$
 
-\cmt period and frequency are solely determined by mass of oscillator $m$ and spring constant $k$
+Period and frequency are solely determined by mass of oscillator $m$ and spring constant $k$. Identical mass-spring systems will oscillate at same frequency no matter what amplitude:
 
-identical mass-spring systems will oscillate at same frequency no matter what amplitude
+\cmt $m \up \ra T \up$, greater mass means greater inertia, oscillation becomes slower.
 
-\cmt $m \up \ra T \up$, greater mass means greater inertia, oscillation becomes slower
-
-\cmt $k \up \ra T \down$, greater $k$ means stiffer spring, greater restoring force makes oscillation go faster
+\cmt $k \up \ra T \down$, greater $k$ means stiffer spring, greater restoring force makes oscillation go faster.
 
 
 
-\subsection*{simple pendulum}
+\subsection*{Simple pendulum}
 
-a simple pendulum is set up by hanging a bob on a light cord from a fixed point
-
-displace the bob by some angle and release from rest, it can swing freely
+A simple pendulum is set up by hanging a bob on a light cord from a fixed point, if we displace the bob by some angle and release from rest, it can swing freely.
 
 \begin{marginfigure}
 	\centering
@@ -329,17 +288,13 @@ displace the bob by some angle and release from rest, it can swing freely
 	\vspace*{-15pt}
 \end{marginfigure}
 
-one can show this performs simple harmonic motion for \emph{small-angle} oscillation
-		
-if angular displacement $\theta$ is small, then the pendulum has almost no vertical displacement, the motion can be considered to be purely horizontal
+One can show this performs simple harmonic motion for \emph{small-angle} oscillation. If angular displacement $\theta$ is small, then the pendulum has almost no vertical displacement, the motion can be considered to be purely horizontal.
 		
 vertically: $T\cos\theta \approx mg \quad \xLongrightarrow{\cos\theta\approx1 \text{ as } \theta\to0} \quad T\approx mg$
 		
 horizontally: $-T\sin\theta = ma \quad \xLongrightarrow{\sin\theta=x/L} \quad a \approx -\frac{g}{L}x$
 
-this shows simple pendulum undergoes simple harmonics
-	
-compare with defining equation for simple harmonics:
+Compare with defining equation for simple harmonics:
 
 {
 
@@ -349,13 +304,11 @@ $a=-\omega^2x \RA \omega = \sqrt{\frac{g}{L}}$
 
 }
 	
-period for a simple pendulum: $\tcbhighmath{T= 2\pi\sqrt{\frac{L}{g}}}$
+The period for a simple pendulum: $$\tcbhighmath{T= 2\pi\sqrt{\frac{L}{g}}}$$
 
-\cmt period and frequency of a pendulum are determined by length of the string $L$ only
+Period and frequency of a pendulum are determined by length of the string $L$ only, as long as angular displacement remains small, frequency does not depend on amplitude.
 
-as long as angular displacement remains small, frequency does not depend on amplitude
-
-fix length $L$, then simple pendulum oscillates at same frequency no matter what amplitude
+For a fixed length $L$, then simple pendulum oscillates at same frequency no matter what the amplitude.
 
 \cmt $L \up \ra T \up$, longer pendulums oscillate more slowly
 
@@ -367,15 +320,15 @@ fix length $L$, then simple pendulum oscillates at same frequency no matter what
 
 
 
-\subsection{velocity \& acceleration}
+\subsection{Velocity \& acceleration}
 
-displacement of simple harmonic oscillator varies with time as: $x=x_0\sin(\omega t + \phi)$
+Displacement of simple harmonic oscillator varies with time as: $x=x_0\sin(\omega t + \phi)$
 
-from this displacement-time relation, we can find velocity and acceleration relations
+From this displacement-time relation, we can find velocity and acceleration relations
 
-\subsection*{velocity}
+\subsection*{Velocity}
 
-to find velocity-time relation, let's recall that velocity $v$ is rate of change of displacement $x$
+To find velocity-time relation, let's recall that velocity $v$ is rate of change of displacement $x$
 \begin{equation*}
 	v = \frac{\dd x}{\dd t} = \frac{\dd}{\dd t} x_0\sin(\omega t+\phi) \RA \tcbhighmath{v(t) = \omega x_0 \cos(\omega t+\phi)}
 \end{equation*}
@@ -391,14 +344,14 @@ this gives velocity-displacement relation: $\tcbhighmath{v(x)=\pm \omega\sqrt{x_
 
 \cmt when $x=\pm x_0$, oscillator is momentarily at rest: $v=0$ 
 
-\subsection*{acceleration}
+\subsection*{Acceleration}
 
-acceleration-time relation is found by further taking rate of change of velocity $v$
+Acceleration-time relation is found by further taking rate of change of velocity $v$
 \begin{equation*}
 a = \frac{\dd v}{\dd t} = \frac{\dd}{\dd t} \omega x_0 \cos(\omega t+\phi) \RA \tcbhighmath{a(t) = - \omega^2 x_0 \sin(\omega t+\phi)}
 \end{equation*}
 
-this is actually unnecessary, if we compare this with $x(t)=x_0 \sin(\omega t+\phi)$, we have: $a=-\omega^2 x$
+This is actually unnecessary, if we compare this with $x(t)=x_0 \sin(\omega t+\phi)$, we have: $a=-\omega^2 x$
 
 we have recovered the definition for simple harmonics
 
@@ -425,7 +378,7 @@ acceleration: $a=-\omega^2x = -\omega^2 x_0\sin\omega t$ & 0 & $-$max & 0 & $+$m
 \end{tabular}
 \end{center}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 \begin{minipage}{0.48\textwidth}
 	\centering
 	\begin{tikzpicture}[scale=0.6]
@@ -457,7 +410,7 @@ acceleration: $a=-\omega^2x = -\omega^2 x_0\sin\omega t$ & 0 & $-$max & 0 & $+$m
 	acceleration-displacement graph
 \end{minipage}
 
-\end{figure}
+\end{figure*}
 
 
 \example{The motion of a simple pendulum is approximately simple harmonic. As the pendulum swings from one side to the other end, it moves through a distance of $6.0 \text{ cm}$ and the time taken is $1.0 \text{ s}$. (a) State the period and amplitude. (b) Find the greatest speed during the oscillation. (c) Find its speed when displacement $x=1.2\text{ cm}$.}
@@ -507,9 +460,9 @@ at $t=1.0$ s, $x=0 \RA a=0$
 \question{Assume the motion of a car engine piston is simple harmonic. The piston completes 3000 oscillations per minute. The amplitude of the oscillation is 4.0 cm. (a) Find the greatest speed. (b) Find the greatest acceleration.}
 
 
-\subsection{vibrational energy}
+\subsection{Vibrational energy}
 
-consider the \emph{ideal} mass-spring oscillator, its vibrational energy consists of two parts:
+Consider the \emph{ideal} mass-spring oscillator, its vibrational energy consists of two parts:
 
 \begin{compactitem}
 	\item[-] kinetic energy of the mass: $E_k = \frac{1}{2} mv^2 = \frac{1}{2} m \omega^2 A^2 \cos^2\omega t \xlongequal{v=\pm\omega\sqrt{x_0^2-x^2}} \frac{1}{2}m\omega^2 (x_0^2-x^2)$
@@ -573,23 +526,19 @@ $E_k$ and $E_p$ keep changing, one transfers into another, but total energy is \
 \end{soln}
 \question{An oscillator is given an energy of 20 mJ and starts to oscillate, it reaches an amplitude of 8.0 cm. If we want to double the amplitude, find the vibrational energy required.}
 
-\subsection{damped oscillations}
+\subsection{Damped oscillations}
 
-total vibrational energy stays constant for an ideal system
-
-but in reality, there are friction, resistance and viscous forces that oppose motion
+The total vibrational energy stays constant for an ideal system but in reality, there are friction, resistance and viscous forces that oppose motion.
 
 \begin{ilight}
-	amplitude of an oscillator decreases due to energy loss to friction, this is called \keypoint{damping}\index{damped oscillation}
+	The amplitude of an oscillator decreases due to energy loss to friction, this is called \keypoint{damping}\index{damped oscillation}
 \end{ilight} 
 
-\subsection{light damping}
+\subsection{Light damping}
 
-for a \keypoint{lightly-damped oscillator}\index{damped oscillation!light damping}, amplitude decreases \emph{gradually}
+For a \keypoint{lightly-damped oscillator}\index{damped oscillation!light damping}, amplitude decreases \emph{gradually}, the oscillator will not stop moving back and forth after quite a few oscillations.
 
-oscillator will not stop moving back and forth after quite a few oscillations
-
-\begin{figure}[ht]
+\begin{figure*}[ht]
 \centering
 \begin{tikzpicture}[xscale=1.5]
 \draw [thick, ->] (-0.5,0) --(7.5,0) node[below]{$t$};
@@ -599,12 +548,10 @@ oscillator will not stop moving back and forth after quite a few oscillations
 \draw [thick,color=purple,dashed,domain=0:7.2,samples=20,smooth,variable=\x] plot (\x,{-2.5*exp(-\x/2.5)});
 \draw [thick,->] (4,1.8) node[above]{\footnotesize{exponential envelope}} to [out=-110, in=55] (3,1) ;
 \end{tikzpicture}
+\caption{Lightly damped oscillations.}
+\end{figure*}
 
-\end{figure}
-
-\cmt decrease in amplitude is \emph{non-linear} in time (exponential decay in many cases)
-
-\cmt frequency and period are (almost) unchanged
+In lightly damped oscillations the decrease in amplitude is \emph{non-linear} in time (exponential decay in many cases) whilst frequency and period are (almost) unchanged.
 
 	In the real world we need to consider damping which will affect all systems to some degree. Damping will come from frictional forces and will remove energy from the system every cycle. If the energy added by the driving force is more than is removed by damping then the amplitude will increase. As the amplitude increases, the energy removed each cycle will also increase until a maximum amplitude is reached.
 	
@@ -613,7 +560,7 @@ oscillator will not stop moving back and forth after quite a few oscillations
 	Another feature is that as we have more damping, the frequency at which resonance occurs is less. You can think of this as damping slowing down the system and so reducing the natural frequency (although strictly speaking the natural frequency refers to an undamped system).
 	
 	
-	This is all expressed in the following graph where I have used the damping ratio $\zeta$ as a measure of how much damping there is. Its not on the syllabus, you will only need to know qualitatively how damping affects resonance e.g. light damping and heavy damping but I though it would be good to introduce you to another Greek letter.
+	This is all expressed in the following graph where I have used the damping ratio $\zeta$ as a measure of how much damping there is. Its not on the syllabus (\piste), you will only need to know qualitatively how damping affects resonance e.g. light damping and heavy damping but I thought it would be good to introduce you to another Greek letter.
 	
 	\tikzset{
 		every pin/.style={
@@ -624,6 +571,9 @@ oscillator will not stop moving back and forth after quite a few oscillations
 			circle,
 			scale=0.1}
 	}
+ \begin{figure*}
+     
+ 
 	\begin{tikzpicture}
 	\begin{axis}[
 	% labels
@@ -689,7 +639,8 @@ oscillator will not stop moving back and forth after quite a few oscillations
 
 	\end{axis}
 	\end{tikzpicture}
-
+ \caption{Amplitude vs frequency}
+\end{figure*}
 \example{An oscillator is composed of a block of mass $m=250$ g and a spring of $k=1.6$ N/cm. It is displaced by 5.0 cm from its rest position and set free. (a) What is its angular frequency? (b) what is the initial vibrational energy? (c) After a few oscillations, 40\% of its energy is lost due to damping. What is its new amplitude?}
 
 \begin{soln}
@@ -703,19 +654,13 @@ since $E \propto x_0^2$, so: $\frac{E'}{E} = \frac{x^{\prime2}_0}{x_0^2} \RA  60
 
 \question{A small toy boat of mass 360 g floats on surface of water. It is gently pushed down and then released. During the fist four complete cycles of its oscillation, its amplitude decreased from 5.0 cm to 2.0 cm in a time of 6.0 s. Find the energy loss.}
 
-\subsection{heavy damping}
+\subsection{Heavy damping}
 
-if resistive forces are too strong, there will be no oscillatory motion
+If resistive forces are sufficiently strong, there will be no oscillatory motion and the system will return to the equilibrium position very slowly. This system is said to be \keypoint{heavily damped}\index{damped oscillation!heavy damping}.
 
-the system will return to the equilibrium position very slowly
+\subsection{Critical damping}
 
-this system is said to be \keypoint{heavily damped}\index{damped oscillation!heavy damping}
-
-\subsection{critical damping}
-
-\keypoint{critical damping} is the border between light damping and heavy damping
-
-it occurs when system returns to equilibrium in \emph{shortest} time without any oscillation\index{damped oscillation!critical damping}
+\keypoint{Critical damping} is the border between light damping and heavy damping. It occurs when a system returns to equilibrium in \emph{shortest} time without any oscillation.\index{damped oscillation!critical damping} \footnote[][-2cm]{\piste Other definitions of critical damping focus on returning to equilibrium in the shortest possible time. It's only A-level exam boards that insist that there is no oscillation.}
 
 \begin{figure}[ht]
 	\centering
@@ -734,17 +679,17 @@ it occurs when system returns to equilibrium in \emph{shortest} time without any
 	
 \end{figure}
 
-\cmt critical damping is desirable in many engineering designs \footnote{When a damped oscillator is required, critically-damped system provides the quickest approach to equilibrium without overshooting, while lightly-damped system reaches the zero position quickly but continues to oscillate, and heavily-damped system reaches zero position in very long time.}
+Critical damping is desirable in many engineering designs \footnote{When a damped oscillator is required, critically-damped system provides the quickest approach to equilibrium without overshooting, while lightly-damped system reaches the zero position quickly but continues to oscillate, and heavily-damped system reaches zero position in very long time.}
 
-examples include door-closing mechanism, shock absorbers in vehicles and artillery, etc.
+Examples include door-closing mechanism, shock absorbers in vehicles and artillery, etc.
 
 
 
-\subsection{forced oscillations}
+\subsection{Forced oscillations}
 
-\subsection{free \& forced oscillation}
+\subsection{Free \& forced oscillation}
 
-an oscillator moving on its own with no gain or loss of energy is called \keypoint{free oscillation}
+An oscillator moving on its own with no gain or loss of energy is called \keypoint{free oscillation}
 
 amplitude of the oscillation is constant, its frequency called \keypoint{natural frequency}
 
@@ -794,17 +739,10 @@ for a forced oscillation system, when frequency of driving force $f_\text{drivin
 \item[--] bridges and skyscrapers -- resonance due to wind conditions
 \end{compactitem}
 
-\subsection{damping \& resonance}
+\subsection{Damping \& resonance}
 
-an oscillation system can be subject to both driving force and resistive force
-
-resonance behaviour will be changed by damping effects
-
-\cmt damping decreases amplitude of oscillation at all frequencies
-
-greater damping causes resonance peak to become \emph{flatter}
-
-engineering systems are often deliberately damped to minimise resonance effect
+An oscillation system can be subject to both driving force and resistive forces, resonance behaviour will be changed by damping.
+Damping decreases amplitude of oscillation at all frequencies, greater damping causes resonance peak to become \emph{flatter}. Engineering systems are often deliberately damped to minimise resonance effect.
 
 \cmt damping also shifts resonance frequency (slightly reduced for light damping)
 

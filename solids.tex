@@ -1,25 +1,15 @@
 \chapter{Materials}
 
-in this chapter, we study how a force changes the shape of an object
+In this chapter, we study how materials behave under a range of conditions. An important notion is the elasticity of materials, for \keypoint{elastic} materials, when external force is removed, the material returns to its original shape. If the material cannot restore to original shape, it is said to be \keypoint{inelastic}, or \keypoint{plastic}
 
-an important notion is the elasticity of materials
-
-for \keypoint{elastic} materials, when external force is removed, it can return to its original shape
-
-if the material cannot restore to original shape, it is said to be \keypoint{inelastic}, or \keypoint{plastic}
-
-
-
-\subsection{springs}
+\section{Springs}
 
 \subsection{Hooke's law}
 
-when a force $F$ is applied to a spring, it is stretched from original length $L_0$ to some length $L$
-
-extension of a spring, $x = L - L_0$, is dependent on the force applied
+When a force $F$ is applied to a spring, it is stretched from original length $L_0$ to some length $L$. This extension of the spring, $x = L - L_0$, is proportional to the force applied.
 
 \begin{ilight}
-	extension of an ideal spring is directly proportional to the load applied (within a certain range), this is called \keypoint{Hooke's law}\index{Hooke's law}
+	Extension of an ideal spring is directly proportional to the load applied (within a certain range), this is called \keypoint{Hooke's law}\index{Hooke's law}.
 \end{ilight}
 
 \begin{figure}[ht]
@@ -45,25 +35,13 @@ extension of a spring, $x = L - L_0$, is dependent on the force applied
 	\end{tikzpicture}
 \end{figure}
 
-\cmt Hooke's law can be summarised by the equation: \begin{empheq}[box=\tcbhighmath]{equation*}{F=kx}\end{empheq}
+Hooke's law can be summarised by the equation: \begin{empheq}[box=\tcbhighmath]{equation*}{F=kx}\end{empheq}
 
-\cmt the proportionality constant $k$ is called the \keypoint{spring constant}, or \keypoint{force constant}
+The proportionality constant $k$ is called the \keypoint{spring constant}, a larger $k$ means a greater force is required to extend the spring by same amount. A spring with a large $k$ is said to be \emph{stiff}. 
+Note that we usually fall into the trap of thinking about materials under tension, however, Hooke's law also holds if spring is being compressed - i.e., if a spring is pushed to have compression of $x$, we still have force applied $F=kx$.
 
-larger $k$ means a greater force is required to extend the spring by same amount
-
-a spring with a large $k$ is said to be \emph{stiff}
-
-\cmt Hooke's law also holds if spring is being compressed
-
-i.e., if a spring is pushed to have compression of $x$, we still have force applied $F=kx$
-
-\cmt linear relationship between $F$ and $x$ is only true up to a certain range
-
-the limit at which Hooke's law no longer holds is called the \keypoint{limit of proportionality}
-
-\cmt if load is too large, spring might be overstretched and no longer exhibits elastic behaviour
-
-the point beyond which spring cannot return to original length is called the \keypoint{elastic limit}
+The linear relationship between $F$ and $x$ is only true up to the limit of the material capability. The point beyond which Hooke's law no longer holds is called the \keypoint{limit of proportionality}. Beyond this point it will still stretch, (and return to the origin if unloaded) but not in a linear fashion.
+If the force on the spring is greater still then, spring might be overstretched and no longer exhibits elastic behaviour - it it may become permanently deformed. The point beyond which spring cannot return to original length is called the \keypoint{elastic limit} and the deformation called \keypoint{permanent set.}
 \footnote{The elastic limit of a spring and the limit of proportionality are two different but always confused concepts. These two limits are usually very close to one another, but they are conceptually different.}
 
 \begin{figure*}[ht]
@@ -96,11 +74,9 @@ the point beyond which spring cannot return to original length is called the \ke
 \end{equation*}
 \end{soln}
 
-\subsection{elastic potential energy in a spring}\label{ch-spring-energy}
+\subsection{Elastic potential energy in a spring}\label{ch-spring-energy}
 
-to stretch or compress a spring, work must be done
-
-this becomes of \emph{elastic potential energy} stored in the spring \index{energy!elastic potential}
+We stretch a spring by exherting a force over a distance. It follows then that to stretch or compress a spring, work must be done. The work done stored is called \emph{elastic potential energy}. \index{energy!elastic potential}
 
 
 \begin{marginfigure}
@@ -115,20 +91,10 @@ this becomes of \emph{elastic potential energy} stored in the spring \index{ener
 		\end{tikzpicture}
 \end{marginfigure}
 
-note that force in spring varies as spring is stretched
+Note that force in spring varies as spring is stretched so to find work in stretching a spring by $x$, we cannot just multiply it by $F$ as one would do with a constant force doing work. Instead we compute the area under $F$-$x$ graph\footnote{Mathematically, we can also integrate over the total extension to find this work done $W=\int_0^x F \dd x = \int_0^x k x \dd x = \frac{1}{2}kx^2$, which of course gives the same result.}. The graph is a right-angled triangle so:
+$$ W = \frac{1}{2}Fx = \frac{1}{2}kx^2 $$
 
-to find work in stretching a spring by $x$, we compute area under $F$-$x$ graph\footnote{Mathematically, we can also integrate over the total extension to find this work done $W=\int_0^x F \dd x = \int_0^x k x \dd x = \frac{1}{2}kx^2$, which of course gives the same result.}, which is a right-angled triangle
-
-{
-	\centering
-	
-	$ W = \frac{1}{2}Fx = \frac{1}{2}kx^2 $
-	
-}
-
-
-
-so elastic potential energy stored in a spring is:
+The formula for the elastic potential energy stored in a spring is:
 
 {
 	\begin{empheq}[box=\tcbhighmath]{equation*}{E_p=\frac{1}{2}kx^2} \end{empheq}
@@ -137,7 +103,7 @@ so elastic potential energy stored in a spring is:
 
 \example{A steel spring has a spring constant of $20 \text{ N cm}^{-1}$. How much work is needed to stretch it from an extension of 3.0 cm to an extension of 5.0 cm?}
 
-\begin{soln} work done needed equals the increase in elastic potential energy:
+\begin{soln} Work done needed equals the increase in elastic potential energy:
 \begin{equation*}
 	W = \Delta E_p = \frac{1}{2}kx_2^2 - \frac{1}{2}kx_1^2 = \frac{1}{2} \times 2000 \times (0.050^2 - 0.030^2) = 1.6 \text{ J} 
 \end{equation*}
@@ -145,7 +111,7 @@ so elastic potential energy stored in a spring is:
 
 \example{A trolley of 400 g can travel freely along a horizontal surface. It is pushed against a spring buffer. Suppose the spring is initially compressed by 5.0 cm under a 20 N force. When the trolley is released, it accelerates until it becomes detached. What is the trolley's final speed?}
 
-\begin{soln} elastic potential energy in spring transforms into kinetic energy of trolley
+\begin{soln} Elastic potential energy in spring $\RA$ kinetic energy of trolley
 \begin{equation*}
 \frac{1}{2}Fx = \frac{1}{2}mv^2 \RA \frac{1}{2}\times20\times0.050 = \frac{1}{2}\times0.40\times v^2 \RA v\approx 1.58\mps 
 \end{equation*}
@@ -167,25 +133,23 @@ so elastic potential energy stored in a spring is:
 	\end{tikzpicture}
 \end{figure}
 
-\begin{soln} elastic potential energy in spring transforms into kinetic energy of the two trolleys:
+\begin{soln} Elastic potential energy in spring transforms into kinetic energy of the two trolleys:
 \begin{equation*}
 \frac{1}{2}Fx=\frac{1}{2}m_Av_A^2 + \frac{1}{2}m_Bv_B^2 \RA 20\times0.050 = 0.40v_A^2 + 0.60v_B^2
 \end{equation*}
 
-total momentum for trolley $A$ and $B$ as a whole is conserved:
+Total momentum for trolley $A$ and $B$ as a whole is conserved:
 \begin{equation*}
 m_Bv_B - m_Av_A = 0 \RA 0.40v_A = 0.60v_B
 \end{equation*}
 
 solving the simultaneous equations, we find: $v_A \approx 1.22\mps, v_B \approx 0.82 \mps$ \end{soln}
 
-\subsection{spring combinations}
+\subsection{Spring combinations}
 
-so far we have discussed the properties of a single spring
+So far we have discussed the properties of a single spring, next we investigate how a set of springs respond to a given load.
 
-next we investigate how a set of springs respond to a given load
-
-\subsection*{parallel springs}
+\subsection*{Parallel springs}
 
 \begin{marginfigure}
 	\vspace{-15pt}
@@ -209,9 +173,7 @@ next we investigate how a set of springs respond to a given load
 	\vspace{-10pt}
 \end{marginfigure}
 
-let's take two springs connected in parallel
-
-when the combination is stretched under a load of $F$, extension in each spring should be the same:
+Let's take two springs connected in parallel, when the combination is stretched under a load of $F$, extension in each spring should be the same:
 
 {
 	\centering
@@ -230,17 +192,17 @@ the forces in each spring will in general be different, but sum of these must be
 }
 
 
-divide both sides by $x$, we have: $\frac{F}{x} = \frac{F_1}{x_1} + \frac{F_2}{x_2}$.
+Divide both sides by $x$, we have: $\frac{F}{x} = \frac{F_1}{x_1} + \frac{F_2}{x_2}$.
 
-recall the Hooke's law, this becomes: $k=k_1+k_2$
+Recall the Hooke's law, this becomes: $k=k_1+k_2$
 
-generalize for $n$ springs in parallel connection, the combined spring constant is
+Generalize for $n$ springs in parallel connection, the combined spring constant is
 \begin{empheq}[box=\tcbhighmath]{equation*}{k=k_1+k_2+\cdots+k_n}
 \end{empheq}
 
-\subsection*{series springs}
+\subsection*{Series springs}
 
-let's now take two springs in series
+Let's now take two springs in series
 
 \begin{figure}[ht]
 	\centering
@@ -265,38 +227,24 @@ let's now take two springs in series
 \end{figure}
 
 
-force in each spring is the same: $F_1=F_2=F$
+The force in each spring is the same: $F_1=F_2=F$
 
-but total extension is the sum of individual extensions: $x=x_1+x_2$.
+But total extension is the sum of individual extensions: $x=x_1+x_2$.
 
-divide by the same $F$, we have: $\frac{x}{F} = \frac{x_1}{F_1} + \frac{x_2}{F_2}$.
+Divide by the same $F$, we have: $\frac{x}{F} = \frac{x_1}{F_1} + \frac{x_2}{F_2}$.
 
-for combined spring constant, we find: $\frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2}$
+For combined spring constant, we find: $\frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2}$
 
-for $n$ springs connected in series, the combined spring constant is therefore given by
+For $n$ springs connected in series, the combined spring constant is therefore given by
 \begin{empheq}[box=\tcbhighmath]{equation*}
 {\frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2} + \cdots \frac{1}{k_n}} 
 \end{empheq}
 
-\subsection*{some brief remarks}
-
-\cmt if we set up $n$ springs in parallel, we actually make it thicker
-
-it then requires a stronger force to stretch it by the same extension
-
-so we indeed see the combined spring constant is greater than that of any individuals
-
-\cmt if we set up $n$ springs in series, we make it longer
-
-instead of pulling one spring at a time, the same force now stretches $n$ springs simultaneously
-
-this gives rise to a greater total extension
-
-so the combined spring constant must be less than that of any individual
+If we set up $n$ springs in parallel, we actually make it thicker, it then requires a stronger force to stretch it by the same extension so we indeed see the combined spring constant is greater than that of any individuals. If we set up $n$ springs in series, we make it longer, instead of pulling one spring at a time, the same force now stretches $n$ springs simultaneously, this gives rise to a greater total extension so the combined spring constant must be less than that of any individual.
 
 \example{(a) A spring with $k_1 = 20 \text{ N cm}^{-1}$ is connected in series with a second spring with $k_2 = 30 \text{ N cm}^{-1}$. When a force of 60 N is applied, what is the total extension of the combination? (b) The same two springs are now connected in parallel. When a force of 50 N is applied on the combination, what is the extension?}
 
-\begin{soln} for series connection: $k = \left(\frac{1}{k_1} + \frac{1}{k_1}\right)^{-1} = \left( \frac{1}{20} + \frac{1}{30} \right)^{-1} = 12 \text{ N cm}^{-1} \RA x = \frac{F}{k} = \frac{60}{12} = 5.0 \text{ cm}$
+\begin{soln} For series connection: $k = \left(\frac{1}{k_1} + \frac{1}{k_1}\right)^{-1} = \left( \frac{1}{20} + \frac{1}{30} \right)^{-1} = 12 \text{ N cm}^{-1} \RA x = \frac{F}{k} = \frac{60}{12} = 5.0 \text{ cm}$
 
 \eqskip or sum up extension of each spring: $x = x_1 + x_2 = \frac{F}{k_1} + \frac{F}{k_2} = \frac{60}{20} + \frac{60}{30} = 5.0 \text{ cm}$
 
@@ -325,9 +273,7 @@ for parallel connection: $k = k_1 + k_2 = 20 + 30 = 50 \text{ N cm}^{-1} \RA x =
 
 \example{A set of identical springs are set up as shown. Each individual spring extends by 1.0 cm under a load of 1.0 N. Assume the limit of proportionality is not exceeded, what is the total extension for this combination when a load of 6.0 N is applied?}
 
-\begin{soln} for a single spring: $k = 1.0 \text{ N cm}^{-1}$
-
-combined spring constant: $k_\text{total} = \left( \frac{1}{3k} + \frac{1}{2k} + \frac{1}{k} \right)^{-1}$
+\begin{soln} For a single spring: $k = 1.0 \text{ N cm}^{-1}$, the combined spring constant: $k_\text{total} = \left( \frac{1}{3k} + \frac{1}{2k} + \frac{1}{k} \right)^{-1}$
 
 {
 	\centering
@@ -336,49 +282,30 @@ combined spring constant: $k_\text{total} = \left( \frac{1}{3k} + \frac{1}{2k} +
 	
 }
 
-total extension: $x = \frac{F}{k_\text{total}} = \frac{6.0}{0.545} = 11 \text{ cm}$
+Total extension: $x = \frac{F}{k_\text{total}} = \frac{6.0}{0.545} = 11 \text{ cm}$
 
-alternatively, we can find and add extensions of each layer
+Alternatively, we can find and add extensions of each layer. In particular, the top layer withstands a force of 6.0 N shared by three springs, so each spring has a force of 2.0 N, extension is 2.0 cm. Similarly, the other two layers extend by 3.0 cm and 6.0 cm respectively, hence, total extension: $x = 2.0 + 3.0 + 6.0 = 11 \text{ cm}$ \end{soln}
 
-in particular, the top layer withstands a force of 6.0 N shared by three springs, so each spring has a force of 2.0 N, extension is 2.0 cm
+\subsection{Stress, strain \& Young modulus}
 
-similarly, the other two layers extend by 3.0 cm and 6.0 cm respectively
+From daily experience, it is easier to stretch a longer wire than a shorter one, the same tensile force also produce greater effects on a thinner material than on a thicker one. To accurately compare materials, we need better quantities to describe what's going on. To study a material's response to a tensile force, several new quantities are to be introduced:
 
-hence, total extension: $x = 2.0 + 3.0 + 6.0 = 11 \text{ cm}$ \end{soln}
-
-
-
-
-\subsection{stress, strain \& Young modulus}
-
-from daily experience, it is easier to stretch a longer wire than a shorter one
-
-same tensile force also produce greater effects on a thinner material than on a thicker one
-
-so we need better quantities to describe the amount of deformation and the amount of action
-
-to study a material's response to a tensile force, several new quantities are to be introduced
-
-\subsection{stress \& strain}
+\subsection{Stress \& Strain}
 
 \begin{ilight}
-	\centering \keypoint{tensile strain}\index{strain} is defined as the ratio of the extension of a wire to its natural length: \begin{empheq}[box=\tcbhighmath]{equation*}{\epsilon = \frac{x}{L}}	\end{empheq}
+	\centering \keypoint{Tensile strain}\index{strain} is defined as the ratio of the extension of a wire to its natural length: \begin{empheq}[box=\tcbhighmath]{equation*}{\epsilon = \frac{x}{L}}	\end{empheq}
 \end{ilight}
 
 \begin{ilight}
-	\centering \keypoint{tensile stress}\index{stress} is defined as the force applied per unit cross-sectional area: 
+	\centering \keypoint{Tensile stress}\index{stress} is defined as the force applied per unit cross-sectional area: 
 	    \begin{empheq}[box=\tcbhighmath]{equation*}{\sigma = \frac{F}{A}}\end{empheq}
 \end{ilight}
 
-\cmt strain is the ratio of two lengths, so it is unit free
+Strain is the ratio of two lengths, so it is unit free. It gives us a measure comparable to extension that allows us to compare materials of different length.
 
-strain is usually expressed in terms of a percentage number
+Stress is comprable to pressure - by considering the force per unit area we have a measure that allows us to compare materials of different (uniform) cross-section. The units of stress, like pressure: $[\sigma] = \text{N m}^{-2} = \text{Pa}$ (pascal)
 
-\cmt units of stress: $[\sigma] = \text{N m}^{-2} = \text{Pa}$ (pascal)
-
-\cmt elastic behaviour of a wire is more or less like that of a spring
-
-Hooke's law says $F \propto x$, it then follows that $\frac{F}{A} \propto \frac{x}{L}$, so $\sigma \propto \epsilon$
+The elastic behaviour of any material, though the physical mechanism might be different, can be accurately modelled as a spring. Hooke's law says $F \propto x$, it then follows that $\frac{F}{A} \propto \frac{x}{L}$, so $\sigma \propto \epsilon$
 
 i.e., stress and strain should also be proportional to each other within certain limit
 
@@ -393,37 +320,27 @@ i.e., stress and strain should also be proportional to each other within certain
 
 \subsection{Young modulus}
 
-% \begin{ilight}
-% 	\centering ratio of stress to strain of a material is called the \keypoint{Young modulus}\index{Young modulus}:\begin{equation*} 
-%  \eqbox{E = \frac{\sigma}{\epsilon} \end{equation*}
-% \end{ilight}
+\begin{ilight}
+	\centering The ratio of stress to strain of a material is called the \keypoint{Young modulus}\index{Young modulus}:\begin{equation*} 
+ \tcbhighmath{E = \frac{\sigma}{\epsilon}} \end{equation*}
+\end{ilight}
 
 
-\cmt unit of measurement: $[E] = \text{Pa}$ (pascal)
+Because one of the parts of this is dimensionless, and the other pascals, the unit of measurementis: $[E] = \text{Pa}$ (pascal)
 
-\cmt Young modulus is a property of the material
+Young modulus is a property of the material, for the same material, Young modulus is a constant, no matter in what shape it takes. i.e., it does not depend on the length or the cross section of the object.\\
+Young modulus values can look ``wrong'' in answers to problems. This is because typical value of Young's modulus for metals: $E_\text{metal} \sim 10^{11} \text{ Pa}$
 
-for the same material, Young modulus is a constant, no matter in what shape it takes
+Young modulus is a measure of the stiffness of a material - to produce same strain, greater stress is required for a material with greater Young modulus. You can get back to the spring constant from $E = \frac{\sigma}{\epsilon} = \frac{\sfrac{F}{A}}{\sfrac{x}{L}} = \frac{FL}{xA}$, we rearrange to get: $F = \frac{EA}{L}x$\\
 
-i.e., it does not depend on the length or the cross section of the object
-
-\cmt typical value of Young's modulus for metals: $E_\text{metal} \sim 10^{11} \text{ Pa}$
-
-\cmt Young modulus is a measure of the stiffness of a material
-
-to produce same strain, greater stress is required for a material with greater Young modulus
-
-\cmt Young modulus $E$ is related to the force constant $k$
-
-from $E = \frac{\sigma}{\epsilon} = \frac{\sfrac{F}{A}}{\sfrac{x}{L}} = \frac{FL}{xA}$, we rearrange to get: $F = \frac{EA}{L}x$
-
-compare with Hooke's law, we can identify the force constant to be given by: $k = \frac{EA}{L} $
+Compare this with Hooke's law, we can identify the force constant to be given by: $k = \frac{EA}{L} $
 
 \titem $E \up \ra k \up$, stiffer material makes stiffer springs
 
 \titem $A \up \ra k \up$, more difficult to stretch a thick spring (think about parallel springs)
 
 \titem $L \up \ra k \down$, easier to stretch a long spring (think about series springs)
+\newpage
 
 \begin{figure*}[ht]
     \begin{center}
@@ -493,10 +410,10 @@ E = \frac{FL}{Ax} \RA x = \frac{FL}{AE} = \frac{mgL}{\pi r^2 E} = \frac{\rho V g
 x \propto \frac{VL}{r^2} \propto \frac{l^3 l}{l^2} \propto l^2 \RA \frac{x_\text{full}}{x_\text{model}} = 10^2 = 100 
 \end{equation*}
 \end{soln}
+\newpage
+\subsection{Measurement of Young modulus}\label{ch-measure-E}
 
-\subsection{measurement of Young modulus}\label{ch-measure-E}
-
-to measure Young's modulus of a metal wire, experimental setup can be laid out as shown
+The measurement of the Young's modulus of a metal wire is a required practical with a lot of detail. The experimental setup can be laid out as shown:
 
 
 \begin{figure*}[ht]
@@ -523,34 +440,19 @@ to measure Young's modulus of a metal wire, experimental setup can be laid out a
 	\end{tikzpicture}
 \end{figure*}
 
-\cmt method of data collection
+The original length $L$ (up to the marker) of the wire is measured with \emph{metre rule} $\pm 1$mm. The diameter $d$ of the wire is measured with \emph{micrometer} $\pm$0.01mm, then cross-sectional area is: $A = \frac{1}{4}\pi d^2$.\\
 
-\titem original length $L$ (up to the marker) of the wire is measured with \emph{metre rule}
+For a recorded mass $m$ attached to the wire, then force applied is $F=mg$\\
 
-\titem diameter $d$ of the wire is measured with \emph{micrometer}, then cross-sectional area is: $A = \frac{1}{4}\pi d^2$
+The extension $x$ of the wire is taken to be distance moved out by the marker. In the lab we typically use a meter rule but in some textbooks you'll see this can be measured with a \emph{travelling microscope}. A travelling microscope is basically a microscope that can move back and forth along a rail. The position of the microscope can be varied by turning a screw. This position can be read off a vernier scale. So in short, a travelling microscope can be used to measure the change in length with a very high resolution (typically to a precision of 0.01mm or 0.02 mm).\\
+Once the data is collected, the stress can be calculated by $\sigma = \frac{F}{A}$, and strain can be calculated by $\epsilon = \frac{x}{L}$.\\
 
-\titem record mass $m$ attached to the wire, then force applied is $F=mg$
+A graph of stress against strain can be plotted, a best fit line can be drawn and by taking the gradient of the straight-line section, the Young modulus can be obtained.
 
-\titem extension $x$ of the wire is taken to be distance moved out by the marker
+\newpage
+\subsection{Stress-strain curves}
 
-\phantom{\titem}this can be measured with a \emph{travelling microscope}\footnote{A travelling microscope is basically a microscope that can move back and forth along a rail. The position of the microscope can be varied by turning a screw. This position can be read off a vernier scale. So in short, a travelling microscope can be used to measure the change in length with a very high resolution (typically to a precision of 0.01mm or 0.02 mm).} or a \emph{vernier calliper}
-
-\cmt analysis of data
-
-stress can be calculated by $\sigma = \frac{F}{A}$, and strain can be calculated by $\epsilon = \frac{x}{L}$
-
-a graph of stress against strain can be plotted, a best fit curve can be drawn
-
-gradient of the straight-line section gives Young modulus
-
-
-
-
-\subsection{stress-strain curves}
-
-stress-strain curve for a material can be obtained using the methods in \S\ref{ch-measure-E}
-
-in AS-Level, you are only supposed to know the behaviour of a metal under stress
+Stress-strain curve for a material can be obtained using the methods in \S\ref{ch-measure-E} 
 
 \begin{figure}[ht]
 	\centering
@@ -568,15 +470,26 @@ in AS-Level, you are only supposed to know the behaviour of a metal under stress
 	\caption{stress-strain graph for a typical metal}
 \end{figure}
 
-\cmt up to limit of proportionality $L_E$, stress is proportional to strain
+Ductile and plastic materials show some plastic deformation before breaking. Strictly speaking, ductility is continued plastic deformation at lower forces.
+Brittle materials on the other hand, break before any plastic deformation.
 
-Young modulus can be given by the gradient of the curve before $L_P$
 
-\cmt consider the product of stress and strain: $\sigma \cdot \epsilon \sim \frac{F}{A} \frac{x}{L} \sim \frac{Fx}{AL} \sim \frac{W}{V}$
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.85]
+	\draw[<->] (6,0) node[below]{strain} -- (0,0) -- (0,6.4) node[left]{stress};
+	\draw[thick] (0,0) -- (3,4);
+    \draw[thick] (0,0) -- (2,4);
+    \fill (3,4) circle(0.08);
+    \fill (2,4) circle(0.08);
+    \draw[<-] (2,4) -- ++(1,1) node[note]{stiffer\\material};
+	\draw[<-] (1.8,2) -- ++(2.3,-0.9) node[note]{linear\\region};
+	\draw[<-] (3.2,3.8) -- ++(1,-1) node[note]{breaking\\point};
+		\end{tikzpicture}
+	\caption{stress-strain graph for two brittle materials}
+\end{figure}
 
-so area under stress-strain curve gives the work done per unit volume to stretch the wire
-
-\cmt up to limit of elasticity $L_E$, metal wire can return to original length when it relaxes
+For all materials, up to limit of proportionality $L_E$, stress is proportional to strain and the Young modulus can be calculated by the gradient of the line before $L_P$. In addition, consider the product of stress and strain: $\sigma \cdot \epsilon \sim \frac{F}{A} \frac{x}{L} \sim \frac{Fx}{AL} \sim \frac{W}{V}$. The area under stress-strain curve therefore, gives the work done per unit volume to stretch the wire. Up to limit of elasticity $L_E$, metal wire can return to original length when it is unloaded.
 
 \begin{marginfigure}
 	\vspace*{-15pt}
@@ -597,17 +510,29 @@ so area under stress-strain curve gives the work done per unit volume to stretch
 	\vspace*{-16pt}
 \end{marginfigure}
 
-\cmt if a wire is stretched beyond the elastic limit, it follows a different path when force is removed
+If a wire is stretched beyond the elastic limit, it follows a different path when force is removed and displays permanent set:
 
-recall area under stress-strain graph relates to energy
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}[scale=0.85]
+	\draw[<->] (7,0) node[below]{strain} -- (0,0) -- (0,6.4) node[left]{stress};
+	\draw[thick] (0,0) -- (3,4) [out=53.13,in=185] to (6.5,5.8);
+    \draw[thick] (2,0) -- (6.5,5.8);
+    \fill (6.5,5.8) circle(0.08);
+ \fill (3,4) circle(0.08);
+	\fill (4.2,5.1) circle(0.08);
+	\draw[<-] (1.5,0) -- ++(3,0.9) node[note]{permanent\\set};
+	\draw[<-] (3.2,3.8) -- ++(1,-1) node[note]{$L_P$: limit of \\porportionality};
+	\draw[<-] (3.9,5.2) -- ++(-1.5,.4) node[note]{$L_E$: limit\\ of elasticity};
+ \draw[<-] (5,5.6) -- ++(1.5,1) node[note]{undergoing plastic\\deformation};
+ \draw[<-] (2,3) -- ++(-1.5,.4) node[note]{Loading};
+	\draw[<-] (6.5,5.6) -- ++(.2,-1.5) node[note]{unloaded\\ here};
+	\end{tikzpicture}
+	\caption{stress-strain graph for a material displaying permanent set}
+\end{figure}
 
-work to stretch wire is given by $X+Y$
+As discussed above, the area under stress-strain graph relates to energy, so the work done in stretching wire is given by $X+Y$. The energy returned when wire contracts is $Y$. The difference $X$ gives energy loss as heat in the wire.
 
-energy goes out when wire contracts is $Y$
-
-the difference $X$ gives energy loss during one cycle
-
-this energy difference becomes heat produced in wire
 
 \subsection{Metals}
 Metals consist of positive ions in a sea of delocalised electrons. During the elastic phase of deformation the spaces between the ions get larger and smaller. The metallic bonds resist this change from their equilibrium length and act like small springs acting to return the spacing to its original length.
@@ -706,7 +631,11 @@ The effect on a stress-strain graph can be seen in figure \ref{stress-strain-all
 
 \subsection{Polymers}
 
-Polymers consist of long chain molecules weakly held together by intermolecular forces. Initially the molecules are likely to be tangled-up together. As force is applied it is initially difficult to move the polymer chains from this state (\textbf{A}). As the chains begin to unravel they straighten out by bond rotation, requiring relatively little force for a large increase in strain (\textbf{B}). As the polymer chains become straight it becomes much more difficult to extend the material any further without damaging the material (\textbf{C}).
+Polymers consist of long chain molecules\begin{marginfigure}
+    \centering
+    \includegraphics[]{polyethelene.png}
+    \caption{Long chain molecule of polyethylene, a common material.}
+\end{marginfigure} weakly held together by inter-molecular forces. Initially the molecules are likely to be tangled-up together. As force is applied it is initially difficult to move the polymer chains from this state (\textbf{A}). As the chains begin to unravel they straighten out by bond rotation, requiring relatively little force for a large increase in strain (\textbf{B}). As the polymer chains become straight it becomes much more difficult to extend the material any further without damaging the material (\textbf{C}).
 
 \begin{figure}[ht]
     \begin{center}
@@ -725,12 +654,28 @@ Polymers consist of long chain molecules weakly held together by intermolecular 
     \label{stress-strain-polymer}
 \end{figure}
 
-
+\section{Rubber}
+When a rubber is exposed to stress or strain energy, internal rearrangements such as rotation and extension of the polymer chains occur. 
+\begin{marginfigure}
+    \includegraphics[]{figures/naturalrubber.png}
+    \caption{The twisted structure of natural rubber}
+\end{marginfigure} These changes occur as a function of the energy applied and the duration and rate of application, as well as the temperature at which the energy is applied.
+The difference between the two curves is the hysteresis losses.
+\begin{figure}
+	\vspace*{-10pt}
+	\centering
+	\begin{tikzpicture}[scale=0.54]
+	\draw[<->] (6.4,0) node[below]{strain} -- (0,0) -- (0,6.4) node[left]{stress};
+	\draw[thick,blue,postaction={decorate},decoration={markings,mark=at position 0.5 with {\arrow{>}}}] (0,0) [out=60,in=210] to (3,4) [out=30,in=225] to (6,6);
+	\draw[thick,blue,postaction={decorate},decoration={markings,mark=at position 0.5 with {\arrow{>}}}] (6,6) [out=240,in=30] to (3,3) [out=210,in=50] to (0,0);
+	\end{tikzpicture}
+	\vspace*{-16pt}
+\end{figure}
 	
-\section{end-of-chapter questions}
+\section{End-of-chapter questions}
 
 
-\subsection*{springs \& Hooke's law}
+\subsection*{Springs \& Hooke's law}
 
 \question{A spring has a force constant of $500 \text{ N m}^{-1}$. The spring has a stretch length of 30 cm when a 40 N weight is hung from it. Find the natural length of the spring.}
 
@@ -769,7 +714,7 @@ Polymers consist of long chain molecules weakly held together by intermolecular 
 }
 
 
-\subsection*{stress, strain, \& Young modulus}
+\subsection*{Stress, Strain, \& Young modulus}
 
 \question{A cable of diameter 1.5 mm is under a tension of 200 N. Find the stress in this cable.}
 

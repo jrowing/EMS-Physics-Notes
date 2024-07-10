@@ -1,36 +1,18 @@
 \chapter{Magnetic Fields}
 
-\subsection{magnetism}
+\subsection{Magnets}\index{magnets}
 
-\subsection{magnets}\index{magnets}
+A magnet is a thing that creates a magnetic field, and magnetic fields attract or repel other magnets. All magnets have two poles, the \emph{north pole} and the \emph{south pole}. For the purposes of A-level, monopoles do not exist. If you freely suspend a magnet, the north pole points towards earth's geographic north pole - it's proper name is a ``North seeking pole''.
 
-magnetic effects are commonly seen in \emph{magnets}
+When two magnets are brought near each other, like poles repel, and opposite poles attract. 
 
-a magnet creates a magnetic field that attracts or repels other magnets
+As with other fields, we use \keypoint{magnetic field lines}\index{field line!magnetic field line} to graphically represent how magnetic fields permeate space. By convention, fields lines emerge from north pole and go into south pole, the density of the field lines shows the strength of the magnetic field. The direction of field lines tells you how the north pole of a small compass would line up at that point.
 
-\cmt polarity of magnets
+The strength of the field is described by a quantity called \keypoint{magnetic flux density}, denoted by $B$
 
-a magnet has two poles, the \emph{north pole} and the \emph{south pole}
+When we draw field lines, we are actually drawing the pattern of flux density $B$, we'll better define flux density later in details in \S\ref{sec:magnetic_flux_density}.
 
-freely suspend a magnet, the north pole points towards earth's geographic north pole
-
-when two magnets are brought near each other, like poles repel, and opposite poles attract
-
-\cmt we use \keypoint{magnetic field lines}\index{field line!magnetic field line} to graphically represent how magnetic field permeate space
-
-by convention, fields lines emerge from north pole and go into south pole
-
-density of field lines shows strength of magnetic field
-
-direction of field line tells how the north pole of a small compass will line up at that point
-
-\cmt strength of the field is described by a quantity called \keypoint{magnetic flux density}, denoted by $B$
-
-when we draw field lines, we are actually drawing the pattern of flux density $B$
-
-the notion of flux density will be defined later in details in \S\ref{sec:magnetic_flux_density}
-
-\example{magnetic field around a bar magnet}
+\example{The magnetic field around a bar magnet}
 
 \begin{center}
 \begin{tikzpicture}[yscale=0.5,xscale=0.8]
@@ -96,14 +78,10 @@ the notion of flux density will be defined later in details in \S\ref{sec:magnet
 \end{minipage}
 \end{figure*}
 
-\subsection{magnetic field due to currents}
-an electric current also induces a magnetic field around it
+\subsection{Magnetic field due to currents}
+An electric current also induces a magnetic field around it - electricity and magnetism are two sides of the same coin. This was first discovered by Danish physicist \emph{Hans Christian Orsted} in 1820, when he noticed the turning of a compass needle placed next to a wire carrying current. The demonstration of the magnetic field produced when a current flows through a straight wire or a coil is still called ``The Orsted experiment''.
 
-this was first discovered by Danish physicist \emph{Hans Christian Orsted} in 1820, when he noticed the turning of a compass needle placed next to a wire carrying current.
-
-we will look into what happens when a current flows through a straight wire or a coil
-
-\cmt pattern of the field can be determined using \keypoint{right-hand (grip) rule}\index{right-hand rule}\footnote[][-2cm]{The awesome right-hand rule illustrations below are copied from the PSTricks web site: \url{http://tug.org/PSTricks/main.cgi?file=examples}. The credits for these figures are attributed to CTAN community member \emph{Thomas S\"{o}ll}.}
+The direction of the field can be determined using \keypoint{right-hand (grip) rule}\index{right-hand rule}\footnote[][-2cm]{The awesome right-hand rule illustrations below are copied from the PSTricks web site: \url{http://tug.org/PSTricks/main.cgi?file=examples}. The credits for these figures are attributed to CTAN community member \emph{Thomas S\"{o}ll}.}
 
 \begin{figure}[ht]
 	\centering
@@ -125,7 +103,7 @@ we will look into what happens when a current flows through a straight wire or a
 \end{center}
 \end{minipage}
 
-\caption{field due to a long straight current-carrying wire}
+\caption{The field due to a long straight current-carrying wire}
 \end{figure}
 
 \begin{figure}[ht]
@@ -154,28 +132,33 @@ we will look into what happens when a current flows through a straight wire or a
 	\end{center}
 \end{minipage}
 
-\caption{field due to a circulating current}
+\caption{The field due to a circulating current}
 \end{figure}
 
-\cmt strength of the field is proportional to the current: $B \propto I$
+The strength of the field is proportional to the current: $B \propto I$ for both wires and coils, greater current means stronger field. The magnetic flux density generated by a current flowing in an infinitely long wire in free space is given by: $$\tcbhighmath{B=\frac{\mu_0 I}{2\pi r}}$$
+Where:\\
+$I$ is the electric current,\\
+$r$ is the perpendicular distance from the current, and \\
+$\mu_0 = 4\pi \times 10^{-7} \text{ T m A}^{-1}$ is a fundamental physical constant called the \emph{permeability of free space}.
 
-for both straight wires The magnetic flux density generated by a current flowing in an infinitely long wire in free space is given by: $\tcbhighmath{B=\frac{\mu_0 I}{2\pi r}}$, $I$ is the electric current, $r$ is the perpendicular distance from the current, and $\mu_0 = 4\pi \times 10^{-7} \text{ T m A}^{-1}$ is a fundamental physical constant called the \emph{vacuum permeability}.
 
- and coils, greater current means stronger field
- The magnetic flux density at the centre of a current-carrying coil in free space is given by: $\tcbhighmath{B=\frac{\mu_0 NI}{L}}$, where $N$ is the number of turns, $I$ is the electric current flowing through the coil, $L$ is the length of coil, and $\mu_0$ is the vacuum permeability
+The magnetic flux density at the centre of a current-carrying coil in free space is given by: $$\tcbhighmath{B=\frac{\mu_0 NI}{L}}$$, \\
+where:\\
+$N$ is the number of turns,\\
+$I$ is the electric current flowing through the coil, \\
+$L$ is the length of coil, and \\
+$\mu_0$ is the permeability of free space.
  
  
 \cmt strength of magnetic field can be increased with \emph{soft iron}
 
 this is because \emph{ferromagnetic materials} (iron, cobalt, nickel) can attract magnetic field lines\footnote{If the straight wire is immersed in a material with \emph{relative permeability} $\mu_r$, then the field becomes: $B=\frac{\mu_0 \mu_r I}{2\pi r}$. Similarly, if a material with relative permeability $\mu_r$ is present, then the magnetic flux density inside a coil becomes: $B=\frac{\mu_0 \mu_r NI}{L}$. A good magnetic material (high permeability material), such as iron, has large $\mu_r$, and therefore can greatly intensify the magnetic field. \piste}
 
-\subsection{solenoids \& electromagnets}
+\subsection{Solenoids \& electromagnets}
 
-strength and polarity of the field due to a coil can be changed easily by tuning currents, so coils are widely used to create magnetic fields where needed
+The strength and polarity of the field due to a coil can be changed easily by changing the current, so coils are widely used to create magnetic fields where needed. A current-carrying coil is also called a \keypoint{solenoid}.
 
-a current-carrying coil is also called a \keypoint{solenoid}
-
-\begin{figure}[htp]
+\begin{figure*}[htp]
 	\centering
 	\begin{minipage}{0.65\linewidth}
 		\begin{center}
@@ -226,31 +209,17 @@ a current-carrying coil is also called a \keypoint{solenoid}
 		\end{center}
 	\end{minipage}
 	
-	\caption{magnetic field around a solenoid}
-\end{figure}
+	\caption{The magnetic field around a solenoid}
+\end{figure*}
 
-\cmt a solenoid generates a magnetic field similar to that of a bar magnet
-
-useful to talk about the north and south poles of a solenoid
-
-\cmt direction of magnetic field in a solenoid is given by the \keypoint{right-hand (grip) rule}\index{right-hand rule}
-
-%\cmt a solenoid produces a \emph{uniform} magnetic field in its centre and near its poles
-
-\cmt magnetic field produced by a solenoid can be controlled
-
-current $I\up \ra $ stronger field, also number of turns $N\up\ra $ stronger field
-
-\cmt inserting an \emph{iron core} inside greatly strengthens the field, this makes an \emph{electromagnet}
+A solenoid generates a magnetic field identically to that of a bar magnet of the same flux density. It's useful to be able to identify the north and south poles of a solenoid. The direction of magnetic field in a solenoid is given by the \keypoint{right-hand (grip) rule}\index{right-hand rule}. Inside the solenoid is a \emph{uniform} magnetic field in its centre. The magnetic field produced by a solenoid can be easily controlled. As current $I\up \ra $ stronger field, also number of turns $N\up\ra $ stronger field. Inserting an \emph{iron core} inside greatly strengthens the field, and  makes an \emph{electromagnet} from a solenoid.
 
 \question{Describe the magnetic field due to an alternating current through a solenoid.}
 
 
-\subsection{magnetic force on current-carrying conductor}
+\subsection{Magnetic force on current-carrying conductor}
 
-\subsection{magnetic force on current-carrying conductor}
-
-a current-carrying wire produces its own magnetic field, when it is surrounded by an external magnetic field, the two fields would interact $\Rightarrow$ a \keypoint{magnetic force}\index{magnetic field!magnetic force} on the conductor
+A current-carrying wire produces its own magnetic field. When it is surrounded by an external magnetic field, the two fields would interact to produde a \keypoint{magnetic force}\index{magnetic field!magnetic force} on the conductor.
 
 \begin{marginfigure}
 	\vspace*{-16pt}
@@ -261,9 +230,9 @@ a current-carrying wire produces its own magnetic field, when it is surrounded b
 	\vspace*{-16pt}
 \end{marginfigure}
 
-\cmt direction of magnetic force on current can be worked out with \keypoint{Fleming's left-hand rule}\index{left-hand rule}\footnote[][2cm]{Figure credit again goes to \emph{Thomas S\"{o}ll} from the CTAN community.}
+The direction of magnetic force on current can be worked out with \keypoint{Fleming's left-hand rule}\index{left-hand rule}\footnote[][2cm]{Figure credit again goes to \emph{Thomas S\"{o}ll} from the CTAN community.}
 
-\cmt magnitude of magnetic force: $\tcbhighmath{F=BIL\sin\theta}$
+The magnitude of magnetic force is calculated by: $$\tcbhighmath{F=BIL\sin\theta}$$
 
 $B$ is the magnetic flux density to be specified later
 
@@ -273,14 +242,10 @@ $I$ is the current, $\theta$ is the angle between $B$ and $I$
 
 when $B \parallelslant I$, there is no magnetic force
 
-when $B$ forms angle $\theta$ with $I$, only the \emph{perpendicular}
-
-\noindent\emph{component} contributes to the force, giving rise to the $\sin\theta$ factor in the formula
-
-\cmt magnetic force is perpendicular to both $B$ and $I$
+when $B$ forms angle $\theta$ with $I$, only the \emph{perpendicular component} contributes to the force, giving rise to the $\sin\theta$ factor in the formula. The magnetic force is perpendicular to both $B$ and $I$.
 \footnote{Vector form of the formula: $\vec{F} = l\vec{I} \times \vec{B}$. \piste}
 
-\example{Determine the direction of the magnetic force acting. Check yourself.}
+\example{Determine the direction of the magnetic force acting. Check for yourself.}
 \begin{center}
 	\begin{minipage}[b]{0.32\textwidth}
 		\centering
@@ -328,20 +293,20 @@ when $B$ forms angle $\theta$ with $I$, only the \emph{perpendicular}
 \end{center}
 
 
-\subsection{magnetic flux density} \label{sec:magnetic_flux_density}
+\subsection{Magnetic flux density} \label{sec:magnetic_flux_density}
 
-rewrite $F=BIL\sin\theta$ as $B = \frac{F}{IL\sin\theta}$,we can now give a formal definition for flux density $B$:
+If we rewrite $F=BIL\sin\theta$ as $B = \frac{F}{IL\sin\theta}$,we can now give a formal definition for flux density $B$:
 
 \begin{ilight}
-	\keypoint{magnetic flux density}\index{magnetic field!magnetic flux density} $B$ at a point is defined as the force acted per unit length on a conductor carrying a unit current at right angle to the magnetic field
+	\keypoint{Magnetic flux density}\index{magnetic field!magnetic flux density} $B$ at a point is defined as the force acted per unit length on a conductor carrying a unit current at right angle to the magnetic field.
 \end{ilight}
 
-\cmt flux density describes the strength of a magnetic field\footnote{Magnetic field strength is a different quantity, defined by $H=\frac{B}{\mu}$, with $\mu=\mu_0\mu_r$ being the \emph{magnetic permeability} of material. The naming of field strength $H$ and flux density $B$ are due to historical reasons.}
+Flux density describes the strength of a magnetic field\footnote{Magnetic field strength is a different quantity, defined by $H=\frac{B}{\mu}$, with $\mu=\mu_0\mu_r$ being the \emph{magnetic permeability} of material. The naming of field strength $H$ and flux density $B$ are due to historical reasons.}
 
 \cmt $B$ is measured in \keypoint{tesla}\index{tesla} (T)\footnote{Telsa is a very large unit. For example, the strength of a typical refrigerator magnet is of about $10^{-3} \text{ T}$, even the very strong superconducting coils used in MRI are of around $1\sim3 \text{ T}$.}: $[B]=\text{T}$, $1 \text{ T} = 1 \text{ N}\cdot\text{A}^{-1}\cdot\text{m}^{-1}$
 
 \begin{ilight}
-	if a wire of 1 m normal to the magnetic field that carries a current of $1\text{ A}$ experiences a force of $1\text{ N}$, then the magnetic flux density is $1\text{ T}$
+	If a wire of 1 m normal to the magnetic field that carries a current of $1\text{ A}$ experiences a force of $1\text{ N}$, then the magnetic flux density is $1\text{ T}$
 \end{ilight}
 
 \cmt $B$ is a \emph{vector} quantity, with both magnitude and direction
@@ -388,7 +353,7 @@ rewrite $F=BIL\sin\theta$ as $B = \frac{F}{IL\sin\theta}$,we can now give a form
 	\end{tikzpicture}
 	\vspace*{-8pt}
 \end{marginfigure}
-
+\begin{soln}
 a rectangular frame lies in parallel with the field
 
 $QR, PS \parallelslant B$, so no force acting on these two sides
@@ -399,7 +364,7 @@ using left-hand rule, we find $F_{PQ}$ acts into the paper, $F_{RS}$ acts out of
 
 this is a pair of equal but opposite forces
 
-they produce a torque about central axis of frame: $\tau=Fd=BILd$, causing the frame to rotate\footnote{This effect allows engineers to build \emph{electric motors}, such as those in electric vehicles, washing machines, blenders, etc.}\eoe
+they produce a torque about central axis of frame: $\tau=Fd=BILd$, causing the frame to rotate. This effect allows engineers to build \emph{electric motors}, such as those in electric vehicles, washing machines, blenders, etc.\end{soln}
 
 \question{If the plane of the rectangular frame is at right angle to the magnetic field, describe the magnetic forces acting on each side and hence state what happens to the frame.}
 
@@ -421,7 +386,7 @@ they produce a torque about central axis of frame: $\tau=Fd=BILd$, causing the f
 
 \example{A U-shaped magnet is placed on a balance with a wire suspended above it as shown. Magnetic flux density between the poles is about 0.50 T. The part of the wire that is in the field is of length 8.0 cm. The balance initially shows a reading of 500.0 g. When a current of 10 A flowing into the paper is switched on, what is the new reading on the balance?}\label{ex-mag-balance}
 
-\sol use left-hand rule, force on wire acts upwards
+\begin{soln} Use left-hand rule, force on wire acts upwards
 
 from \emph{Newton's third law}, reaction force on magnet acts downwards
 
@@ -431,11 +396,11 @@ magnitude of the force: $F=BIl = 0.50 \times 10 \times 8.0\times10^{-2} = 0.40 \
 
 change in the mass reading: $\Delta m = \frac{F}{g} = \frac{0.40}{9.81} \approx 0.0407 \text{ kg} \approx 40.7 \text{ g}$
 
-new reading on balance: $m_\text{new} = 500.0 + 40.7 = 540.7 \text{ g}$ \eoe
+new reading on balance: $m_\text{new} = 500.0 + 40.7 = 540.7 \text{ g}$ \end{soln}
 
 \question{If the current in Example \ref{ex-mag-balance} is replaced by a current of 6.0 A flowing out of the plane of the paper. What is the reading on the balance?}
 
-\subsection*{force between long straight current-carrying wires}
+\subsection*{The force between long straight current-carrying wires}
 
 \begin{center}
 \begin{minipage}{0.3\linewidth}
@@ -471,15 +436,9 @@ new reading on balance: $m_\text{new} = 500.0 + 40.7 = 540.7 \text{ g}$ \eoe
 \end{minipage}
 \end{center}
 
-if we have two straight parallel wires carrying currents in the same direction
+If we have two straight parallel wires carrying currents in the same direction then the force acting on $I_2$ is due to magnetic field $B_1$ generated by $I_1$. From the top view, $I_1$ creates a counter-clockwise $B_1$, so $I_2$ experiences an upward field.
 
-force acting on $I_2$ is due to magnetic field $B_1$ generated by $I_1$
-
-from top view, $I_1$ creates a counter-clockwise $B_1$, so $I_2$ experiences an upward field
-
-using left-hand rule, force acting on $I_2$ by $I_1$, denoted $F_{21}$\footnote{$F_{AB}$ denotes the force acted on object $A$ by object $B$.}, points to the left
-
-since $F_{21}$ and $F_{12}$ are a pair of action-reaction, so $F_{12}$ points to the right
+Using left-hand rule, the force acting on $I_2$ by $I_1$, denoted $F_{21}$\footnote{$F_{AB}$ denotes the force acted on object $A$ by object $B$.}, points to the left. Since $F_{21}$ and $F_{12}$ are a pair of action-reaction, so $F_{12}$ points to the right.
 
 
 \begin{center}
@@ -517,9 +476,9 @@ since $F_{21}$ and $F_{12}$ are a pair of action-reaction, so $F_{12}$ points to
 \end{minipage}
 \end{center}
 
-similar discussions apply for $I_1$ and $I_2$ flowing in opposite directions (left as exercise)
+Similar discussions apply for $I_1$ and $I_2$ flowing in opposite directions (left as exercise for the reader).
 
-hence we come to an conclusion: \emph{parallel currents attract, and anti-parallel currents repel}\footnote{The S.I. unit for current, ampere, is defined using two long wires parallel to each other carrying the same current in the same direction. If the wires are separated by 1 m and the magnetic force experienced per metre is $2.0\times10^{-7}$ N, then the current is of 1 A.}
+So we come to a conclusion: \emph{parallel currents attract, and anti-parallel currents repel}\footnote{The S.I. unit for current, ampere, was defined using two long wires parallel to each other carrying the same current in the same direction. If the wires are separated by 1 m and the magnetic force experienced per metre is $2.0\times10^{-7}$ N, then the current is of 1 A.}
 
 \question{A light coil of wire of several loops is suspended from a fixed point. When an electric current is switched on in the coil, state and explain the change in the separation between the loops.}
 
@@ -557,23 +516,21 @@ hence we come to an conclusion: \emph{parallel currents attract, and anti-parall
 
 
 
-\subsection{magnetic force on charged particles}
+\subsection{Magnetic force on charged particles}
 
-electric currents are formed by moving charges, since current-carrying wires in a magnetic field experience force, charged particle moving in magnetic field should also experience force
+Electric currents are formed by moving charges, since current-carrying wires in a magnetic field experience force, charged particle moving in magnetic field should also experience force
 
-\subsection{magnetic force on charged particles}
+\subsection{Magnetic force on charged particles}
 
-starting from $F=BIl\sin\theta$, let's substitute $I=nAqv \RA F=B(nAqv)l\sin\theta$
+Starting from $F=BIl\sin\theta$, let's substitute $I=nAqv \RA F=B(nAqv)l\sin\theta$. Note that $n$ is the number density of charged particles, so $nAl$ together gives the total number of charged particles. If we look at the force acting on \emph{one} charged particle, then $nAl=1$, so: $F=Bqv\sin\theta$\index{magnetic field!magnetic force}
 
-notice $n$ is the number density of charged particles, so $nAl$ together gives the total number
+The magnitude of magnetic force on charged particle then is: $$\tcbhighmath{F=Bqv\sin\theta}$$
 
-if we look at the force acting on \emph{one} charged particle, then $nAl=1$, so: $F=Bqv\sin\theta$\index{magnetic field!magnetic force}
-
-\cmt magnitude of magnetic force on charged particle: $\tcbhighmath{F=Bqv\sin\theta}$ 
-
-$B$ is magnetic flux density, $q$ is electric charge of the particle, $v$ is its velocity
-
-$\theta$ refers to the angle between $B$ and $v$
+Where:\\
+$B$ is magnetic flux density, \\
+$q$ is electric charge of the particle,\\
+$v$ is its velocity\\
+$\theta$ refers to the angle between $B$ and $v$\\
 
 \begin{marginfigure}
 	\vspace*{-16pt}
@@ -584,21 +541,16 @@ $\theta$ refers to the angle between $B$ and $v$
 	\vspace*{-16pt}
 \end{marginfigure}
 
-\cmt direction of magnetic force can be determined using \emph{Fleming's left-hand rule}\index{left-hand rule}
+The direction of magnetic force can be determined using \emph{Fleming's left-hand rule}\index{left-hand rule}.\\
+for $+q$, current in same direction as $v$\\
+for $-q$, current in opposite direction as $v$\\
 
-for $+q$, current in same direction as $v$
+\cmt The force depends on \emph{perpendicular component} of $B$\\ 
+If $v \perp B$, magnetic force $F=Bqv$.
 
-for $-q$, current in opposite direction as $v$
+If $v \parallelslant B$, there is no magnetic force.
 
-\cmt force depends on \emph{perpendicular component} of $B$
-
-if $v \perp B$, magnetic force $F=Bqv$
-
-if $v \parallelslant B$, there is no magnetic force
-
-when particle moves at angle $\theta$ to $B$, contribution to the force only comes from the \emph{perpendicular component}, giving rise to the $\sin\theta$ factor
-
-\cmt magnetic force always perpendicular to both velocity $v$ and magnetic field $B$\footnote{Vector form of the formula: $\vec{F} = q\vec{v} \times \vec{B}$. \piste}
+When a particle moves at angle $\theta$ to $B$, the contribution to the force only comes from the \emph{perpendicular component}, giving rise to the $\sin\theta$ factor. the magnetic force always perpendicular to both velocity $v$ and magnetic field $B$.\footnote{Vector form of the formula: $\vec{F} = q\vec{v} \times \vec{B}$. \piste}
 
 \example{Use the left-hand rule to find the direction of the magnetic forces acting on the following moving charges. Check yourself.}
 \begin{figure*}
@@ -644,11 +596,9 @@ when particle moves at angle $\theta$ to $B$, contribution to the force only com
 	\end{minipage}
 \end{figure*}
 
-\subsection*{charged particles in electric \& magnetic fields}
+\subsection*{Charged particles in electric \& magnetic fields}
 
-in either electric field or magnetic field, charged particle may experience a force\footnote{The combination of electric and magnetic force on the charge due to electromagnetic fields is called the \emph{Lorentz force}\index{Lorentz force}: $\vec{F} = q(\vec{E} + \vec{v}\times \vec{B})$. If you have a good knowledge in maths, everything we cover in this section can be recovered from this vector equation. \piste}
-
-in this section, we will compare the difference between electric field and magnetic field
+In either electric field or magnetic field, charged particle may experience a force\footnote{The combination of electric and magnetic force on the charge due to electromagnetic fields is called the \emph{Lorentz force}\index{Lorentz force}: $\vec{F} = q(\vec{E} + \vec{v}\times \vec{B})$. If you have a good knowledge in maths, everything we cover in this section can be recovered from this vector equation. \piste}, in this section, we will compare the difference between electric field and magnetic field:
 
 \begin{center}
 	{%\renewcommand{\arraystretch}{1.2}
@@ -676,9 +626,9 @@ in this section, we will compare the difference between electric field and magne
 
 
 
-\subsection{charged particle in uniform magnetic fields}
+\subsection{Charged particle in uniform magnetic fields}
 
-suppose a charged particle is moving at right angle to a uniform magnetic field
+Suppose a charged particle is moving at right angle to a uniform magnetic field:
 
 \begin{figure}[htp]
 	\centering
@@ -699,20 +649,16 @@ suppose a charged particle is moving at right angle to a uniform magnetic field
 			}
 	\end{tikzpicture}
 	
-	circular motion of a charged particle in uniform magnetic field
+	\caption{Circular motion of a charged particle in uniform magnetic field}
 \end{figure}
 
-magnetic force $F_B$ always at right angle to motion, so $F_B$ keeps changing direction of velocity
-
-uniform field means a constant force, so $F_B$ deflects the particle at the same rate
-
-the particle should describe a \emph{circular} path!
+The magnetic force $F_B$ is always at right angle to motion, so $F_B$ keeps changing the direction of velocity. A uniform field means a constant force, so $F_B$ deflects the particle at the same rate and the particle describes a \emph{circular} path.
 
 \begin{ilight}
-	for a charged particle moving in a uniform magnetic field, \emph{magnetic force provides centripetal force for circular motion}: $\tcbhighmath{Bqv = \frac{mv^2}{r}}$, or $\tcbhighmath{Bqv = m \omega^2 r}$
+	For a charged particle moving in a uniform magnetic field, \emph{magnetic force provides centripetal force for circular motion}: $\tcbhighmath{Bqv = \frac{mv^2}{r}}$, or $\tcbhighmath{Bqv = m \omega^2 r}$
 \end{ilight}
 
-\cmt can solve for radius of the orbiting particles: $r=\frac{mv}{Bq}$
+We can solve for radius of the orbiting particles: $r=\frac{mv}{Bq}$
 
 \begin{compactenum}
 
@@ -724,13 +670,11 @@ the particle should describe a \emph{circular} path!
 
 \end{compactenum}
 	
-\cmt radius of curvature relates to charge-to-mass ratio (also called \emph{specific charge}\index{specific charge}) of the particle
-
-rearrange the equation we have $\frac{q}{m}=\frac{v}{Br}$, which can be computed using experimental data
+The radius of curvature relates to charge-to-mass ratio (also called \emph{specific charge}\index{specific charge}) of the particle. If we rearrange the equation we have $\frac{q}{m}=\frac{v}{Br}$, which can be computed using experimental data.
 
 \example{An $\alpha$-particle travelling at $2.5\times10^4 \mps$ enters a region of uniform magnetic field. The field has flux density of 5.4 mT and is normal to direction of particle's velocity. What is the radius of $\alpha$-particle's path?}
 
-\begin{soln} radius of circular arc: $r=\frac{mv}{Bq} = \frac{4\times 1.66\times10^{-27}\times2.5\times10^4}{5.4\times10^{-3}\times2\times1.60\times10^{-19}} \approx 0.096 \text{ m} \approx 9.6 \text{ cm}$ \end{soln}
+\begin{soln} Radius of circular arc: $r=\frac{mv}{Bq} = \frac{4\times 1.66\times10^{-27}\times2.5\times10^4}{5.4\times10^{-3}\times2\times1.60\times10^{-19}} \approx 0.096 \text{ m} \approx 9.6 \text{ cm}$ \end{soln}
 
 \question{For an $\alpha$-particle and a $\beta$-particle entering the same uniform magnetic field at a same speed, compare the radius of their paths.}
 
@@ -738,9 +682,9 @@ rearrange the equation we have $\frac{q}{m}=\frac{v}{Br}$, which can be computed
 
 \question{If a charged particle enters a uniform magnetic field at an angle $\theta \neq 90^\circ$, state and explain the path of this particle. (Hint: think about components of its velocity.)}
 	
-\subsection{mass spectrometer}
+\subsection{The mass spectrometer}
 
-a \keypoint{mass spectrometer}\index{mass spectrometer} is a device to measure the charge-to-mass ratio of charged particles
+A \keypoint{mass spectrometer}\index{mass spectrometer} is a device to measure the charge-to-mass ratio of charged particles.
 
 \begin{figure*}[ht]
 	\centering
@@ -773,15 +717,11 @@ a \keypoint{mass spectrometer}\index{mass spectrometer} is a device to measure t
 	\caption{deflection of two charged particles in a mass spectrometer}
 \end{figure*}
 
-charged particles accelerated through an electric field: $\frac{1}{2}mv^2 = qV$
+In use, charged particles are accelerated through an electric field: $\frac{1}{2}mv^2 = qV$, they then enter a uniform magnetic field: $Bqv = \frac{mv^2}{r} \ra v=\frac{Bqr}{m}$.\\
 
-they then enter a uniform magnetic field: $Bqv = \frac{mv^2}{r} \ra v=\frac{Bqr}{m}$ $\quad$
+Eliminating $v$: $v^2 = \frac{2qV}{m} = \frac{B^2 q^2 r^2}{m^2} \ra \frac{q}{m} = \frac{2V}{B^2 r^2}$\\
 
-eliminating $v$: $v^2 = \frac{2qV}{m} = \frac{B^2 q^2 r^2}{m^2} \ra \frac{q}{m} = \frac{2V}{B^2 r^2}$
-
-we can measure $V$, $B$, $r$ in practice, so the charge-to-mass ratio $\frac{q}{m}$ is worked out
-
-since different particles usually have different values of $\frac{q}{m}$, so this technique is widely used to identify unknown particles
+We can then measure $V$, $B$, $r$ in practice, so the charge-to-mass ratio $\frac{q}{m}$ is worked out. Since different particles usually have different values of $\frac{q}{m}$, so this technique is widely used to identify unknown particles.
 
 \question{In the figure above, two paths of deflected particles are shown. Give reasons why the radius of the circular path can be different.}
 
@@ -789,9 +729,9 @@ since different particles usually have different values of $\frac{q}{m}$, so thi
 
 \question{A particle carrying a charge of $+e$ enters a uniform magnetic field of $8.8$ mT at right angles with an initial speed of $1.4\times10^5 \text{ m s}^{-1}$. It describes a semi-circle with diameter of 66 cm. (a) Find the mass of the particle. (b) Suggest possible composition of this particle.}
 
-\subsection{cyclotron}\index{cyclotron}
+\subsection{The cyclotron}\index{cyclotron}
 
-a \keypoint{cyclotron} is a type of \emph{particle accelerator}
+A \keypoint{cyclotron} is a type of \emph{particle accelerator.}
 
 \begin{figure}[ht]
 	\centering
@@ -823,41 +763,22 @@ a \keypoint{cyclotron} is a type of \emph{particle accelerator}
 	\draw (2.791,2.2) -- (1,3.5) node[above, twoline]{outgoing beam of\\high-speed protons};
 	\end{tikzpicture}
 	
-	\caption{protons being accelerated in a cyclotron}
+	\caption{Protons being accelerated in a cyclotron}
 \end{figure}
 
-the idea is to makes use of magnetic force to guide moving charges into a spiral path between accelerations by an electric field
+The idea is to makes use of magnetic force to guide moving charges into a spiral path between accelerations by an electric field, as the particle enters and leaves the region of electric field, it gains extra energy of $qV$. The particle then follows a semi-circular path under magnetic force and re-enters the electric field. At this point the polarity of the electric field is reversed so the particle continues to accelerate across the gap and the energy of particle increases by $qV$, it then moves in a larger semi-circle in magnetic field. This process is repeated many times until the particle leaves the exit port with very high speed.
+For charged particles circulating in a uniform magnetic field: $Bqv=m\omega^2 r$ and the time to complete one full turn is: $T=\frac{2\pi r}{v} = \frac{2\pi}{v}\times\frac{mv}{Bq}\ra T=\frac{2\pi m}{Bq}$.
 
-as the particle enters and leaves the region of electric field, it gains extra energy of $qV$
+Rather magically, this shows the period is independent of radius of the circular path!
 
-it then follows a semi-circular path under magnetic force and re-enters the electric field
-
-polarity of the electric field is reversed so the particle continues to accelerate across the gap
-
-energy of particle increases by $qV$, it then moves in a larger semi-circle in magnetic field
-
-repeat this process, the particle leaves the exit port with very high speed
-
-
-
-\cmt cyclotron frequency
-
-for charged particles circulating in a uniform magnetic field: $Bqv=m\omega^2 r$
-
-time to complete one full turn is: $T=\frac{2\pi r}{v} = \frac{2\pi}{v}\times\frac{mv}{Bq}\ra T=\frac{2\pi m}{Bq}$
-
-this shows the period is independent of radius of the circular path!
-
-if an alternating voltage is applied at frequency $f=\frac{Bq}{2\pi m}$, particles can be accelerated continuously at just the right time when they cross the gap
-
-this frequency is known as the \emph{cyclotron frequency}
+If an alternating voltage is applied at frequency $f=\frac{Bq}{2\pi m}$, the particles can be accelerated continuously as they cross the gap at just the right time. This frequency is known as the \emph{cyclotron frequency}.
 
 \question{Protons are accelerated in a cyclotron where the uniform magnetic field region has a flux density of 1.5 T and the voltage between the gap is 20 kV. (a) Find the frequency of the voltage supply needed. (b) Find the number of circles the protons must make in order to gain an energy of 10 MeV.}
 
 
-\subsection{velocity selector}
+\subsection{Velocity selector}
 
-\keypoint{velocity selector}\index{velocity selector} is a device to produce a beam of charged particles all with same speed $v$
+A \keypoint{velocity selector}\index{velocity selector} is a device to produce a beam of charged particles all with same speed $v$.
 
 \begin{figure}[ht]
 	\centering
@@ -890,12 +811,10 @@ this frequency is known as the \emph{cyclotron frequency}
 	
 	\end{tikzpicture}
 	
-	\caption{velocity selector}
+	\caption{A velocity selector in action.}
 \end{figure}
 
-let's consider a beam of electrons passing through a region where both uniform electric field and magnetic field are applied, electrons at desired speed $v$ are \emph{undeflected}
-
-no net force acting on these electrons, so equilibrium between electric and magnetic force
+Let's consider a beam of electrons passing through a region where both uniform electric field and magnetic field are applied, electrons at the desired speed $v$ are \emph{undeflected}, there's no net force acting on these electrons, so there is equilibrium between electric and magnetic force:
 
 {
 
@@ -905,9 +824,7 @@ $F_E = F_B \RA Eq = Bqv \RA \tcbhighmath{v=\frac{E}{B}}$
 
 }
 
-for particles entering the same region with higher speed, $F_B>F_E$, they deflect upwards
-
-for particles entering the same region with lower speed, $F_B<F_E$, they deflect downwards
+For particles entering the same region with higher speed, $F_B>F_E$, they deflect upwards, for particles entering the same region with lower speed, $F_B<F_E$, they deflect downwards.
 
 \question{If electrons at speed $v$ are undeflected when they pass through the velocity selector, what about a beam of $\alpha$-particles entering the same region at the same speed $v$?}
 
@@ -915,13 +832,11 @@ for particles entering the same region with lower speed, $F_B<F_E$, they deflect
 
 
 \subsection{Hall effect}
-when an electric current passes through a conductor surrounded by an external magnetic field perpendicular to the current, a transverse potential difference is produced
-
-this phenomenon is known as the \keypoint{Hall effect}\index{Hall effect} (discovered by American physicist \emph{Edwin Hall} in 1879), the voltage difference is called the \keypoint{Hall voltage}
+The Hall effect is a really neat application of the interaction of charged particles and fields. When an electric current passes through a conductor surrounded by an external magnetic field perpendicular to the current, a transverse potential difference is produced. This phenomenon \index{Hall effect} was discovered by American physicist \emph{Edwin Hall} in 1879, the voltage difference is called the \keypoint{Hall voltage}.
 
 \vspace*{\baselineskip}
 
-suppose magnetic field goes upward, current flows to the right (see figure), then charge carriers (assumed to be electrons for now) experience a magnetic force pointing out of paper
+Suppose magnetic field is aligned upward, and the current flows to the right (see figure \ref{hallsens1}), then the charge carriers (assumed to be electrons for now) experience a magnetic force pointing to the bottom left of the page.
 
 \begin{figure}[ht]
 	\centering
@@ -935,9 +850,11 @@ suppose magnetic field goes upward, current flows to the right (see figure), the
 	\draw[thick,purple,->] (-1.1,1) -- ++(-1,0) node[above right]{$v$};
 	\draw[thick,red,->] (-1.1,1) -- ++(-1,-.667) node[left]{$F_B$};
 	\end{tikzpicture}
+ \caption{Hall sensor fig 1}
+ \label{hallsens1}
 \end{figure}
 
-this magnetic force causes a build-up of extra charge on front side of conductor, which produces an internal electric field $E$ inside conductor, i.e., a potential difference $V_H$ is formed
+This magnetic force causes a build-up of extra charge on front side of conductor, which produces an internal electric field $E$ inside conductor, i.e., a potential difference $V_H$ is formed.
 
 \begin{figure}[ht]
 	\centering
@@ -960,11 +877,11 @@ this magnetic force causes a build-up of extra charge on front side of conductor
 	\draw[thick,<->] (.5,-1.35) -- ++(3,2) node[midway, below right]{$d$};
 	\draw[thick,<->] (3.5,1) -- ++(0,1) node[midway, right]{$t$};
 	\end{tikzpicture}
+ \caption{Hall sensor fig 2}
+ \label{hallsens2}
 \end{figure}
 
-as charge carriers accumulate on one side, Hall voltage opposes further migration of charges
-
-steady $V_H$ is established when magnetic force and electric force are balanced: $Eq = Bqv$
+As the charge carriers accumulate on one side, the Hall voltage opposes further migration of charges, so a steady $V_H$ is established when magnetic force and electric force are balanced: $Eq = Bqv$.
 
 \begin{compactenum}
 	\item[-] strength of internal electric field is related to Hall voltage: $E=\frac{V_H}{d}$
@@ -976,14 +893,13 @@ steady $V_H$ is established when magnetic force and electric force are balanced:
 	where $A$ is cross section of conductor and $n$ is number density of charge carriers
 \end{compactenum}
 
-
 we now have: $\frac{V_H}{d}q = Bq \frac{I}{nAq} \ra V_H = \frac{BId}{nAq}$
 
 note that cross section $A=dt$, where $t$ is thickness of conductor as shown
 
-we therefore obtain an useful expression for Hall voltage: $ V_H = \frac{BId}{n(td)q} \ra \tcbhighmath{V_H = \frac{BI}{ntq}}$ 
+we therefore obtain an useful expression for Hall voltage: $$ V_H = \frac{BId}{n(td)q} \ra \tcbhighmath{V_H = \frac{BI}{ntq}}$$ 
 
-\cmt to produce noticeable $V_H$, we want smaller $n$ and smaller $t$
+To produce a noticeable $V_H$, we want smaller $n$ and smaller $t$
 
 \begin{compactenum}
 	\item[-] $n\downarrow \ra$ few free charge carriers $\ra$ \emph{semi-conductors} are preferable
@@ -992,23 +908,19 @@ we therefore obtain an useful expression for Hall voltage: $ V_H = \frac{BId}{n(
 
 \end{compactenum}
 
-\cmt polarity of $V_H$ is determined by nature of charge carries
-	
-charge carriers can be \emph{free electrons} (negatively charged) or \emph{holes} (positively charged)
-	
-then Hall voltage induced would have opposite polarity
+The polarity of $V_H$ is determined by nature of charge carries. The charge carriers can be \emph{free electrons} (negatively charged) or \emph{holes} (positively charged), these would obviously cause the Hall voltage to have opposite polarity.
 
-\cmt if current $I$ forms angle $\theta$ with flux density $B$, again only perpendicular component matters
+% If current $I$ forms angle $\theta$ with flux density $B$, again only perpendicular component matters
 
-expression for Hall voltage becomes: $V_H = \frac{BI}{ntq}\sin\theta$
+% expression for Hall voltage becomes: $V_H = \frac{BI}{ntq}\sin\theta$
 	
 \cmt apply a fixed current in a conductor, $V_H$ is proportional to $B$
 	
-so magnetic flux density can be calculated once we find $V_H$
+ % so magnetic flux density can be calculated once we find $V_H$
 	
-one can make use of Hall effect to build a \emph{Hall probe}, a device used to measure flux density $B$
+% one can make use of Hall effect to build a \emph{Hall probe}, a device used to measure flux density $B$
 
-when using a Hall probe, one should rotate and record the greatest voltage reading to ensure the current applied is at right angle to the external magnetic field
+% when using a Hall probe, one should rotate and record the greatest voltage reading to ensure the current applied is at right angle to the external magnetic field
 
 \question{Why is it difficult to detect Hall voltage in a thin slice of copper?}
 

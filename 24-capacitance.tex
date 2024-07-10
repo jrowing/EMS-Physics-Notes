@@ -1,8 +1,6 @@
 \chapter{Capacitors}
 
-\section{capacitors: an introduction}
-
-\subsection{capacitors}
+\section{Capacitors: an introduction}
 
 \begin{marginfigure}
 \begin{tikzpicture}[scale=0.5]
@@ -31,18 +29,16 @@
 \end{tikzpicture}
 \end{marginfigure}
 
-\keypoint{capacitors}\index{capacitor} are elementary electrical units widely used in electrical and electronic engineering
+\keypoint{Capacitors}\index{capacitor} are elementary electrical units widely used in electrical and electronic engineering. a typical capacitor has two conductive plates and between the plates there is usually an insulating material called \emph{dielectric}.
 
-a typical capacitor has two conductive plates
-
-between the plates there is usually an insulating material called \emph{dielectric}
-
-circuit symbol for a capacitor is 
+circuit symbol for a capacitor is:
+\begin{figure}
+    \centering
 \begin{tikzpicture}[scale=0.2]
 \draw (0,0) -- (1.6,0) (2.4,0) -- (4,0);
 \draw (1.6,-1) -- (1.6,1) (2.4,-1) -- (2.4,1);
 \end{tikzpicture}
-
+\end{figure}
 \vspace*{\baselineskip}
 
 \begin{marginfigure}
@@ -57,35 +53,29 @@ circuit symbol for a capacitor is
 \end{circuitikz}
 \end{marginfigure}
 
-if we construct an electric circuit as shown
+If we construct an electric circuit as shown, when contact $S$ is moved to $X$, capacitor is connected to a voltage supply and becomes charged. Positive and negative charges are separated onto two plates, and they will stay where they are even if we disconnect the capacitor from the voltage supply.
 
-when contact $S$ is moved to $X$, capacitor is connected to a voltage supply and becomes charged
+If we then move $S$ to $Y$, the charged capacitor discharges and drives a current through resistor $R$, i.e., it can act as a temporary power source\footnote{Details on charging and discharging processes will be gone through in \S\ref{sec:charging-capacitors}.}
 
-positive and negative charges are separated onto two plates, and they will stay where they are even if we disconnect the capacitor from the voltage supply
+So capacitors can be used to store and release energy, or more correctly, charge.\footnote{Other important functions of capacitors in electronic circuits include smoothing output voltage of power supplies, blocking direct current while allowing alternating current to pass, etc.}
 
-if we then move $S$ to $Y$, the charged capacitor discharges and drives a current through resistor $R$, i.e., it can act as a temporary power source\footnote{Details on charging and discharging processes will be gone through in \S\ref{sec:charging-capacitors}.}
+\subsection{Capacitance}
 
-so capacitors can be used to store and release energy\footnote{Other important functions of capacitors in electronic circuits include smoothing output voltage of power supplies, blocking direct current while allowing alternating current to pass, etc.}
-
-
-\subsection{mutual capacitance}
-
-to describe ability of a capacitor to store charges, we define the notion of capacitance
+To describe ability of a capacitor to store charges, we define the notion of capacitance
 
 \begin{ilight}
-	\keypoint{(mutual) capacitance}\index{capacitance!mutual capacitance} of a parallel-plate capacitor is defined as the ratio of the charge stored on one plate to the potential difference across the two plates.
+	\keypoint{The capacitance}\index{capacitance!mutual capacitance} of a parallel-plate capacitor is defined as the ratio of the charge stored on each plate to the potential difference across the two plates.
 \end{ilight}
 
-in a word equation: $\text{mutual capacitance } C = \frac{\text{charge on one plate }Q }{\text{p.d. } V \text{ across the plates}}$ $\quad \Rightarrow \quad$ $\tcbhighmath{C = \frac{Q}{V}}$
+In a word equation: $\text{Capacitance } C = \frac{\text{charge on one plate }Q }{\text{p.d. } V \text{ across the plates}} \quad \Rightarrow \quad$ $$\tcbhighmath{C = \frac{Q}{V}}$$
 
-
-\cmt unit of capacitance: \keypoint{farad}\index{farad}
+The unit of capacitance: \keypoint{farad}\index{farad}
 \footnote{The unit is named after Michael Faraday, a British physicist who developed the concept of capacitance. Faraday's other main discoveries include electromagnetic induction and electrolysis. He established the basis for the concept of the electromagnetic field in physics.}
 : $[C] = \text{F}$
 
-farad a derived unit: $1 \text{ F} = 1 \text{ C}\cdot\text{V}^{-1}$
+It's a derived unit: $1 \text{ F} = 1 \text{ C}\cdot\text{V}^{-1}$
 
-farad is a large unit, more common subunits of capacitance in use are sub-multiples of farad:
+The Farad is a stupidly large unit for most applications, more common subunits of capacitance in use are sub-multiples of farad:
 
 {
 	
@@ -95,59 +85,58 @@ $1 \muF = 10^{-6} \text{ F}, \quad 1 \text{ nF} = 10^{-9} \text{ F}, \quad 1 \pF
 
 }
 
-\cmt for a parallel-plate capacitor, charges on the two plates are equal but opposite
+One important point that is often missed - for a parallel-plate capacitor, charges on the two plates are equal but opposite so the net charge on the capacitor: $Q_\text{net} = (+Q)+(-Q)=0$. 
 
-net charge on the capacitor: $Q_\text{net} = (+Q)+(-Q)=0$
+I want to really emphasise that:
+\begin{ilight}
+    The charge in the definition is charge on \emph{one} plate \textbf{not} the difference between the plates.
+\end{ilight}
 
-so we should emphasise on the notion of charge on \emph{one} plate in the definition
+The capacitance of a capacitor depends on \emph{geometry} of the device and permittivity of the dielectric material. It does not depend on electric field or potential\footnote{Recall the resistance of an electrical component. Resistance is defined as the ratio of p.d. to current, but the value of resistance is essentially dependent on the length, cross-sectional area and material of the component, instead of the p.d. applied or the current flowing through it.}
 
+for example, capacitance between two metal plates isfootnote{If there is \emph{dielectric} in between, the formula should be rewritten as $C = \frac{\epsilon A}{d}$, where $\epsilon$ is permittivity of dielectric. These formulae are not examinable by the syllabus.}: $$\tcbhighmath{C=\frac{\epsilon_0 A}{d}}$$\
 
-
-\cmt capacitance depends on \emph{geometry} of the device and permittivity of the dielectric material
-
-capacitance does not depend on electric field or potential\footnote{Recall the resistance of an electrical component. Resistance is defined as the ratio of p.d. to current, but the value of resistance is essentially dependent on the length, cross-sectional area and material of the component, instead of the p.d. applied or the current flowing through it.}
-
-for example, capacitance between two metal plates is: $C=\frac{\epsilon_0 A}{d}$
-\footnote{If there is \emph{dielectric} in between, the formula should be rewritten as $C = \frac{\epsilon A}{d}$, where $\epsilon$ is permittivity of dielectric. These formulae are not examinable by the syllabus.}
-
-$A$ is area of plate, $d$ is distance between plates, both are geometrical quantities
-
+Where:\\
+$A$ is area of plate, \\
+$d$ is distance between plates, \\
+both are geometrical quantities
 
 
-\subsection{self-capacitance}
 
-there are two closely related notions of capacitance: \emph{mutual} capacitance and \emph{self} capacitance
+% \subsection{self-capacitance}
 
-the definition for capacitance given in the previous chapter, is actually \emph{mutual} capacitance\footnote{In many cases, the term capactiance is a shorthand for mutual capacitance.}
+% there are two closely related notions of capacitance: \emph{mutual} capacitance and \emph{self} capacitance
 
-on the other hand, all bodies are able to store electrical charge
+% the definition for capacitance given in the previous chapter, is actually \emph{mutual} capacitance\footnote{In many cases, the term capactiance is a shorthand for mutual capacitance.}
 
-any object that can be electrically charged exhibits capacitance
+% on the other hand, all bodies are able to store electrical charge
 
-we define \keypoint{self-capacitance}\index{capacitance!self-capacitance} of an object as the amount of charge that must be added to increase per unit electrical potential
+% any object that can be electrically charged exhibits capacitance
 
-in a word equation, $ \text{self capacitance }C=\frac{\text{charge of object }Q}{\text{electric potential of object }V} \RA \tcbhighmath{C=\frac{Q}{V}}$\footnote{For either mutual capacitance or self capacitance, defining equation $C=\frac{Q}{V}$ takes the same form, but you should keep in mind that $Q$ and $V$ represent different things in different contexts.}
+% we define \keypoint{self-capacitance}\index{capacitance!self-capacitance} of an object as the amount of charge that must be added to increase per unit electrical potential
 
-\example{Self-capacitance of a charged metal sphere in a vacuum}
+% in a word equation, $ \text{self capacitance }C=\frac{\text{charge of object }Q}{\text{electric potential of object }V} \RA \tcbhighmath{C=\frac{Q}{V}}$\footnote{For either mutual capacitance or self capacitance, defining equation $C=\frac{Q}{V}$ takes the same form, but you should keep in mind that $Q$ and $V$ represent different things in different contexts.}
 
-consider a metal sphere of radius $R$ and carries an electric charge of $Q$
+% \example{Self-capacitance of a charged metal sphere in a vacuum}
 
-its electric potential: $V = \frac{Q}{\ec R}$
+% consider a metal sphere of radius $R$ and carries an electric charge of $Q$
 
-\begin{soln}
-self-capacitance of the sphere: $C_\text{sphere} = \frac{Q}{V} = Q \times \frac{\ec R}{Q} \RA \tcbhighmath{C_\text{sphere} = \ec R}$
+% its electric potential: $V = \frac{Q}{\ec R}$
 
-note that capacitance is only dependent on its geometrical property (radius $R$) \end{soln}
+% \begin{soln}
+% self-capacitance of the sphere: $C_\text{sphere} = \frac{Q}{V} = Q \times \frac{\ec R}{Q} \RA \tcbhighmath{C_\text{sphere} = \ec R}$
 
-\example{A conducting sphere of radius 1.0 m is situated in free space. (a) Find its capacitance. (b) In order to raise its potential to 5000 V, find the amount of charge needed.}
+% note that capacitance is only dependent on its geometrical property (radius $R$) \end{soln}
 
-\begin{soln} capacitance of the sphere: $C = \ec R = 4\pi\times8.85\times10^{-12}\times 1.0 \approx 1.11\times10^{-10} \text{ F}$
+% \example{A conducting sphere of radius 1.0 m is situated in free space. (a) Find its capacitance. (b) In order to raise its potential to 5000 V, find the amount of charge needed.}
 
-(here you can see farad being an impractically huge unit)
+% \begin{soln} capacitance of the sphere: $C = \ec R = 4\pi\times8.85\times10^{-12}\times 1.0 \approx 1.11\times10^{-10} \text{ F}$
 
-charge on sphere: $Q = CV = 1.11\times10^{-10} \times 5000 \approx 5.56\times 10^{-7} \text{ C}$ \end{soln}
+% (here you can see farad being an impractically huge unit)
 
-\subsection*{analogy with ideal gases}
+% charge on sphere: $Q = CV = 1.11\times10^{-10} \times 5000 \approx 5.56\times 10^{-7} \text{ C}$ \end{soln}
+
+\subsection*{Analogy with ideal gases}
 
 an interesting analogy can be made between capacitors and ideal gases
 
@@ -167,11 +156,9 @@ also for a container, there exists a maximum pressure which it can withstand
 
 for a capacitor, there exists a \emph{breakdown voltage}, or \emph{withstand voltage}, beyond which there could be sparkling across the capacitor
 
-\subsection{energy stored in a capacitor}
+\subsection{Energy stored in a capacitor}
 
-to charge a capacitor, need to push electrons off one plate and onto the other
-
-separation of positive and negative charges requires work done $\ra$ energy is stored
+To charge a capacitor, we need to push electrons off one plate and onto the other, the separation of positive and negative charges requires work done $\ra$ energy is stored.
 
 \begin{marginfigure}
 	\vspace*{-8pt}
@@ -185,9 +172,7 @@ separation of positive and negative charges requires work done $\ra$ energy is s
 	\vspace*{-16pt}
 \end{marginfigure}
 
-since charge $Q$ varies with p.d. $V$, we shall use the $V$-$Q$ graph to find work done $W$
-
-area under $V$-$Q$ graph is equal to work done $W$
+Since charge $Q$ varies with p.d. $V$, we shall use the $V$-$Q$ graph to find work done $W$, the area under $V$-$Q$ graph is equal to work done $W$
 
 {
 	
@@ -197,7 +182,7 @@ area under $V$-$Q$ graph is equal to work done $W$
 	
 }
 
-substitute $Q=CV$, energy stored in capacitor is\footnote{Rigorously speaking, this electrical potential energy is stored within the \emph{electric fields} between metal plates of capacitor.}:
+Substituting $Q=CV$, the energy stored in capacitor is\footnote{Rigorously speaking, this electrical potential energy is stored within the \emph{electric fields} between metal plates of capacitor.}:
 
 {
 
@@ -220,9 +205,9 @@ $\tcbhighmath{W = \frac{1}{2}CV^2 = \frac{Q^2}{2C}}$
 
 \newpage
 
-\subsection{capacitor networks}
+\subsection{Capacitor networks}
 
-\subsection{capacitors in parallel}
+\subsection{Capacitors in parallel}
 
 \begin{marginfigure}
 \vspace*{-20pt}
@@ -239,11 +224,7 @@ $\tcbhighmath{W = \frac{1}{2}CV^2 = \frac{Q^2}{2C}}$
 \end{circuitikz}
 \end{marginfigure}
 
-consider two capacitors connected in parallel
-
-same p.d. $V$ across the network: $V=V_1=V_2$
-
-but charge $Q$ is shared: $Q_\text{total} = Q_1 + Q_2$
+Consider two capacitors connected in parallel, they have the same p.d. $V$ across the network: $V=V_1=V_2$, but charge $Q$ is shared: $$Q_\text{total} = Q_1 + Q_2$$
 
 {
 
@@ -256,15 +237,15 @@ $C_\text{total} = C_1 + C_2$
 }
 
 
-if three of more capacitors in parallel: $\tcbhighmath{C_\text{total} = C_1 + C_2 + C_3 + \cdots}$ $\quad$ $\tcbhighmath{Q_\text{total} = Q_1 + Q_2 + Q_3 + \cdots}$
+If three of more capacitors in parallel: $$\tcbhighmath{C_\text{total} = C_1 + C_2 + C_3 + \cdots}$$ and... $$\tcbhighmath{Q_\text{total} = Q_1 + Q_2 + Q_3 + \cdots}$$
 
-\cmt adding extra capacitor in parallel to a network, total capacitance will increase
+Adding an extra capacitor in parallel to a network, will cause the total capacitance to increase.
 
-explanation: when several capacitors connected in parallel, equivalent to a single capacitor with larger plates, so more charge on the plates $\ra$ $C\up$
+In terms of the physical structure of the plates - when several capacitors connected in parallel, equivalent to a single capacitor with larger plates, so more charge on the plates $\ra$ $C\up$.
 
 \example{A capacitor with capacitance $C_0$ is charged to a p.d. $V_0$. It is disconnected from the power supply, and then connected across an identical capacitor. Discuss the change in p.d., and change in energy stored in the system.}
 
-\begin{soln} initial charge $Q=C_0 V_0$, initial energy stored $W_0 = \frac{1}{2} C V_0^2$
+\begin{soln} Initial charge $Q=C_0 V_0$, initial energy stored $W_0 = \frac{1}{2} C V_0^2$
 
 combined capacitance: $C= C_0 + C_0 = 2C_0$
 
@@ -282,10 +263,10 @@ half of stored energy is lost as heat when electrons flow between two capacitors
 
 \newpage
 
-\subsection{capacitors in series}
+\subsection{Capacitors in series}
 
 \begin{marginfigure}
-\vspace*{-20pt}
+
 \centering
 \begin{circuitikz}[european resistors,xscale=0.7]
 \draw (0,0) to[C, l_=$C_1$] (4,0) to[C, l_=$C_2$] (8,0);
@@ -299,14 +280,12 @@ half of stored energy is lost as heat when electrons flow between two capacitors
 \draw [<->] (0,2) -- (4,2)node[above]{$V$} -- (8,2);
 \foreach \y  in {0,8} \draw (\y,1.8) -- (\y,2.2);
 \end{circuitikz}
-\vspace*{-20pt}
+
 \end{marginfigure}
 
-consider next two series capacitors
+Consider two series capacitors, with the same charge $Q$ on each plate: $$Q=Q_1=Q_2$$\footnote{Initially, the H-shaped isolated section between capacitors is uncharged. But no charge can enter or leave this section, its net charge must remain zero. Since a capacitor carries equal and opposite charges on its plates, so every capacitor in series carries same charge $Q$}
 
-same charge $Q$ on each plate: $Q=Q_1=Q_2$\footnote{Initially, the H-shaped isolated section between capacitors is uncharged. But no charge can enter or leave this section, its net charge must remain zero. Since a capacitor carries equal and opposite charges on its plates, so every capacitor in series carries same charge $Q$}
-
-p.d. is shared: $V_\text{total} = V_1 + V_2$
+The p.d. is shared: $V_\text{total} = V_1 + V_2$ so..
 
 {
 	
@@ -320,12 +299,11 @@ p.d. is shared: $V_\text{total} = V_1 + V_2$
 	
 }
 
+if three of more capacitors in series: 
+$$\tcbhighmath{\frac{1}{C_\text{total}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots}$$ and... $$\tcbhighmath{V_\text{total} = V_1 + V_2 + V_3 + \cdots}$$
 
-if three of more capacitors in series: $\tcbhighmath{\frac{1}{C_\text{total}} = \frac{1}{C_1} + \frac{1}{C_2} + \frac{1}{C_3} + \cdots}$ $\quad$ $\tcbhighmath{V_\text{total} = V_1 + V_2 + V_3 + \cdots}$
-
-\cmt adding extra capacitor in series to a network, total capacitance will decrease
-
-explanation: when several capacitors connected in series, equivalent to a parallel-plate capacitor with greater separation, so more charge on the plates $\ra$ $C\down$
+Adding an extra capacitor in series to a network will cause the total capacitance to decrease. 
+In physical terms, when several capacitors connected in series, equivalent to a parallel-plate capacitor with greater separation, so more charge on the plates $\ra$ $C\down$.
 
 
 
@@ -357,9 +335,9 @@ V_2 = 2.0 \text{ V}
 
 
 
-\subsection{capacitor networks}
+\subsection{Capacitor networks}
 
-more complicated capacitor networks can be considered as a combination of some smaller networks with capacitors in parallel or in series
+More complicated capacitor networks can be considered as a combination of some smaller networks with capacitors in parallel or in series.
 
 \example{$C_1=C_2=C_3=C_4=10\muF$, calculate the capacitance of the network (a) and (b).}\label{ex-Cnet}
 \begin{soln}
@@ -423,11 +401,10 @@ so maximum p.d. across the terminals: $V_\tmax = 12 + 6 + 12 = 30 \text{ V}$ \en
 \question{If the two networks in Example \ref{ex-Cnet} are both connected to a supply voltage of 15 V, determine the p.d. across each individual capacitor.}
 
 
-\subsection{capacitors \& resistors}
+\subsection{Capacitors \& resistors}
 
-as a quick review, we compare capacitor networks with resistor networks
-
-\begin{center}
+As a quick review, we compare capacitor networks with resistor networks.
+\begin{fullwidth}
 {\renewcommand{\arraystretch}{2}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -460,16 +437,17 @@ as a quick review, we compare capacitor networks with resistor networks
  & & \\ [0.4ex]
  & $C_\text{total} = C_1 + C_2 + C_3 + \cdots$ & $\frac{1}{R_\text{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \cdots$ \\ [1.5ex] \hline
 \end{tabular}}
-\end{center}
+\end{fullwidth}
+   
 
 
 
 
-\subsection{charging \& discharging capacitors \piste} \label{sec:charging-capacitors}
+\subsection{Charging \& discharging capacitors} \label{sec:charging-capacitors}
 
-in this section, we will investigate how the p.d. across a capacitor changes with time when it is being charged, and we will also look into discharging processes\footnote{This section is not required by the CIE A-Level exams. However, the contents introduced here may appear in the A-Level syllabus of other examination board.}
+In this section, we will investigate how the p.d. across a capacitor changes with time when it is being charged, and we will also look into discharging processes\footnote{This section is not required by the CIE A-Level exams. However, the contents introduced here may appear in the A-Level syllabus of other examination board.}
 
-\subsection{charging phase}
+\subsection{Charging phase}
 
 \begin{marginfigure}
 \centering
@@ -493,49 +471,33 @@ in this section, we will investigate how the p.d. across a capacitor changes wit
 	
 	\centering
 	
-	\eqyskip
 	$\frac{\dd t}{RC} = \frac{\dd V_C}{\mathcal{E} - V_C}$ 
 	
-	\eqyskip
 	$\int_0^t \frac{\dd t}{RC} = \int_0^{V_C} \frac{\dd V_C}{\mathcal{E} - V_C}$ 
 	
-	\eqyskip
+	
 	$\frac{t}{RC}\Big|_0^t = -\ln(\mathcal{E} - V_C)\Big|_0^{V_C}$
 
 }
 			
-	simplify everything, we get: $\tcbhighmath{V_C = \mathcal{E} \left( 1 - \mathrm{e}^{-t/RC}\right)}$
+	simplify everything, we get: $$\tcbhighmath{V_C = \mathcal{E} \left( 1 - \mathrm{e}^{-t/RC}\right)}$$
 		
-\cmt p.d. of capacitor increases at a decreasing rate when it is being charged
+The p.d. of capacitor increases at a decreasing rate when it is being charged, as electric charges are separated onto the two plates, pushing more $+Q$/$-Q$ onto $+\text{ve}$/$-\text{ve}$ plate requires more work done to overcome the repulsion $\ra$ increase in p.d. slows down.
 
-as electric charges are separated onto the two plates, pushing more $+Q$/$-Q$ onto $+\text{ve}$/$-\text{ve}$ plate requires more work done to overcome the repulsion $\ra$ increase in p.d. slows down
-
-\cmt p.d of capacitor eventually tends to the battery e.m.f.
-
-charge will continue to flow if there exists a potential difference
-
-when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops to zero
+The p.d of capacitor eventually tends to the battery e.m.f. Charge will continue to flow if there exists a potential difference, when $V_C = \mathcal{E}$, no charge flows, hence the charging current gradually drops to zero
 		
-\subsection{discharging phase}
+\subsection{Discharging phase}
 
-
-		
-	capacitor initially charged with $Q(0)=Q, V_C(0) = V_0$
-	
-	at any instant, $\dd Q = -C \dd V_C$ (minus sign because charge decreases during discharging)
-	
-	\begin{marginfigure}
+If the capacitor is initially charged with $Q(0)=Q, V_C(0) = V_0$. At any instant, $\dd Q = -C \dd V_C$ (minus sign because charge decreases during discharging) \begin{marginfigure}
 		\centering
 		\vspace*{-12pt}
 		\begin{circuitikz}[european resistors, xscale=1.2, yscale=1.5]
 			\draw (0,0) -- (0,2) to[C,l^=$C$] (3,2) -- (3,0) to[R,l^=$R$] (0,0);
 		\end{circuitikz}
 	\vspace*{-25pt}
-	\end{marginfigure}
-
-	also $V_C=V_R$ because in parallel
+	\end{marginfigure} and $V_C=V_R$ because the resistor and capacitor are in parallel.
 	
-	charge change: $\dd Q = I \dd t = \frac{V_C}{R} \dd t = - C \dd V_C$
+	The change in charge: $\dd Q = I \dd t = \frac{V_C}{R} \dd t = - C \dd V_C$
 	
 	{
 	
@@ -552,11 +514,9 @@ when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops
 
 }
 			
-	simplify everything, we get: $\tcbhighmath{V_C = V_0 \mathrm{e}^{-t/RC} }$
+	simplify everything, we get: $$\tcbhighmath{V_C = V_0 \mathrm{e}^{-t/RC} }$$
 	
-\cmt p.d. of capacitor gradually drops to zero during discharging
-
-\cmt discharging current also gradually approaches zero
+The p.d. of capacitor gradually drops to zero during discharging and correspondingly the discharging current also gradually approaches zero.
 		
 \begin{figure*}[ht]
 	\centering
@@ -568,7 +528,7 @@ when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops
 		\draw [thick,color=blue,domain=0:5.6,samples=12,smooth,variable=\x] plot (\x,{3.2-3.2*exp(-1.2*\x)});
 		\end{tikzpicture}
 		
-		charging phase of capacitor
+		The charging phase of capacitor
 	\end{minipage}
 	\begin{minipage}{0.45\linewidth}
 		\centering
@@ -578,20 +538,16 @@ when $V_C = \mathcal{E}$, no charge flow, hence	charging current gradually drops
 		\draw [thick,color=blue,domain=0:5.6,samples=12,smooth,variable=\x] plot (\x,{3.2*exp(-1.2*\x)});
 		\end{tikzpicture}
 		
-		discharging phase of capacitor
+		The discharging phase of capacitor
 	\end{minipage}
 \end{figure*}
 
-\subsection{time constant}
+\subsection{The time constant}
 
-$\tau \equiv RC$ is called \emph{time constant}, which determines charging and discharging rate of a capacitor
+$\tau \equiv RC$ is called the \emph{time constant}, which determines charging and discharging rate of a capacitor. 
 
-$R\up$ $\Rightarrow$ smaller charging/discharging current $\Rightarrow$ takes longer to charge/discharge
+As $R\up$ $\Rightarrow$ smaller charging/discharging current $\Rightarrow$ takes longer to charge/discharge.
 
-$C\up$ $\Rightarrow$ more charge to be charged/discharged $\Rightarrow$ takes longer
+As $C\up$ $\Rightarrow$ more charge to be charged/discharged $\Rightarrow$ takes longer charging or discharging of capacitors is not instantaneous, always a certain time delay.
 
-charging or discharging of capacitors is not instantaneous, always a certain time delay
-
-as a rule of thumb, after a time $t=3\sim5\tau$, charging or discharging is almost complete
-
-time delay for common $RC$ circuits is usually small, but the delay could hinder further increasing of speed in integrated circuits
+As a rule of thumb, after a time $t=3\sim5\tau$, charging or discharging is almost complete. The time delay for common $RC$ circuits is usually small, but the delay could hinder further increasing of speed in integrated circuits.

@@ -1,16 +1,14 @@
 \chapter{Circular Motion}
 
-\section{angular quantities}
+\section{Angular quantities}
 
-movement or rotation of an object along a circular path is called \keypoint{circular motion}
-
-to describe a circular motion, we can use \emph{angular quantities}, which turn out to be more useful than linear displacement , linear velocity , etc.
+Movement or rotation of an object along a circular path is called \keypoint{circular motion}, to describe a circular motion, we can use \emph{angular quantities}, which turn out to be more useful than linear displacement , linear velocity , etc.
 
 
-\subsection{angular displacement}
+\subsection{Angular displacement}
 
 \begin{ilight}
-	\keypoint{angular displacement}\index{angular displacement} is angle swiped out by object moving along circular
+	\keypoint{Angular displacement}\index{angular displacement} is angle swiped out by object moving along circular
 \end{ilight}
 
 \begin{marginfigure}
@@ -26,7 +24,7 @@ to describe a circular motion, we can use \emph{angular quantities}, which turn 
 	\end{tikzpicture}
 \end{marginfigure}
 
-\cmt unit: $[\theta]=\rad \quad$ (natural unit of measurement for angles)
+unit: $[\theta]=\rad \quad$ (natural unit of measurement for angles)
 
 conversion rule: $2\pi \rad = 360^\circ$
 
@@ -35,37 +33,26 @@ conversion rule: $2\pi \rad = 360^\circ$
 two radii subtending an arc of same length as radius form an angle of one \keypoint{radian}\index{radian}
 
 
-\subsection{angular velocity}
+\subsection{Angular velocity}
 
-angular velocity describes how fast an object moves along a circular path
+Angular velocity describes how fast an object moves along a circular path
 
 \begin{ilight}
-	\keypoint{angular velocity}\index{angular velocity} is defined as angular displacement swiped out per unit time: $\tcbhighmath{\omega = \frac{\Delta \theta}{\Delta t}}$
+	\keypoint{Angular velocity}\index{angular velocity} is defined as angular displacement swiped out per unit time: $\tcbhighmath{\omega = \frac{\Delta \theta}{\Delta t}}$
 \end{ilight}
 
 \cmt unit of: $[\omega] = \radps$, also in radian measures
 
-\cmt angular velocity is a \emph{vector} quantity
+\cmt angular velocity is a \emph{vector} quantity that points in a direction normal to the plane of circular motion but in A-level course, we treat angular velocity as if it is a scalar. Angular velocity and angular speed may be considered to be the same idea
 
-this vector points in a direction normal to the plane of circular motion
-
-but in A-level course, we treat angular velocity as if it is a scalar
-
-angular velocity and angular speed may be considered to be the same idea
-
-\cmt relation with linear velocity
-
-in interval $\Delta t$, distance moved along arc $$\Delta s=v\Delta t=r \Delta\theta \RA \omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} \RA \tcbhighmath{v=\omega r}$$
+Angular and linear velocity are closely related: in interval $\Delta t$, distance moved along arc $$\Delta s=v\Delta t=r \Delta\theta \RA \omega = \frac{\Delta \theta}{\Delta t} = \frac{v}{r} \RA \tcbhighmath{v=\omega r}$$
 
 this relation between linear speed and angular speed holds at any instant
 
 
-\subsection{uniform circular motion}
+\subsection{Uniform circular motion}
 
-when studying linear motion, we started from motion with constant velocity $v$
-
-consider the simplest possible circular motion $\longrightarrow$ circular motion with constant $\omega$
-
+Consider the simplest possible circular motion $\longrightarrow$ circular motion with constant $\omega$
 
 \begin{marginfigure}
 	\centering
@@ -116,12 +103,12 @@ in general, any object moving along circular path is accelerating
 \question{A spacecraft moves around the earth in a circular orbit. The spacecraft has a speed of $7200 \mps$ at a height of 1300 km above the surface of the earth. Given that the radius of the earth is 6400 km. (a) What is the angular speed of this spacecraft? (b) What is its period?}
 
 
-\subsection{centripetal acceleration}
+\subsection{Centripetal acceleration}
 
 \rcyskip
 
 \begin{ilight}
-	\keypoint{centripetal acceleration} is the acceleration due to the change in direction of velocity vector, it points toward the centre of circular path
+	\keypoint{Centripetal acceleration} is the acceleration due to the change in direction of velocity vector, it points toward the centre of circular path
 \end{ilight}
 
 consider motion along a circular path from $A$ to $B$ with constant speed $v$
@@ -167,14 +154,14 @@ this is related to \emph{angular acceleration}\footnote{Angular acceleration is 
 
 \question{A racing car makes a $180^\circ$ turn in 2.0 s. Assume the path is a semi-circle with a radius of 30 m and the car maintains a constant speed during the turn. (a) What is the angular velocity of the car? (b) What is the centripetal acceleration?}
 
-\subsection{centripetal force}
+\subsection{Centripetal force}
 
-circular motion must involve change in velocity, so object is not in equilibrium 
+Circular motion must involve change in velocity, so object is not in equilibrium 
 
 there must be a \emph{net force} on an object performing circular motion 
 
 \begin{ilight}
-	\keypoint{centripetal force}\index{centripetal force} ($F_c$) is the resultant force acting on an object
+	\keypoint{Centripetal force}\index{centripetal force} ($F_c$) is the resultant force acting on an object
 	moving along a circular path, and it is always directed towards centre of the circle
 \end{ilight}
 
@@ -198,7 +185,7 @@ to change \emph{magnitude} of velocity, there requires a \emph{tangential} compo
 
 again the idea of tangential force is beyond the syllabus
 
-\example{planet orbiting around a star}
+\example{Planet orbiting around a star}
 \begin{soln}
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
@@ -364,14 +351,15 @@ at lowest point: $\, F_c = T- mg = m \frac{v^2}{r}$
 \question{A turntable that can rotate freely in a horizontal plane is covered by dry mud. When the angular speed of rotation is gradually increased, state and explain whether the mud near edge of the plate or near the mud will first leave the plate?}
 
 \question{A bucket of water is swung at a constant speed and the motion describes a circle of radius $r=1.0 $m in the vertical plane. If the water does not pour down from the bucket even when it is at the highest position, how fast do you need to swing the bucket?}
+\begin{figure}
+\begin{flushright}
 
-\begin{marginfigure}
-	\centering
 	\begin{tikzpicture}
 	\draw[thick] (-4,2) -- (-3,1) to [out=-45, in=180] (0,-1) arc[radius=1,start angle = -90, end angle = 245] (.3,-1) -- (2,-1);
 	\draw[dashed] (0,1) node[above]{$T$} -- (-3,1) node[above right]{$P$};
 	\draw (-3.2,1.2) -- ++(0.1,0.1) -- ++(0.4,-0.4) -- ++(-0.1,-0.1);
 	\end{tikzpicture}
-\end{marginfigure}
+ \end{flushright}
+\end{figure}
 
 \question{This question is about the design of a roller-coaster. We consider a slider that starts from rest from a point $P$ and slides along a frictionless circular track as sketched below. $P$ is at the same height as the top of the track $T$. (a) Show that the slider cannot get to $T$. (b) As a designer for a roller-coaster, you have to make sure the slider can reach point $T$ and continue to slide along the track, what is the minimum height for the point of release?}

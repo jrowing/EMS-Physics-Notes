@@ -11,15 +11,13 @@ they were first formulated by German physicist \emph{Gustav Robert Kirchhoff} in
 
 the two rules allow for analysis of complex circuits in the field of electrical engineering
 
-\subsection{first law}
+\subsection{First law}
 
 \begin{ilight}
 	\keypoint{Kirchhoff's first law}\index{Kirchhoff's laws!first law}, also called \keypoint{Kirchhoff's current law} (KCL), states that for any point in a circuit, sum of currents flowing in equals sum of currents going out: \begin{empheq}[box=\tcbhighmath]{equation*}{\sum I_\text{in} = \sum I_\text{out}}\end{empheq}
 \end{ilight}
 
-\cmt recall currents are produced by movement of electric charges
-
-so Kirchhoff's first law is therefore a consequence of \emph{conservation of electric charges}
+Recall currents are produced by movement of electric charges so Kirchhoff's first law is therefore a consequence of \emph{conservation of electric charge}. 
 
 \begin{marginfigure}
 	\vspace{-21pt}
@@ -46,80 +44,73 @@ so Kirchhoff's first law is therefore a consequence of \emph{conservation of ele
 	
 
 
-\subsection{second law}
+\subsection{Second law}
 
 \begin{ilight}
 	\keypoint{Kirchhoff's second law}\index{Kirchhoff's laws!second law}, also known as \keypoint{Kirchhoff's voltage law} (KVL), states that for any closed loop in a circuit, sum of all e.m.f.'s of supplies is equal to sum of potential differences across resistors: \begin{empheq}[box=\tcbhighmath]{equation*}{\sum \mathcal{E} = \sum V }\end{empheq}
 \end{ilight}
 
-\cmt recall e.m.f. and p.d. are both defined as energy transfer per unit charge
+Recall e.m.f. and p.d. are both defined as energy transfer per unit charge. The e.m.f. of a supply is electrical energy produced per unit charge. The p.d. across a resistor gives electrical energy consumed per unit charge.
+So Kirchhoff's second law is a consequence of \emph{energy conservation}.
 
-e.m.f. of a supply is electrical energy produced per unit charge
+Signs for $\mathcal{E}$ and $V$ depend on the choice of loop orientation.
 
-p.d. across a resistor gives electrical energy consumed per unit charge
-
-so Kirchhoff's second law is a consequence of \emph{energy conservation}
-
-\cmt signs for $\mathcal{E}$ and $V$ depend on the choice of loop orientation
-
-sign conventions for $\mathcal{E}$ and $V$ are illustrated below
-
-\begin{figure}[ht]
-	\centering
-	\begin{minipage}{0.24\textwidth}
-		\centering
-		\begin{circuitikz}
-		\draw (2,0) to[battery1, l_=$\mathcal{E}$] (0,0);
-		\draw[<-] (2,-1.5) [out=150, in=30] to (0,-1.5);
-		\node at (1,-0.9) {loop};
-		\end{circuitikz}
-	\caption{$+\mathcal{E}$}
-	\end{minipage}\hfil
-	\begin{minipage}{0.24\textwidth}
-		\centering
-		\begin{circuitikz}
-			\draw (2,0) to[battery1, l_=$\mathcal{E}$] (0,0);
-			\draw[->] (2,-1.5) [out=150, in=30] to (0,-1.5);
-			\node at (1,-0.9) {loop};
-		\end{circuitikz}
-		\caption{$-\mathcal{E}$}
-	\end{minipage}\hfil
-	\begin{minipage}{0.24\textwidth}
-		\centering
-		\begin{circuitikz}[european resistors]
-			\draw (0,0) to[R, l^=$R$] (3,0);
-			\draw[->] (2.5,0) -- (2.6,0) node[above] {$I$};
-			\draw[<-] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
-			\node at (1.5,-0.9) {loop};
-		\end{circuitikz}
-		\caption{$V = +IR$}
-	\end{minipage}\hfil
-	\begin{minipage}{0.24\textwidth}
-		\centering
-		\begin{circuitikz}
-			\draw (0,0) to[R, l^=$R$] (3,0);
-			\draw[->] (2.5,0) -- (2.6,0) node[above] {$I$};
-			\draw[->] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
-			\node at (1.5,-0.9) {loop};
-		\end{circuitikz}
-		\caption{$V = -IR$}
-	\end{minipage}
-\end{figure}
+% \begin{figure}[ht]
+% 	\centering
+% 	\begin{minipage}{0.24\textwidth}
+% 		\centering
+% 		\begin{circuitikz}
+% 		\draw (2,0) to[battery1, l_=$\mathcal{E}$] (0,0);
+% 		\draw[<-] (2,-1.5) [out=150, in=30] to (0,-1.5);
+% 		\node at (1,-0.9) {loop};
+% 		\end{circuitikz}
+% 	\caption{$+\mathcal{E}$}
+% 	\end{minipage}\hfil
+% 	\begin{minipage}{0.24\textwidth}
+% 		\centering
+% 		\begin{circuitikz}
+% 			\draw (2,0) to[battery1, l_=$\mathcal{E}$] (0,0);
+% 			\draw[->] (2,-1.5) [out=150, in=30] to (0,-1.5);
+% 			\node at (1,-0.9) {loop};
+% 		\end{circuitikz}
+% 		\caption{$-\mathcal{E}$}
+% 	\end{minipage}\hfil
+% 	\begin{minipage}{0.24\textwidth}
+% 		\centering
+% 		\begin{circuitikz}[european resistors]
+% 			\draw (0,0) to[R, l^=$R$] (3,0);
+% 			\draw[->] (2.5,0) -- (2.6,0) node[above] {$I$};
+% 			\draw[<-] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
+% 			\node at (1.5,-0.9) {loop};
+% 		\end{circuitikz}
+% 		\caption{$V = +IR$}
+% 	\end{minipage}\hfil
+% 	\begin{minipage}{0.24\textwidth}
+% 		\centering
+% 		\begin{circuitikz}
+% 			\draw (0,0) to[R, l^=$R$] (3,0);
+% 			\draw[->] (2.5,0) -- (2.6,0) node[above] {$I$};
+% 			\draw[->] (2.5,-1.5) [out=150, in=30] to (0.5,-1.5);
+% 			\node at (1.5,-0.9) {loop};
+% 		\end{circuitikz}
+% 		\caption{$V = -IR$}
+% 	\end{minipage}
+% \end{figure}
 
 
 
-\begin{marginfigure}
-	\vspace*{-24pt}
-	\centering
-	\begin{circuitikz}[european resistors,scale=0.75]
-		\draw (0,3) to [battery,l=$\mathcal{E}_1$] (4,3) to [R=$R_2$] (4,0);
-		\draw (0,0) to [R=$R_1$] (0,3);
-		\draw (0,0)  to [battery1] (4,0);
-		\draw[Green, thick, dashed, ->] (3.0, 1.8597) arc(21.79:338.21:1.2 and 0.9);
-		\node at (2,-0.9) {$\mathcal{E}_2$};
-	\end{circuitikz}
-	\vspace*{-10pt}
-\end{marginfigure}
+% \begin{figure}[ht]
+% 	\vspace*{-24pt}
+% 	\centering
+% 	\begin{circuitikz}[european resistors,scale=0.75]
+% 		\draw (0,3) to [battery,l=$\mathcal{E}_1$] (4,3) to [R=$R_2$] (4,0);
+% 		\draw (0,0) to [R=$R_1$] (0,3);
+% 		\draw (0,0)  to [battery1] (4,0);
+% 		\draw[Green, thick, dashed, ->] (3.0, 1.8597) arc(21.79:338.21:1.2 and 0.9);
+% 		\node at (2,-0.9) {$\mathcal{E}_2$};
+% 	\end{circuitikz}
+% 	\vspace*{-10pt}
+% \end{figure}
 
 \example{For the circuit shown, find an expression, in terms of $\mathcal{E}$ and $R$, for the electric current flowing through the resistors.}
 
@@ -168,13 +159,11 @@ this equation looks complex but is simply \ding{173}$-$\ding{174}, which is not 
 when writing down equations using KVL, choosing simpler loops gives easier equations \end{soln}
 
 
-\subsection{resistor networks}
+\subsection{Resistor networks}
 
-for a network of resistors, it is useful to treat the combination as a single resistor
+For a network of resistors, it is useful to treat the combination as a single resistor. We can derive formula for series and parallel resistors using Kirchhoff's laws.
 
-we can derive formula for series and parallel resistors using Kirchhoff's laws
-
-\subsection{series resistors}
+\subsection{Series resistors}
 
 \begin{figure}[ht]
 	\centering
@@ -186,23 +175,16 @@ we can derive formula for series and parallel resistors using Kirchhoff's laws
 	\caption{three resistors in series}
 \end{figure}
 
-take three series resistors as shown
+Take three series resistors as shown. The current through each resistor is the same: $I = I_1 = I_2 = I_3$. The e.m.f. however must be split as p.d. across the three resistors: $V_\text{total} = V_1 + V_2 + V_3$
 
-current through each resistor is the same: $I = I_1 = I_2 = I_3$
+Dividing both sides by $I$, we have: $\frac{V_\text{total}}{I} = \frac{V_1}{I} + \frac{V_2}{I} + \frac{V_3}{I}$
 
-p.d. is shared between the three resistors: $V_\text{total} = V_1 + V_2 + V_3$
+So combined resistance for the three resistors is: $R_\text{total} = R_1 + R_2 + R_3$
 
-divide both sides by $I$, we have: $\frac{V_\text{total}}{I} = \frac{V_1}{I} + \frac{V_2}{I} + \frac{V_3}{I}$
+In general, if there are $n$ resistors in series, then: \begin{empheq}[box=\tcbhighmath]{equation*}{R_\text{total} = R_1 + R_2 + \cdots + R_n} \end{empheq}
 
-so combined resistance for the three resistors is: $R_\text{total} = R_1 + R_2 + R_3$
+If one of the resistors in a series network increases, then $R_\text{total}$ would increase. Adding an additional resistor to a network in series, would cause $R_\text{total}$ to increase.
 
-in general, if there are $n$ resistors in series, then: \begin{empheq}[box=\tcbhighmath]{equation*}{R_\text{total} = R_1 + R_2 + \cdots + R_n} \end{empheq}
-
-\cmt if one of the resistors in a series network increases, then $R_\text{total}$ would increase
-
-\cmt adding an additional resistor to a network in series, then $R_\text{total}$ would increase
-
-\cmt if $n$ identical resistors $R_0$ are connected in series, then $R_\text{total}  = nR_0$
 
 
 \subsection{parallel resistors}
@@ -591,8 +573,10 @@ so voltage reading ranges from 0 to 12.5 V \end{soln}
 by balancing two legs of a bridge circuit, an unknown resistance can be measured
 
 \begin{figure}[ht]
-	\centering
 	\vspace*{-5pt}
+ \begin{flushright}
+     
+ 
 	\begin{circuitikz}[european resistors,scale=0.9]
 		\draw (6,0) -- (6,3.75) to[battery] (0,3.75) -- (0,0); 
 		\draw (0,2) to[R] (3,2) to[R] (6,2);
@@ -604,7 +588,10 @@ by balancing two legs of a bridge circuit, an unknown resistance can be measured
 		\node[above] at (4.5, 0.25) {$R_v$};
 		\node[above] at (3,4.25) {$\mathcal{E}$};
 	\end{circuitikz}
+ \end{flushright}
+  \forceversofloat
 	\vspace*{-5pt}
+ 
 \end{figure}
 
 the circuit diagram shows a typical bridge circuit
@@ -703,7 +690,7 @@ e.m.f. of test cell is given by: $ \mathcal{E}_t = \frac{AP}{AB} \times \mathcal
 \example{In the circuit below, the driver cell has an e.m.f. of 17 V and an internal resistance of $5.0$ $\Omega$. $AB$ is a resistance wire of total resistance 80 $\Omega$ and length 80 cm. The e.m.f. of a test cell with an unknown internal resistance is to be determined. The moving contact $P$ is adjusted to a position where $AP=50$ cm such that the ammeter shows no reading. (a) Find the current flowing in the resistance wire. (b) Find the p.d across $A$ and $P$. (c) State the e.m.f. of the test cell.}
 
 \begin{figure}[ht]
-	\centering
+	\begin{flushright}
 	\vspace*{-5pt}
 	\begin{circuitikz}[yscale=0.8]
 		\draw (0,0) node[left]{$A$} -- (0,3) to [battery,l=$\mathcal{E}_d$] (8,3) -- (8,0) node[right]{$B$};
@@ -711,6 +698,7 @@ e.m.f. of test cell is given by: $ \mathcal{E}_t = \frac{AP}{AB} \times \mathcal
 		\draw (0,0) -- (0,-3) to [battery1, l=$\mathcal{E}_t$] (5,-3) to [rmeter, t=A] (5,0) node[above]{$P$};
 	\end{circuitikz}
 	\vspace*{-5pt}
+ \end{flushright}
 \end{figure}
 
 \begin{soln} current in wire: $I = \frac{\mathcal{E}}{R_{AB} + r_d} = \frac{17}{80+5.0} = 0.20 \text{ A}$

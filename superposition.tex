@@ -2,19 +2,19 @@
 
 When two of more waves meet together, the resultant motion is a combination of the individuals. They can form a \emph{resultant wave} when they overlap, after which they cross one another and neither is affected. In this chapter, we will study the principle of superposition, and look at two important consequences: the phenomenon of \emph{interference} and \emph{stationary waves}.
 
-\subsection{superposition of waves}
+\subsection{Superposition of waves}
 
 
 
-\subsection{principle of superposition}
+\subsection{Principle of superposition}
 
 \begin{ilight}
-	 when two (or more) waves meet to form a resultant wave, the \keypoint{principle of superposition} states that the resultant displacement is the vector sum of each individual displacement\index{superposition of waves!principle of superposition}
+	 When two (or more) waves meet to form a resultant wave, the \keypoint{principle of superposition} states that the resultant displacement is the vector sum of each individual displacement\index{superposition of waves!principle of superposition}
 \end{ilight}
 
 \example{Displacement–time graphs for two waves $A$ and $B$ meeting at some point, together with the resultant wave formed at that point.}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
@@ -36,21 +36,13 @@ When two of more waves meet together, the resultant motion is a combination of t
 		\draw [thick,blue,domain=0:6,samples=30,smooth] plot (\x,{1.2*sin(\x*1.5 r) + 0.6*sin(\x*3 r)});
 		\end{tikzpicture}
 	\end{minipage}
-\end{figure}
+\end{figure*}
 
-\cmt two important situations are constructive superposition and destructive superposition\index{superposition of waves!constructive superposition}\index{superposition of waves!destructive superposition}
+Two important situations are constructive superposition and destructive superposition\index{superposition of waves!constructive superposition}\index{superposition of waves!destructive superposition}
 
-\cmt \keypoint{constructive superposition} occurs when resultant wave has greatest possible amplitude
+\keypoint{Constructive superposition} occurs when resultant wave has greatest possible amplitude. This happens when peaks of the two waves meet together (also trough meets trough)\footnote{This statement is implicitly for transverse waves. For longitudinal waves to superpose constructively, the regions of compression (or rarefaction) must overlap.} 	peaks of both waves must arrive with a time difference $\Delta t = 0, \, T, \, 2T, \cdots$
 	
-	this happens when peaks of the two waves meet together (also trough meets trough)\footnote{This statement is implicitly for transverse waves. For longitudinal waves to superpose constructively, the regions of compression (or rarefaction) must overlap.}
-	
-	peaks of both waves must arrive with a time difference $\Delta t = 0, \, T, \, 2T, \cdots$
-	
-\cmt \keypoint{destructive superposition} occurs when amplitudes of each wave cancel out one another
-	
-	this happens when peak of one wave overlaps with trough of the other wave
-	
-	peaks of both waves must arrive with a time difference $\Delta t = \frac{1}{2}T, \, \frac{3}{2}T, \, \frac{5}{2}T, \cdots$
+\keypoint{Destructive superposition} occurs when amplitudes of each wave cancel out one another this happens when peak of one wave overlaps with trough of the other wave peaks of both waves must arrive with a time difference $\Delta t = \frac{1}{2}T, \, \frac{3}{2}T, \, \frac{5}{2}T, \cdots$
 
 \begin{figure*}[ht]
 	\centering
@@ -77,7 +69,7 @@ When two of more waves meet together, the resultant motion is a combination of t
 	\caption{constructive and destructive superposition of two transvers waves}
 \end{figure*}
 \vspace{2cm}
-Note: longitudinal waves are often represented by transverse diagrams:
+Note: longitudinal waves are often represented by transverse diagrams. Transverse are much clearer and easier to read:
 \vspace{1cm}
  
 
@@ -95,15 +87,9 @@ Note: longitudinal waves are often represented by transverse diagrams:
 \end{figure*}
 
 
-\subsection{path difference}
+\subsection{Path difference}
 
-one way to compare how much peaks of two waves differ is using the \keypoint{path difference}\index{path difference}
-
-when two waves meet at a point, each wave travels a distance from its source
-
-the difference between distances travelled by the two waves is the path difference $\Delta L$
-
-\cmt we can tell whether two waves superpose constructively or destructively by path difference
+The \keypoint{path difference}\index{path difference} is the difference in distance that two waves must travel from their sources to a given point. It plays a crucial role in wave interference, where waves can either constructively or destructively superpose depending on their path difference. Path difference is generally expressed in multiples of wavelength. To tell whether two waves superpose constructively or destructively:
 
 {
 
@@ -134,29 +120,19 @@ path difference for case (b): $\Delta L = 12 - 10 = 2.0 \text{ m} \RA \Delta L =
 
 so destructive superposition, resultant amplitude is small, sound is quiet \end{soln}
 
-\subsection{phase difference}
+\subsection{Phase difference}
 
-when two waves or two vibrating particles are compared, it is also useful to describe how much one is out of step with the other in terms of their \keypoint{phase difference}\index{phase difference} ($\Delta \phi$)
+When two waves or two vibrating particles are compared, it is also useful to describe how much one is out of step with the other in terms of their \keypoint{phase difference}\index{phase difference} ($\Delta \phi$)
 \footnote{More logically, we should first define the notion of \emph{phase angle} before talking about the \emph{phase difference}, which is simply the difference between the phase angles of two waves.
 	
 	Wave motion can generally be described by sine (or cosine) functions. Since the initial displacement of a wave is not necessarily zero, one can introduce a constant term that appears in the argument of the sine function. This term shifts the origin of the sine, and we call that the \emph{phase angle} $\phi$ of the wave, measured in radians (or degrees). One can think of $\phi$ as a number giving the fraction in a complete oscillation.
 	
 	In particular, the displacement $y$ of a transverse wave along the direction $x$ of energy transfer can be given by: $y = A \sin\left( \frac{2\pi x}{\lambda} - \frac{2\pi t}{T} + \phi \right)$. You can verify that this indeed describes a sinusoidal wave of wavelength $\lambda$ and period $T$ travelling at speed $v = \frac{\lambda}{T}$, while $\phi$ determines when and where the peaks show up.}
 
-\cmt phase difference is measured in radians (rad) or degrees ($^\circ$)
+Phase difference is measured in radians (rad) or degrees ($^\circ$),  if two waves have a phase difference $\Delta \phi = 0,2\pi,4\pi,\cdots$, the two waves are said to be \keypoint{in phase}\footnote{If $\Delta \phi$ is given in degrees, then two waves are in phase if $\Delta \phi = 0, \, 360^\circ, \, 720^\circ, \cdots$}. In this case, peak of one wave overlaps with peak of the other. If two waves are not in phase, then they are said to be \keypoint{out of phase}
+If $\Delta \phi = \pi, 3\pi, 5\pi, \cdots$, then two waves are completely out of phase, or \keypoint{anti-phase}\footnote{If $\Delta \phi$ is given in degrees, then two waves are anti-phase if $\Delta \phi = 180^\circ, \, 540^\circ, \, 900^\circ, \cdots$} in this case, peak of one wave meets the trough of the other. 
 
-\cmt if two waves have a phase difference $\Delta \phi = 0,2\pi,4\pi,\cdots$, the two waves are said to be \keypoint{in phase}\footnote{If $\Delta \phi$ is given in degrees, then two waves are in phase if $\Delta \phi = 0, \, 360^\circ, \, 720^\circ, \cdots$}
-
-in this case, peak of one wave overlaps with peak of the other
-
-\cmt if two waves are not in phase, then they are said to be \keypoint{out of phase}
-
-\cmt if $\Delta \phi = \pi, 3\pi, 5\pi, \cdots$, then two waves are completely out of phase, or \keypoint{anti-phase}\footnote{If $\Delta \phi$ is given in degrees, then two waves are anti-phase if $\Delta \phi = 180^\circ, \, 540^\circ, \, 900^\circ, \cdots$}
-
-in this case, peak of one wave meets the trough of the other
-
-
-\cmt we can tell whether two waves superpose constructively or destructively by phase difference
+We can tell whether two waves superpose constructively or destructively from their phase difference as follows:
 
 {
 	
@@ -182,7 +158,7 @@ in this case, peak of one wave meets the trough of the other
 
 \newpage
 
-\cmt phase difference can be related to path difference by: \begin{empheq}[box=\tcbhighmath]{equation*}{ \frac{\Delta \phi}{2\pi} = \frac{\Delta L}{\lambda} = \frac{\Delta t}{T} } \end{empheq}
+Phase difference can also be related to path difference by: \begin{empheq}[box=\tcbhighmath]{equation*}{ \frac{\Delta \phi}{2\pi} = \frac{\Delta L}{\lambda} = \frac{\Delta t}{T} } \end{empheq}
 
 \example{The diagrams below each shows the displacement of a particular point in two transverse waves. If both waves are travelling in the same direction with a wavelength of 30 cm, what is the phase difference and path difference between each wave?}
 
@@ -232,9 +208,9 @@ in this case, peak of one wave meets the trough of the other
 \eqyskip (c) $\Delta t = \frac{1}{6}T \RA \Delta \phi = \frac{1}{6}\times 2\pi = \frac{1}{3}\pi, \quad \Delta L = \frac{1}{6} \lambda = \frac{1}{6}\times30 = 5.0 \text{ cm}$ \end{soln}
 
 
-\subsection*{brief summary}
+\subsection*{Brief summary}
 
-conditions for constructive and destructive superposition can be summarised as follows:
+The conditions for constructive and destructive superposition can be summarised as follows:
 
 \begin{center}
 {\renewcommand{\arraystretch}{1.25}
@@ -256,18 +232,16 @@ conditions for constructive and destructive superposition can be summarised as f
 
 where $n$ is a whole number: $n=0, 1, 2, 3 \cdots$
 
-remember that $\Delta t$, $\Delta L$ and $\Delta \phi$ are just different ways to describe how much one wave is ahead of/lag behind another wave, so they must be closely interrelated to each other
+Remember that $\Delta t$, $\Delta L$ and $\Delta \phi$ are just different ways to describe how much one wave is ahead of/lag behind another wave, so they must be closely interrelated to each other.
 
 
 
 
+\newpage
 
+\subsection{Interference}
 
-\subsection{interference}
-
-\subsection{interference}
-
-when two (or more) waves of constant phase difference meet, stable regions of constructive and destructive superposition are produced alternately, this phenomenon is called \keypoint{interference}\index{interference}
+When two (or more) waves of constant phase difference meet, stable regions of constructive and destructive superposition are produced alternately, this phenomenon is called \keypoint{interference}\index{interference}
 
 
 
@@ -276,8 +250,8 @@ when two (or more) waves of constant phase difference meet, stable regions of co
 	\includegraphics[width=1\textwidth]{interference.pdf}
 \caption{constructive (solid lines) and destructive (dashed lines) interference of waves produced from two coherent sources $A$ and $B$}
 \end{figure*}
-
-\cmt regions of constructive interference are often called \emph{maxima}
+\vspace{1cm}
+Regions of constructive interference are often called \emph{maxima}
 
 \begin{compactitem}
 	\item[--] points on line C$_0$ are of equal distance to wave sources, i.e., path difference $\Delta L = 0$
@@ -291,7 +265,7 @@ when two (or more) waves of constant phase difference meet, stable regions of co
 	\item[--] equivalently, points on C$_n$ have phase difference $\Delta \phi = n\cdot 2\pi$, where $n=0,1,2,3,\cdots$
 \end{compactitem} 
 
-\cmt regions of destructive interference are often called \emph{minima}
+Regions of destructive interference are often called \emph{minima}
 
 \begin{compactitem}
 	\item[--] points on D$_1$, D$_2$ and D$_3$ have path difference $\Delta L = \frac{1}{2}\lambda, \, \frac{3}{2}\lambda, \, \frac{5}{2}\lambda$
@@ -309,16 +283,15 @@ when two (or more) waves of constant phase difference meet, stable regions of co
 \newpage
 
 
-\cmt stable interference means regions of maxima/minima remain maxima/minima
+Stable interference means regions of maxima/minima remain maxima/minima can be easily seen. This requires \keypoint{coherent} wave sources, which means constant phase difference over time\index{coherence}.
 
-this requires \keypoint{coherent} wave sources, which means constant phase difference over time\index{coherence}
-
-\cmt coherent waves usually come from same source, such as
+The easiest way to produce coherent waves is to use the the same source, such as
 
 \begin{compactitem}
 	\item[--] dippers driven by a common vibrating beam in a ripple tank
 	
 	\item[--] loudspeakers driven by the same signal generator
+ \item[--] a laser beam shone on two slits.
 \end{compactitem}
 
 \begin{figure}[ht]
@@ -351,85 +324,227 @@ this requires \keypoint{coherent} wave sources, which means constant phase diffe
 	\draw[gray] (-0.38,-0.4) [out=-75 , in=180] to (0.1,-0.8) [out=0, in=210] to (1.3,-0.4);
 	\end{tikzpicture}
 	
-	\caption{demonstrating interferece of water waves in a ripple tank}
+	\caption{Demonstrating interferece of water waves in a ripple tank}
 \end{figure}
 
 
-\cmt interference are not observed for beams of light from different lamps or laser sources
+Conversely, we do not see interference from beams of light from different lamps or laser sources because light from different sources are usually \emph{incoherent}\footnote{Emission of light is associated with the electronic transitions between energy levels in an atom, which is a completely random process. So in general separate light sources are not coherent.}
 
-this is because light from different sources are usually \emph{incoherent}\footnote{Emission of light is associated with the electronic transitions between energy levels in an atom, which is a completely random process. So in general separate light sources are not coherent.}
-
-this can be overcome by dividing a single beam into several beams using a number of slits
-
-common apparatuses of doing so are the \emph{double-slit} and \emph{diffraction gratings}
+This can be overcome by dividing a single beam into several beams using a number of slits. common apparatuses of doing so are the \emph{double-slit} and \emph{diffraction gratings}
 
 \example{Two coherent waves meet in space, one of which has an amplitude of 0.30 cm and the other of 0.20 cm. How does the intensity of maxima compare with the intensity of minima?}
 
-\begin{soln} amplitude of maxima: $A_\tmax = A_1 + A_2 = 0.30 + 0.20 = 0.50 \text{ cm}$
+\begin{soln} Amplitude of maxima: $A_\tmax = A_1 + A_2 = 0.30 + 0.20 = 0.50 \text{ cm}$
 
-amplitude of minima: $A_\tmin = A_1 - A_2 = 0.30 - 0.20 = 0.10 \text{ cm}$
+Amplitude of minima: $A_\tmin = A_1 - A_2 = 0.30 - 0.20 = 0.10 \text{ cm}$
 
-ratio of intensities: $\frac{I_\tmax}{I_\tmin} = \left( \frac{A_\tmax}{A_\tmin} \right)^2 = \left( \frac{0.50}{0.10} \right)^2 \RA \frac{I_\tmax}{I_\tmin} = 25$ \end{soln}
+Ratio of intensities: $\frac{I_\tmax}{I_\tmin} = \left( \frac{A_\tmax}{A_\tmin} \right)^2 = \left( \frac{0.50}{0.10} \right)^2 \RA \frac{I_\tmax}{I_\tmin} = 25$ \end{soln}
 
 
 
 \newpage
 
 
-\subsection{double-slit interference}\index{double-slit experiement}
+\subsection{Double-slit interference}\index{double-slit experiement}
 
-let's take a beam of light being guided through two narrow slits
+Let's take a beam of light being guided through two narrow slits, light waves diffracting through the slits act as coherent wave sources and when they meet on a screen, interference pattern can be seen. Since this experiment is carried out with light, alternating bright and dark fringes are formed. 
 
-light waves diffracting through the slits act as coherent wave sources
+This is known as \emph{Thomas Young}'s \keypoint{double-slit experiment}
+\footnote[][-4cm]{The nature of light has been argued since the history of human civilisation. It has been long debated whether light is a \emph{wave} or it is made of \emph{particles}. It was until the early 1800s when Thomas Young carried out the famous double-slit experiment that now bears his name, people became certain that light has wavelike properties. We know now of course that it has particle -like properties too. For a detailed review, check out the Wikipedia article: \url{https://en.wikipedia.org/wiki/Light}.}
 
-when they meet on a screen, interference pattern can be seen
 
-since this experiment is carried out with light, alternating bright and dark fringes are formed
 
-this is known as \emph{Thomas Young}'s \keypoint{double-slit experiment}
-\footnote[][-4cm]{The nature of light has been argued since the history of human civilisation. It has been long debated whether light is a \emph{wave} or it is made of \emph{particles}. It was until the early 1800s when Thomas Young carried out the famous double-slit experiment that now bears his name, people became certain that light has wavelike properties. For a detailed review, check out the Wikipedia article: \url{https://en.wikipedia.org/wiki/Light}.}
+\colorlet{wall}{blue!30!black}
+\colorlet{myblue}{blue!70!black}
+\colorlet{myred}{red!70!black}
+\colorlet{mydarkred}{red!50!black}
+\colorlet{mylightgreen}{green!60!black!70}
+\colorlet{mygreen}{green!60!black}
+\colorlet{myredgrey}{red!50!black!80}
+\colorlet{myshadow}{blue!30!black!90}
+\tikzstyle{wave}=[myblue,thick]
+\tikzstyle{mydashed}=[black!70,dashed,thin]
+\tikzstyle{mymeas}=[{Latex[length=3,width=2]}-{Latex[length=3,width=2]},thin]
+\tikzstyle{mysmallarr}=[-{Latex[length=3,width=2]}]
 
-\begin{figure*}[ht]
+
+\newcommand\rightAngle[4]{
+  \pgfmathanglebetweenpoints{\pgfpointanchor{#2}{center}}{\pgfpointanchor{#3}{center}}
+  \coordinate (tmpRA) at ($(#2)+(\pgfmathresult+45:#4)$);
+  \draw[white,line width=0.6] ($(#2)!(tmpRA)!(#1)$) -- (tmpRA) -- ($(#2)!(tmpRA)!(#3)$);
+  \draw[mydarkred] ($(#2)!(tmpRA)!(#1)$) -- (tmpRA) -- ($(#2)!(tmpRA)!(#3)$);
+}
+\newcommand\lineend[2]{
+  \def\w{0.1} \def\c{30}
+  \draw[mygreen] (#1)++(#2:\w) to[out=#2-180-\c,in=#2+\c] (#1)
+                               to[out=#2+\c-180,in=#2-\c]++ (#2-180:\w);
+}
+\def\tick#1#2{\draw[thick] (#1) ++ (#2:0.1) --++ (#2-180:0.2)}
+
+% INTERFERENCE FADING
+\begin{tikzfadingfrompicture}[name=interference]
+  \def\lambd{0.5} % wavelength
+  \foreach \r in {1,...,15}
+    \foreach \j in {1,...,25}
+       \path [line width=\lambd*\j,draw=transparent!0,opacity=0.04]
+          (0,0) circle (\lambd*\r); %(0:\r) arc (0:180:\r);
+\end{tikzfadingfrompicture}
+
+
+\begin{figure*}
 	\centering
-	\begin{tikzpicture}[xscale=1.5, yscale=1.2]
-	% screen & fringes
-	\draw[thick, fill=gray!20] (30:6) ++ (-1.5,1) --++ (3,0) --++ (0,-2) --++ (-3,0) --++ (0,2);
-	\foreach \x in {-0.9,-0.6,...,0.9} \draw[very thick, blue, fill] (30:6) ++ (\x, 0) circle (0.05) -- (30:2.5);
-	% double slit
-	\draw[thick,fill=orange!35, opacity=0.75] (30:2.5) ++ (-0.6,0.6) --++ (1.2,0) --++ (0,-1.2) --++ (-1.2,0) --++ (0,1.2);
-	\draw[thin] (30:2.5) ++ (-0.08,0.4) --++ (0.05,0) --++ (0,-0.8) --++ (-0.05,0) --++ (0,0.8);
-	\draw[thin] (30:2.5) ++ (0.08,0.4) --++ (-0.05,0) --++ (0,-0.8) --++ (0.05,0) --++ (0,0.8);
-	\draw[very thick, blue] (30:2.5) -- (0,0);
-	% laser source
-	\draw[white, fill, opacity=0.75] (-0.6, 0.4) rectangle (0.6,-0.4);
-	\draw[thick] (-0.6, 0.4) -- (0.6, 0.4) -- (0.6,-0.4);
-	\draw[thick] (-0.6, 0.4) --++ (210:2);
-	\draw[thick] (0.6,-0.4) --++ (210:2);
-	\draw[thick] (0.6, 0.4) --++ (210:2.4);
-	% nodes
-	\draw (1.2,-1) node {laser source};
-	\draw (30:6) ++ (0, 1.1) node[above] {screen};
-	\draw (30:2.5) ++ (0, 0.7) node[above] {double slit};
-	\end{tikzpicture}
+ \begin{tikzpicture}[
+    nodal/.style={mylightgreen,dashed,very thin},
+    declare function={
+      %xnode(\n,\dn,\lam,\f) = sqrt( (\n^2+(\n+\dn)^2)*\lambd^2/2 - (\n^2-(\n+\dn)^2)^2*\lambd^4/(4*\a^2) - \a^2/4 );
+      xnode(\n,\dn,\lam,\f) = \lam/\f*sqrt( \n^2*(\f^2-\dn^2)+\n*\dn*(\f^2-\dn^2)+\dn^2*\f^2/2-(\f^4+\dn^4)/4 );
+      ynode(\n,\dn,\lam,\a) = (2*\n*\dn+\dn^2)*\lam/(2*\f);
+      intensity(\y,\lam,\a,\L) = cos(180*\a*\y/(2*\lam*sqrt(\L*\L+\y*\y)))^2;
+    }
+  ]
+  
+  \def\L{3.8}       % distance between walls
+  \def\H{5.4}       % total wall height
+  \def\h{2.8}       % plane wave height
+  \def\t{0.15}      % wall thickness
+  \def\a{1.15}      % slit distance
+  \def\d{0.20}      % slit size
+  \def\N{21}        % number of waves
+  \def\lambd{0.20}  % wavelength
+  \def\R{\N*\lambd} % wave radius
+  \def\Nlines{3}    % number of nodal lines
+  \def\A{1.6}       % amplitude
+  %\def\r{0.06}      % point source radius
+  %\def\nmax{10}
+  \def\nsamples{100}
+  \def\ang{62}
+  
+  \begin{scope}
+    \clip (-\t/2,-\H/2) rectangle (\L,\H/2);
+    %\clip (-\t/2,0.7*\a) -- (0.6*\L,\H/2) -- (\L,\H/2) --
+    %      (\L,-\H/2) -- (0.6*\L,-\H/2) -- (-\t/2,-0.7*\a) -- cycle;
+    
+    % NODAL LINES
+    \draw[nodal]
+      (0.08*\N*\lambd,0) -- (1.06*\R,0);
+    \coordinate (NP0) at (\L,0);  % to avoid "Dimension too large error"
+    \foreach \dn [evaluate={
+                   \f=\a/\lambd;
+                   \nmin=2.5+0.2*\dn; %0.501*(-\dn+\f)
+                   \nmax=10; %(NP0)
+                   \c=int(\dn<\f);
+                   \y=\L/sqrt((\a/(\lambd*\dn))^2-1);
+                 }] in {1,...,\Nlines}{
+      \coordinate (NP+\dn) at (\L,\y);  % to avoid "Dimension too large error"
+      \coordinate (NP-\dn) at (\L,-\y); % to avoid "Dimension too large error"
+      \ifnum\c=1
+        \draw[nodal,variable=\n,samples=\nsamples,smooth]
+          plot[domain=\nmin:\nmax] ({xnode(\n,\dn,\lambd,\f)},{ynode(\n,\dn,\lambd,\f)})
+          -- (NP+\dn);
+        \draw[nodal,variable=\n,samples=\nsamples,smooth]
+          plot[domain=\nmin:\nmax] ({xnode(\n,\dn,\lambd,\f)},{-ynode(\n,\dn,\lambd,\f)})
+          -- (NP-\dn);
+      \fi
+    }
+    
+    % WAVES
+    \foreach \i [evaluate={\R=\i*\lambd;}] in {1,...,\N}{
+      \ifodd\i
+        \draw[myblue,line width=0.8] (0,\a/2)++(\ang:\R) arc (\ang:-\ang:\R);
+        \draw[myred,line width=0.8] (0,-\a/2)++(\ang:\R) arc (\ang:-\ang:\R);
+      \else
+        \draw[myblue!80,line width=0.1] (0,\a/2)++(\ang:\R) arc (\ang:-\ang:\R);
+        \draw[myred!80,line width=0.1] (0,-\a/2)++(\ang:\R) arc (\ang:-\ang:\R);
+      \fi
+    }
+  \end{scope}
+  
+  % PLANE WAVES
+  \foreach \i [evaluate={\x=-\i*\lambd;}] in {0,...,5}{
+    \ifodd\i
+      \draw[myblue,line width=0.8] (\x,-\h/2) -- (\x,\h/2);
+    \else
+      \draw[myblue,line width=0.1] (\x,-\h/2) -- (\x,\h/2);
+    \fi
+  }
+  
+  % WALL
+  \fill[wall]
+    (\t/2,\a/2-\d/2) rectangle (-\t/2,-\a/2+\d/2)
+    (\t/2,\a/2+\d/2) rectangle (-\t/2,\H/2)
+    (\t/2,-\a/2-\d/2) rectangle (-\t/2,-\H/2)
+    (\L,-\H/2) rectangle (\L+\t,\H/2);
+  
+  % SHADES
+  \begin{scope}[shift={(1.08*\L,0)}]
+    \def\yz{\L/sqrt((\a/\lambd)^2-1)} % m = +- 1/2
+    \def\yZ{\L/sqrt((\a/\lambd/2)^2-1)} % m = +- 1
+    \clip (0,-\H/2) rectangle (1.1*\A,\H/2);
+    \fill[white] (0,-\H/2) rectangle++ (\A,\H); % to fill seams
+    \foreach \i [evaluate={\n=0.5*\i;\yn=\L/sqrt((\a/(2*\lambd*\n))^2-1);
+                 }] in {1,...,\Nlines}{
+      \ifodd\i % if even
+        \fill[myshadow] (0,{-\yn-0.1}) rectangle++ (\A,0.2); % to fill seams
+        \fill[myshadow] (0,{ \yn-0.1}) rectangle++ (\A,0.2); % to fill seams
+      \fi
+    }
+    \path[left color=myshadow,right color=myshadow,middle color=white,shading angle={180}]
+      (0,{-\yz}) rectangle (\A,{\yz});
+    \foreach \i [evaluate={
+                  \n=0.5*\i;
+                  \m=0.5*(\i+1);
+                  \yn=\L/sqrt((\a/(2*\lambd*\n))^2-1);
+                  \ym=\L/sqrt((\a/(2*\lambd*\m))^2-1);
+                  \dang=mod(\i,2)*180;
+                 }] in {1,...,\Nlines}{
+      \path[left color=myshadow,right color=white,shading angle={\dang}]
+        (0,\yn) rectangle (\A,\ym);
+      \path[left color=myshadow,right color=white,shading angle={180+\dang}]
+        (0,-\yn) rectangle (\A,-\ym);
+    }
+  \end{scope}
+  
+  % INTENSITY
+  \begin{scope}[shift={(1.1*\L+1.1*\A,0)}]
+    \draw[->,thick] (-0.08*\A,0) -- (1.3*\A,0) node[right=-2] {$\expval{I}$}; % I axis
+    \draw[->,thick] (0,-0.52*\H) -- (0,0.54*\H) node[right] {$y$}; % y axis
+    \draw[nodal] (NP0) --++ (0.15*\L+2.1*\A,0); % green nodal lines
+    \foreach \i [evaluate={\y=\L/sqrt((\a/(\lambd*\i))^2-1)}] in {1,...,\Nlines}{ % green nodal lines
+      \draw[nodal] (NP+\i) --++ ({0.15*\L+1.1*\A+\A*intensity(\y,\lambd,\a,\L)},0);
+      \draw[nodal] (NP-\i) --++ ({0.15*\L+1.1*\A+\A*intensity(\y,\lambd,\a,\L)},0);
+    }
+    \draw[myred,thick,variable=\y,samples=\nsamples,smooth,domain=-\H/2:\H/2]
+      plot({\A*intensity(\y,\lambd,\a,\L)},\y);
+    \foreach \i [evaluate={ % ticks
+        \modd=\i; %int(\i);
+        \meven=int(\i-1);
+        \y=\L/sqrt((\a/(\lambd*\i))^2-1);
+                }] in {1,...,\Nlines}{
+      \ifodd\i
+        \tick{0,-\y}{180} node[right=0,scale=0.85] {$m=-\frac{\modd}{2}$};
+        \tick{0,\y}{180} node[right=0,scale=0.85] {$m=+\frac{\modd}{2}$};
+      \else
+        \tick{0,-\y}{180} node[right=0,scale=0.85] {$m=-\meven$};
+        \tick{0,\y}{180} node[right=0,scale=0.85] {$m=+\meven$};
+      \fi
+    }
+  \end{scope}
+  
+\end{tikzpicture}
 	\caption{Young's double-slit interference experiment}
 \end{figure*}
 
 
-\cmt when waves from the two slits meet with path difference $\Delta L = 0, \, \lambda, \, 2\lambda, \cdots$, maxima is formed
+When waves from the two slits meet with path difference $\Delta L = 0, \, \lambda, \, 2\lambda, \cdots$, maxima is formed, ie bright fringes are observed.\\
+When waves from the two slits meet with path difference $\Delta L = \frac{1}{2}\lambda, \, \frac{3}{2}\lambda, \, \frac{5}{2}\lambda, \cdots$, minima is formed, ie dark fringes are observed.
 
-these give positions where bright fringes are observed
+We can use the geometry of the slit separation, the distance to the screen, and the spacing of the fringes to calculate the wavelength of the light - at least we can if the slit-to-screen distance is much larger than the slit separation, i.e., $D \gg d$.\\
 
-\cmt when waves from the two slits meet with path difference $\Delta L = \frac{1}{2}\lambda, \, \frac{3}{2}\lambda, \, \frac{5}{2}\lambda, \cdots$, minima is formed
-
-these give positions is where dark fringes are observed
-
-\cmt slit-to-screen distance is usually much larger than the slit separation, i.e., $D \gg d$
-
-in this case, bright fringes are nearly equally spaced with a separation of: \begin{empheq}[box=\tcbhighmath]{equation*}{x = \frac{\lambda D}{d}}\end{empheq}
+In this case, bright fringes are nearly equally spaced with a separation of: \begin{empheq}[box=\tcbhighmath]{equation*}{x = \frac{\lambda D}{d}}\end{empheq}
 
 where $d$ is separation of the two slits, $D$ is slit-to-screen distance
 
-\begin{figure}[htp]
+\begin{figure*}
 	\centering
 	\begin{tikzpicture}[scale=0.55]
 	\coordinate (A) at (0,1); \node[left] at (A) {$A$};
@@ -478,51 +593,71 @@ where $d$ is separation of the two slits, $D$ is slit-to-screen distance
 	\draw[red] (14,-5.4) node[right] {\footnotesize{$\Delta L \approx d\sin\theta$}};
 	\draw[densely dotted] (10.5,-6.4) rectangle (17.5,-1);
 	\end{tikzpicture}
-	
-\end{figure}
+	\label{fringey}
+ \caption{Deriving the Young slits formulae.}
+\end{figure*}
 
-\noindent \textbf{proof}: consider a point $P$ on the screen where a bright fringe is formed (see graph)
+The derivation of this formulae is one you should know and follows: 
+Consider a point $P$ on the screen where a bright fringe is formed (see figure \ref{fringey})
 
-path difference between the slits must be a whole number of wavelength: $ \Delta L = \big|PB-PA\big| = n\lambda $
+The path difference between the slits must be a whole number of wavelength: $$ \Delta L = \big|PB-PA\big| = n\lambda $$
 
-since $D \gg d$, paths $PA$ and $PB$ can be considered approximately parallel
+Because $D \gg d$, paths $PA$ and $PB$ can be considered approximately parallel, so path difference is length of the segment $HB$, then we have: $$\Delta L \approx d\sin\theta$$
 
-so path difference is length of the segment $HB$, then we have: $\Delta L \approx d\sin\theta$
+In terms of $\theta$, bright fringes are found where: $$ d\sin\theta = n\lambda $$
 
-in terms of $\theta$, bright fringes are found where: $ d\sin\theta = n\lambda $
+To convert $\theta$ into the coordinate $y$, we have: $$\tan \theta = \frac{y}{D}$$
 
-to convert $\theta$ into the coordinate $y$, we have: $\tan \theta = \frac{y}{D}$
+Because $\theta$ is very small, the small-angle approximation ($\sin \theta \approx \tan \theta$) can be applied, so positions where the bright fringes show up are: $$ \tcbhighmath{y_n =  n \times \frac{\lambda D}{d}} $$\begin{marginfigure}
+\begin{tikzpicture}[scale=.7]
+\begin{axis}[
+  grid=both,
+  xmin=-.1,
+  xmax=.6,
+  ymin=-.5,
+  ymax=1,
+  xlabel=$x$,
+  ylabel=$y$,
+  axis lines=center,
+  >=stealth
+]
+  \addplot[
+    domain=-.1:.6,
+    blue,
+    ultra thick,
+    samples=100,
+  ] plot[smooth] {sin(deg(x))};
+  \addplot[
+    domain=-.1:.6,
+    red,
+    ultra thick,
+    samples=100,
+  ] plot[smooth] {tan(deg(x))};
+\end{axis}
+\end{tikzpicture}
 
-but $\theta$ is very small, small-angle approximation ($\sin \theta \approx \tan \theta$) can be applied
+\caption{For small values of x, tan(x) [red] and sin(x) [blue] can be considered equal.} 
+\end{marginfigure}
 
-so positions where the bright fringes show up are: $ y_n =  n \times \frac{\lambda D}{d} $
 
-here the coordinate subscript $n$ labels the order of the bright fringes
+Here the coordinate subscript $n$ labels the order of the bright fringes. This shows that the $(n+1)$-th fringe is at a fixed distance from the $n$-th fringe, therefore the separation between neighbouring bright fringes is: $$ {x=\frac{\lambda D}{d}} $$
 
-this shows that the $(n+1)$-th fringe is at a fixed distance from the $n$-th fringe
-
-therefore separation between neighbouring bright fringes is $ {x=\frac{\lambda D}{d}} $ \eoe
-
-\cmt altering width of slit could cause a change in \emph{brightness} of fringes
-
-width of slit determines intensity of emergent light passing through that slit
-
-resultant amplitude will be affected as a consequence of the superposition principle
+Aaltering width of slit could cause a change in \emph{brightness} of fringes.
 
 \example{A teacher demonstrates the double-slit experiment with a beam of red light produced from a helium-neon laser. The beam of wavelength of 632 nm is sent through a double-slit separated by 0.30 mm and passed onto a wall at about 2.0 m from the slits. (a) What is the fringe separation? (b) If the experiment is carried out using a green laser, what changes do you expect?}
 
-\begin{soln} fringe separation: $ x = \frac{\lambda D}{d} = \frac{632 \times 10^{-9} \times 2.0 }{0.30 \times 10^{-3}} \RA x \approx 4.2 \times 10^{-3} \text{ m}$
+\begin{soln} Fringe separation: $ x = \frac{\lambda D}{d} = \frac{632 \times 10^{-9} \times 2.0 }{0.30 \times 10^{-3}} \RA x \approx 4.2 \times 10^{-3} \text{ m}$
 
 if replaced by green light, wavelength becomes shorter, so smaller fringe separation \end{soln}
 
 
 \example{Coherent light passes through a double slit. Initially, the light intensity from each slit is the same. State the change to the appearance of the fringes if (a) the separation between the slits is increased, (b) The width of one of the slits is reduced.}
 
-\begin{soln} (a) from $ x = \frac{\lambda D}{d} $, shorter $\lambda$ results in smaller fringe separation
+\begin{soln} (a) From $ x = \frac{\lambda D}{d} $, shorter $\lambda$ results in smaller fringe separation
 
 \hspace*{1.25em} but brightness of the fringes remains unchanged
 
-(b) reducing width of slit causes amplitude of light from that slit to decrease
+(b) Reducing width of slit causes amplitude of light from that slit to decrease
 
 \hspace*{1.25em} at maxima, resultant amplitude decreases, so bright fringes become less bright
 
@@ -532,11 +667,9 @@ if replaced by green light, wavelength becomes shorter, so smaller fringe separa
 
 
 
-\subsection{multi-slit interference: diffraction gratings}
+\subsection{Multi-slit interference: diffraction gratings}
 
-passing light through even more slits also produces nice interference patterns
-
-\keypoint{diffraction grating} is such an apparatus, with hundreds or thousands of slits per mm\index{diffraction grating}
+Passing light through even more slits also produces nice interference patterns, the \keypoint{diffraction grating} is such an apparatus, with hundreds or thousands of slits per mm\index{diffraction grating}
 
 \begin{figure*}[ht]
 	\centering
@@ -563,13 +696,9 @@ passing light through even more slits also produces nice interference patterns
 	\caption{multi-slit interference as light passes through a diffraction grating}
 \end{figure*}
 
-\cmt compared to double-slit, maxima produced by diffraction grating are \emph{sharper} and \emph{brighter}
+Compared to double-slit, maxima produced by diffraction grating are \emph{sharper} and \emph{brighter}, maxima are formed when waves from not two but many slits interfere constructively. The location of each maxima from a diffraction grating is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{d \sin \theta = n\lambda}\end{empheq}
 
-maxima are formed when waves from not two but many slits interfere constructively
-
-\cmt location of each maxima from a diffraction grating is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{d \sin \theta = n\lambda}\end{empheq}
-
-where $d$ is the separation between adjacent slits, and light is incident \emph{normally}
+where $d$ is the separation between adjacent slits, and light is incident \emph{normally}.
 
 \begin{figure*}[htp]
 	\noindent
@@ -589,7 +718,8 @@ where $d$ is the separation between adjacent slits, and light is incident \emph{
 		\node at (27:1.25) {{\footnotesize $\theta_2$}};
 		\node at (51:0.8) {{\footnotesize $\theta_3$}};
 		\end{tikzpicture}
-	\end{minipage}\hfill
+  
+  \end{minipage}\hfill
 	\begin{minipage}{0.35\textwidth}
 		\centering
 		\begin{tikzpicture}[scale=1.3]
@@ -611,28 +741,19 @@ where $d$ is the separation between adjacent slits, and light is incident \emph{
 		\node[below] at (2,1) {$\Delta L = d\sin\theta$};
 		\end{tikzpicture}
 	\end{minipage}
-\end{figure*}
+ \caption{Diffraction gratings}
+ \end{figure*}
 
-\noindent\textbf{proof} for constructive interference, path difference between adjacent slits must satisfy: $\Delta L = n\lambda $
+You do not need to be able to reproduce this derivation, but it is offered here in contrast to the above. For constructive interference, path difference between adjacent slits must satisfy: $\Delta L = n\lambda $. Since slits are so close together, we consider the light rays passing through the slits are nearly parallel. Using the same small angle trick as before, we obtain: $d \sin \theta = n\lambda$ - this is known as the \emph{diffraction grating equation}.
 
-since slits are so close together, light rays passing through the slits are nearly parallel
-
-using the same trick as before, we obtain: $d \sin \theta = n\lambda$
-
-this is known as the \emph{diffraction grating equation}.
-
-
-
-\cmt greatest angle through which a beam of light can be diffracted is 90$^\circ$
-
-this puts a constraint on the highest order possible:
+Note that the greatest angle through which a beam of light can be diffracted is 90$^\circ$ which puts a constraint on the highest order possible:
 \begin{equation*}
 n_\tmax = \frac{d\sin\theta_\tmax}{\lambda} < \frac{d \sin 90^\circ}{\lambda} \RA \boxed{n_\tmax < \frac{d}{\lambda}}
 \end{equation*}
 
-the value of $\frac{d}{\lambda}$ should be rounded \emph{down} to the nearest whole number to give $n_\tmax$
+The value of $\frac{d}{\lambda}$ should be rounded \emph{down} to the nearest whole number to give $n_\tmax$
 
-\cmt if white light is passed through diffraction gratings, \emph{dispersion} is observed
+If white light is passed through diffraction gratings, \emph{dispersion} is observed, this is the cause of the pretty colours seen in a dvd or cd:
 
 \begin{figure*}[!ht]
 	\centering
@@ -667,26 +788,16 @@ the value of $\frac{d}{\lambda}$ should be rounded \emph{down} to the nearest wh
 
 
 \newpage
-
+Some notes on the peculiarities of this effect:
 \begin{compactitem}
-	\item[--] at zeroth order, diffraction grating equation $d\sin\theta_0 = 0\cdot\lambda$ is satisfied at $\theta_0 = 0$ for any $\lambda$
+	\item[--] At zeroth order, diffraction grating equation $d\sin\theta_0 = 0\cdot\lambda$ is satisfied at $\theta_0 = 0$ for any $\lambda$, so we observe a collection of all colours, i.e., a white central maxima.
 	
-	so we observe a collection of all colours, i.e., a white central maxima
+	\item[--] At first order, $d\sin\theta_1 = 1\cdot\lambda$, maxima for long wavelengths appear at greater angles, so the spectrum spreads into a rainbow band, with red light at outer end and violet closer to the centre.
 	
-	\item[--] at first order, $d\sin\theta_1 = 1\cdot\lambda$, maxima for long wavelengths appear at greater angles
-	
-	spectrum spreads into a rainbow band, with red light at outer end and violet closer in
-	
-	\item[--] at higher orders, dispersion would be more spread out 
-	
-	the spectra of different orders may even overlap to give complicated combinations
-	
-	we do not intend to discuss this further
+	\item[--] At higher orders, the spectrum would be more spread out as the frequency dependence of diffracted angle becomes more pronounced. The spectra of different orders may even overlap to give complicated combinations.
 \end{compactitem}
 
-\cmt diffraction grating is an import device in analysis of light
-
-it is widely used in measurement of wavelength of light
+The diffraction grating is an import device in analysis of light - it is widely used in measurement of wavelength of light and in telecommunications.
 
 \example{Light of 632 nm wavelength produces first-order maxima at 16$^\circ$ when passing through a diffraction grating at right angles. How many lines per millimetre are there in the diffraction grating?}
 
@@ -717,21 +828,308 @@ if $n\geq 4$, $\lambda \leq 315 \text{ nm}$, which would be ultraviolet
 so the desired wavelength is 420 nm \end{soln}
 
 
+\subsection{Diffraction}
 
-
-
-
-
-\subsection{stationary waves}
-
-\subsection{formation of stationary waves}
-
-stationary waves are often formed when a travelling wave is \emph{reflected} at a some point
-
-forward-moving wave and backward-moving reflected wave combine to form stationary wave
+A wave has the ability to bend around obstacles or pass through narrow gaps
 
 \begin{ilight}
-	when two waves of same frequency and same speed travel in opposite directions and meet together, they superpose to form stable regions of constructive and destructive interference, this forms a \keypoint{stationary wave}, also known as a \keypoint{standing wave}\index{stationary wave}
+	When a wave passes through a aperture/slit/gap/hole or encounters an obstacle, it spreads out/around the corners, this is known as \keypoint{diffraction}\index{diffraction} of waves.
+\end{ilight}
+
+Diffraction is a general property of all waves. Some examples of diffraction are:
+
+\begin{compactitem}
+	\item[--] sound waves can diffract through an open door
+	
+	so you can hear people in the next room talking, even though you cannot see them
+	
+	\item[--] light ray can bend when it goes through/around a small hole/small particles
+	
+	sky appears red at sunset as red light is diffracted most by dust particles in atmosphere
+\end{compactitem}
+
+Diffraction is a scale-dependent effect - a wave is diffracted most when its wavelength is close to size of aperture/obstacle. Because a single object is close to an ``infinite gap'', longer wavelengths usually diffracts more around an edge than a wave of shorter wavelength.
+
+\begin{figure*}[htp]
+	\centering
+	\begin{tikzpicture}[scale=1.25]
+	\draw[ultra thick] (0,2.4) -- (0,0.25) (0,-0.25) -- (0,-2.4);
+	\foreach \x in {0.25,0.75,1.25,1.75,2.25}{
+		\draw[blue,thick] (-\x,-2.4) -- (-\x,2.4);
+		\draw[blue,thick] (-65:\x) arc(-65:65:\x);
+	}
+	\draw[ultra thick] (6,2.4) -- (6,0.8) (6,-0.8) -- (6,-2.4);
+	\foreach \x in {0.25,0.75,1.25,1.75,2.25}{
+		\draw[blue,thick] (-\x+6,-2.4) -- (-\x+6,2.4);
+		\draw[blue,thick] (6,-0.8) ++ (-25:\x) to[out=65,in=270] (6+\x,-0.8-\x/6) -- (6+\x,0.8+\x/6) to[out=90,in=-65] (6+0.9063*\x,0.8+0.4226*\x);
+	}
+	\end{tikzpicture}
+	
+	\caption{diffraction of a wave as it passes through an aperture of width that is (a) close to the wavelength, (b) greater than the wavelength}
+\end{figure*}
+
+If we go beyond the GCSE understanding of diffraction as above we can we can see that the light passing through a single slit forms a diffraction pattern somewhat different from those formed by double slits or diffraction gratings, which we discuss earlier in the chapter on interference.
+\begin{figure*}
+    \centering
+\begin{tikzpicture}[
+    nodal/.style={mylightgreen,dashed,very thin},scale=1.5
+  ]
+  
+  \def\L{3.8}       % distance between walls
+  \def\H{5.4}       % total wall height
+  \def\h{2.8}       % plane wave height
+  \def\t{0.15}      % wall thickness
+  \def\a{0.8}       % slit distance
+  \def\d{0.20}      % slit size
+  \def\N{21}        % number of waves
+  \def\dN{1}        % shift radius
+  \def\A{1.6}       % amplitude
+  \def\lambd{0.20}  % wavelength
+  \def\R{\N*\lambd} % wave radius
+  \def\Nfringes{2}  % number of nodal lines
+  \def\nshades{70}  % number of shades
+  \def\nsamples{40}
+  \def\ang{40}
+  
+  % PLANE WAVES
+  \foreach \i [evaluate={\xp=-2*(\i-0.5)*\lambd; \xm=-2*(\i-1)*\lambd;}] in {1,...,3}{
+    \draw[myblue,line width=0.8] (\xp,-\h/2) -- (\xp,\h/2);
+    \draw[myblue,line width=0.1] (\xm,-\h/2) -- (\xm,\h/2);
+  }
+  
+  % WAVES
+  \begin{scope}
+    \clip (-\t/2,-\H/2) rectangle (\L,\H/2);
+    \foreach \i [evaluate={\Rp=2*(\i+\dN)*\lambd; \Rm=2*(\i+\dN+0.5)*\lambd;}] in {1,...,\N}{
+      \draw[myblue,line width=0.8] (-2.2*\lambd,0)++(\ang:\Rp) arc (\ang:-\ang:\Rp);
+      \draw[myblue!80,line width=0.1] (-2.2*\lambd,0)++(\ang:\Rm) arc (\ang:-\ang:\Rm);
+    }
+    \foreach \m [evaluate={\ddy=0.1*\m;}] in {1,2,2.7}{ % mask at destructive interference
+      \foreach \i [evaluate={\ym=\L/sqrt((\a/(\lambd*\m))^2-1); \dy=0.55*\i/\nshades;}]
+        in {1,...,\nshades}{
+        \fill[white,opacity=0.045] (0.05,0.005+\ddy) -- (\L,{\dy+\ym}) --++ (0,-2*\dy) -- (0.05,-0.005+\ddy);
+        \fill[white,opacity=0.045] (0.05,0.005-\ddy) -- (\L,{\dy-\ym}) --++ (0,-2*\dy) -- (0.05,-0.005-\ddy);
+      }
+    }
+  \end{scope}
+  
+  % WALL
+  \fill[wall]
+    (\t/2,\a/2) rectangle (-\t/2,\H/2)
+    (\t/2,-\a/2) rectangle (-\t/2,-\H/2)
+    (\L,-\H/2) rectangle (\L+\t,\H/2);
+  
+  % SHADES
+  \begin{scope}[shift={(1.08*\L,0)}]
+    \clip (0,-\H/2) rectangle (1.1*\A,\H/2);
+    \fill[myshadow] (0,-\H/2) rectangle (\A,\H/2); % to fill seams
+    \def\yz{\L/sqrt((\a/\lambd)^2-1)} %\L/sqrt((\a/\lambd)^2-1)
+    \path [left color=myshadow,right color=myshadow,middle color=white,shading angle={180}]
+      (0,{-\yz}) rectangle (\A,{\yz});
+    \foreach \i [evaluate={
+                  \n=\i;
+                  \m=\i+1;
+                  \yn=\L/sqrt((\a/(\lambd*\n))^2-1); %\L*\n*\lambd/\a
+                  \ym=\L/sqrt((\a/(\lambd*\m))^2-1);
+                  \dang=mod(\i,2)*180;
+                 }] in {1,...,\Nfringes}{
+      \path [left color=myshadow,right color=myshadow,middle color=myshadow!50,shading angle={\dang}]
+        (0,\yn) rectangle (\A,\ym);
+      \path [left color=myshadow,right color=myshadow,middle color=myshadow!50,shading angle={180+\dang}]
+        (0,-\yn) rectangle (\A,-\ym);
+    }
+  \end{scope}
+  
+  % INTENSITY
+  \begin{scope}[shift={(1.2*\L+1.1*\A,0)}]
+    \draw[->,thick] (-0.08*\A,0) -- (1.3*\A,0) node[right=-2] {$\expval{I}$};
+    \draw[->,thick] (0,-0.52*\H) -- (0,0.54*\H) node[right] {$y$};
+    \draw[myred,thick,variable=\y,samples=\nsamples,smooth,domain=-\H/2:\H/2]
+      plot({\A*int_one(\y,\lambd,\a,\L)},\y);
+    \foreach \i [evaluate={\y=\L/sqrt((\a/(\lambd*\i))^2-1);}] in {1,...,\Nfringes}{
+      \tick{0,-\y}{180} node[right=-1,scale=0.9] {$m=-\i$};
+      \tick{0,\y}{180} node[right=-1,scale=0.9] {$m=+\i$};
+    }
+  \end{scope}
+  
+\end{tikzpicture}
+    
+    \caption{Single slit diffraction}
+    \label{single slit}
+\end{figure*}
+
+Figure \ref{single slit} Shows a single-slit diffraction pattern as we would obseve with eg. a laser. Note that the central maximum is larger than maxima on either side and that the intensity decreases rapidly on either side. In contrast, a diffraction grating produces evenly spaced lines that dim slowly on either side of the center.
+
+\begin{figure*}
+\centering
+% DIFFRACTION - ONE SLIT - PATH DIFFERENCE close-up
+\begin{tikzpicture}[scale=1.5]
+  \message{Diffraction, path difference (close-up)^^J}
+  
+  \def\L{6.15}      % distance between walls
+  \def\l{4.0}       % path length
+  \def\H{4.3}       % total wall height
+  \def\f{0.9}       % fractional height of projection point
+  \def\t{0.15}      % wall thickness
+  \def\a{2.5}       % slit distance
+  \def\ang{26}      % angle
+  \coordinate (T) at (0,\a/2);
+  \coordinate (B) at (0,-\a/2);
+  \coordinate (L) at (0,0);
+  \coordinate (R) at (\L,0);
+  \coordinate (I) at ({\a/2/tan(\ang)},0);
+  
+  % LINES
+  \draw[mygreen,thick] (T) --++ (\ang:.8*\l) coordinate (PT); %node[midway,below=1,above left=-2] {$r_1$};
+  \draw[mygreen,thick] (B) --++ (\ang:\l) coordinate (PB); %node[midway,left=2,below right=-1] {$r_2$};
+  \draw[mygreen,thick] (L) --++ (\ang:.9*\l) coordinate (PR);
+  \draw[dashed] (T) -- (B);
+  \draw[mydarkred,dashed] (T) -- ($(L)!(T)!(PR)$) coordinate (M);
+  %\draw[black!60,dashed] (T) --++ (.20*\L,0) coordinate (TR);
+  \draw[black!60,dashed] (L) --++ (.6*\L,0) coordinate (LR);
+  %\draw[black!60,dashed] (B) --++ (.20*\L,0) coordinate (BR);
+  
+  % LINE END
+  \lineend{PT}{\ang+70}
+  \lineend{PR}{\ang+70}
+  \lineend{PB}{\ang+70}
+  
+  % ANGLES
+  \draw pic[mysmallarr,"$\theta$",mydarkred,draw=mydarkred,angle radius=20,angle eccentricity=1.3]
+    {angle = B--T--M}; %\contour{white}{}
+  \draw pic[mysmallarr,"$\theta$",mydarkred,draw=mydarkred,angle radius=24,angle eccentricity=1.2]
+    {angle = LR--L--PR};
+  \draw pic[mysmallarr,"$\theta$",mydarkred,draw=mydarkred,angle radius=24,angle eccentricity=1.2]
+    {angle = LR--I--PB};
+  \rightAngle{T}{M}{PR}{0.3}
+  
+  % MEASURES
+  \draw[<->,black] (-2.1*\t,0) --++ (0,\a/2) node[midway,fill=white,inner sep=0.1] {$a/2$};
+  \draw[<->,black] (-2.1*\t,0) --++ (0,-\a/2) node[midway,fill=white,inner sep=0.1] {$a/2$};
+  \draw[<->,black] ([shift={({\ang-90}:0.1)}]L) -- ([shift={({\ang-90}:0.1)}]M)
+    node[midway,left=2,below right=0]{$\frac{a}{2}\!\sin\theta$};
+  
+  % WALL
+  \fill[wall]
+    (0,\a/2) rectangle (-\t,\H/2)
+    (0,-\a/2) rectangle (-\t,-\H/2);
+  
+\end{tikzpicture}
+\label{singleslitmaths}
+\caption{Analysis of single slit diffraction}
+ %\forceversofloat
+\end{figure*}
+
+The analysis of single-slit diffraction is illustrated in Figure \ref{singleslitmaths} in which the light arrives at the slit, illuminating it uniformly and is in phase across its width. We then consider light propagating onwards from different parts of the same slit. 
+
+Assuming the screen is very far away compared with the size of the slit, rays heading toward a common destination are nearly parallel. When they travel straight ahead, they remain in phase, and we observe a central maximum. However, when rays travel at an angle $\theta$ relative to the original direction of the beam, each ray travels a different distance to a common location, and they can arrive in or out of phase. The ray from the bottom travels a distance of one wavelength farther than the ray from the top. Thus, a ray from the center travels a distance $\lambda/2$ less than the one at the bottom edge of the slit, arrives out of phase, and interferes destructively. A ray from slightly above the center and one from slightly above the bottom also cancel one another. In fact, each ray from the slit interferes destructively with another ray. In other words, a pair-wise cancellation of all rays results in a dark minimum in intensity at this angle. By symmetry, another minimum occurs at the same angle to the right of the incident direction (toward the bottom of the figure) of the light.
+
+% \begin{tikzpicture}
+%   \message{Diffraction, path difference^^J}
+  
+%   \def\L{5.9}       % distance between walls
+%   \def\H{4.3}       % total wall height
+%   \def\f{0.95}      % fractional height of projection point
+%   \def\ang{atan((\f*\H+\a/2)/\L/2)} % theta
+%   \def\t{0.15}      % wall thickness
+%   \def\a{2.5}       % slit distance
+%   \coordinate (T) at (0,\a/2);
+%   \coordinate (B) at (0,-\a/2);
+%   \coordinate (L) at (0,0);
+%   \coordinate (R) at (\L,0);
+%   \coordinate (P) at (\L,\f*\H/2);
+%   \coordinate (M) at ($(L)!(T)!(P)$);
+  
+%   % LINES
+%   \draw[mygreen,thick] (T) -- (P); %node[midway,above=-1] {$r_1$};
+%   \draw[mygreen,thick] (B) -- (P); %node[midway,below=3,right=6] {$r_2$}; %right=6,below right=-4
+%   \draw[mygreen,thick] (L) -- (P);
+%   \draw[dashed] (T) -- (B);
+%   \draw[dashed,black!60] (L) -- (R);
+%   \draw[mydarkred,dashed] (M) -- (T);
+  
+%   % ANGLES
+%   \draw pic[mysmallarr,"$\theta'$",mydarkred,draw=mydarkred,angle radius=25,angle eccentricity=1.2]
+%     {angle = B--T--M};
+%   \draw pic[mysmallarr,"$\theta$",mydarkred,draw=mydarkred,angle radius=31,angle eccentricity=1.14]
+%     {angle = R--L--P};
+%   \rightAngle{T}{M}{P}{0.3}
+  
+%   % MEASURES
+%   \draw[<->,black] (0,-0.47*\H) --++ (\L,0) node[midway,fill=white,inner sep=1] {$L$};
+%   \draw[<->,black] (-2.1*\t,0) --++ (0,\a/2) node[midway,fill=white,inner sep=0.1] {$a/2$};
+%   \draw[<->,black] (-2.1*\t,0) --++ (0,-\a/2) node[midway,fill=white,inner sep=0.1] {$a/2$};
+%   \draw[<->,black] ([shift={({\ang-100}:0.1)}]L) -- ([shift={({\ang-100}:0.1)}]M)
+%     node[midway,left=3,below right=-2]{$\frac{a}{2}\sin\theta'$};
+%   \draw[<->,black] ([shift={(2.1*\t,0)}]P) -- ([shift={(2.1*\t,0)}]R)
+%     node[midway,fill=white,inner sep=1]{$y$};
+  
+%   % WALL
+%   \fill[wall]
+%     (0,\a/2) rectangle (-\t,\H/2)
+%     (0,-\a/2) rectangle (-\t,-\H/2)
+%     (\L,-\H/2) rectangle (\L+\t,\H/2);
+%   \fill[mygreen!80!black] (P) circle (0.3*\t) node[right=1,above left=-1] {P};
+  
+% \end{tikzpicture}
+
+
+As seen in the figure, the difference in path length for rays from either side of the slit is  $a \sin{\theta}$  and we see that a destructive minimum is obtained when this distance is an integral multiple of the wavelength.
+
+Thus, to obtain destructive interference for a single slit,
+
+$$ a \sin{\theta} = m \lambda$$ 
+Where:
+m is the order of the minimum.\\
+a is the slit width,\\
+$\lambda$  is the light’s wavelength,\\
+$\theta$  is the angle relative to the original direction of the light\\
+
+% \begin{figure}
+%     \centering
+%     % TWO SPLIT: interference x diffraction
+% \begin{tikzpicture}
+%  \def\A{3.5}
+%  \def\d{3.4}     % slit distance
+%  \def\a{0.9}     % slit size
+%  \def\lambd{0.2} % wavelength
+%  \def\k{15}      % x -> theta
+%  \def\xmax{4.6}
+%  \def\ymax{\A}
+%  \def\N{4}
+%  \def\D{2.3*\xmax}
+%  \def\L{4.0}
+%  \def\nsamples{80}
+ 
+%  \draw[->,thick,black] (-1.05*\xmax,0) -- (1.1*\xmax,0) node[below] {$\theta$};
+%  \draw[->,thick,black] (0,-0.1*\A) -- (0,1.12*\A);
+%  \draw[wave,variable=\t,samples=\nsamples,smooth,domain=-\xmax:\xmax]
+%     plot(\t,{\A*int_one_ang(\k*\t,\lambd,\a)});
+ 
+%  \foreach \i [evaluate={\t=asin(\i*\lambd/\a)/\k;}] in {1,...,\N}{
+%     \tick{-\t,0}{90} node[below=-1,scale=0.7] {$m=-\i$};
+%     \tick{\t,0}{90} node[below=-1,scale=0.7] {$m=+\i$};
+%  }
+ 
+% \end{tikzpicture}
+%     \caption{Caption}
+%     \label{fig:enter-label}
+% \end{figure}
+
+
+\newpage
+
+
+
+
+\subsection{Stationary waves}
+
+\subsection{Formation of stationary waves}
+
+Stationary waves are often formed when a travelling wave is \emph{reflected}. Forward-moving wave and backward-moving reflected wave combine to form stationary wave.
+
+\begin{ilight}
+	When two waves of same frequency and same speed travel in opposite directions and meet together, they superpose to form stable regions of constructive and destructive interference, this forms a \keypoint{stationary wave}, also known as a \keypoint{standing wave}\index{stationary wave}
 \end{ilight}
 
 \begin{figure*}[htp]
@@ -789,13 +1187,12 @@ forward-moving wave and backward-moving reflected wave combine to form stationar
 		\node at (0,-11) {$t=\frac{3T}{4}$};
 		\end{tikzpicture}
 	\end{minipage}
-	
-	\vspace*{0.75em} formation of a stationary wave (red) due to the superposition of one wave 
-	
-	travelling to the right (blue) and another wave travelling to the left (green)
+		\caption{The formation of a stationary wave (red) due to the superposition of one wave travelling to the right (blue) and another wave travelling to the left (green)}
 \end{figure*}
 
-from this one can visualise how the pattern of a stationary wave varies with time
+from this one can visualise how the pattern of a stationary wave varies with time (see Figure \ref{fig:statwave}. There are points in the wave where destructive interference always occurs, these points are called \keypoint{nodes}, which have zero amplitudes. \index{node}
+
+The points oscillating with the greatest amplitudes are called \keypoint{anti-nodes}. \index{anti-node} Points other than nodes and anti-nodes oscillate with different amplitudes. 
 
 \begin{figure*}[htp]
 	\centering
@@ -811,37 +1208,24 @@ from this one can visualise how the pattern of a stationary wave varies with tim
 	\foreach \a in {-2.5,-1.5,...,2.5} \node at (\a*pi,2.25) {A};
 	\end{tikzpicture}
 	\caption{variation of a stationary wave pattern with time}
+ \label{fig:statwave}
 \end{figure*}
-
-\cmt there are points in the wave where destructive interference always occurs
-
-these points are called \keypoint{nodes}, which have zero amplitudes \index{node}
-
-\cmt points oscillating with the greatest amplitudes are called \keypoint{anti-nodes} \index{anti-node}
-
-\cmt points other than nodes and anti-nodes oscillate with different amplitudes
-
-\cmt distance between two adjacent nodes is half of one wavelength
-
-wavelength can be estimated as: \begin{empheq}[box=\tcbhighmath]{equation*}{\lambda = 2 \times \text{node-to-node distance}}\end{empheq}
+The distance between two adjacent nodes is half of one wavelength. This allows us to say:: \begin{empheq}[box=\tcbhighmath]{equation*}{\text{the wavelength }\lambda = 2 \times \text{node-to-node distance}}\end{empheq}
 
 
 
-\subsection{stationary wave pattern \& boundary conditions}
+\subsection{Stationary wave pattern \& boundary conditions}
 
-patterns of stationary waves depend heavily on the boundary conditions
+Patterns of stationary waves depend heavily on the boundary conditions
+The end can be \emph{fixed}, also called a \emph{closed} end, to form a \emph{node} - such as with a wave on a string.
 
-\cmt the end can be \emph{fixed}, also called a \emph{closed} end, to form a \emph{node}
-
-\cmt the end can also be \emph{free} to oscillate, known as an \emph{open} end, to form \emph{an anti-node}
-
+The end can also be \emph{free} to oscillate, known as an \emph{open} end, to form \emph{an anti-node} - such as you might find in a flute.
 
 
-\subsection*{stationary wave between two fixed ends}
 
-with both ends fixed, the two ends are both nodes
+\subsection*{Stationary wave between two fixed ends}
 
-three patterns with the longest wavelengths and lowest frequencies are shown
+With both ends fixed, the two ends are both nodes, three patterns with the longest wavelengths and lowest frequencies are shown:
 
 \begin{figure*}[htp]
 	\centering
@@ -871,25 +1255,20 @@ three patterns with the longest wavelengths and lowest frequencies are shown
 	\end{minipage}\hfil
 \end{figure*}
 
-\cmt longest-wavelength mode is called the \emph{fundamental mode}, it also has lowest frequency
-
-modes with higher frequencies are usually referred to as \emph{excited modes}, or \emph{harmonics}\footnote{These modes are closely related to the notes played on musical instruments.}
-
+The longest-wavelength mode is called the \emph{fundamental mode}, it also has lowest frequency. Modes with higher frequencies are usually referred to as \emph{excited modes}, or \emph{harmonics}\footnote{These modes are closely related to the notes played on musical instruments.}
 in many texts different modes are labelled as 1st, 2nd, 3rd \emph{harmonics}, etc.
 
-\cmt if two ends are separated by a distance of $L$, then wavelengths for different modes are:
+If two ends are separated by a distance of $L$, then wavelengths for different modes are:
 \begin{equation*}
 \lambda_1 = 2L \qquad \lambda_2 = L \qquad \lambda_3 = \frac{2L}{3} \qquad \cdots \qquad \lambda_n = \frac{2L}{n}
 \end{equation*}
 
-making comparison with the fundamental wavelength $\lambda_1$ $\lambda_1$, we have
+Making comparison with the fundamental wavelength $\lambda_1$ $\lambda_1$, we have
 \begin{equation*}
 \lambda_2 = \frac{\lambda_1}{2} \qquad \lambda_3 = \frac{\lambda_1}{3} \qquad \cdots \qquad \lambda_n = \frac{\lambda_1}{n}
 \end{equation*}
 
-\cmt since wave speed remains constant as wave travels through the same medium
-
-frequency of each mode is inversely proportional to its wavelength, hence,  
+Since wave speed remains constant as wave travels through the same medium, the frequency of each mode is inversely proportional to its wavelength, hence,  
 \begin{equation*}
 f_2 = 2f_1 \qquad f_3 = 3f_1 \qquad \cdots \qquad f_n=n f_1
 \end{equation*}
@@ -913,7 +1292,7 @@ f_2 = 2f_1 \qquad f_3 = 3f_1 \qquad \cdots \qquad f_n=n f_1
 	\caption{Melde's experiment: demonstration of stationary waves on a tense string}
 \end{figure*}
 
-\begin{soln} five loops so five half-wavelengths $\RA L = \frac{5}{2}\lambda \RA \lambda = \frac{2}{5}L = \frac{2}{5} \times 80 \RA \lambda = 32\text{ cm}$
+\begin{soln} Five loops so five half-wavelengths $\RA L = \frac{5}{2}\lambda \RA \lambda = \frac{2}{5}L = \frac{2}{5} \times 80 \RA \lambda = 32\text{ cm}$
 
 to have larger wavelength, one could do either of the following:
 use a string with greater length (while keeping frequency of oscillator unchanged)
@@ -924,11 +1303,9 @@ reduce the frequency of oscillation (constant wave speed, so $\lambda$ increases
 
 
 
-\subsection*{stationary wave between one fixed end and one open end}
+\subsection*{Stationary wave between one fixed end and one open end}
 
-in this case, we have a node at one end and an anti-node at the other end
-
-again we give the three patterns with the longest wavelengths and lowest frequencies
+In this case, we have a node at one end and an anti-node at the other end, again we give the three patterns with the longest wavelengths and lowest frequencies.
 
 \begin{figure*}[htp]
 	\centering
@@ -1026,7 +1403,7 @@ f_2 = 3f_1 \qquad f_3 = 5f_1 \qquad \cdots \qquad f_n=(2n-1) f_1
 \end{marginfigure}
 
 
-\example{A tuning fork is held above a tall cylinder which is initially filled with water. The water level, measured from the bottom of the cylinder, is lowered at a constant rate. A loud sound is first heard when the water level is at 60.0 cm, and the next loud sound is heard when the water level is at 26.8 cm. It is known that the speed of sound in air is $340 \mps$. What is the frequency of the sound wave produced by the tuning fork?}
+\example{\label{recpracwave}A tuning fork is held above a tall cylinder which is initially filled with water. The water level, measured from the bottom of the cylinder, is lowered at a constant rate. A loud sound is first heard when the water level is at 60.0 cm, and the next loud sound is heard when the water level is at 26.8 cm. It is known that the speed of sound in air is $340 \mps$. What is the frequency of the sound wave produced by the tuning fork?}
 
 \begin{soln} loud sound is heard when stationary wave is set up
 
@@ -1039,18 +1416,17 @@ wavelength of this wave: $\lambda = 2 \times 33.2 \text{ cm} = 0.664 \text{ m}$
 frequency: $f = \frac{v}{\lambda} = \frac{340}{0.664} \RA f \approx 512 \text{ Hz}$ 
 \end{soln}
 
-\subsection*{stationary wave between two open ends}
+\subsection*{Stationary wave between two open ends}
 
-the result is left as an exercise for the reader to prove
+This is left as an exercise for the reader to prove:
 
-you shall verify that the allowed wavelengths are: $\lambda = 2L, \, L, \,\frac{2}{3}L, \cdots, \frac{2L}{n}, \cdots$
+You should verify that the allowed wavelengths are: $\lambda = 2L, \, L, \,\frac{2}{3}L, \cdots, \frac{2L}{n}, \cdots$
 
-frequencies of the fundamental and excited modes go as $f = f_1, \, 2f_1, \, 3f_1, \cdots, nf_1 \cdots$
+Frequencies of the fundamental and excited modes go as $f = f_1, \, 2f_1, \, 3f_1, \cdots, nf_1 \cdots$
 
 
-\subsection{measurement of speed of sound with stationary waves}
-
-speed of sound waves can be measured using stationary waves as follows
+\subsection{Measurement of speed of sound with stationary waves}
+The required practical version of this is covered in Example \ref{recpracwave}, however there is a version that often appears in exam questions as follows;
 
 \begin{figure}[ht]
 	\centering
@@ -1086,81 +1462,36 @@ speed of sound waves can be measured using stationary waves as follows
 	\caption{arrangement of apparatuses for setting up a stationary sound wave}
 \end{figure}
 
-\cmt to set up a stationary sound wave, we need two travelling waves in opposite directions
+\cmt To set up a stationary sound wave, we need two travelling waves in opposite directions, this sound wave can be produced by a \emph{loudspeaker} (coupled to a \emph{signal generator}). The forward-travelling wave is reflected at a \emph{metal plate} and the reflected wave superposes with wave from loudspeaker to give a stationary wave.
+The wave intensity at any point can be detected by a \emph{microphone} and observed on an \emph{oscilloscope}. To verify whether stationary wave is formed, we check whether nodes are formed - the positions of the metal plate and the microphone are adjusted carefully and if there exists a location where no signal is detected, this means microphone is at a node and a stationary wave has been formed between loudspeaker and reflector.
+To then find wavelength of sound wave, we slowly move microphone to the next node, the wavelength of sound wave: $\lambda = 2\times \text{distance between neighbouring nodes}$
 
-sound wave can be produced by a \emph{loudspeaker} (coupled to a \emph{signal generator})
+To find frequency of sound wave, we move microphone to anywhere that is not a node, from time base of the oscilloscope, we can work out period $T$ of the wave. Frequency is then given by the formula: $f=\frac{1}{T}$.
 
-this forward-travelling wave is reflected at a \emph{metal plate}
-
-reflected wave superposes with wave from loudspeaker to give a stationary wave
-
-wave intensity can be detected by a \emph{microphone} and observed on an \emph{oscilloscope}
-
-\cmt to verify whether stationary wave is formed, we check whether nodes are formed
-
-positions of the metal plate and the microphone are adjusted carefully
-
-if there exists a location where no signal is detected, this means microphone is at a node
-
-now a stationary wave has been formed between loudspeaker and reflector
-
-\cmt to find wavelength of sound wave, we slowly move microphone to the next node
-
-wavelength of sound wave: $\lambda = 2\times \text{distance between neighbouring nodes}$
-
-\cmt to find frequency of sound wave, we move microphone to anywhere that is not a node
-
-from time base of the oscilloscope, we can work out period $T$ of the wave
-
-frequency is then given by the formula: $f=\frac{1}{T}$
-
-\cmt finally,  speed of the sound wave\footnote{We should bear in mind that stationary waves do not propagate through space, so rigorously speaking, it is incorrect to say the speed of a stationary way. The wave speed calculated in this way refers to the speed of either of the two travelling waves that give rise to the stationary wave through superposition.} can be calculated: $v=\lambda f$
+Finally,  speed of the sound wave\footnote{We should bear in mind that stationary waves do not propagate through space, so rigorously speaking, it is incorrect to say the speed of a stationary way. The wave speed calculated in this way refers to the speed of either of the two travelling waves that give rise to the stationary wave through superposition.} can be calculated: $v=\lambda f$
 
 
 
 
-\subsection{stationary waves \& progressive waves}
+\subsection{Stationary waves \& progressive waves}
 
-there are quite a few differences between a stationary wave and a progressive wave
+There are quite a few differences between a stationary wave and a progressive wave:
 
-\cmt progressive wave can transfer energy from one place to another
+A progressive wave can transfer energy from one place to another but for stationary waves, vibrational energy is not transferred due to existence of nodes. 
 
-but for stationary waves, vibrational energy is not transferred due to existence of nodes
+In a stationary wave, all part have the same amplitude. Different points in general have different amplitudes over a stationary wave. Nodes have zero amplitude, anti-nodes have greatest amplitudes. Other points have various amplitudes depending on their positions.
 
-\cmt different points in general have different amplitudes over a stationary wave
+In a progressive wave the displacements of each point at a particular moment can be all different, but the largest displacements they can reach are the same (if no loss of energy). This means that the phase difference between any two points in a progressive wave can take any value and different points reach their peaks at different times for a progressive wave so $\Delta \phi$ can be anything from 0 to $2\pi$ (or anything from 0 to $360^\circ$).
 
-\hspace*{1.25em} nodes have zero amplitude, anti-nodes have greatest amplitudes
-
-\hspace*{1.25em} other points have various amplitudes depending on their positions
-
-but for a progressive wave, all points have the same amplitude
-
-\hspace*{1.25em} displacements of each point at a particular moment can be all different
-
-\hspace*{1.25em} but the largest displacements they can reach are the same (if no loss of energy)
-
-\cmt phase difference between any two points in a progressive wave can take any value
-
-\hspace*{1.25em} different points reach their peaks at different times for a progressive wave
-
-\hspace*{1.25em} so $\Delta \phi$ can be anything from 0 to $2\pi$ (or anything from 0 to $360^\circ$)
-
-phase difference between any two points in a stationary wave is either 0 or $\pi$ (or $180^\circ$)
-
-\hspace*{1.25em} for points between adjacent nodes, they all reach their highest at same time
-
-\hspace*{1.25em} despite differences in amplitudes, these points are all in phase, so $\Delta \phi=0$
-
-\hspace*{1.25em} for points separated by one node, they are anti-phase
-
-\hspace*{1.25em} this is because when one is at its peak, the other is at its trough, so $\Delta \phi = \pi$ (or $180^\circ$)
+Phase difference between any two points in a stationary wave however, is either 0 or $\pi$ (or $180^\circ$). For points between adjacent nodes, they all reach their highest at same time despite differences in amplitudes, these points are all in phase, so $\Delta \phi=0$.
+For points separated by one node, they are anti-phase, because when one is at its peak, the other is at its trough, so $\Delta \phi = \pi$ (or $180^\circ$)
 
 
 	
-\section{end-of-chapter questions}
+\section{End-of-chapter questions}
 
 
-\subsection*{principle of superposition}
+\subsection*{Principle of superposition}
 
 \question{
 	Noise reduction headphones can cancel out external sound waves by producing their own sound waves. What is the phase difference between the external sound wave and the wave produced in the headphone?
@@ -1193,7 +1524,7 @@ phase difference between any two points in a stationary wave is either 0 or $\pi
 
 
 
-\subsection*{double-slit experiment}
+\subsection*{Double-slit experiment}
 
 \question{
 	A laser emits a yellow light of 580 nm. It is sent through a set of double slits with a separation of 0.40 mm. An interference pattern is seen on a screen at a distance of 2.5 m from the slits. What is the distance between a bright fringe and its closest dark fringe?
@@ -1230,7 +1561,7 @@ phase difference between any two points in a stationary wave is either 0 or $\pi
 
 
 
-\subsection*{diffraction gratings}
+\subsection*{Diffraction gratings}
 
 \question{
 	A beam of light is incident normally on a diffraction grating that has 1000 lines per mm. The angle between the first order maxima is $60^\circ$. Find the wavelength of the light.
@@ -1265,7 +1596,7 @@ phase difference between any two points in a stationary wave is either 0 or $\pi
 }
 
 
-\subsection*{stationary waves}
+\subsection*{Stationary waves}
 
 \question{
 	How many nodes, including the end points, are there in a standing wave that is three wavelengths long? What about anti-nodes?
@@ -1309,7 +1640,7 @@ phase difference between any two points in a stationary wave is either 0 or $\pi
 		\draw[<->] (3, -1.4) -- (9,-1.4) node[midway, above]{30 cm};
 	\end{circuitikz}
 \end{figure}
-
+\newpage
 
 \question{
 	A stationary wave is set up between the two ends $X$ and $Y$ of an elastic cord. The graph shows the wave pattern at a time $t=t_0$. Given that the frequency of the vibration is 50 Hz. (a) Sketch the wave pattern between $X$ and $Y$ at time $t_1 = t_0 + 10 \text{ ms}$. (b) Sketch the wave pattern at time $t_2 = t_0 + 25 \text{ ms}$. (c) State the phase difference between the displacement of point $A$ and that of point $B$.

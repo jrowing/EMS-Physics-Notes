@@ -4,17 +4,15 @@ In the previous chapter, we studied the accumulative effect of a force over a pe
 
 Energy is a concept central to all of physical sciences. The entire universe is made up by energy and matter. In this section we study the energy changes during various physical processes.
 
-\subsection{work}
+\subsection{Work}
 
 \begin{ilight}
-	\keypoint{work done} by a force is defined as the product of the force and the displacement moved out in the direction of the force: \begin{empheq}[box=\tcbhighmath]{equation*}{W=Fs}\end{empheq} \index{work}
+	\keypoint{Work done} by a force is defined as the product of the force and the displacement moved out in the direction of the force: \begin{empheq}[box=\tcbhighmath]{equation*}{W=Fs}\end{empheq} \index{work}
 \end{ilight}
 
-\cmt unit for work done: $[W]=[F][s]=\text{N}\cdot\text{m}\equiv \text{J (joule)}$
+The unit for work done: is the Joule: $[W]=[F][s]=\text{N}\cdot\text{m}\equiv \text{J (joule)}$
 
-if a one newton force makes an object move out by one metre, then it does work of one \keypoint{joule}
-
-\cmt if force acts at angle $\theta$ to the displacement travelled, then: \begin{empheq}[box=\tcbhighmath]{equation*}{W=Fs\cos\theta} \end{empheq}
+As with moments, the direction of the displacement or the force is important. Only the components that align contribute.If the force acts at angle $\theta$ to the displacement travelled, then: \begin{empheq}[box=\tcbhighmath]{equation*}{W=Fs\cos\theta} \end{empheq}
 
 \begin{figure}[ht]
 	\centering
@@ -29,34 +27,17 @@ if a one newton force makes an object move out by one metre, then it does work o
 	\end{tikzpicture}
 \end{figure}
 
-\cmt work is a \emph{scalar} quantity\footnote{Although work is defined as the product of two vectors, work carries no information about direction. This vector product is called as a \emph{scalar product} or a \emph{dot product}, which can be written explicitly as: $W = \vec{F} \cdot \vec{s} = |F||s|\cos\theta$. You might have seen this operation in the A-Level course in Mathematics.}, i.e., it has no direction
+Like any energy concept, work is a \emph{scalar} quantity\footnote{Although work is defined as the product of two vectors, work carries no information about direction. This vector product is called as a \emph{scalar product} or a \emph{dot product}, which can be written explicitly as: $W = \vec{F} \cdot \vec{s} = |F||s|\cos\theta$. You might have seen this operation in the A-Level course in Mathematics.}, i.e., it has no direction. Note that work done can be either positive or negative, this tells you the direction of energy transfer. If the work being done on an object is positive, then work is being done on it.
 
+Resistive forces, such as friction and air drag, act in the opposite direction to motion so work done by resistive forces is negative\footnote{You might take $\theta=180^\circ$, then $\cos\theta = -1$, giving rise to a negative work done.}, we say this is work done \emph{against} resistance. The minus sign will be crucial in energy calculations in later discussions.
 
-\cmt work done can be either positive or negative
+ It is particularly common to worry about the direction of energy transfer when we are considering the behaviour of gasses because a change in energy is usually connected with a change in Temperature, and/or volume, and/or pressure.
 
-resistive forces, such as friction and air drag, act in the opposite direction to motion
+If pressure stays constant, then work by/on gas: $W = F \Delta s = p A \Delta s \RA$ \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{gas} = p\Delta V}\end{empheq}
 
-so work done by resistive forces is negative\footnote{You might take $\theta=180^\circ$, then $\cos\theta = -1$, giving rise to a negative work done.}, we say this is work \emph{against} resistance
+Work done by a varying force\footnote{The equation $W=Fs$ is valid only if the force acting is constant. Similarly, the equation $W_\text{gas} = p\Delta V$ holds for constant pressure processes only.} is found by integration or using a $F$-$s$ graph. If force varies with position, its change over small displacements is still considered small. Work done over an infinitesimal displacement is therefore $\dd W = F\dd s$. Integrate from initial position to final position, total work done is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{W=\int_i^f F \dd s} \end{empheq}
 
-the minus sign will be crucial in energy calculations in later discussions
-
-\cmt a gas can do work to/against the surroundings
-
-if pressure stays constant, then work by/on gas: $W = F \Delta s = p A \Delta s \RA$ \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{gas} = p\Delta V}\end{empheq}
-
-\cmt work done by a varying force\footnote{The equation $W=Fs$ is valid only if the force acting is constant.
-	
-Similarly, the equation $W_\text{gas} = p\Delta V$ holds for constant pressure processes only.} is found by integration or using a $F$-$s$ graph
-
-
-
-if force varies with position, its change over small displacements is still considered small
-
-work done over an infinitesimal displacement is therefore $\dd W = F\dd s$
-
-integrate from initial position to final position, total work done is given by: \begin{empheq}[box=\tcbhighmath]{equation*}{W=\int_i^f F \dd s} \end{empheq}
-
-if one plots force against displacement, then $\boxed{\text{area under $F$-$s$ curve gives work done}}$
+If one plots force against displacement, then $\boxed{\text{area under $F$-$s$ curve gives work done}}$
 
 \example{A 20 N force is applied at 60$^\circ$ to the horizontal to move a 1.0 kg object at a constant speed of 2.0$\mps$ for 30 s. How much work is done by the force?}
 
@@ -99,38 +80,37 @@ work to compress spring equals area under $F$-$x$ graph:
 
 
 
-\subsection{types of energies}\label{ch-KE}
+\subsection{Energy forms}\label{ch-KE}
 
-Energy is something acquired by an object that enables it to do work. A moving vehicle, water stored in a reservoir, a compressed spring, separated magnets, all of these objects can do work to other objects. In this section, we will look at various situations where work on an object causes a change in some form of energy.
+Energy is not so much a thing as a useful abstract concept - there's a common misconception that there are ``types'' of energy that one can transform from one ``type'' to another. We do use this language sometimes for the sake of linguistic ease but it's important to understand that we're just using a useful shorthand that makes it easier to talk about, and predict how the universe behaves. We say that Energy is something acquired by an object that enables it to do work. A moving vehicle, water stored in a reservoir, a compressed spring, separated magnets, all of these objects can do work to other objects so we say they have a quantity of energy stored in some form. In this section, we will look at various situations where work on an object causes a change in some form of energy.
 
+\subsection{Kinetic energy}
 
-\subsection{kinetic energy}
-
-suppose a constant force $F$ is acting over a distance $s$, we have:
+Suppose a constant force $F$ is acting over a distance $s$, we have:
 \begin{equation*}
 	W=Fs \xlongequal{F=ma} mas \xlongequal{v^2 = u^2 + 2as} m \frac{v^2-u^2}{2} \RA W = \frac{1}{2}mv^2 - \frac{1}{2}mu^2
 \end{equation*}
 
-this shows work is transformed into change in some quantity associated with object's motion
+This shows work is done and energy is transferred into some quantity associated with object's motion. 
 
-this is recognised as the gain in kinetic energy of the object: $ \Delta E_k = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 $
+This is recognised as the gain in (the store of\footnote{Whilst important at GCSE, we're past the point where we have to be obsessive about using the language of stores. We know energy is a weird abstract concept and that's ok}) kinetic energy of the object: $ \Delta E_k = \frac{1}{2}mv^2 - \frac{1}{2}mu^2 $
 
 \begin{ilight}
-	\keypoint{kinetic energy} (K.E.) is the energy possessed by an object due to its motion  \index{energy!kinetic}
+	\keypoint{Kinetic energy} (K.E.) is the energy stored by an object due to its motion  \index{energy!kinetic}
 \end{ilight}
 
-\cmt an object of mass $m$ moving with speed $v$ has K.E.: \begin{empheq}[box=\tcbhighmath]{equation*}{E_k = \frac{1}{2}mv^2} \end{empheq}
+An object of mass $m$ moving with speed $v$ has K.E.: \begin{empheq}[box=\tcbhighmath]{equation*}{E_k = \frac{1}{2}mv^2} \end{empheq}
 
 \example{Estimate the kinetic energy of a running man.}
 
-\begin{soln} suppose the man has a mass of 75 kg and is running at $5 \mps$ (any reasonable value will do)
+\begin{soln} Suppose the man has a mass of 75 kg and is running at $5 \mps$ (any reasonable value will do)
 \begin{equation*}
 	E_k = \frac{1}{2}mv^2 = \frac{1}{2}\times75\times5^2 \approx 940 \text{ J} 
 \end{equation*}
 \end{soln}
 
 
-\subsection{gravitational potential energy}
+\subsection{Gravitational potential energy}
 
 \begin{marginfigure}
 	\vspace*{-12pt}
@@ -147,13 +127,10 @@ this is recognised as the gain in kinetic energy of the object: $ \Delta E_k = \
 \end{marginfigure}
 
 
-consider a body being slowly pulled from a height of $h_1$ to $h_2$
+Later on we will consider situations that are in a nun-uniform gravitational field ie. on a planetary scale. For now, lets stick with human-scale things and so the value for ``g'' is constant everywhere.
+Consider a body being slowly pulled from a height of $h_1$ to $h_2$. The work done for this process is: $W = Fs = mg\Delta h = mgh_2 - mgh_1$
 
-work done for this process is: $W = Fs = mg\Delta h = mgh_2 - mgh_1$
-
-this shows work is transformed into change in some quantity associated with object's position
-
-we say this is the gain in gravitational potential energy:
+This shows work is transformed into change in some quantity associated with object's position, we say this is the gain in gravitational potential energy:
 
 {
 	\centering
@@ -163,61 +140,52 @@ we say this is the gain in gravitational potential energy:
 }
 
 \begin{ilight}
-	\keypoint{gravitational potential energy} (G.P.E.) is the energy possessed by a body due to its position in a gravitational field\index{energy!gravitational potential}
+	\keypoint{Gravitational potential energy} (G.P.E.) is the energy possessed by a body due to its position in a gravitational field\index{energy!gravitational potential}
 \end{ilight}
 
-\cmt a body of mass $m$ at a height of $h$ has G.P.E.: \begin{empheq}[box=\tcbhighmath]{equation*}{E_p = mgh}\end{empheq}
+In a uniform field, a body of mass $m$ at a height of $h$ has G.P.E.: \begin{empheq}[box=\tcbhighmath]{equation*}{E_p = mgh}\end{empheq}
 
 \cmt G.P.E. is a \emph{relative} quantity, only its change is important in physical processes
 \footnote{The formula $E_p = mgh$ implies that we have defined G.P.E. at the ground level to be zero. But this is purely conventional. Here I would like to point out that one can freely choose any zero potential energy level as he/she wishes, but no matter what point is picked as reference, we will always agree on the quantity of physical significance, that is, the \emph{change} in G.P.E between two fixed points.}
 
 
 
+\subsection{Elastic potential energy}
 
-
-
-\subsection{elastic potential energy}
-
-let's now consider a spring being stretched or compressed
-
-work is done by external forces to cause the change in shape
-
-this becomes of the elastic energy stored in the body
+Let's now consider a spring being stretched or compressed, work is done by external forces to cause the change in shape - this is the mechanism that stores the elastic energy potential in the body.
 
 \begin{ilight}
-	\keypoint{elastic potential energy}, also called \keypoint{strain energy}, is the energy possessed by an elastic body due to deformation \index{energy!elastic potential}
+	\keypoint{Elastic potential energy}, also called \keypoint{strain energy}, is the energy possessed by an elastic body due to deformation \index{energy!elastic potential}
 \end{ilight}
 
-this topic will be revisited in details in \S\ref{ch-spring-energy}
+This topic will be revisited in details in \S\ref{ch-spring-energy}
 
-\subsection{other types of energies}
+\subsection{Other energy stores}
 
-apart from those we have mentioned above, there are many other types of energies 
+Apart from those we have mentioned above, there are many other ways to store energy:
 
-\emph{electric potential energy}: energy of a charged object due to its position in an electric field
+\titem \emph{electric potential energy}: energy of a charged object due to its position in an electric field.
 
-\titem \emph{chemical energy}: ability to do work due to potential energy between atoms and molecules
+\titem \emph{chemical energy}: ability to do work due to potential energy between atoms and molecules.
 
-\titem \emph{nuclear energy}: ability to do work due to potential energy of subatomic particles in the nuclei
+\titem \emph{nuclear energy}: ability to do work due to potential energy of subatomic particles in the nuclei.
 
-\titem \emph{internal energy}: sum of random kinetic and potential energies of molecules in a substance
+\titem \emph{internal energy}: sum of random kinetic and potential energies of molecules in a substance.
 
-\titem \emph{electromagnetic energy}: energy carried by light/electromagnetic waves
+\titem \emph{electromagnetic energy}: energy carried by light/electromagnetic waves.
 
 
-\subsection{work \& energy transformations}
+\subsection{Work \& energy transformations}
 
-from previous discussions, we have seen doing work is a way of transferring energy
-
-for examination purposes\footnote{More rigorous discussions (which go beyond the syllabus) are given in \S\ref{ch:conservation-of-energy}.}, we can say the following:
+From previous discussions, we have seen doing work is a way of transferring energy,  for examination purposes\footnote{More rigorous discussions (which go beyond the syllabus) are given in \S\ref{ch:conservation-of-energy}.}, we can say the following:
 
 \begin{ilight}
-	the change in the total energy of an object equals the net work done by all external forces (excluding those associated with potential energies): \begin{empheq}[box=\tcbhighmath]{equation*}{W  = \Delta E} \end{empheq}
+	The change in the total energy of an object equals the net work done by all external forces (excluding those associated with potential energies): \begin{empheq}[box=\tcbhighmath]{equation*}{W  = \Delta E} \end{empheq}
 \end{ilight}
 
 \example{A racing car of 800 kg starts off from rest. If the driving force is 5000 N, and the car experiences a constant resistive force of 1500 N, what is its speed after it has travelled 50 m?}
 
-\begin{soln} gain in K.E. equals work by driving force plus \emph{negative} work against resistance
+\begin{soln} The gain in K.E. equals work by driving force plus \emph{negative} work against resistance
 \begin{equation*}
 W_\text{total} = \Delta E_k \RA Fs - fs = \frac{1}{2}mv^2 - 0
 \end{equation*}
@@ -230,7 +198,7 @@ W_\text{total} = \Delta E_k \RA Fs - fs = \frac{1}{2}mv^2 - 0
 
 \begin{soln}
     
-work by crane equals gain in G.P.E. of cube
+The work done by crane equals gain in G.P.E. of cube
 \begin{equation*}
 W = \Delta E_p 
 \end{equation*}
@@ -241,102 +209,99 @@ W = \Delta E_p
 
 \subsection{conservation of energy}\label{ch:conservation-of-energy}
 
-\subsection{work-energy theorem \piste}
+% \subsection{work-energy theorem \piste}
 
-more generally, net work done due to several forces $F_1$, $F_2$, $\dots$, acting on an object is
-\begin{equation*}
-W_\text{total} = \sum W_i = \sum \left(\int_i^f F_i \dd s\right) = \int_i^f \left(\sum F_i \right)\dd s = \int_i^f F_\text{net} \dd s = \int_i^f ma \dd s
-\end{equation*}
+% more generally, net work done due to several forces $F_1$, $F_2$, $\dots$, acting on an object is
+% \begin{equation*}
+% W_\text{total} = \sum W_i = \sum \left(\int_i^f F_i \dd s\right) = \int_i^f \left(\sum F_i \right)\dd s = \int_i^f F_\text{net} \dd s = \int_i^f ma \dd s
+% \end{equation*}
 
-recall in kinematics, $a=\frac{\dd v}{\dd t}$ and $\dd s = v \dd t$, so we have
-\begin{equation*}
-W_\text{total} = \int_i^f m \frac{\dd v}{\dd t} v \dd t = \int_i^f m v \dd v
-\end{equation*}
+% recall in kinematics, $a=\frac{\dd v}{\dd t}$ and $\dd s = v \dd t$, so we have
+% \begin{equation*}
+% W_\text{total} = \int_i^f m \frac{\dd v}{\dd t} v \dd t = \int_i^f m v \dd v
+% \end{equation*}
 
-we are integrating over velocity from initial value $u$ to final value $v$, so we find
-\begin{equation*}
-W_\text{total} = \int_i^f m v \dd v = \frac{1}{2}mv^2 \Big|_u^v = \frac{1}{2}mv^2 - \frac{1}{2}mu^2
-\end{equation*}
+% we are integrating over velocity from initial value $u$ to final value $v$, so we find
+% \begin{equation*}
+% W_\text{total} = \int_i^f m v \dd v = \frac{1}{2}mv^2 \Big|_u^v = \frac{1}{2}mv^2 - \frac{1}{2}mu^2
+% \end{equation*}
 
-identify kinetic energy $E_k = \frac{1}{2}mv^2$, now we come to the \keypoint{work-energy theorem}  \index{work-energy theorem}
+% identify kinetic energy $E_k = \frac{1}{2}mv^2$, now we come to the \keypoint{work-energy theorem}  \index{work-energy theorem}
 
-\vspace*{-7pt}
+% \vspace*{-7pt}
+% \begin{ilight}
+% 	the net work done on a body equals the change in the body's kinetic energy: \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{total} = \Delta E_k}\end{empheq}
+% \end{ilight}
+
+
+
+% \subsection{conservative forces \& potential energy \piste}
+
+
+% if work by a force does not depend on which specific path is taken, this force is \keypoint{conservative}
+
+% put differently, when an object is moved from one place to another under a conservative force, work done depends on initial and final positions only
+
+% we can split $W_\text{total}$ into two parts: contributions from conservative and non-conservative forces
+
+% for conservative part, let's define: $\Delta E_p = - W_{c} = - \int_i^f F_c \dd s $
+
+% this means work by conservative forces can be interpreted as change in its \keypoint{potential energy}
+
+% let's call the sum of an object's kinetic and potential energy its \keypoint{mechanical energy}: $E_m = E_k + E_p$
+
+% work-energy theorem can then be rewritten: $\Delta E_k = W_\text{total} = W_\text{c} + W_\text{nc} = -\Delta E_p + W_\text{nc}$
+
+% rearrange we have: $W_\text{nc} = \Delta E_k + \Delta E_p \RA$ \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{nc} = \Delta E_m}\end{empheq}
+
+% \vspace*{-7pt}
+% \begin{ilight}
+% 	the change in mechanical energy equals the net work done by all non-conservative forces
+% \end{ilight}
+
+% \newpage
+
+% \subsection*{gravitational potential energy revisited \piste}
+
+% \begin{marginfigure}
+% 	%\vspace{pt}
+% 	\begin{center}
+% 		\begin{tikzpicture}[xscale=1.4]
+% 		\draw[thick,->,blue] (0,0) node[below]{\textcolor{black}{initial}} -- (0,3) node[above]{\textcolor{black}{final}} node[midway,right]{$C_1$};
+% 		\draw[thick,->,blue] (0,0) [out=135,in=200] to (0,3);
+% 		\node[blue] at (-0.95,1.5) {$C_2$};
+% 		\draw[thick,->,blue] (0,0) [out=60,in=60] to (1.5,1) [out=240,in=-15] to (0,3);
+% 		\node[blue] at (1.2,1.5) {$C_3$};
+% 		\end{tikzpicture}
+% 	\end{center}
+% 	\vspace{-20pt}
+% \end{marginfigure}
+
+% work by gravitational force is path independent
+
+% for example, same work is done via path $C_1$, $C_2$ and $C_3$
+
+% so gravitational force is conservative, G.P.E. can be defined
+
+% as a consequence, gain or loss in G.P.E. only depends on the difference in initial and final position of the object
+
+% if there is no other conservative force acting on a body apart from gravitational force, it follows that change in total energy of an object equals the net work done by all forces excluding gravity
+
+
+
+
+
+%\subsection{conservation of energy}
+
 \begin{ilight}
-	the net work done on a body equals the change in the body's kinetic energy: \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{total} = \Delta E_k}\end{empheq}
+	\keypoint{The law of conservation of energy} states that energy cannot be created or destroyed, but can only transform from one form into another while the total amount is always constant.  \index{conservation of energy}
 \end{ilight}
-
-
-
-\subsection{conservative forces \& potential energy \piste}
-
-
-if work by a force does not depend on which specific path is taken, this force is \keypoint{conservative}
-
-put differently, when an object is moved from one place to another under a conservative force, work done depends on initial and final positions only
-
-we can split $W_\text{total}$ into two parts: contributions from conservative and non-conservative forces
-
-for conservative part, let's define: $\Delta E_p = - W_{c} = - \int_i^f F_c \dd s $
-
-this means work by conservative forces can be interpreted as change in its \keypoint{potential energy}
-
-let's call the sum of an object's kinetic and potential energy its \keypoint{mechanical energy}: $E_m = E_k + E_p$
-
-work-energy theorem can then be rewritten: $\Delta E_k = W_\text{total} = W_\text{c} + W_\text{nc} = -\Delta E_p + W_\text{nc}$
-
-rearrange we have: $W_\text{nc} = \Delta E_k + \Delta E_p \RA$ \begin{empheq}[box=\tcbhighmath]{equation*}{W_\text{nc} = \Delta E_m}\end{empheq}
-
-\vspace*{-7pt}
-\begin{ilight}
-	the change in mechanical energy equals the net work done by all non-conservative forces
-\end{ilight}
-
-\newpage
-
-\subsection*{gravitational potential energy revisited \piste}
-
-\begin{marginfigure}
-	%\vspace{pt}
-	\begin{center}
-		\begin{tikzpicture}[xscale=1.4]
-		\draw[thick,->,blue] (0,0) node[below]{\textcolor{black}{initial}} -- (0,3) node[above]{\textcolor{black}{final}} node[midway,right]{$C_1$};
-		\draw[thick,->,blue] (0,0) [out=135,in=200] to (0,3);
-		\node[blue] at (-0.95,1.5) {$C_2$};
-		\draw[thick,->,blue] (0,0) [out=60,in=60] to (1.5,1) [out=240,in=-15] to (0,3);
-		\node[blue] at (1.2,1.5) {$C_3$};
-		\end{tikzpicture}
-	\end{center}
-	\vspace{-20pt}
-\end{marginfigure}
-
-work by gravitational force is path independent
-
-for example, same work is done via path $C_1$, $C_2$ and $C_3$
-
-so gravitational force is conservative, G.P.E. can be defined
-
-as a consequence, gain or loss in G.P.E. only depends on the difference in initial and final position of the object
-
-if there is no other conservative force acting on a body apart from gravitational force, it follows that change in total energy of an object equals the net work done by all forces excluding gravity
-
-
-
-
-
-\subsection{conservation of energy}
-
-\begin{ilight}
-	\keypoint{the law of conservation of energy} states that energy cannot be created or destroyed, but can only transform from one form into another while the total amount is always constant  \index{conservation of energy}
-\end{ilight}
-
-in absence of any non-conservative force, sum of a body's kinetic energy and potential energies, or the total mechanical energy,  is constant, this is also a law of conservation
-
 
 \example{For an object falling from rest due to gravity, if air resistance is negligible, what is its speed when it has fallen through a distance of $h$? }
 
 \begin{soln}
 \begin{equation*}
-	\text{G.P.E loss} \,\,\, = \,\,\, \text{K.E gain} \RA mgh = \frac{1}{2}mv^2 \RA v=\sqrt{2gh} 
+	\text{G.P.E loss }  =  \text{ K.E gain} \RA mgh = \frac{1}{2}mv^2 \RA v=\sqrt{2gh} 
 \end{equation*}
 \end{soln}
 
@@ -366,10 +331,9 @@ in absence of any non-conservative force, sum of a body's kinetic energy and pot
 	\end{center}
 	\vspace{-25pt}
 \end{marginfigure}
-
+\newpage
 \example{A box of mass $m$ slides down along a slope that is inclined at an angle $\theta$ to the horizontal. There is a constant friction $f$ acting on the box. When the box has moved through a distance of $\Delta s$ down the slope from $A$ to $B$, write down an equation relating its velocities $v_A$ and $v_B$ by applying the law of conservation of energy.}
 
-\newpage
 
 \begin{soln}
     
@@ -452,7 +416,7 @@ again the two approaches produce the same expression for final velocity \end{sol
 
 \example{A \emph{ballistic pendulum} is a device used to measure the speeds of fast-moving bullets. It consists of a large block of wood of mass $M$, suspended from two long light strings. A bullet of mass $m$ is fired into the block, and the block and bullet combination swings upward. If the centre of mass rises a vertical distance $h$, what is the initial speed $u$ of the bullet?}
 
-\begin{soln} as bullet enters block, combined momentum is conserved:
+\begin{soln} As th bullet enters block, the combined momentum is conserved:
 \begin{equation*}
 	mu = (M+m)v \RA v = \frac{mu}{M+m}
 \end{equation*}
@@ -467,25 +431,17 @@ putting the two equations together, we find: $ u = \left(1+\frac{M}{m}\right)\sq
 
 
 
+\subsection{Power}
 
-
-
-
-\subsection{power}
-
-to describe how fast work is done, we introduce the notion of power
+To describe how fast work is done, we introduce the notion of power:
 
 \begin{ilight}
-	\keypoint{power} is defined as the work done per unit time: \begin{empheq}[box=\tcbhighmath]{equation*}{P = \frac{\Delta W}{\Delta t}}\end{empheq}  \index{power}
+	\keypoint{Power} is defined as the work done per unit time: \begin{empheq}[box=\tcbhighmath]{equation*}{P = \frac{\Delta W}{\Delta t}}\end{empheq}  \index{power}
 \end{ilight}
 
-\cmt unit of power: $[P]  = \frac{[W]}{[t]} = \text{J s}^{-1} = \text{W (watt)}$
+The unit of poweris the Watt\footnote{Which leads to the real \emph{Joule} of a joke: Watt is the unit of poweer?...} $[P]  = \frac{[W]}{[t]} = \text{J s}^{-1} = \text{W (watt)}$. In other words, if one joule of work is done in one second, the power is one \keypoint{watt}
 
-if one joule of work is done in one second, the power is one \keypoint{watt}
-
-\cmt $P = \frac{\Delta W}{\Delta t}$ gives the \emph{average} power during in a period of time $\Delta t$
-
-to find the \emph{instantaneous} power at a particular moment, we have
+$P = \frac{\Delta W}{\Delta t}$ gives the \emph{average} power during in a period of time $\Delta t$, to find the \emph{instantaneous} power at a particular moment, we have
 \begin{equation*}
 P = \frac{\Delta W}{\Delta t} = \frac{F \Delta s}{\Delta t} \RA\end{equation*} \begin{empheq}[box=\tcbhighmath]{equation*}{P=Fv}
 \end{empheq}
@@ -510,7 +466,7 @@ P = \frac{1}{2} \times 1.3 \times 500 \times 10^3 \approx 3.25 \times10^5 \text{
 
 \example{A ship is cruising a a constant speed of $15 \mps$. The total resistive force acting is 9000 N. What is the output power of this ship?}
 
-\begin{soln} constant speed so equilibrium between driving force and resistive force
+\begin{soln} Constant speed so equilibrium between driving force and resistive force
 \begin{equation*}
 	P = F v = f v = 9000 \times 15 \RA P = 1.35 \times 10^5 \text{ W} 
 \end{equation*}
@@ -518,7 +474,7 @@ P = \frac{1}{2} \times 1.3 \times 500 \times 10^3 \approx 3.25 \times10^5 \text{
 
 \example{A car of mass $800 kg$ accelerates from rest on a horizontal road. Suppose the engine provides a constant power of 24000 W, and the resistive force can be given by $f=16v$, where $v$ is the speed of the car in$\mps$. (a) What is the acceleration of the car when it is travelling at $15\mps$? (b) What happens to the car if it maintains this driving power?}
 
-\begin{soln} equation of motion for the car is: $ F_\text{net} = F - f = ma \RA \frac{P}{v} - \alpha v = ma $
+\begin{soln}The equation of motion for the car is: $ F_\text{net} = F - f = ma \RA \frac{P}{v} - \alpha v = ma $
 
 at $v=15\mps$: $\frac{24000}{15} - 16\times15 = 800a \RA a=1.7\mpss $
 
@@ -533,7 +489,7 @@ F=f \RA \frac{P}{v_t} = \alpha v_t \RA \frac{24000}{v_t} = 16v_t \RA v_t \approx
 \end{soln}
 
 
-\subsection{efficiency}
+\subsection{Efficiency}
 
 efficiency of a system is given by: $\text{efficiency} = \frac{\text{useful energy output}}{\text{total energy input}} $, or \begin{empheq}[box=\tcbhighmath]{equation*}{\eta = \frac{W_\text{useful}}{W_\text{total}}}\end{empheq}
 
@@ -561,9 +517,9 @@ P_\text{out} = \eta P_\text{in} = \eta \frac{\Delta E_p}{\Delta t} = \eta \frac{
 
 
 
-\subsection{end-of-chapter questions}
+\subsection{End-of-chapter questions}
 
-\subsection*{work}
+\subsection*{Work}
 
 \question{
 	A trolley is pushed through a distance of 2.0 m with a force of $F=5.0$ N along a track. The trolley experiences a constant frictional force of 3.0 N. What is the work done by $F$?
@@ -586,7 +542,7 @@ P_\text{out} = \eta P_\text{in} = \eta \frac{\Delta E_p}{\Delta t} = \eta \frac{
 	A fixed mass of gas at a pressure of $1.50 \times 10^5 \text{ Pa}$ and initial volume of $2.80 \times 10^{-4} \text{ m}^3$ is heated. The gas expands at a constant pressure to a final volume of $8.40 \times 10^{-4} \text{ m}^3$. Find the work done by the gas.
 }
 
-\subsection*{kinetic energy}
+\subsection*{Kinetic energy}
 
 \question{Estimate the kinetic energy of a family car travelling at $40 \text{ km}$ per hour.}
 
@@ -639,22 +595,22 @@ P_\text{out} = \eta P_\text{in} = \eta \frac{\Delta E_p}{\Delta t} = \eta \frac{
 	This question concerns the design of a roller coaster. One designer says each summit must be lower than the previous one. Another designer suggests that it does not matter what heights the summits are as long as the first one is the highest. What do you think?
 }
 
-\subsection*{conservative forces \piste}
+% \subsection*{Conservative forces \piste}
 
-\question{
-	Explain why gravitational force is conservative.
-}
+% \question{
+% 	Explain why gravitational force is conservative.
+% }
 
-\question{
-	A charged object is acted by an electric force in an electric field. State and explain whether the electric force is conservative.
-}
+% \question{
+% 	A charged object is acted by an electric force in an electric field. State and explain whether the electric force is conservative.
+% }
 
-\question{
-	Is friction a conservative force? Explain your reasons.
-}
+% \question{
+% 	Is friction a conservative force? Explain your reasons.
+% }
 
 
-\subsection*{power}
+\subsection*{Power}
 \question{
 	A car engine exerts an average force of 400 N in moving the car 900 m in 200 s. What is the average power developed?
 }
@@ -677,7 +633,7 @@ P_\text{out} = \eta P_\text{in} = \eta \frac{\Delta E_p}{\Delta t} = \eta \frac{
 A car of mass 800 kg travels in a straight line up a slope. The total resistive force $f_R$ can be modelled by the equation: $f_R = kv^2$, where constant $k= \text{5.0 kg m}^{-1}$ and $v$ is the car's speed. When the car travels at a steady speed of $10\mps$, the engine exerts a force of 2.1 kN up the slope. (a) Find the component of the car's weight down the slope, and hence find the angle that the slope makes with the horizontal. (b) Find the power output from the engine. (c) If the car then travels onto a horizontal road. The engine's output power is unchanged and the resistive force obeys the same model as before. Find the acceleration of the car when its speed is $15\mps$. (d) The car eventually reaches a constant speed on the horizontal road. Find this terminal speed.
 }
 
-\subsection*{efficiency}
+\subsection*{Efficiency}
 \question{
 	An electric motor is used to lift a mass. When operating at full power, the current in the motor is 2.0 A and the voltage is 5.0 V. If the motor is 50\% efficient, what is the time take to lift a mass of 400 g through a height of 2.5 m?
 }

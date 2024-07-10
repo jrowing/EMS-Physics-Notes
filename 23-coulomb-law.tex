@@ -1,20 +1,18 @@
 \chapter{Electrostatics}
 
-\subsection{electric forces}
+\subsection{Electric forces}
 
 \subsection{Coulomb's law}
-
-charged objects will attract or repel one another through the electric force
+This law was first published by French physicist \emph{Charles Augustin de Coulomb} in 1785. In short this interaction underpins most of our experience of the universe - touch, sight and sound all depend on electrostatics. At it's simplest, it tells us how charged objects will attract or repel one another through the electric force.
 
 \begin{ilight}
-	\keypoint{Coulomb's law}\index{Coulomb's law} states that the electric force between two electrically charged particles is proportional to their charges and inversely proportional to the square of their separation: $\tcbhighmath{F = \frac{Qq}{4\pi\epsilon_0 r^2}}$
+	\keypoint{Coulomb's law}\index{Coulomb's law} states that the electric force between two electrically charged particles is proportional to their charges and inversely proportional to the square of their separation: $$\tcbhighmath{F = \frac{Qq}{4\pi\epsilon_0 r^2}}$$
 \end{ilight}
 
 $\epsilon_0 = 8.85 \times 10^{-12} \text{ C}^2 \text{ N}^{-1} \text{ m}^{-2}$ is the \emph{permittivity of free space}
 
 $k = \frac{1}{\ec} = 8.99 \times 10^9 \text{ N m}^2 \text{ C}^{-2}$ is a useful constant for calculations
 
-this law was first published by French physicist \emph{Charles Augustin de Coulomb} in 1785
 
 \cmt charges $Q$, $q$ in Coulomb's law are \emph{point charges}
 
@@ -37,69 +35,48 @@ for opposite charges (one positive and one negative), $Q_1Q_2<0 \ra F<0 \ra$  \e
 
 \question{Two protons are separated by a distance $r$. Find the ratio of the electric force to the gravitational force between them.}
 
-\subsection{electric fields}
+\subsection{Electric fields}
 
-to explain how charges affect each other at a distance, we introduce notion of \emph{electric fields}
+In order to explain how charges affect each other at a distance, we need to use the notion of \emph{electric fields}
 
 \begin{ilight}
-	\keypoint{electric field} is a region of space where a charged object is acted by a force
+	An \keypoint{electric field} is a region of space where a charged object is acted by a force.
 \end{ilight}
 
-any charge $Q$ (or several charges) can produce an electric field
-
-any test charge $q$ within the field will experience an electric force
+Any charge $Q$ (or several charges) can produce an electric field - any charge $q$ within the field will experience an electric force.
 
 \vspace*{\baselineskip}
-
-Next, we will introduce the concepts of \emph{electric field strength} and \emph{electric potential}, and see how they are related to the force acting on a charged object and the potential energy it possesses.
 
 You might have noticed that Coulomb's law for electrostatic forces and Newton's law of gravitation are both \emph{inverse square laws}, it turns out that electric fields are very similar to gravitational fields in various aspects.
 
 
-
-\subsection{electric field strength}
-
-\subsection{electric field strength}
+\subsection{Electric field strength}
 
 \rcyskip
 
 \begin{ilight}
-	\keypoint{electric field strength}\index{electric field!electric field strength} is defined as electric force per unit positive charge: $\tcbhighmath{E=\frac{F}{q}}$
+	\keypoint{Electric field strength}\index{electric field!electric field strength} is defined as electric force per unit positive charge: $\tcbhighmath{E=\frac{F}{q}}$
 \end{ilight}
 
 \cmt unit of $E$: $[E]=\text{N C}^{-1} = \text{V m}^{-1}$\footnote{You will later find in \S\ref{field-strength-potential} the deeper reason why $\text{V m}^{-1}$ is also a reasonable unit for field strength.}
 
-\cmt field strength due to an isolated source of \emph{point} charge $Q$
+To calculate the field strength due to an isolated source of \emph{point} charge $Q$, we can start by considering the force on a small test charge $q$ at distance $r$. This experiences a force: $F = \frac{Qq}{\ec r^2}$
 
-a small test charge $q$ at distance $r$ is acted by a force: $F = \frac{Qq}{\ec r^2}$
+From the above definition, the field strength at this point: $$ E = \frac{F}{q} \RA \tcbhighmath{E=\frac{Q}{\ec r^2}}$$
 
-field strength at this point: $ E = \frac{F}{q} \RA \tcbhighmath{E=\frac{Q}{\ec r^2}}$
+The field is produced by $Q$, so field strength only depends on the source $Q$. 
 
-the field is produced by $Q$, so field strength only depends on the source $Q$
+In the situation where the source is a charged \emph{sphere} of radius $R$ with uniform charge distribution, we realise that viewed from \emph{outside} the sphere, it acts like a point charge concentrated at the centre. 
+\footnote{A brief explanation is given in Example \ref{ex-radial-efield}.} Therefore, $$E=\frac{Q}{\ec r^2}$$ also holds for field due to charged sphere at $r>R$\footnote{For electric field strength \emph{inside} a conducting sphere, detailed discussions are given in \S\ref{inside-conductors}.}.
 
-\cmt if the source is a charged \emph{sphere} of radius $R$ with uniform charge distribution
+where $r$ is the distance from the point of interest to \emph{centre} of the sphere.
 
-viewed from \emph{outside} the sphere, it acts like a point charge concentrated at the centre
-\footnote{A brief explanation is given in Example \ref{ex-radial-efield}.}
+Like force, the field strength $E$ is a \emph{vector} quantity, it has a direction. To compute combined field strength due to several sources, one should perform \emph{vector sum} of contributions from each individual charge. 
 
-therefore, $E=\frac{Q}{\ec r^2}$ also holds for field due to charged sphere at $r>R$\footnote{For electric field strength \emph{inside} a conducting sphere, detailed discussions are given in \S\ref{inside-conductors}.}
+The direction of field strength depends on the source charge $Q$, for positive source ($Q>0$): field points away from the source, for negative source ($Q<0$): field points towards the source.
 
-where $r$ is the distance from the point of interest to \emph{centre} of the sphere
-
-\cmt field strength $E$ is a \emph{vector} quantity, it has a direction
-
-to compute combined field strength due to several sources, should perform \emph{vector sum} of contributions from each individual
-
-\cmt direction of field strength depends on the source charge $Q$
-
-for positive source ($Q>0$): field points away from the source
-
-for negative source ($Q<0$): field points towards the source
-
-\cmt electric force on a charge $q$ can be found if field strength $E$ is known
-
-magnitude of electric force: $F=Eq$
-direction of force: same direction as $E$ if $q>0$, but opposite to $E$ if $q<0$
+Electric force on a charge $q$ can be found if field strength $E$ is known. The magnitude of electric force: $F=Eq$ 
+The direction of force will be the same direction as $E$ if $q>0$, but opposite to $E$ if $q<0$.
 
 
 \example{A \emph{Van de Graaff generator} produces sparks when its surface electric field strength $4.0 \times 10^4 \Vpcm$. If the diameter of the sphere is $40 \text{ cm}$, what is the charge on it?}
@@ -127,7 +104,7 @@ direction of force: same direction as $E$ if $q>0$, but opposite to $E$ if $q<0$
 	\end{tikzpicture}
 \end{figure}
 	
-\begin{soln} field strengths due to the two spheres are in same direction
+\begin{soln} Field strengths due to the two spheres are in same direction
 \begin{equation*}
 E = E_1 + E_2 = 8.99 \times 10^9 \times \left( \frac{2.0\times 10^{-6}}{0.25^2} + \frac{1.0\times 10^{-6}}{0.25^2}\right) \approx 4.32\times 10^5 \NpC
 \end{equation*}
@@ -144,17 +121,15 @@ so force on dust particle acts to the left \end{soln}
 
 \question{Two positively charged particles $A$ and $B$ are situated in a vacuum. Point P lies on the line joining the centres of the two spheres and is a distance $x$ from $A$. Sketch the variation with $x$ of electric field strength $E$ due to the two particles.}
 
-\subsection{electric field lines}
-we can use \keypoint{electric field lines} to visualize an electric field\index{field line!electric field line}
+\subsection{Electric field lines}
+As with all fields, we can use \keypoint{field lines} to visualize an electric field\index{field line!electric field line}
 
-\cmt \emph{arrows} of field lines show direction of the field
-
-field lines always tend to leave positive charge, and end up at negative charges
-
-\cmt \emph{density} or spacing of lines show strength of the field
+\emph{Arrows} of field lines show direction of the field and field lines always tend to leave positive charge, and end up at negative charges. The \emph{density} or spacing of lines show strength of the field.
 
 \example{Sketch the electric field around a positively-charged sphere or a negatively charged sphere, and explain why they can be considered as point charges.}\label{ex-radial-efield}
-	
+
+    
+
 \begin{center}
 	\begin{tikzpicture}[scale=1]
 			\draw (-3,0) node{$+Q$} circle [radius=0.5];
@@ -166,13 +141,11 @@ field lines always tend to leave positive charge, and end up at negative charges
 			\draw [blue, thick, <-] (3,0) ++ (\s:0.5) -- ++(\s:1.8);
 	\end{tikzpicture}
 \end{center}
-
-\vspace*{-6pt} field lines of either case are \emph{radial}, i.e., perpendicular to surface
-
-field lines appear to start from or converge towards centre of the sphere
+\begin{soln}
+\vspace*{-6pt} The field lines of either case are \emph{radial}, i.e., perpendicular to surface, field lines appear to start from or converge towards centre of the sphere
 
 so charged spheres act like point charges.
-
+\end{soln}	
 \newpage
 
 \example{Field lines between two oppositely-charged large metal plates.}
@@ -188,7 +161,7 @@ so charged spheres act like point charges.
 	\end{tikzpicture}
 \end{center}
 
-\vspace*{-6pt} field lines are \emph{parallel} and equally spaced, so this is a \emph{uniform} electric field 
+\vspace*{-6pt} Field lines are \emph{parallel} and equally spaced, so this is a \emph{uniform} electric field 
 
 \example{Field pattern due to two charges of equal magnitude.}
 
@@ -211,24 +184,18 @@ so charged spheres act like point charges.
 	\end{minipage}
 \end{figure*}
 
-\section{potential \& potential energy }
+\section{Potential \& potential energy }
 
-\subsection{electric potential energy}
+\subsection{Electric potential energy}
 \label{sec:electric-potential}
 
-gain/loss in \keypoint{electric potential energy}\index{electric field!electric potential energy} is defined as work done against/by electric force
-
-(compare everything in this chapter with what you have learned about gravitational P.E.!)
-
-let's start to derive the electrical P.E. between two charges $Q$ and $q$ separated by $r$
-
-again we define $E_p=0$ at $r=\infty$ (choice of zero potential energy, no force so no P.E.), then
+The gain/loss in \keypoint{electric potential energy}\index{electric field!electric potential energy} is defined as work done against/by electric force, (compare everything in this chapter with what you have learned about gravitational P.E.!). Let's start to derive the electrical P.E. between two charges $Q$ and $q$ separated by $r$. Again we define $E_p=0$ at $r=\infty$ (choice of zero potential energy, no force so no P.E.), then:
 
 \begin{ilight}
-	\keypoint{electric potential energy} is equal to the work done by electric force to bring a charge to a specific position from \emph{infinity}
+	\keypoint{Electric potential energy} is equal to the work done by electric force to bring a charge to a specific position from \emph{infinity}
 \end{ilight} 
 
-moving a test charge $q$ from $r=\infty$ to a distance of $r$ from $Q$
+Moving a test charge $q$ from $r=\infty$ to a distance of $r$ from $Q$
 
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
@@ -243,33 +210,22 @@ moving a test charge $q$ from $r=\infty$ to a distance of $r$ from $Q$
 \end{tikzpicture}
 \end{center}
 
-work done by electric force: $W=\int^r_\infty F dr = \int^r_\infty \frac{Qq}{\ec} \frac{\dd x}{x^2} = - \frac{Qq}{\ec x}\bigg|^r_\infty = - \frac{Qq}{\ec r} $
+work done by electric force: $$W=\int^r_\infty F dr = \int^r_\infty \frac{Qq}{\ec} \frac{\dd x}{x^2} = - \frac{Qq}{\ec x}\bigg|^r_\infty = - \frac{Qq}{\ec r} $$
 
-\eqyskip
 
-since $\Delta E_p=-W$, we find: $E_p(r) - E_p(_\infty) = \frac{Qq}{\ec r}$
+Since: $\Delta E_p=-W$, we find: $$E_p(r) - E_p(_\infty) = \frac{Qq}{\ec r}$$
 
-but $E_p(_\infty) = 0$,  so electric P.E. between two charges $Q$ and $q$ is $\tcbhighmath{E_p(r) = \frac{Qq}{\ec r}}$
+but $E_p(_\infty) = 0$,  so electric P.E. between two charges $Q$ and $q$ is $$\tcbhighmath{E_p(r) = \frac{Qq}{\ec r}}$$
 
-\cmt as $r \to \infty$, $E_p \to 0$, this agrees with our definition for zero P.E. point
+As $r \to \infty$, $E_p \to 0$, this agrees with our definition for zero P.E. point. For like charges, $Qq > 0$, so $E_p > 0$, to bring like charges closer, work must be done to overcome their \emph{repulsion}, and P.E. increases.
 
-\cmt for like charges, $Qq > 0$, so $E_p > 0$
+The minimum P.E. $E_p(\infty)=0$ is at infinity, so positive P.E. at finite $r$. 
 
-to bring like charges closer, work must be done to overcome their \emph{repulsion}, P.E. increases
+For opposite charges, $Qq < 0$, so $E_p < 0$, to pull opposite charges apart, work must be done to overcome their \emph{attraction}, P.E. increases.
 
-minimum P.E. $E_p(\infty)=0$ at infinity, so positive P.E. at finite $r$
+The maximum P.E. $E_p(\infty)=0$ at infinity, so negative P.E. at finite $r$.
 
-\cmt for opposite charges, $Qq < 0$, so $E_p < 0$
-
-to pull opposite charges apart, work must be done to overcome their \emph{attraction}, P.E. increases
-
-maximum P.E. $E_p(\infty)=0$ at infinity, so negative P.E. at finite $r$
-
-\cmt electric P.E. is a \emph{scalar quantity}, sign is important
-
-repulsion implies positive P.E., and attraction implies negative P.E.
-
-sign of P.E. is hidden in polarities of charges
+Note that electric P.E. is a \emph{scalar quantity}, sign is important however as repulsion implies positive P.E., and attraction implies negative P.E. Sometimes the sign of P.E. is hidden by the polarities of charges.
 
 
 \example{To gain information about the gold nucleus ($_{\phantom{0}79}^{197}\text{Au}$), we fire $\alpha$-particles ($_2^4\alpha$) towards a thin gold foil. The size of a typical nucleus is about $10^{-14}$m, what is the minimum initial speed for $\alpha$-particles so that radius of gold nucleus can be determined?}
@@ -299,31 +255,23 @@ $\text{K.E. loss} = \text{P.E. gain} \RA \frac{1}{2}mu^2 - \underbrace{\frac{1}{
 
 
 
-\subsection{electric potential}
+\subsection{Electric potential}
 
-it is also useful to define the \emph{electric potential} for any specific point in a field
-
-electric potential can be thought as the electric potential energy per unit charge: $V = \frac{E_p}{q}$
+It is also useful to define the \emph{electric potential} for any specific point in a field. The electric potential can be thought as the electric potential energy per unit charge: $V = \frac{E_p}{q}$
 
 \begin{ilight}
-	\keypoint{electric potential}\index{electric field!electric potential} is the work needed to bring a unit positive charge from infinity
+	\keypoint{Electric potential}\index{electric field!electric potential} is the work needed to bring a unit positive charge from infinity
 \end{ilight}
 
 \cmt unit: $[V] = \text{ J C}^{-1} = \text{V}$
 
-\cmt electric potential due to an isolated source $Q$: $V = \frac{E_p}{q} = \frac{\frac{Qq}{\ec r}}{q} \RA \tcbhighmath{V = \frac{Q}{4\pi\epsilon_0 r}}$
+\cmt electric potential due to an isolated source $Q$: $V = \frac{E_p}{q} = \frac{\frac{Qq}{\ec r}}{q} \RA$ $$\tcbhighmath{V = \frac{Q}{4\pi\epsilon_0 r}}$$
 
-\cmt potential at infinity vanishes: $V_\infty = 0$
+Potential at infinity vanishes: $V_\infty = 0$
 
-\cmt electric potential can take both signs
+Electric potential can take both signs, the sign depends on whether unit positive charge is repelled or attracted by the source. For positively-charged sources $V>0$, while for negatively-charged sources $V<0$. 
 
-the sign depends on whether unit positive charge is repelled or attracted by the source
-
-for positively-charged sources $V>0$, while for negatively-charged sources $V<0$
-
-\cmt electric potential is a \emph{scalar} quantity
-
-to find combined potential due to multiple charges, add up contributions of each charge
+\cmt electric potential is a \emph{scalar} quantity so to find combined potential due to multiple charges, simply add up contributions of each charge.
 
 \example{An electron is accelerated from rest through a potential difference of 600 V.
 	
@@ -415,16 +363,10 @@ at surface of $B$, $V_P = 260 \text{ V}$ (at $x=11.0$ cm)
 \question{A particle with specific charge (ratio of its electric charge to its mass) $+9.58\times10^7 \text{ C kg}^{-1}$ is moving towards a fixed metal sphere. The sphere has a potential of $+500$ V. The initial speed of the particle is $3.0\times10^5 \mps$ when it is a large distance from the sphere. Determine whether the particle can reach the surface of the sphere.}
 
 
-\subsection{equipotential lines}
+\subsection{Equipotential lines}
 
-to show potential distributions, we draw \keypoint{equipotential lines}\index{equipotential lines}
-\footnote{In three dimensions, these lines form equipotential \emph{surfaces}.}
-
-points on same equipotential line have constant electric potential
-
-i.e., equipotential lines are \emph{contour lines} of equal electric potential
-
-\cmt for a field near a point charge, equipotential lines are a set of \emph{concentric} circles
+To show potential distributions, we draw \keypoint{equipotential lines}\index{equipotential lines}
+\footnote{In three dimensions, these lines form equipotential \emph{surfaces}.}. Points on same equipotential line have constant electric potential, i.e., equipotential lines are \emph{contour lines} of equal electric potential. For a field near a point charge, equipotential lines are a set of \emph{concentric} circles
 
 \begin{center}
 	\begin{tikzpicture}[scale=1.35]
@@ -441,7 +383,7 @@ i.e., equipotential lines are \emph{contour lines} of equal electric potential
 	\end{tikzpicture}
 \end{center}
 
-\cmt for uniform fields, equipotential lines are a set of \emph{parallel} straight lines
+\cmt For uniform fields, equipotential lines are a set of \emph{parallel} straight lines
 
 \begin{center}
 	\begin{tikzpicture}[yscale=1.2]
@@ -457,11 +399,9 @@ i.e., equipotential lines are \emph{contour lines} of equal electric potential
 	
 
 	
-\cmt equipotential lines are always perpendicular to the electric field lines
-	
-moving along an equipotential line requires no work done
+Equipotential lines are always perpendicular to the electric field lines and moving along an equipotential line requires no work done.
 
-\example{Field lines and equipotential lines due to two charges of various magnitudes}
+\example{Field lines and equipotential lines due to two charges of various magnitudes - you might be given an example and asked to sketch the lines and equipotentials.}
 
 \begin{figure*}
 	\noindent\begin{minipage}{0.48\textwidth}
@@ -504,15 +444,11 @@ moving along an equipotential line requires no work done
 
 
 
-\subsection{further discussions on electric fields}
+\subsection{Further discussions on electric fields}
 
-\subsection{comparison with gravitational fields}
+\subsection{A comparison with gravitational fields}
 
-both gravitational and electric force are described by inverse square law, so it follows that the mathematical language for both theories are very similar
-
-\cmt physical quantities that describe gravitational/electric fields
-\cmt comparing gravitational field with electric field
-\footnote{Note that there is no negative mass, gravitational force always interacts attractively. This is the fundamental difference between gravitational fields and electric fields.}
+Both gravitational and electric force are described by inverse square law, so it follows that the mathematical language for both theories are very similar\footnote{Note that there is no negative mass, gravitational force always interacts attractively. This is the fundamental difference between gravitational fields and electric fields.}.
 
 \begin{center}
 	\begin{tabular}{|c|c|c|}
@@ -535,7 +471,7 @@ potential & $\varphi = \frac{E_p}{m} = -G \frac{M}{r}$ & $V = \frac{E_p}{q} = \f
 \end{tabular}}
 \end{center}
 
-\cmt similarities between gravitational field and electric field
+Similarities between gravitational field and electric field:
 
 \begin{itemize}
 	\item[-] force and field strength both obey \emph{inverse square laws}
@@ -545,38 +481,26 @@ potential & $\varphi = \frac{E_p}{m} = -G \frac{M}{r}$ & $V = \frac{E_p}{q} = \f
 	\item[-] no potential energy and no potential at infinite separation
 \end{itemize}
 
-\cmt differences between gravitational field and electric field
-
-mass (source of gravity) is always positive, but electric charges can be positive or negative
-
-this fact leads to many fundamental differences between the two force fields
+Differences between gravitational field and electric field:
 
 \begin{itemize}
+
+\item[-] Mass (source of gravity) is always positive, but electric charges can be positive or negative - this fact leads to many fundamental differences between the two force fields
 \item[-] electric force can be repulsive or attractive, but gravitational force is always attractive
 
 \item[-] electric potential can take both signs, but gravitational potential is always negative
 \end{itemize}
 
-\subsection{electric field inside conductors}\label{inside-conductors}
+\subsection{Electric field inside conductors}\label{inside-conductors}
 
-consider electric field \emph{inside} a metal conductor carrying charge $Q$
-
-conductor means there are free charge carriers that can move around 
-
-but charge distribution should be stable for a charged conductor (no circulating currents)
-
-so charge carriers must experience no force, i.e., field strength inside conductor is zero
-
-put it the other way round, if there is an excess field, it will push free charge carriers to move around, until they are distributed so that the field inside the conductor becomes zero
-
-moreover, there shall be no potential difference between any two points inside the conductor, otherwise charge carriers would flow, so electric potential must be constant
+Consider electric field \emph{inside} a metal conductor carrying charge $Q$. the fact that the shell is a conductor means there are free charge carriers that can move around but charge distribution should be stable for a charged conductor (no circulating currents) so charge carriers must experience no force, i.e., field strength inside conductor is zero. To put it the other way round, if there is an excess field, it will push free charge carriers to move around, until they are distributed so that the field inside the conductor becomes zero. Moreover, there shall be no potential difference between any two points inside the conductor, otherwise charge carriers would flow, so electric potential must be constant.
 
 \begin{ilight}
 	\centering
 	
-	electric field strength is everywhere zero inside a conductor: $E=0$
+	Electric field strength is everywhere zero inside a conductor: $E=0$
 	
-	electric potential is everywhere constant inside a conductor: $V=\text{const}$
+	Electric potential is everywhere constant inside a conductor: $V=\text{const}$
 \end{ilight}
 
 \example{Consider the electric field due to a metal sphere of radius $R$ carrying charge $Q$. Plot the variation with the distance $r$ from sphere's centre of the field strength, and the variation with $r$ of the electric potential.}\label{ex-metal-sphere}
@@ -632,9 +556,9 @@ electric potential at distance $r$ from sphere's centre is: $V=\frac{Q}{4\pi\eps
 
 \question{You might have the experience that your mobile phone signal gets much weaker when you get into an elevator. Explain why this happens.}
 
-\subsection{field strength \& potential}\label{field-strength-potential}
+\subsection{Field strength \& potential}\label{field-strength-potential}
 
-for a small displacement $\Delta r$ in an electric field, change in potential $\Delta V$ is
+For a small displacement $\Delta r$ in an electric field, change in potential $\Delta V$ is
 
 {
 
@@ -644,17 +568,16 @@ $\Delta V = \frac{\Delta E_p}{q} \xlongequal{\Delta E_p=-W} - \frac{\Delta W}{q}
 
 }
 
-\eqyskip as change in displacement $\Delta r \to 0$, we have $\tcbhighmath{E = - \frac{\dd V}{\dd r}}$
+\eqyskip as change in displacement $\Delta r \to 0$, we have $$\tcbhighmath{E = - \frac{\dd V}{\dd r}}$$
 
 therefore we have the following theorem:
 
 \begin{ilight}
-	\centering field strength is negative gradient of potential with respect to displacement
+	\centering Field strength is negative gradient of potential with respect to displacement.
 \end{ilight}
 
-\newpage
 
-can also consider change in potential $\Delta V$ for large distance due to work done in a field
+One can also consider change in potential $\Delta V$ for large distance due to work done in a field
 
 {
 	
@@ -665,7 +588,7 @@ $\Delta V= \int \dd V \xlongequal{E = -\dd V/\dd r}  \int (-)E \dd r =  -\int E 
 
 }
 
-\eqyskip this gives the inverse relation: $\tcbhighmath{\Delta V = -\int E \dd r}$
+\eqyskip this gives the inverse relation: $$\tcbhighmath{\Delta V = -\int E \dd r}$$
 \footnote{These equations are correct if the charge is moving in the parallel direction to the field, i.e., the motion is along the field lines. But an object can move in all directions in the field. More rigorously, if we take the vector nature of electric field into account, we should write $\Delta V = - \int \mathbf{E}\cdot\dd\mathbf{r}$, and $\mathbf{E} = - \frac{\partial V}{\partial \mathbf{r}}$. \piste}
 
 \cmt given a $V$-$r$ graph, gradient of curve gives field strength
@@ -743,13 +666,9 @@ this agrees with the expression for field strength due to an isolated charge \eo
 
 
 
-\subsection*{uniform fields revisited}
+\subsection*{Uniform fields revisited}
 
-given two oppositely-charged metal plates separated by a distance of $d$
-
-if p.d. between the plates is $V$, then electric field strength between is given by $E = \frac{V}{d}$\footnote{You should have learned this in AS-level physics.}
-
-we will derive this result using the theorem introduced in the last chapter
+Given two oppositely-charged metal plates separated by a distance of $d$, if th p.d. between the plates is $V$, then electric field strength between is given by $E = \frac{V}{d}$. We will derive this result using the theorem introduced in the last chapter
 
 \begin{figure}[ht]
 \centering
@@ -780,25 +699,23 @@ we will derive this result using the theorem introduced in the last chapter
 \end{figure}
 
 
-moving a test charge $q$ in a uniform field, work done by electric force: $W=Fd = Eqd$
+Moving a test charge $q$ in a uniform field, work done by electric force: $W=Fd = Eqd$
 		
-change in P.E.: $\Delta E_p = -W = -Eqd$
+Change in P.E.: $\Delta E_p = -W = -Eqd$
 
-change in potential: $\Delta V = \frac{\Delta E_p}{q} = - Ed$, or $E=-\frac{\Delta V}{d}$
+Change in potential: $\Delta V = \frac{\Delta E_p}{q} = - Ed$, or $E=-\frac{\Delta V}{d}$
 
-plotting $V$-$r$ graph, $\text{gradient of line}=-E$
+Potting $V$-$r$ graph, $\text{gradient of line}=-E$.
 
-the minus sign means field strength points in the direction such that potential decreases
+The minus sign means field strength points in the direction such that potential decreases.
 
-i.e., electric field acts from high potential to low potential
+i.e., electric field acts from high potential to low potential.
 
 
 
-\subsection*{electric field due to two positive point charges}
+\subsection*{The electric field due to two positive point charges}
 
-two point charges $+Q_1$, $+Q_2$ are separated by a distance of $D$
-
-let's look into the electric field along the segment joining the two charges 
+Two point charges $+Q_1$, $+Q_2$ are separated by a distance of $D$, let's look into the electric field along the segment joining the two charges:
 
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
@@ -817,16 +734,14 @@ let's look into the electric field along the segment joining the two charges
 \end{tikzpicture}
 \end{center}
 
-combined potential: $V = V_1 + V_2 = \frac{Q_1}{4\pi\epsilon_0r_1} + \frac{Q_2}{4\pi\epsilon_0r_2} = \frac{1}{4\pi\epsilon_0}\left(\frac{Q_1}{x} + \frac{Q_2}{D-x}\right)$
+The combined potential: $V = V_1 + V_2 = \frac{Q_1}{4\pi\epsilon_0r_1} + \frac{Q_2}{4\pi\epsilon_0r_2} = \frac{1}{4\pi\epsilon_0}\left(\frac{Q_1}{x} + \frac{Q_2}{D-x}\right)$
 
-combined field strength: $E = E_1 - E_2 = \frac{Q_1}{4\pi\epsilon_0r_1^2} - \frac{Q_2}{4\pi\epsilon_0r_2^2} = \frac{1}{4\pi\epsilon_0}\left(\frac{Q_1}{x^2} - \frac{Q_2}{(D-x)^2}\right)$
+The combined field strength: $E = E_1 - E_2 = \frac{Q_1}{4\pi\epsilon_0r_1^2} - \frac{Q_2}{4\pi\epsilon_0r_2^2} = \frac{1}{4\pi\epsilon_0}\left(\frac{Q_1}{x^2} - \frac{Q_2}{(D-x)^2}\right)$
 
-notice that when computing $V$, we carry out \emph{scalar sum}
+Notice that when computing $V$, we carry out \emph{scalar sum} but for $E$, we carry out a \emph{vector sum}, i.e., directions of $E_1$ and $E_2$ become important.
 
-but for $E$, we carry out \emph{vector sum}, i.e., directions of $E_1$ and $E_2$ become important
 
-$V$-$x$ graph and $E$-$x$ graph for the case where $Q_1=3Q_2$ are sketched
-
+\begin{figure*}
 \begin{center}
 	\begin{tikzpicture}[scale=1.35]
 	\draw[thick,->] (0,-2) -- (0,4.8);
@@ -838,6 +753,8 @@ $V$-$x$ graph and $E$-$x$ graph for the case where $Q_1=3Q_2$ are sketched
 	\shade [ball color = green] (8,0) node[below right]{$+Q_2$} circle (0.15);
 	\end{tikzpicture}
 \end{center}
+\caption{$V$-$x$ graph and $E$-$x$ graph for the case where $Q_1=3Q_2$ are sketched.}
+\end{figure*}
 
 \question{Convince yourself that field strength is indeed given by negative potential gradient. You may interpret it either graphically (think about gradient of tangent along the curve) or algebraically (think about the derivative of $V$).}
 
