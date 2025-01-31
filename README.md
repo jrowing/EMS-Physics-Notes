@@ -6,7 +6,7 @@
 A structured collection of physics notes designed for sixth-form and pre-university students, covering key concepts with clear explanations, diagrams, and equations.
 
 ## 📌 Features
-- Comprehensive notes covering all major physics topics
+- Comprehensive notes covering all major physics topics 
 - Clear explanations with diagrams and worked examples
 - Equations formatted in LaTeX for readability
 - Suitable for students preparing for A-Level, IB, and equivalent exams
