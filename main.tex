@@ -1,5 +1,5 @@
 
-\documentclass[symmetric,a4paper]{tufte-book}
+\documentclass[a4paper]{tufte-book}%symmetric
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 
 %%
@@ -633,7 +633,10 @@ The CC BY-NC-SA licence allows the work to be re-mixed, re-used, and re-shared s
 % \listoftodos
 %\phantomsection
 %\cleardoublepage
-%\addcontentsline{toc}{section}{\indexname}
-\printindex
+%\begin{fullwidth} 
 
+%\addcontentsline{toc}{section}{\indexname}
+%\newgeometry{left=6cm,right=6cm,bottom=1cm}
+\printindex
+%\end{fullwidth}
 \end{document}
