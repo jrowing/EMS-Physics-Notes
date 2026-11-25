@@ -1,0 +1,341 @@
+\contentsline {chapter}{\numberline {1}Openings}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Physical Quantities}{3}{chapter.2}%
+\contentsline {section}{Units of measurement}{3}{section*.2}%
+\contentsline {subsection}{SI base units}{3}{section*.2}%
+\contentsline {subsection}{Derived units}{3}{section*.2}%
+\contentsline {subsection}{Metric prefixes}{4}{section*.2}%
+\contentsline {subsection}{Dimensional analysis}{4}{section*.2}%
+\contentsline {subsection}{Scalars \& Vectors}{4}{section*.2}%
+\contentsline {subsection}{Adding Vectors}{5}{figure.caption.3}%
+\contentsline {subsection}{Multiplication of vectors}{5}{figure.caption.7}%
+\contentsline {subsection}{Resolving vectors}{6}{figure.caption.8}%
+\contentsline {chapter}{\numberline {3}Measurements}{9}{chapter.3}%
+\contentsline {section}{uncertainties}{9}{section*.12}%
+\contentsline {subsection}{absolute uncertainty}{9}{section*.12}%
+\contentsline {subsection}{fractional \& percentage uncertainty}{10}{section*.12}%
+\contentsline {subsection}{propagation of uncertainties}{10}{section*.12}%
+\contentsline {subsection}{errors of measurement}{12}{section*.12}%
+\contentsline {subsection}{systematic \& random errors}{12}{section*.12}%
+\contentsline {subsection}{accuracy \& precision}{13}{figure.caption.13}%
+\contentsline {chapter}{\numberline {4}Kinematics}{15}{chapter.4}%
+\contentsline {section}{Kinematic quantities}{15}{section*.15}%
+\contentsline {subsection}{Displacement \& Distance}{15}{section*.15}%
+\contentsline {subsection}{Velocity \& speed}{16}{figure.caption.17}%
+\contentsline {subsection}{Acceleration}{17}{figure.caption.17}%
+\contentsline {subsection}{Motion graphs}{17}{figure.caption.17}%
+\contentsline {subsection}{Displacement-time graphs}{18}{figure.caption.17}%
+\contentsline {subsection}{Velocity-time graphs}{19}{figure.caption.20}%
+\contentsline {subsection}{Acceleration-time graphs}{20}{figure.caption.22}%
+\contentsline {subsection}{Linear motion with constant velocity}{21}{figure.caption.25}%
+\contentsline {subsection}{Linear motion with constant acceleration}{22}{figure.caption.26}%
+\contentsline {subsection}{Equations of motion}{22}{figure.caption.27}%
+\contentsline {subsection}{Free fall}{23}{equation.4.0.4}%
+\contentsline {subsection}{Upward projection}{23}{equation.4.0.4}%
+\contentsline {subsection}{Motion in two dimensions -- projectile motion}{25}{figure.caption.32}%
+\contentsline {section}{End-of-chapter questions}{28}{figure.caption.34}%
+\contentsline {chapter}{\numberline {5}Force \& Motion}{29}{chapter.5}%
+\contentsline {section}{Force \& motion: an introduction}{29}{section*.36}%
+\contentsline {subsection}{Newton's laws of motion}{30}{figure.caption.37}%
+\contentsline {subsection}{Newton's first law}{30}{figure.caption.37}%
+\contentsline {subsection}{Newton's Second law}{31}{figure.caption.37}%
+\contentsline {subsection}{Newton's third law}{32}{figure.caption.39}%
+\contentsline {subsection}{Force analysis \& free-body diagrams}{32}{figure.caption.39}%
+\contentsline {section}{Types of forces}{32}{figure.caption.39}%
+\contentsline {subsection}{Weight}{32}{section*.40}%
+\contentsline {subsection}{Drag}{33}{section*.40}%
+\contentsline {subsection}{Normal contact}{35}{figure.caption.43}%
+\contentsline {subsection}{Friction}{36}{figure.caption.46}%
+\contentsline {subsection}{Inclined slopes}{37}{figure.caption.46}%
+\contentsline {subsection}{Tension in ropes}{38}{figure.caption.51}%
+\contentsline {chapter}{\numberline {6}Mechanical Equilibrium}{41}{chapter.6}%
+\contentsline {subsection}{Moment of force}{41}{section*.55}%
+\contentsline {subsection}{Torque of couple}{42}{figure.caption.56}%
+\contentsline {subsection}{Moment of weight}{43}{figure.caption.57}%
+\contentsline {section}{Stability}{43}{figure.caption.58}%
+\contentsline {subsection}{Principle of moments}{44}{figure.caption.65}%
+\contentsline {subsection}{Mechanical equilibrium}{46}{figure.caption.68}%
+\contentsline {subsection}{Two forces in equilibrium}{48}{figure.caption.71}%
+\contentsline {subsection}{Three forces in equilibrium}{48}{figure.caption.72}%
+\contentsline {subsection}{Force triangle}{48}{figure.caption.72}%
+\contentsline {subsection}{Concurrent forces}{49}{figure.caption.75}%
+\contentsline {chapter}{\numberline {7}Momentum}{51}{chapter.7}%
+\contentsline {subsection}{Momentum}{51}{section*.77}%
+\contentsline {subsection}{Momentum and force}{51}{section*.77}%
+\contentsline {subsection}{Impulse-momentum relation}{53}{figure.caption.79}%
+\contentsline {subsection}{Principle of momentum conservation}{53}{figure.caption.79}%
+\contentsline {subsection}{Collision in one dimension}{54}{figure.caption.79}%
+\contentsline {section}{Elastic \& Inelastic collisions}{55}{figure.caption.82}%
+\contentsline {subsection}{Collisions in two dimensions}{56}{figure.caption.89}%
+\contentsline {chapter}{\numberline {8}Work \& Energy}{59}{chapter.8}%
+\contentsline {subsection}{Work}{59}{section*.92}%
+\contentsline {subsection}{Energy forms}{60}{figure.caption.94}%
+\contentsline {subsection}{Kinetic energy}{60}{figure.caption.94}%
+\contentsline {subsection}{Gravitational potential energy}{61}{figure.caption.94}%
+\contentsline {subsection}{Elastic potential energy}{62}{figure.caption.95}%
+\contentsline {subsection}{Other energy stores}{62}{figure.caption.95}%
+\contentsline {subsection}{Work \& energy transformations}{62}{figure.caption.95}%
+\contentsline {subsection}{conservation of energy}{62}{figure.caption.95}%
+\contentsline {subsection}{Power}{63}{figure.caption.98}%
+\contentsline {subsection}{Efficiency}{64}{figure.caption.98}%
+\contentsline {chapter}{\numberline {9}Materials}{65}{chapter.9}%
+\contentsline {section}{Springs}{65}{section*.99}%
+\contentsline {subsection}{Hooke's law}{65}{section*.99}%
+\contentsline {subsection}{Elastic potential energy in a spring}{66}{figure.caption.101}%
+\contentsline {subsection}{Spring combinations}{67}{figure.caption.103}%
+\contentsline {subsection}{Stress, strain \& Young modulus}{68}{figure.caption.106}%
+\contentsline {subsection}{Stress \& Strain}{68}{figure.caption.106}%
+\contentsline {subsection}{Young modulus}{69}{figure.caption.106}%
+\contentsline {subsection}{Measurement of Young modulus}{71}{figure.caption.107}%
+\contentsline {subsection}{Stress-strain curves}{72}{figure.caption.108}%
+\contentsline {subsection}{Metals}{73}{figure.caption.112}%
+\contentsline {subsection}{Polymers}{74}{figure.caption.115}%
+\contentsline {section}{Rubber}{75}{figure.caption.117}%
+\contentsline {section}{End-of-chapter questions}{75}{figure.caption.119}%
+\contentsline {chapter}{\numberline {10}Waves}{81}{chapter.10}%
+\contentsline {subsection}{Wave terminology}{81}{section*.123}%
+\contentsline {subsection}{Transverse \& longitudinal waves}{82}{figure.caption.125}%
+\contentsline {subsection}{Transverse waves}{82}{figure.caption.125}%
+\contentsline {subsection}{Longitudinal waves}{83}{figure.caption.125}%
+\contentsline {subsection}{Sound waves}{83}{figure.caption.127}%
+\contentsline {subsection}{Electromagnetic waves}{85}{figure.caption.130}%
+\contentsline {subsection}{Properties of electromagnetic waves}{85}{figure.caption.130}%
+\contentsline {subsection}{The electromagnetic spectrum}{86}{figure.caption.131}%
+\contentsline {subsection}{Wave intensity}{89}{figure.caption.133}%
+\contentsline {subsection}{Polarisation}{89}{figure.caption.133}%
+\contentsline {subsection}{Plane polarisation}{89}{figure.caption.133}%
+\contentsline {subsection}{Polarisers \& Malus's law}{90}{figure.caption.134}%
+\contentsline {subsection}{Doppler effect}{91}{figure.caption.136}%
+\contentsline {section}{Superposition of Waves}{95}{figure.caption.141}%
+\contentsline {subsection}{Superposition of waves}{95}{section*.142}%
+\contentsline {subsection}{Principle of superposition}{95}{section*.142}%
+\contentsline {subsection}{Path difference}{96}{figure.caption.145}%
+\contentsline {subsection}{Phase difference}{97}{figure.caption.145}%
+\contentsline {subsection}{Interference}{99}{figure.caption.146}%
+\contentsline {subsection}{Double-slit interference}{101}{figure.caption.148}%
+\contentsline {subsection}{Multi-slit interference: diffraction gratings}{103}{figure.caption.151}%
+\contentsline {subsection}{Diffraction}{105}{figure.caption.154}%
+\contentsline {subsection}{Stationary waves}{108}{figure.caption.157}%
+\contentsline {subsection}{Formation of stationary waves}{108}{figure.caption.157}%
+\contentsline {subsection}{Stationary wave pattern \& boundary conditions}{109}{figure.caption.159}%
+\contentsline {subsection}{Measurement of speed of sound with stationary waves}{111}{figure.caption.164}%
+\contentsline {subsection}{Stationary waves \& progressive waves}{111}{figure.caption.165}%
+\contentsline {section}{End-of-chapter questions}{112}{figure.caption.165}%
+\contentsline {chapter}{\numberline {11}Cosmology}{115}{chapter.11}%
+\contentsline {section}{Stephan's law}{115}{section*.168}%
+\contentsline {section}{Wein's law}{115}{section*.168}%
+\contentsline {subsection}{Black Body Radiator}{115}{section*.169}%
+\contentsline {subsection}{Wien's Displacement Law}{116}{figure.caption.170}%
+\contentsline {section}{End-of-chapter questions}{116}{figure.caption.170}%
+\contentsline {chapter}{\numberline {12}Electrical Quantities \& Components}{119}{chapter.12}%
+\contentsline {section}{Electrical quantities}{119}{section*.172}%
+\contentsline {subsection}{Electric charges}{119}{section*.172}%
+\contentsline {subsection}{Electric current}{120}{section*.172}%
+\contentsline {subsection}{P.d. \& e.m.f.}{122}{figure.caption.175}%
+\contentsline {subsection}{Resistance}{122}{figure.caption.176}%
+\contentsline {subsection}{Electrical power}{123}{figure.caption.176}%
+\contentsline {section}{Electrical components \& $I$-$V$ characteristics}{123}{figure.caption.176}%
+\contentsline {subsection}{Ohmic conductors}{124}{section*.177}%
+\contentsline {subsection}{Filament lamps}{124}{figure.caption.178}%
+\contentsline {subsection}{Thermistors}{124}{figure.caption.179}%
+\contentsline {subsection}{Diodes}{125}{figure.caption.181}%
+\contentsline {section}{Current Electricity}{127}{figure.caption.183}%
+\contentsline {subsection}{Kirchhoff's circuit laws}{127}{section*.184}%
+\contentsline {subsection}{First law}{127}{section*.184}%
+\contentsline {subsection}{Second law}{127}{figure.caption.185}%
+\contentsline {subsection}{Resistor networks}{128}{figure.caption.186}%
+\contentsline {subsection}{Series resistors}{128}{figure.caption.186}%
+\contentsline {subsection}{parallel resistors}{128}{figure.caption.187}%
+\contentsline {subsection}{practical circuits}{129}{figure.caption.189}%
+\contentsline {subsection}{power supplies \& internal resistance}{129}{figure.caption.189}%
+\contentsline {subsection}{practical ammeters \& voltmeters}{131}{figure.caption.193}%
+\contentsline {subsection}{potential dividers}{131}{figure.caption.194}%
+\contentsline {chapter}{\numberline {13}Electric Fields}{135}{chapter.13}%
+\contentsline {section}{Electric forces \& fields}{135}{section*.201}%
+\contentsline {subsection}{Electrostatic forces}{135}{section*.201}%
+\contentsline {subsection}{Electric fields}{135}{section*.201}%
+\contentsline {subsection}{Electric field strength}{136}{section*.201}%
+\contentsline {subsection}{Electric field lines}{136}{figure.caption.202}%
+\contentsline {subsection}{Uniform electric fields}{136}{figure.caption.204}%
+\contentsline {subsection}{Equilibrium between electric force and weight}{138}{figure.caption.206}%
+\contentsline {subsection}{Deflection of a charged particle in a uniform field}{139}{figure.caption.207}%
+\contentsline {subsection}{{\fontencoding {U}\fontfamily {futs}\selectfont \char 49\relax }Polar molecules in uniform electric fields}{139}{figure.caption.209}%
+\contentsline {chapter}{\numberline {14}Sub-atomic Particles}{141}{chapter.14}%
+\contentsline {section}{Atomic structure}{141}{section*.211}%
+\contentsline {subsection}{Atomic model}{141}{section*.211}%
+\contentsline {subsection}{The $\alpha $-particle scattering experiment}{141}{figure.caption.213}%
+\contentsline {subsection}{Nuclide notation}{143}{figure.caption.216}%
+\contentsline {subsection}{Chemical properties of elements}{144}{figure.caption.216}%
+\contentsline {subsection}{Radioactivity}{144}{figure.caption.216}%
+\contentsline {subsection}{Radioactive decays}{144}{figure.caption.216}%
+\contentsline {subsection}{Properties of $\alpha $-, $\beta $- \& $\gamma $-radiation}{144}{figure.caption.216}%
+\contentsline {subsection}{Laws of conservation}{146}{figure.caption.218}%
+\contentsline {subsection}{Decay equations}{146}{figure.caption.218}%
+\contentsline {subsection}{Fundamental particles}{147}{figure.caption.218}%
+\contentsline {subsection}{Particles \& anti-particles}{148}{figure.caption.218}%
+\contentsline {subsection}{Quarks \& hadrons}{148}{figure.caption.218}%
+\contentsline {subsection}{Leptons}{149}{figure.caption.218}%
+\contentsline {subsection}{$\beta $-decays}{149}{figure.caption.219}%
+\contentsline {section}{End-of-chapter questions}{150}{figure.caption.219}%
+\contentsline {chapter}{\numberline {15}Circular Motion}{151}{chapter.15}%
+\contentsline {section}{Angular quantities}{151}{section*.220}%
+\contentsline {subsection}{Angular displacement}{151}{section*.220}%
+\contentsline {subsection}{Angular velocity}{151}{figure.caption.221}%
+\contentsline {subsection}{Uniform circular motion}{152}{figure.caption.221}%
+\contentsline {subsection}{Centripetal acceleration}{152}{figure.caption.222}%
+\contentsline {subsection}{Centripetal force}{153}{figure.caption.223}%
+\contentsline {chapter}{\numberline {16}Gravitational Fields}{157}{chapter.16}%
+\contentsline {section}{Gravitational forces}{157}{section*.228}%
+\contentsline {subsection}{Newton's law of gravitation}{157}{section*.228}%
+\contentsline {subsection}{Planetary motion}{158}{figure.caption.230}%
+\contentsline {subsection}{Apparent weight}{158}{figure.caption.231}%
+\contentsline {section}{Gravitational fields}{159}{figure.caption.232}%
+\contentsline {subsection}{Gravitational field strength}{159}{section*.233}%
+\contentsline {subsection}{acceleration of free fall}{160}{section*.233}%
+\contentsline {subsection}{Gravitational field lines}{160}{section*.233}%
+\contentsline {section}{Gravitational potential \& potential energy}{161}{section*.233}%
+\contentsline {subsection}{Potential energy}{161}{section*.234}%
+\contentsline {subsection}{Gravitational potential energy}{161}{section*.234}%
+\contentsline {subsection}{Gravitational potential}{163}{figure.caption.235}%
+\contentsline {chapter}{\numberline {17}Oscillations}{165}{chapter.17}%
+\contentsline {subsection}{Amplitude, period, frequency}{165}{section*.237}%
+\contentsline {subsection}{Phase angle}{165}{figure.caption.238}%
+\contentsline {subsection}{Acceleration \& restoring force}{166}{figure.caption.239}%
+\contentsline {subsection}{Simple harmonic oscillation}{166}{figure.caption.239}%
+\contentsline {subsection}{Equation of motion}{166}{figure.caption.239}%
+\contentsline {section}{Examples of simple harmonic oscillators}{167}{figure.caption.241}%
+\contentsline {subsection}{Velocity \& acceleration}{169}{figure.caption.243}%
+\contentsline {subsection}{Vibrational energy}{170}{figure.caption.245}%
+\contentsline {subsection}{Damped oscillations}{171}{figure.caption.246}%
+\contentsline {subsection}{Light damping}{172}{figure.caption.246}%
+\contentsline {subsection}{Heavy damping}{172}{figure.caption.248}%
+\contentsline {subsection}{Critical damping}{172}{figure.caption.248}%
+\contentsline {subsection}{Forced oscillations}{174}{figure.caption.249}%
+\contentsline {subsection}{Free \& forced oscillation}{174}{figure.caption.249}%
+\contentsline {subsection}{resonance}{174}{figure.caption.249}%
+\contentsline {subsection}{Damping \& resonance}{175}{figure.caption.250}%
+\contentsline {chapter}{\numberline {18}Ideal Gases}{177}{chapter.18}%
+\contentsline {subsection}{Gas molecules}{177}{section*.252}%
+\contentsline {subsection}{Motion of gas particles}{177}{section*.252}%
+\contentsline {subsection}{Number of molecules}{178}{figure.caption.253}%
+\contentsline {subsection}{Pressure (qualitative view)}{178}{figure.caption.253}%
+\contentsline {subsection}{Empirical laws}{178}{figure.caption.253}%
+\contentsline {section}{Avogadro's Law}{180}{figure.caption.256}%
+\contentsline {subsection}{An ideal gas}{181}{section*.257}%
+\contentsline {subsection}{The ideal gas equation}{181}{section*.257}%
+\contentsline {subsection}{The kinetic theory of ideal gases}{183}{section*.257}%
+\contentsline {subsection}{Assumptions of ideal gas model}{183}{section*.257}%
+\contentsline {subsection}{Pressure (quantitative view)}{183}{section*.257}%
+\contentsline {subsection}{Kinetic energy of a gas}{184}{figure.caption.258}%
+\contentsline {chapter}{\numberline {19}Thermodynamics}{187}{chapter.19}%
+\contentsline {subsection}{Thermal physics basics}{187}{section*.259}%
+\contentsline {subsection}{Temperature scales}{187}{section*.259}%
+\contentsline {subsection}{The kinetic theory of matter}{187}{figure.caption.260}%
+\contentsline {subsection}{Specific latent heat}{188}{figure.caption.260}%
+\contentsline {subsection}{Specific heat capacity}{188}{figure.caption.260}%
+\contentsline {subsection}{Internal energy}{188}{figure.caption.261}%
+\contentsline {subsection}{Kinetic energy}{189}{figure.caption.261}%
+\contentsline {subsection}{Potential energy}{189}{figure.caption.261}%
+\contentsline {subsection}{Internal energy of ideal gas}{190}{figure.caption.261}%
+\contentsline {subsection}{Change of states}{190}{figure.caption.261}%
+\contentsline {subsection}{First law of thermodynamics}{191}{figure.caption.262}%
+\contentsline {subsection}{Temperature}{194}{figure.caption.264}%
+\contentsline {subsection}{Temperature \& thermal energy}{194}{figure.caption.264}%
+\contentsline {subsection}{Absolute zero}{194}{figure.caption.264}%
+\contentsline {subsection}{Thermometer}{194}{figure.caption.264}%
+\contentsline {chapter}{\numberline {20}Electrostatics}{197}{chapter.20}%
+\contentsline {subsection}{Electric forces}{197}{section*.266}%
+\contentsline {subsection}{Coulomb's law}{197}{section*.266}%
+\contentsline {subsection}{Electric fields}{197}{section*.266}%
+\contentsline {subsection}{Electric field strength}{198}{section*.266}%
+\contentsline {subsection}{Electric field lines}{198}{figure.caption.267}%
+\contentsline {section}{Potential \& potential energy }{200}{figure.caption.268}%
+\contentsline {subsection}{Electric potential energy}{200}{section*.269}%
+\contentsline {subsection}{Electric potential}{201}{section*.269}%
+\contentsline {subsection}{Equipotential lines}{202}{figure.caption.271}%
+\contentsline {subsection}{Further discussions on electric fields}{204}{figure.caption.274}%
+\contentsline {subsection}{A comparison with gravitational fields}{204}{figure.caption.274}%
+\contentsline {subsection}{Electric field inside conductors}{204}{figure.caption.274}%
+\contentsline {subsection}{Field strength \& potential}{205}{figure.caption.275}%
+\contentsline {chapter}{\numberline {21}Capacitors}{209}{chapter.21}%
+\contentsline {section}{Capacitors: an introduction}{209}{section*.280}%
+\contentsline {subsection}{Capacitance}{210}{figure.caption.283}%
+\contentsline {subsection}{Energy stored in a capacitor}{211}{figure.caption.283}%
+\contentsline {subsection}{Capacitor networks}{212}{figure.caption.284}%
+\contentsline {subsection}{Capacitors in parallel}{212}{figure.caption.284}%
+\contentsline {subsection}{Capacitors in series}{213}{figure.caption.285}%
+\contentsline {subsection}{Capacitor networks}{214}{figure.caption.287}%
+\contentsline {subsection}{Capacitors \& resistors}{214}{figure.caption.287}%
+\contentsline {subsection}{Charging \& discharging capacitors}{214}{figure.caption.287}%
+\contentsline {subsection}{Charging phase}{214}{figure.caption.287}%
+\contentsline {subsection}{Discharging phase}{215}{figure.caption.288}%
+\contentsline {subsection}{The time constant}{216}{figure.caption.290}%
+\contentsline {chapter}{\numberline {22}Magnetic Fields}{217}{chapter.22}%
+\contentsline {subsection}{Magnets}{217}{section*.291}%
+\contentsline {subsection}{Magnetic field due to currents}{218}{figure.caption.292}%
+\contentsline {subsection}{Solenoids \& electromagnets}{219}{figure.caption.294}%
+\contentsline {subsection}{Magnetic force on current-carrying conductor}{220}{figure.caption.295}%
+\contentsline {subsection}{Magnetic flux density}{220}{figure.caption.296}%
+\contentsline {subsection}{Magnetic force on charged particles}{223}{figure.caption.299}%
+\contentsline {subsection}{Magnetic force on charged particles}{223}{figure.caption.299}%
+\contentsline {subsection}{Charged particle in uniform magnetic fields}{225}{figure.caption.301}%
+\contentsline {subsection}{The mass spectrometer}{225}{figure.caption.302}%
+\contentsline {subsection}{The cyclotron}{226}{figure.caption.303}%
+\contentsline {subsection}{Velocity selector}{227}{figure.caption.304}%
+\contentsline {subsection}{Hall effect}{227}{figure.caption.305}%
+\contentsline {chapter}{\numberline {23}Electromagnetic Induction}{231}{chapter.23}%
+\contentsline {subsection}{Magnetic flux}{231}{section*.308}%
+\contentsline {subsection}{Laws of electromagnetic induction}{232}{figure.caption.309}%
+\contentsline {subsection}{Faraday's law}{232}{figure.caption.309}%
+\contentsline {subsection}{Lenz's law}{232}{figure.caption.309}%
+\contentsline {section}{Applications of electromagnetic induction}{233}{figure.caption.311}%
+\contentsline {subsection}{Magnetic braking}{233}{section*.312}%
+\contentsline {subsection}{The generator}{235}{figure.caption.315}%
+\contentsline {subsection}{Electromagnetic gun}{235}{figure.caption.316}%
+\contentsline {chapter}{\numberline {24}Quantum Physics Basics}{237}{chapter.24}%
+\contentsline {subsection}{Classical theories}{237}{section*.318}%
+\contentsline {subsection}{Particle models}{237}{section*.318}%
+\contentsline {subsection}{Wave models}{237}{section*.318}%
+\contentsline {subsection}{A history of light}{238}{section*.318}%
+\contentsline {subsection}{Photon theory}{238}{section*.318}%
+\contentsline {subsection}{Photoelectric effect}{238}{section*.318}%
+\contentsline {section}{The Photo-electric Effect}{240}{figure.caption.319}%
+\contentsline {subsection}{Demonstrating the Photo-electric Effect}{240}{section*.320}%
+\contentsline {subsection}{Photo-electric Puzzles}{241}{figure.caption.321}%
+\contentsline {subsection}{Einstein's Photo-electric Equation}{241}{figure.caption.321}%
+\contentsline {subsection}{Experimental test of Einstein's Equation}{241}{figure.caption.321}%
+\contentsline {subsection}{Effect of changing the Light Intensity}{244}{figure.caption.323}%
+\contentsline {subsection}{Photon theory}{245}{Item.2}%
+\contentsline {subsection}{Photoelectric effect explained}{246}{Item.2}%
+\contentsline {subsection}{Photon momentum}{247}{figure.caption.324}%
+\contentsline {subsection}{Wave-particle duality}{248}{figure.caption.324}%
+\contentsline {subsection}{Matter waves}{248}{figure.caption.324}%
+\contentsline {subsection}{Electron diffraction}{248}{figure.caption.324}%
+\contentsline {subsection}{Wave-particle duality}{249}{figure.caption.325}%
+\contentsline {subsection}{Quantisation of electron energy levels}{249}{figure.caption.325}%
+\contentsline {subsection}{The Hydrogen atom \piste }{249}{figure.caption.325}%
+\contentsline {subsection}{Electron energy levels}{250}{figure.caption.326}%
+\contentsline {subsection}{Atomic spectra}{251}{figure.caption.328}%
+\contentsline {subsection}{{\fontencoding {U}\fontfamily {futs}\selectfont \char 49\relax }Band theory}{254}{figure.caption.333}%
+\contentsline {subsection}{Energy bands}{254}{figure.caption.333}%
+\contentsline {subsection}{Band theory \& electrical conductivity}{254}{figure.caption.335}%
+\contentsline {chapter}{\numberline {25}Nuclear Physics}{257}{chapter.25}%
+\contentsline {subsection}{Nuclear energy}{257}{section*.338}%
+\contentsline {subsection}{Mass-energy equivalence}{257}{section*.338}%
+\contentsline {subsection}{Binding energy}{258}{section*.338}%
+\contentsline {subsection}{Nuclear stability}{258}{section*.338}%
+\contentsline {subsection}{Fusion}{259}{figure.caption.339}%
+\contentsline {subsection}{Fission}{260}{figure.caption.339}%
+\contentsline {subsection}{Energy release from nuclear reactions}{260}{figure.caption.339}%
+\contentsline {section}{Radioactive decay}{262}{figure.caption.342}%
+\contentsline {subsection}{Decay equations}{262}{section*.343}%
+\contentsline {subsection}{Half-life}{263}{figure.caption.344}%
+\contentsline {subsection}{Measurement of radioactive decay}{264}{figure.caption.345}%
+\contentsline {chapter}{\numberline {26}Electronics}{267}{chapter.26}%
+\contentsline {subsection}{Sensors}{267}{section*.349}%
+\contentsline {section}{Thermistor}{267}{section*.349}%
+\contentsline {section}{LDR}{268}{figure.caption.350}%
+\contentsline {section}{Strain gauges}{268}{figure.caption.351}%
+\contentsline {section}{{\fontencoding {U}\fontfamily {futs}\selectfont \char 49\relax }The piezo-electric transducer}{269}{figure.caption.352}%
+\contentsline {subsection}{Processors}{270}{figure.caption.353}%
+\contentsline {section}{The potential divider}{270}{figure.caption.353}%
+\contentsfinish 

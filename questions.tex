@@ -1,0 +1,1504 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows,positioning,calc,fadings,shapes,decorations.markings,decorations.pathmorphing,angles,quotes,patterns,arrows.meta}
+\usepackage{circuitikz}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{physics}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage[unicode,colorlinks]{hyperref}
+
+% Colours
+\colorlet{myred}{red!65!black}
+\colorlet{xcol}{blue!70!black}
+\colorlet{vcol}{green!60!black}
+\colorlet{myblue}{blue!70!black}
+\colorlet{mypurple}{blue!60!red!80}
+
+% tcolorbox environments
+\newenvironment{ilight}{%
+  \centering\vspace*{4pt}%
+  \begin{tcolorbox}[colframe=gray,colback=gray!10]%
+}{%
+  \end{tcolorbox}\vspace*{-4pt}%
+}
+
+\newenvironment{soln}{%
+  \vspace*{4pt}%
+  \begin{tcolorbox}[colframe=gray,colback=green!8,title=Solution]%
+}{%
+  \end{tcolorbox}\vspace*{-4pt}%
+}
+
+\newtcbox{\mymath}[1][]{%
+  nobeforeafter,math upper,tcbox raise base,
+  enhanced,colframe=blue!30!black,colback=blue!30,boxrule=1pt,#1}
+
+% Counters
+\newcounter{example}[section]
+\newcounter{question}[section]
+\renewcommand{\theexample}{\thesection.\arabic{example}}
+\renewcommand{\thequestion}{\thesection.\arabic{question}}
+
+\newcommand{\example}[1]{%
+  \refstepcounter{example}%
+  \noindent{\textcolor{cyan}{\textsf{\textbf{Example \theexample }}}\hspace*{1pt}#1}\vspace{4pt}}
+
+\newcommand{\question}[1]{%
+  \refstepcounter{question}%
+  \noindent{\textcolor{magenta}{\textsf{\textbf{Question \thequestion }}}\hspace*{1pt}#1}}
+
+% Useful macros from original
+\newcommand{\keypoint}[1]{\textbf{\textcolor{red}{#1}}}
+\newcommand{\cmt}{}
+\newcommand{\sol}{\hspace{2cm}\textcolor{green!60!black}{\ding{52}}}
+\newcommand{\RA}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\mps}{\ \text{m\,s}^{-1}}
+\newcommand{\mpss}{\ \text{m\,s}^{-2}}
+\newcommand{\jpkgk}{\text{J\,kg}^{-1}\text{K}^{-1}}
+\newcommand{\NpC}{\text{N\,C}^{-1}}
+\newcommand{\Vpm}{\text{V\,m}^{-1}}
+\newcommand{\Vpcm}{\text{V\,cm}^{-1}}
+\newcommand{\ec}{4\pi\epsilon_0}
+\newcommand{\avg}[1]{\langle#1\rangle}
+\newcommand{\eqyskip}{\vspace{4pt}}
+\newcommand{\rcyskip}{\vspace{4pt}}
+\newcommand{\OC}{^{\circ}\text{C}}
+\newcommand{\xskip}{\hspace{1em}}
+\newcommand{\tmin}{\text{min}}
+\newcommand{\tmax}{\text{max}}
+\newcommand{\fnet}{F_{\text{net}}}
+\newcommand{\tcbhighmath}[1]{\boxed{#1}}
+\newcommand{\radps}{\text{rad\,s}^{-1}}
+\newcommand{\rad}{\text{rad}}
+\newcommand{\muF}{\mu\text{F}}
+\newcommand{\syl}[1]{}
+\newcommand{\piste}{}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{D}[1]{>{\centering\arraybackslash}m{#1}}
+
+\tikzset{>=stealth'}
+\tikzstyle{wave}=[blue!70!black,thick]
+
+\begin{document}
+\begin{center}
+{\Huge\bfseries Questions}\\[6pt]
+{\large EMS Physics Notes}\\[4pt]
+{\today}
+\end{center}
+\tableofcontents
+\newpage
+\section{Physical Quantities}
+
+\question{What are the SI base units of (a) density, (b) pressure, (c) energy, (d) electric charge?}
+
+\bigskip
+
+\question{For a substance of mass $m$, the heat energy $Q$ needed to change its temperature by $\Delta T$ is given by: $Q = cm\Delta T$. Find the SI base units of the constant $c$.}
+
+\bigskip
+
+\question{The resistive force $F$ on a metal ball falling at low speeds in water is given by the equation $F = krv$, where $r$ is the radius of the metal ball, $v$ is its speed and $k$ is a constant.
+	Find the base units of $k$ in the SI system.}
+
+\bigskip
+
+\question{The speed of sound in air can be given by $c=\sqrt{\frac{\gamma p}{\rho}}$, where $p$ is the pressure of the air and $\rho$ is the air density. Show that $\gamma$ is unit free.}
+
+\bigskip
+
+\question{The effective power output from a wind turbine is given by the equation $P = \frac{1}{2} \eta \rho A v^n$, where $\rho$ is the air density, $A$ is the area of the turbine blades, and $v$ is the wind speed. Given that $\eta$ is a constant with no units, what is the value of $n$?}
+
+\bigskip
+
+\question{An aircraft, which has a speed of $35 \mps$ in still air, is flying from south to north at a speed of $32 \mps$ with respect to a stationary observer on the ground. Find the magnitude and the possible directions of wind velocity.}
+
+\bigskip
+
+\question{Three forces of 5.0 N, 12 N and 13 N act at one point on an object. The angles at which the forces act can vary. What is the maximum and the minimum resultant force?}
+
+\bigskip
+
+\section{Kinematics}
+
+\question{What is the distance covered for a car that travels half a lap along a circular path of radius of 200 m. What about the displacement?}
+
+\bigskip
+
+\question{A ball is released from a height of 2.0 m above the ground. It bounces vertically for quite a number of times before coming to rest. (a) State the change of displacement for the ball. (b) Explain how the distance travelled is different from the change in displacement.}
+
+\bigskip
+
+\question{For an athlete running around a track for many laps, suggest how his average velocity could be zero?}
+
+\bigskip
+
+\question{A car travels 2400 m east in 3.0 minutes, then takes a left turn, and then travels 700 m north in 1.5 minutes. What is the average speed and the average velocity for this journey?}
+
+\bigskip
+
+\question{Is it possible for an object moving at a steady speed to have acceleration?}
+
+\bigskip
+
+\question{For the $v$-$t$ graph given in Example \ref{ex-vgraph}, sketch the $a$-$t$ graph for this motion.}
+
+\bigskip
+
+\question{If the tangent of a displacement-time graph at one particular instant is sloping downwards, what does that imply about the velocity at that instant?}
+
+\bigskip
+
+\question{A vehicle initially travels at a steady speed of $15 \mps$. It accelerates uniformly for 10 s to reach a higher speed of $20 \mps$. It maintains at this speed for 20 s, and then decelerates uniformly to a stop in the last 10 s. (a) Sketch the velocity-time graph for this motion. (b) Sketch the acceleration-time graph. (c) Find the distance travelled during the 40 s.}
+
+\bigskip
+
+\question{Sonar is a technique that uses sound waves to detect objects. It can be used to measure the depth of the seabed. Given that speed of sound in water is $1500 \mps$, and reflected waves sent from a submarine are detected 0.50s after they are transmitted. How deep is the water below the submarine?}
+
+\bigskip
+
+\question{Given that the speed of sound in air is $340 \mps$ and the speed of light in air is $3.0\times10^8 \mps$. If a person hears the sound of a thunder 5.0 seconds after seeing a lightning flash, how far away from this person is did the lightning strike?}
+
+\bigskip
+
+\question{A train initially travels at a speed of $40\mps$. It starts to decelerate at 0.50\mpss. (a) What is the distance travelled in 50 s? (b) When it comes to a stop, how far out has it travelled?}
+
+\bigskip
+
+\question{A vehicle moving at $14\mps$ accelerate uniformly to $26\mps$ in 6.0 s. (a) What is the average velocity during this time? (b) What is the acceleration during this time (c) What is the distance travelled by the vehicle? (d) The vehicle then braked with constant deceleration to stop in another 8.0 s. What is the distance travelled during the time when brakes are applied?}
+
+\bigskip
+
+\question{Two balls are dropped from rest from the same height. The second ball is released 0.80 s after the first one. What is their separation 1.5 s after the second ball is dropped?}
+
+\bigskip
+
+\question{A golf ball is dropped from the top of a tower of height 30 m. The ball falls from rest and air resistance is negligible. What time is taken for the ball to fall (a) the first 10 m from rest, (b) the last 10 m to the ground?}
+
+\bigskip
+
+\question{The acceleration of free fall on Pluto is about one-fifteenth of that on Earth. If it takes a time of $T$ for a rock to fall from rest a distance of $S$, what is the time taken, in terms of $T$, for a rock to fall from rest through the same distance $S$ on Pluto?}
+
+\bigskip
+
+\question{In an experiment is carried out to determine the acceleration of free fall $g$ using a falling body. The body is released from rest from a height of $h$, the time taken $t$ for it to hit the floor is measured. (a) Find the expression that can be used to calculate the value of $g$? (b) Suggest what could lead to an overestimation for the value of $g$.}
+
+\bigskip
+
+\question{A ball is tossed upwards with a speed of $9.0 \mps$. (a) How long does it take to return to the same point if air resistance is negligible? (b) How does the return velocity compare with its initial velocity?}
+
+\bigskip
+
+\question{Someone wants to toss a ball onto a platform that is at a height of 20 m above him. What is the minimum initial velocity needed to launch the ball?}
+
+\bigskip
+
+\question{Someone standing at the top of a high building throws a ball straight up and another ball straight down with the same initial speed. Assume that air drag is negligible, which ball will have a greater speed when it hits the ground?}
+
+\bigskip
+
+\question{In basketball games, hang time refers to the length of time a player stays in the air after jumping from the floor. (a) It is reported that Michael Jordan is able to stay in the air for $T=1.0\text{ s}$ to do his slam-dunk tricks, estimate how high he can jump. (b) The acceleration of fee fall on the Moon is about one-sixth of that on Earth. What is the hang time of Michael Jordan if he takes off from the surface of the Moon?}
+
+\bigskip
+
+\question{Mark Watney\footnote{A fictional character in the science fiction movie \emph{The Martian} (2015) based on the novel of the same name written by \emph{Andy Weir}.} stands at the edge of a cliff on the Mars and throws a rock vertically upwards with a speed of $7.4 \mps$. The graph shows the variation with the time $t$ of the rock's velocity $v$. (a) What is the acceleration of free fall on the Mars? (b) When does the rock reach the maximum height? (c) What is the height above the base of the cliff the moment when the rock is thrown? (d) What is the maximum height above the base of the cliff to which the rock rises? (e) What is the total distance travelled by the rock before it strikes the ground?}
+
+\bigskip
+
+\question{A ball rolls off a table and lands at a position of a horizontal distance of 1.2 m from the table. The table is 0.95 m high. Find the speed at which the ball leaves the table.}
+
+\bigskip
+
+\question{A ball is kicked from the ground towards a vertical barrier. The barrier is at a horizontal distance of 18 m from the initial position of the ball. The ball strikes the barrier after 1.5 s at a height of 2.5 m above the ground. (a) Find the magnitude and the direction of the initial velocity. (b) Find the magnitude and the direction of the velocity at which the ball hits the barrier.}
+
+\bigskip
+
+\question{When a particle is launched from the origin at an angle $\theta$ with the horizontal at a speed of $u$, show that its trajectory is a parabola given by the equation: $y = x \tan\theta - \frac{gx^2}{2u^2\cos^2\theta}$.}
+
+\bigskip
+
+\question{Two golf players each hit a ball at the same speed. One at $30^\circ$ with the horizontal, the other at $60^\circ$. Which ball hits the ground first? Which ball goes farther?}
+
+\bigskip
+
+\question{(a) State the difference between the displacement of a projectile and the distance it travels. (b) Suggest in what situation a projectile's displacement could have the same magnitude as the distance.}
+
+\bigskip
+
+\question{An archer always aims slight higher than the distant target that she wants to hit. Why isn't the bow lined up such that it points exactly at the target?}
+
+\bigskip
+
+\section{Force \\& Motion}
+
+\question{A little girl tries to lift a luggage bag of mass 25 kg. She pulls upwards with a force of 150 N. The bag does not move. What is the normal reaction from the floor?}
+
+\bigskip
+
+\question{To push a trolley around in a supermarket with constant velocity, you need to exert a steady force. How does this fact agree with Newton's first law, which suggests that motion with constant velocity requires no force?}
+
+\bigskip
+
+\question{A worker is pulling a wagon of mass of 40 kg across a lawn at a constant velocity. He applies a force of 200 N at an angle of $15^\circ$ above the horizontal. (a) Draw a free-body diagram for the wagon. (b) Find the frictional force. (c) Find the normal contact force.}
+
+\bigskip
+
+\question{(a) Forces of 3.0 N and 4.0 N act at right angles upon a mass of 160 g. What is the acceleration produced? (b) If the angle between the two forces are allowed to vary, what is the maximum possible acceleration they produce on the same mass? (c) What about the minimum possible acceleration?}
+
+\bigskip
+
+\question{Explain why it becomes increasingly easier for an rocket to accelerate as it travels through space. (Hint: consider the fuel carried by the rocket.)}
+
+\bigskip
+
+\question{Many cars are equipped with airbags which can inflate quickly in case of a collision event. Using Newton's second law, suggest why airbags could protect the driver and the passenger in the car during a car crash.}
+
+\bigskip
+
+\question{A rocket of mass $30,000$ kg is launched vertically upwards at uniform acceleration of $1.6 \mpss$. What is the minimum thrust force required?}
+
+\bigskip
+
+\question{A fire-fighter of mass 85 kg slides down a vertical pole. He descends through a distance of 6.0 m in 2.0 seconds. (a) Find the average acceleration. (b) Find the average frictional force acting on the fire-fighter.}
+
+\bigskip
+
+\question{A trolley has mass $m$. A person needs to push the trolley with force $F$ to produce an acceleration of $a$, and with force $2F$ to produce an acceleration of $3a$. Find, in terms of $m$ and $a$, the constant resistive force opposing the trolley's motion.}
+
+\bigskip
+
+\question{A girl stands onto a bathroom scale and finds the reading is 35.0 \text{ kg}. She then takes the scale into a lift, what mass reading would she observe if the lift (a) is going down at a constant speed, (b) is accelerating downwards at $2.1 \mpss$?}
+
+\bigskip
+
+\question{A pirate finds a box of gold coins at the bottom of a lake. The box and its contents have a total mass of 40 kg. The pirate pulls on the box by means of a cable, so that the box is made to rise vertically through the water. Meanwhile, the flow of water creates a constant horizontal force on the box, and the upthrust on the box is known to be 150 N. At one instant, the pirate applies a force of 380 N at an angle of $25^\circ$ to the upward vertical, and the acceleration of the box is found to be $0.80 \mpss$. Assume all the forces acting are coplanar. (a) Draw a free-body diagram for the box. (b) Find the horizontal force due to water flow. (c) Find the drag force on the box.}
+
+\bigskip
+
+\question{A book placed on your desk experiences two forces: its weight and the support force. Identify the associated reaction forces.}
+
+\bigskip
+
+\question{A student deduces that a rocket travelling in space can never accelerate because the propelling force acting on the rocket is cancelled by an equal and opposite force. Explain why this statement is incorrect.}
+
+\bigskip
+
+\question{A U-shaped magnet lies on a top-pan balance and a mass reading of 180 g is registered. A current-carrying wire is then placed above the magnet. The wire experiences an additional force of 0.30 N that acts upwards. What is the mass reading on the balance?}
+
+\bigskip
+
+\question{A light ball and a heavy ball of the same size are released from a very high tower, state and explain whether they will reach the ground at the same time.}
+
+\bigskip
+
+\question{A stone is dropped from rest from a high tower. Air resistance is not negligible as the stone reaches terminal speed. Sketch two separate graphs to show the variation of its displacement and acceleration with time.}
+
+\bigskip
+
+\question{How does the terminal speed of a parachutist before opening the parachute compare to that after? Explain your reasons.}
+
+\bigskip
+
+\question{A ball is thrown horizontally from the top of a cliff. Effects of air resistance cannot be neglected. What happens to the horizontal and vertical components of the ball’s velocity?}
+
+\bigskip
+
+\question{A small sphere of mass 20.0 g is dropped from rest in a viscous liquid. When the sphere is moving at a speed of $v$, the viscous drag has a magnitude of $f = \alpha v^2$, where $\alpha=14 \text{ kg m}^{-1}$. (a) What is the sphere's acceleration at the instant when it is released? (b) What is the acceleration when it is moving at $5.0 \text{ cm s}^{-1}$? (c) What is the terminal velocity?}
+
+\bigskip
+
+\question{A stone is thrown with some initial velocity at an angle to the horizontal. Sketch on the same graph the path of the stone if (a) air resistance is negligible, (b) air resistance is significant.}
+
+\bigskip
+
+\question{A 3.0 kg mass is placed on an inclined plane and it does not move. Given that the normal contact force acting on it is 28.0 N. (a) Find the angle of the plane to the horizontal. (b) Find the frictional force acting on the mass.}
+
+\bigskip
+
+\question{A small mass slides down a frictionless slope with an acceleration of $2.8 \mpss$. Determine the angle that the slope makes with the horizontal.}
+
+\bigskip
+
+\question{A car of mass 1400 kg is moving up a slope at a constant velocity of $13.5\mps$. The slope makes an angle of $6.0^\circ$ to the horizontal. Total resistive force of 650 N acts on the car. What is the driving force required to push the car up the slope?}
+
+\bigskip
+
+\question{A shopping trolley somehow loses control and runs down a straight slope from rest. The slope makes an angle of $3.0^\circ$ to the horizontal. The resistive force acting on the trolley is a constant 15 N. The trolley and its contents have a total mass of 40 kg. (a) Find the acceleration of the trolley. (b) Determine the time for the trolley to travel a distance of 4.0 m along the the slope. (c) Suggest why the slope in shopping malls are not made any steeper.}
+
+\bigskip
+
+\question{A heavy log of mass 240 kg is initially placed at a point $P$ at the bottom of a slope. A motor drags the log up the slope through a cable. The slope is inclined at an angle of $16^\circ$ to the horizontal. The motor provides a tension of 1200 N parallel to the slope. The friction that acts on the log is a constant 450 N. (a) Find the acceleration of the log. (b) Find the time taken to pull the log through a distance of 8.0 m to a point $Q$. (c) Find the velocity of the log at $Q$. (d) The cable breaks when the log reaches $Q$, find the distance moved beyond $Q$ until the log's speed becomes zero. (e) The log will then slide back down the slope. Find the time for the log to return to its starting position. (f) Sketch a $v$-$t$ graph for the log from the start at $P$ until it returns to $P$.}
+
+\bigskip
+
+\question{Block $A$ of mass 5.0 kg is connected by means of a light string to block $B$ of mass 3.0 kg. The two blocks are placed on a horizontal table. A force of 30 N is applied to pull on block $A$. Given that the friction on each block is 30\% of its own weight. (a) Find the acceleration of the blocks. (b) Find the tension in the string.}
+
+\bigskip
+
+\question{A box of mass $M=3.6 \text{ kg}$ rests on a horizontal, rough surface. The box is connected to a block of mass $m=2.0 \text{ kg}$ through a light cord that passes over a frictionless pulley as shown. The box is released from rest. Given that the box experiences a frictional force of 12 N and the block is initially at a height of $H=0.80 m$ above the floor. (a) Find the acceleration of the block. (b) Determine the time taken for the block to hit the floor.}
+
+\bigskip
+
+\section{Mechanical Equilibrium}
+
+\question{Is it possible for an object to be in equilibrium if only one force is acting on it?}
+
+\bigskip
+
+\question{If three forces are in equilibrium, suggest and explain whether the lines of action must lie in the same plane.}
+
+\bigskip
+
+\section{Momentum}
+
+\question{When speed cars run out of control in a racing game, why are they stopped by haystacks instead of concrete walls? When you jump from an elevated position and land on the ground, you naturally bend your knees instead of keeping your legs stiff. How does that reduce the chance of causing harmful injuries?}
+
+\bigskip
+
+\question{Automobiles were manufactured to be as rigid as possible, but nowadays many cars are designed to crumple upon impact. Can you explain why?}
+
+\bigskip
+
+\question{How does conservation of momentum apply to a ball bouncing off a wall?}
+
+\bigskip
+
+\question{In the comic hero series, Superman hurls an asteroid in outer space, and he is seen at rest after the throw. What law of physics is violated here? If the asteroid is 100 times as massive as the superhero, and it is thrown at $50\mps$. What is Superman's velocity right after the throw?}
+
+\bigskip
+
+\question{When a piece of putty falls and hits the floor without bouncing, what becomes of its momentum before impact? What becomes of its kinetic energy?}
+
+\bigskip
+
+\section{Work \\& Energy}
+
+\question{A trolley is pushed through a distance of 2.0 m with a force of $F=5.0$ N along a track. The trolley experiences a constant frictional force of 3.0 N. What is the work done by $F$?}
+
+\bigskip
+
+\question{A child of mass 40 kg slides down a slope from a height of 2.0 m above the ground. The slide is of a length of 6.0 m. How much work is done by gravity?}
+
+\bigskip
+
+\question{A dog pulls on a lead with a force of 20 N at an angle of 20$^\circ$ to the horizontal. As the dog moves 10 m along the playground, find the work done (a) by the dog, (b) by the person holding the lead.}
+
+\bigskip
+
+\question{A satellite is orbiting around the earth in a circular orbit due to gravitational attraction. The gravitational force on the satellite always acts towards the centre of the earth. Does this force do any work?}
+
+\bigskip
+
+\question{A fixed mass of gas at a pressure of $1.50 \times 10^5 \text{ Pa}$ and initial volume of $2.80 \times 10^{-4} \text{ m}^3$ is heated. The gas expands at a constant pressure to a final volume of $8.40 \times 10^{-4} \text{ m}^3$. Find the work done by the gas.}
+
+\bigskip
+
+\question{Estimate the kinetic energy of a family car travelling at $40 \text{ km}$ per hour.}
+
+\bigskip
+
+\question{Object $B$ has double the mass and moves at twice the speed of object $A$. If the kinetic energy of object $A$ is $K$, what is the kinetic enery of $B$?}
+
+\bigskip
+
+\question{Estimate how much gravitational potential energy you gain when you get to the top of the highest building in your country?}
+
+\bigskip
+
+\question{Four uniform bricks, each of mass $m$ and thickness $H$, are laid out on a table. In order to stack them on top of one another, how much work has to be done on the bricks?}
+
+\bigskip
+
+\question{A stone is projected vertically upwards at a speed of $16 \mps$ from the ground. Air resistance is negligible. (a) What is the greatest height reached by the stone? (b) When the stone is at a height of 5.0 m, what is its speed? (c) If the stone is projected at an angle from the upward vertical with the same initial speed, what is its speed when it reaches a height ob 5.0 m?}
+
+\bigskip
+
+\question{A hammer of mass 600 g hits a nail at a velocity of $10 \mps$. The nail is pushed into a plank by 3.0 mm. What is the average frictional force acting on the nail?}
+
+\bigskip
+
+\question{A block of mass $m$ is pushed through a fixed distance along a horizontal frictionless surface by a constant force. Show that the final speed $v$ of the block has: $v\propto \frac{1}{\sqrt{m}}$}
+
+\bigskip
+
+\question{A block of 3.0 kg is released from rest on a slope at an angle $\theta = \sin^{-1}\left(\frac{1}{5} \right)$ to the horizontal. As the block travels 6.0 m down the slope, it experiences a frictional force of 5.0 N. What is the final speed of the block?}
+
+\bigskip
+
+\question{A cyclist is travelling up a hill at a constant speed. The cyclist uses 640 J of energy to travel a distance of 25 m. If the total resistive force opposing the motion is 9.0 N, what is the increase in gravitational potential energy? To determine the increase in the height, what further information do you need?}
+
+\bigskip
+
+\question{A pendulum of mass 120 g is released from a position that is 1.6 cm above its equilibrium position. (a) At what point in its motion is the kinetic energy of a pendulum bob at its maximum? (b) At what point is the gravitational potential energy at a maximum? (c) When the kinetic energy is half its greatest value, how much gravitational potential energy does it have?}
+
+\bigskip
+
+\question{A particle of mass $m$ is initially at a height of $h$ above the ground. It is then released from rest. Just before hitting the ground, the particle gains a speed of $v$. What is the average resistive force acting on the particle during the fall?}
+
+\bigskip
+
+\question{Men's pole vault (a athletic event in which a person jumps over a bar with the aid of a long, flexible pole) world record is about 6 m. Could this record be raised to, say, 10 m by using a longer pole? If not, why is it impossible?}
+
+\bigskip
+
+\question{This question concerns the design of a roller coaster. One designer says each summit must be lower than the previous one. Another designer suggests that it does not matter what heights the summits are as long as the first one is the highest. What do you think?}
+
+\bigskip
+
+\question{A car engine exerts an average force of 400 N in moving the car 900 m in 200 s. What is the average power developed?}
+
+\bigskip
+
+\question{During a human heart beat, about 20 g of blood is pushed into the main arteries. This blood is accelerated from a speed of $0.20 \mps$ to $0.35\mps$. For a heart pulsing at 75 beats per minute, what is the average power developed by the heart?}
+
+\bigskip
+
+\question{Estimate your body power when you run upstairs at full speed.}
+
+\bigskip
+
+\question{A truck of mass 2700 kg is travelling at a constant speed of $9.0\mps$ up a road that is inclined at 8.0$^\circ$ to the horizontal. Assume that the resistive forces are negligible. What is the useful power from the engine of the truck?}
+
+\bigskip
+
+\question{Given that the forces resisting the motion of a racing car is proportional to the square of the car's speed. The car has an output power of 200 kW when travelling at a steady speed of $50\mps$. What output power is required to maintain a speed of $80\mps$?}
+
+\bigskip
+
+\question{A car of mass 800 kg travels in a straight line up a slope. The total resistive force $f_R$ can be modelled by the equation: $f_R = kv^2$, where constant $k= \text{5.0 kg m}^{-1}$ and $v$ is the car's speed. When the car travels at a steady speed of $10\mps$, the engine exerts a force of 2.1 kN up the slope. (a) Find the component of the car's weight down the slope, and hence find the angle that the slope makes with the horizontal. (b) Find the power output from the engine. (c) If the car then travels onto a horizontal road. The engine's output power is unchanged and the resistive force obeys the same model as before. Find the acceleration of the car when its speed is $15\mps$. (d) The car eventually reaches a constant speed on the horizontal road. Find this terminal speed.}
+
+\bigskip
+
+\question{An electric motor is used to lift a mass. When operating at full power, the current in the motor is 2.0 A and the voltage is 5.0 V. If the motor is 50\% efficient, what is the time take to lift a mass of 400 g through a height of 2.5 m?}
+
+\bigskip
+
+\question{A turbine at a hydroelectric power station is designed to drive a generator to produce electrical energy. The water falls through a vertical distance of 8.0 m at a rate of 150 kg per second as it passes through the turbine. The generator supplies a current of 24 A at a voltage of 220 V. What is the efficiency of the turbine system?}
+
+\bigskip
+
+\question{When power to the grid is not required during the night, 200 MW of electrical power is used to pump water from a reservoir up to a lake 300 m higher. The pumping system operates at an efficiency of 90\%. What mass of water can be pumped to the lake in three hours?}
+
+\bigskip
+
+\question{Given that the petrol engine for a real car is 25\% efficient. The fuel consumption for the engine is 16 litres per hour, and the energy density of the fuel is 44 MJ per litre. What is the power output from the engine?}
+
+\bigskip
+
+\question{A bow shoots an arrow of mass 150 g vertically upwards with an initial speed of $30 \mps$. The potential energy stored in the bow before release is 200 J. The arrow reaches a height of 30 m above the point of release. (a) What is the energy loss just after the arrow is released? (b) What is the efficiency of the bow for converting its potential energy into useful kinetic energy? (c) What is the energy loss due to air resistance? (d) What is the average force due to air resistance?}
+
+\bigskip
+
+\section{Materials}
+
+\question{A spring has a force constant of $500 \text{ N m}^{-1}$. The spring has a stretch length of 30 cm when a 40 N weight is hung from it. Find the natural length of the spring.}
+
+\bigskip
+
+\question{Two springs, one with spring constant $k_1 = 8.0 \text{ N cm}^{-1}$ and the other with $k_2 = 12 \text{ N cm}^{-1}$. (a) When they are connected in parallel, what is the total extension when the combination supports a load of 60 N? (b) If they are connected in series, what is the total extension when they support the same load?}
+
+\bigskip
+
+\question{A weight of 100 N is placed on top of a spring. The spring is compressed by 2.0 cm. Assume the spring obeys Hooke's law, how much strain energy is stored in the spring?}
+
+\bigskip
+
+\question{A spring with a force constant $800 \text{ N m}^{-1}$ is supported and stands vertically. A ball of mass 60 g falls vertically onto it. The ball has a speed of $3.0\mps$ as it makes contact with the spring. Assume no energy loss, what is the maximum compression of the spring?}
+
+\bigskip
+
+\question{A trolley of mass 160 g is placed on a frictionless track. The trolly pushed against a spring buffer of a force constant $90 \text{ N m}^{-1}$. The spring buffer is compressed by 7.0 cm. The trolley is then released from rest. (a) What is the initial acceleration of the trolley? (b) Assume no loss of energy, what is the final speed of the trolley along the track?}
+
+\bigskip
+
+\question{Spring $A$ is stiffer than spring $B$, i.e., $k_A>k_B$. On which spring is more elastic potential energy stored if they are stretched by (a) the same extension, (b) the same force?}
+
+\bigskip
+
+\question{A load is attached to the lower end of a spring. The extension of the spring is measured when the load increases. The variation with extension of the load is shown. (a) Suggest whether the spring obeys Hooke's law. (b) Find the spring constant. (c) How much elastic potential energy is stored in the spring when the extension is 5.0 cm? (d) How much work is done to increase the extension from 2.0 cm to 4.0 cm?}
+
+\bigskip
+
+\question{Suppose you have a spring, a ruler, a mass hanger and a set of masses. Suggest how the apparatus may be used to determine the load on the spring at (a) the limit of elasticity, (b) the limit of proportionality?}
+
+\bigskip
+
+\question{A cable of diameter 1.5 mm is under a tension of 200 N. Find the stress in this cable.}
+
+\bigskip
+
+\question{Estimate the stress in your neck when it supports your head in a vertical position.}
+
+\bigskip
+
+\question{A metal wire of natural length 1.8 m and diameter 0.70 mm is fixed to the ceiling at one end. When a mass of 6.5 kg is hung from the lower end, the wire extends by 2.7 mm. (a) Find the strain of the wire. (b) Find the Young modulus of the metal.}
+
+\bigskip
+
+\question{A wire has a diameter of 0.50 mm with a Young modulus of 0.18 TPa. The length of the wire is increased by 0.20\% by a force $F$. (a) Find the stress in the wire. (b) Find the force $F$.}
+
+\bigskip
+
+\question{Two metal wires $A$ and $B$ are made of different materials. The diameter of wire $A$ is twice that of wire $B$, and the Young modulus of wire $A$ is three times that of wire $B$. If the wires are extended by the same strain, what is the ratio of the tension in wire $A$ to tension in wire $B$?}
+
+\bigskip
+
+\question{Two rods $A$ and $B$ of the same diameter are joined end to end and hug vertically. Rod $B$ is twice as long as rod $A$ but has half the Young modulus. When a mass is hung from the combination, what is the ratio of the extension of rod $A$ to the extension of rod $B$?}
+
+\bigskip
+
+\question{Bones of different animals have very similar compositions. Suggest why heavier animals appear to have thicker bones?}
+
+\bigskip
+
+\question{A load $F$ is suspended from a copper wire. The graph shows the load-extension relation. (a) State two quantities other than $F$ and $x$ that are required to determine the Young modulus of copper. (b) Suggest how the two quantities may be measured. (c) Use the graph to find the energy stored in the wire when a load of 2.0 N is applied. (d) Given that steel has about twice the Young modulus as copper, sketch the variation with $x$ of $F$ for a steel wire that has the same dimensions as the copper wire.}
+
+\bigskip
+
+\question{In an experiment, a speciman of a rubber compound is being stretched and relaxed. The stress-strain curve is plotted. (a) State and explain whether this rubber compound behaves elastically. (b) The tyres on a vehicle are made of this rubber compound. Explain why the tyres become warm as the car travels on a road.}
+
+\bigskip
+
+\section{Waves}
+
+\question{A bottle floating on a water surface is seen to bob up and down over a distance of 20 cm twice each second. What is its amplitude and its frequency?}
+
+\bigskip
+
+\question{A horn produces a note of frequency of 512 Hz. Given that sound travels at $330 \mps$ in air, find the wavelength of this sound wave.}
+
+\bigskip
+
+\question{The graph shows the variation of displacement $y$ with the distance $x$ of wave $P$ and wave $Q$ at some instant. (a) For each of the two waves, state the amplitude and the wavelength. (b) Given that both waves have a time period of 0.30 s, find the frequency of the waves, and hence find the speed for each wave.}
+
+\bigskip
+
+\question{An ultrasound waves of frequency 2.0 MHz travels with a speed of $1600 \mps$ through water. What is the shortest distance from a point of maximum pressure to a point of	minimum pressure?}
+
+\bigskip
+
+\question{The graph shows the variation with distance $x$ of the displacement $y$ of a wave on a stretched rope at
+	time $t = 0$. The wave has a frequency of 1.0 Hz. (a) State and explain whether this wave is transverse or longitudinal. (b) For the points $P$, $Q$, $R$, and $S$ labelled on the graph, which one of them is moving upwards with greatest speed at $t=0$? (c) Sketch the wave pattern at $t = 0.50 \text{ s}$. (c) For the points $P$, $Q$, $R$, and $S$, what are their positions at $t = 0.50 \text{ s}$?}
+
+\bigskip
+
+\question{Given a slinky toy, suggest how you can demonstrate (a) a transverse wave, (b) a longitudinal wave to your classmates.}
+
+\bigskip
+
+\question{If some alien civilisation blows up the moon one day, can we hear it?}
+
+\bigskip
+
+\question{An oscilloscope is used to measure a sound wave. When the time base is set at 5.0 ms div$^{-1}$, 3 complete waveforms are observed over 5 divisions. Calculate, (a) the period of the wave, (b) the frequency of the wave.}
+
+\bigskip
+
+\question{Describe the changes to the wave pattern displayed on an oscilloscope if the sound being measured has (a) a higher pitch, (b) a greater volume.}
+
+\bigskip
+
+\question{Green light has a wavelength of 500 nm in vacuum. What is its frequency?}
+
+\bigskip
+
+\question{An electromagnetic wave has a period of 1.0 ps. (a) What is the wavelength of this wave? (b) What is the number of wavelengths in a distance of 1.0 m?}
+
+\bigskip
+
+\question{(a) What is the frequency of the longest-wavelength ultraviolet wave? (b) What is the frequency of the shortest-wavelength infra-red radiation?}
+
+\bigskip
+
+\question{State a typical value for the wavelength for the following radiation in vacuum: (a) infra-red, (b) X-ray, (c) microwave, (d) ultraviolet.}
+
+\bigskip
+
+\question{A student argues that the speed of an electromagnetic wave is proportional to its frequency because we have $c=\lambda f$. State and explain whether the student's argument is correct.}
+
+\bigskip
+
+\question{(a) Suggest as many properties of electromagnetic waves as you can. (b) Among these properties you have listed, which property of electromagnetic wave is distinct from other transverse waves?}
+
+\bigskip
+
+\question{A sound wave in air has an amplitude $A_0$ and intensity $I_0$. If the amplitude increases to $3A_0$, what is the new intensity?}
+
+\bigskip
+
+\question{The intensity of radiation arriving normally on a solar panel was $500 \text{ W m}^{-2}$. (a) If the panel has an effective area of $4.0 \text{ m}^2$, how much energy would arrive in one hour? (b) If the radiation has double the amplitude, how much energy would arrive in one hour?}
+
+\bigskip
+
+\question{The intensity $I$ of a sound wave can be given by the formula: $I = k v \rho f^2 A^2$, where $v$ is the speed of sound, $\rho$ is the density of the medium, $f$ is the frequency and $A$ is the amplitude. Show that $k$ is a unit-free constant.}
+
+\bigskip
+
+\question{A point source gives out spherical waves. How does the wave amplitude $A$ vary with the distance $r$ from the source?}
+
+\bigskip
+
+\question{A horizontally polarised beam of light of intensity $I_0$ passes through a polarising filter whose plane of polarisation is at $30^\circ$ to the horizontal. What is the transmitted intensity?}
+
+\bigskip
+
+\question{When polarized light is sent through some chemical solution, the plane of polarization is rotated. If the intensity is $I$ without the solution being placed in the beam but $0.80I$ after the sugar is placed in the beam, what is the angle of rotation?}
+
+\bigskip
+
+\question{A beam of unpolarised light is sent through two polarising filters $A$ and $B$. Filter $A$ has its axis of
+	polarisation in the vertical direction, and filter $B$ has its axis of polarisation in the horizontal direction. (a) What is the emergent intensity? (b) A third polarising filter $C$ is inserted between the filters $A$ and $B$, such that filter $C$ has its plane of polarisation at an angle of $45^\circ$ to the vertical. What is the new emergent intensity?}
+
+\bigskip
+
+\question{Suggest how you may use a stretched elastic rope to demonstrate the phenomenon of polarisation.}
+
+\bigskip
+
+\question{A hill stands between a house and a radio transmitter, but radio signals sent from the transmitter are still received at the house. How can this happen?}
+
+\bigskip
+
+\question{Diffraction can be demonstrated by observing how water waves in a ripple tank go through a gap. Suggest whether the following action would lead to greater or less obvious diffraction: (a) increasing the frequency of the water waves, (b) increasing the amplitude of the waves, (c) increasing the width of the gap, (d) increasing the speed of the waves by increasing the depth of water.}
+
+\bigskip
+
+\question{Microwave ovens use microwaves of frequency of around 2.4 GHz to heat food. The front door of many microwave ovens is made of glass with a metal grid, where gap in the grid are a few mm across. By reference to the wavelength of the microwave, explain how the front door keeps microwaves in but could let light out.}
+
+\bigskip
+
+\question{A car travels with a constant speed along a straight road. The car's horn is known to sound at a frequency of 500 Hz, but an observer standing on the roadside hears a frequency of 450 Hz. What is the magnitude and the direction of the car's velocity relative to the observer?}
+
+\bigskip
+
+\question{An ambulance travelling at a steady speed of $25 \mps$ passes close to a stationary observer. The warning signal on the ambulance has a frequency of 1500 Hz. What is the overall change in the frequency heard by the observer as the ambulance goes by?}
+
+\bigskip
+
+\question{If the motion of the source is at right angles to an observer, state and explain whether there will be a Doppler effect?}
+
+\bigskip
+
+\question{A girl sits on a horizontal platform that is rotating about a vertical axis. The girl moves in a circular path with a constant speed of $8.0 \mps$. The girls starts blowing a whistle which emits a sound of frequency 1200 Hz. To an observer standing at a distance, (a) find the maximum and the minimum frequency heard. (b) Describe the variation in the frequency of the sound heard by the observer.}
+
+\bigskip
+
+\question{A spectral line of a particular wavelength is emitted from a distant star. The wavelength observed is found to vary periodically from a maximum value to a minimum value and back to the maximum value. What can you say about the motion of the star?}
+
+\bigskip
+
+\question{[This question is beyond CAIE syllabus] (a) A source emits sound wave of frequency $f$. If the observer, rather than the source, is in motion, suggest whether there is any change in the apparent frequency $f^\prime$ heard by the observer. (b) If the observer is moving towards the source at a velocity of $v_o$, show that the observed frequency $f'$ is: $f' = f \frac{v+v_o}{v}$. (c) If the observer is moving away from the source, derive a similar expression for the observed frequency.}
+
+\bigskip
+
+\section{superposition}
+
+\question{Noise reduction headphones can cancel out external sound waves by producing their own sound waves. What is the phase difference between the external sound wave and the wave produced in the headphone?}
+
+\bigskip
+
+\question{A wave of frequency of 10 Hz travels at a speed of $4.0 \mps$. What is the phase difference between two points 0.50 m apart?}
+
+\bigskip
+
+\question{Two loudspeakers $A$ and $B$ are connected to the same signal generator. They give out sound signals of wavelength 0.50 m. A person stands in a position which is at a distance of 20.0 m from $A$ and 21.0 m from $B$. Initially, only loudspeaker $A$ is emitting sound. What happens to the intensity of the sound heard by the person when loudspeaker $B$ is also switched on?}
+
+\bigskip
+
+\question{A students thinks that the superposition of waves is about the superposition of the wave amplitudes. Give a counter-example why he is wrong.}
+
+\bigskip
+
+\question{Two separate loudspeakers generate sound waves of slightly different frequencies. (a) Explain why a stable interference is not observed. (b) If an observer stands at a fixed location, state and explain the variation of the intensity of the sound that he hears.}
+
+\bigskip
+
+\question{Two waves $A$ and $B$ are of the same type. Given that they have a phase difference of $120^\circ$, and the intensity of wave $A$ is twice that of wave $B$. On the same graph, sketch the displacement against time to illustrate the two waves.}
+
+\bigskip
+
+\question{Two waves $A$ and $B$ of the same amplitude have a phase difference of $90^\circ$. (a) On the same graph, sketch the displacement against time to illustrate the two waves. (b) Sketch the variation of the resultant displacement if $A$ and $B$ superpose together.}
+
+\bigskip
+
+\question{A laser emits a yellow light of 580 nm. It is sent through a set of double slits with a separation of 0.40 mm. An interference pattern is seen on a screen at a distance of 2.5 m from the slits. What is the distance between a bright fringe and its closest dark fringe?}
+
+\bigskip
+
+\question{A double-slit interference pattern is produced on a screen using a red laser of 630 nm wavelength. The screen is 4.0 m from the double slit, and the fringes are seen to have a spacing of 15 mm. What is the separation of the slits?}
+
+\bigskip
+
+\question{Light is incident normally on two narrow slits which are of 2.00 mm apart. A screen is at a distance of 2.5 m from the slits. The distance between the central maximum and the 4$^\text{th}$ bright spot is found to be 3.2 mm. What is the wavelength of the light?}
+
+\bigskip
+
+\question{In a double-slit experiment, suggest by what factor does the separation between bright fringes change if (a) the distance between the slits and the screen is doubled, (b) the slit separation is doubled, (c) the frequency of incident light is doubled?}
+
+\bigskip
+
+\question{A light of wavelength $\lambda$ passes through two narrow slits $S_1$ and $S_2$ and forms a series of bright and dark fringes on a screen. The $n^\text{th}$ dark fringe from the central bright fringe is observed at point $X$ on the screen. Find an expression, in terms of $\lambda$ and $n$, for $\big|S_2X - S_1 X\big|$.}
+
+\bigskip
+
+\question{A beam of white light enters a double-slit. Describe and explain the appearance of (a) the central bright fringe, (b) the first bright fringe from the central fringe.}
+
+\bigskip
+
+\question{A beam of light passes through a double slit such that the emergent intensity from each slit is initially the same. Describe the change to the brightness of the fringes if (a) the intensity of light through both slits are increased, (b) the intensity of light through one of the slit is increased.}
+
+\bigskip
+
+\question{A beam of light is incident normally on a diffraction grating that has 1000 lines per mm. The angle between the first order maxima is $60^\circ$. Find the wavelength of the light.}
+
+\bigskip
+
+\question{Light of wavelength 590 nm is directed through a diffraction grating. The first order maximum is formed at an angle of $20.0^\circ$. (a) What is the slit separation for the diffraction grating? (b) What is the angular separation between the first and second order maxima?}
+
+\bigskip
+
+\question{A beam of light of 480 nm wavelength is incident normally on a diffraction grating which has a slit separation of 3.0 $\mu$m. How many intensity maxima can be observed?}
+
+\bigskip
+
+\question{A diffraction pattern is observed when monochromatic light falls on a diffraction grating. If another diffraction grating with twice as many lines per millimetre is used, suggest the possible effects to (a) the total number of diffraction maxima, (b) the angle between the first and second order.}
+
+\bigskip
+
+\question{A beam of light contains two wavelengths 420 nm and 630 nm. A diffraction grating of $6.0 \times 10^5$ lines per metre produces a pattern such that the second order of one of these wavelengths overlaps with the third order of the other wavelength. What is the angle $\theta$ at which the overlap occurs?}
+
+\bigskip
+
+\question{A diffraction grating is used with several wavelengths of light. The angle $\theta$ of the second order maxima is measured for each wavelength $\lambda$. If a graph of $\sin\theta$ against $\lambda$ is plotted, what does the gradient of the graph represent?}
+
+\bigskip
+
+\question{A beam of monochromatic light is incident normally on a diffraction grating. If the grating is rotated about the axis parallel to the incident beam, describe the changes to the positions of diffraction maxima.}
+
+\bigskip
+
+\question{Light of unknown wavelength $\lambda$ is emitted from a distant star. Suggest the apparatuses you need and what measurements you need take in order to determine $\lambda$.}
+
+\bigskip
+
+\question{How many nodes, including the end points, are there in a standing wave that is three wavelengths long? What about anti-nodes?}
+
+\bigskip
+
+\question{A stretched rope of length 150 cm is fixed at the two ends. At what wavelengths can stationary waves be set up on this rope?}
+
+\bigskip
+
+\question{(a) A pipe of length $l$ is closed at one end but open at the other. Notes are produced by the pipe if stationary waves are set up. In terms of $l$ and the speed of sound $v$ in the air column, what is the frequency of the lowest note produced in the pipe? (b) If the pipe is open at both ends, what is the lowest frequency?}
+
+\bigskip
+
+\question{Suggest and explain how you can lower the pitch of a note on a guitar by altering the length of the string.}
+
+\bigskip
+
+\question{A glass cylinder stands upright and is initially full of water. A loudspeaker emits a sound wave of frequency 850 Hz into the cylinder from above. The speed of sound in air is measured to be $340 \mps$. A tap at the bottom of the cylinder is opened so that the water level slowly decreases. The first loud sound is heard when the water level is at a height of 70.0 cm. When the wave level drops to a height of $y$ cm, a second loud sound is heard. (a) What is the wavelength of the sound wave? (b) Explain why loud sounds are heard for these specific water levels. (c) Find the value of $y$.}
+
+\bigskip
+
+\question{A glass tube, closed at one end, has a layer of fine dust sprinkled inside on its lower side. A loudspeaker placed near the open end emits sound waves at a particular frequency of 1700 Hz such that a stationary wave is produced inside the tube. The dust is seen to form small heaps of equal spacing as shown below. (a) Explain why heaps of dust are formed. (b) Label the nodes of the stationary wave on the graph. (c) Find the speed of sound in the pipe.}
+
+\bigskip
+
+\question{A stationary wave is set up between the two ends $X$ and $Y$ of an elastic cord. The graph shows the wave pattern at a time $t=t_0$. Given that the frequency of the vibration is 50 Hz. (a) Sketch the wave pattern between $X$ and $Y$ at time $t_1 = t_0 + 10 \text{ ms}$. (b) Sketch the wave pattern at time $t_2 = t_0 + 25 \text{ ms}$. (c) State the phase difference between the displacement of point $A$ and that of point $B$.}
+
+\bigskip
+
+\section{Electrical Quantities \\& Components}
+
+\question{A technician reports that the charge of an ion in a solution is measured to be $-5.5 \times 10^{-19} \text{ C}$. State and explain whether this measurement is reliable.}
+
+\bigskip
+
+\question{Calculate the current that gives a charge flow of 300 C in one minute.}
+
+\bigskip
+
+\question{The manufacturer of a car battery claims that the battery can supply a steady current of 40 A for one hour when fully-charged. (a) What is the charge flow through a point in the circuit in this time? (b) If a car requires a current of 90 A to start, for how long could the battery be used before recharging?}
+
+\bigskip
+
+\question{A beam of $2.0 \times 10^{10}$ electrons travel through a distance of 0.50 m and are stopped on an electrode in a time period of $5.0 \times 10^{-8} \text{ s}$. (a) Find the charge collected on the electrode. (b) Find the average current produced by the electron beam.}
+
+\bigskip
+
+\question{State the SI base units of number density $n$ and electric charge $q$, and hence show that the equation $ I = nAqv$ has consistent units on both sides.}
+
+\bigskip
+
+\question{The number density of free electrons in copper is about $8.0\times10^{28} \text{ m}^{-3}$. If the current in a copper wire of diameter 0.50 mm is 0.80 A, calculate the average drift speed of electrons in the wire.}
+
+\bigskip
+
+\question{Two coppers wires $A$ and $B$ are joined together and carry a current. If wire $A$ has diameter $d$ and wire $B$ has diameter $2d$, calculate the ratio of the average drift velocity of free electrons in the wires $\frac{v_A}{v_B}$}
+
+\bigskip
+
+\question{From the calculations, we find that the drift speed of electrons in metal wires is around a few mm per second, so it would take a very long time for the free electrons to travel a distance of a few metres in an electric circuit. But when we switch on an electric lamp, it lights up immediately. Give a reason for this observation.}
+
+\bigskip
+
+\question{When a p.d. of 15 V is applied across a wire of resistance 4000 $\Omega$, how many electrons would have passed a point in the wire in one minute?}
+
+\bigskip
+
+\question{A motor has a resistance of 40 $\Omega$ and carries a current of 2.0 A. (a) What is the p.d. across? (b) At what rate is electrical energy being dissipated in the motor?}
+
+\bigskip
+
+\question{A cable of 50 m is made of 19 parallel strands of copper wires. Each strand has a diameter of 0.25 mm. Given that the resistivity of copper is $1.7\times10^{-8} \text{ }\Omega \text{ m}$, find the resistance of the cable.}
+
+\bigskip
+
+\question{A pencil is used to draw a line of length 20 cm, width 1.5 mm, and thickness 0.10 $\mu$m. The resistance of the line is 30 k$\Omega$. What is the resistivity of the material in the pencil?}
+
+\bigskip
+
+\question{One resistor $P$ has a resistance of 16 $\Omega$. A second resistor $Q$ is made of the same material, but has twice the length but half the diameter. What is the resistance of $Q$?}
+
+\bigskip
+
+\question{A coil is made by wounding a long insulated wire of diameter $d$ onto a cylindrical core of diameter $D$ where $D \gg d$. If the coil has $N$ turns, and the resistivity of the wire is $\rho$, show that the resistance in the coil is $\frac{4N\rho D}{d^2}$.}
+
+\bigskip
+
+\question{If we want to determine the resistivity of the material of a length of metal wire, what measurements do we need to take?}
+
+\bigskip
+
+\question{What is the current in a 40 W light bulb when a supply of 200 V is applied?}
+
+\bigskip
+
+\question{Fuses of current ratings 1 A, 5 A, 10 A, 20 A are available. Suggest and explain which fuse should be used for a 120 V, 900 W hairdryer.}
+
+\bigskip
+
+\question{A 12 V battery supplies a continuous current of 5.0 A for 3.0 hours. (a) Find the charge supplied by the battery during this time. (b) Find the energy produced from the battery.}
+
+\bigskip
+
+\question{An electric cooker is labelled `240 V, 900 W'. (a) What is the resistance of the cooker's filament at its operating temperature? (b) State and explain whether there is any change in the resistance if it is measured at room temperature.}
+
+\bigskip
+
+\question{The diagram shows an electric circuit incorporating a diode, connected in series with a 5.0 $\Omega$ resistor across a battery having an e.m.f. of 3.0 V. If the diode and the voltmeter are both ideal, suggest the reading on the voltmeter (a) for the circuit shown, (b) if the diode is reversed.}
+
+\bigskip
+
+\question{The diagram shows the $I$-$V$ characteristics of an electrical component $P$. (a) Suggest whether $P$ a filament lamp or a thermistor. (b) What is the resistance of $P$ for a current of 2.8 A? (c) Draw on the same graph the $I$-$V$ characteristics for a fixed resistor $Q$ of 4.0 $\Omega$. (d) Compare the power dissipated in $P$ and $Q$ for a p.d. of 4.0 V.}
+
+\bigskip
+
+\section{current}
+
+\question{Use the idea of resistors in series or in parallel to explain	(a) why a long wire has more resistance than a short wire, and (b) why a thick wire has less resistance than a thin wire.}
+
+\bigskip
+
+\section{Sub-atomic Particles}
+
+\question{List the number of sub-atomic particles in an argon-40 ($^{40}_{18}\text{Ar}$) atom.}
+
+\bigskip
+
+\question{A radioactive source emits a parallel beam of $\alpha$-, $\beta$- and $\gamma$-radiation. A detector sensitive to all forms of radiation has been calibrated for background radiation and is placed just 1 cm from the radioactive source. The detector registers 500 counts s$^{-1}$.  
+		
+	When the detector is 10 cm from the source, the radiation level drops to 200 counts s$^{-1}$.
+	
+	When a thin aluminium sheet is placed in front of the detector, the level falls to 50 counts s$^{-1}$.
+	
+	In what proportion is the source emitting $\alpha$-, $\beta$- and $\gamma$-particles?}
+
+\bigskip
+
+\question{An unstable isotope of phosphorus, $_{15}^{30}$P can be produced by bombarding aluminium, $_{13}^{27}$Al, with $\alpha$-particles. What is the by-product of this reaction?}
+
+\bigskip
+
+\question{Carbon-14 ($^{14}_{\phantom{0}6}$ C) undergoes $\beta$-decay and forms an isotope of nitrogen (N). Write down the decay equation using the nuclide notations.}
+
+\bigskip
+
+\question{Radon-222 ($^{222}_{\phantom{2}86}$Rn) undergoes a series of decays and forms lead-210 ($^{210}_{\phantom{2}82}$Pb). 
+	How many $\alpha$-particles and $\beta$-particle are emitted during this process?}
+
+\bigskip
+
+\question{State the mass and electric charge of an anti-proton.}
+
+\bigskip
+
+\question{$\pi^+$ is a particle with quark structure $u\bar{d}$. (a) State the family of this particle. (b) Show that it carries a charge of $+e$. (c) Suggest the charge of its anti-particle.}
+
+\bigskip
+
+\question{$\Xi^0$ is a particle with quark structure $uss$. (a) State the family of $\Xi^0$. (b) Find its electric charge.}
+
+\bigskip
+
+\question{Magnesium-23 ($^{23}_{12}$Mg) can decay into sodium-23 ($^{23}_{11}$Na). (a) Write down the decay equation using nuclide notation, and specify any other product particles produced. (b) Write an equation for this decay in terms of protons and neutrons. (c) Write an equation for this decay in terms of quark composition. (d) State the name of the force that is responsible for this decay.}
+
+\bigskip
+
+\section{Circular Motion}
+
+\question{What is the angular velocity of the minute hand of a clock?}
+
+\bigskip
+
+\question{A spacecraft moves around the earth in a circular orbit. The spacecraft has a speed of $7200 \mps$ at a height of 1300 km above the surface of the earth. Given that the radius of the earth is 6400 km. (a) What is the angular speed of this spacecraft? (b) What is its period?}
+
+\bigskip
+
+\question{A racing car makes a $180^\circ$ turn in 2.0 s. Assume the path is a semi-circle with a radius of 30 m and the car maintains a constant speed during the turn. (a) What is the angular velocity of the car? (b) What is the centripetal acceleration?}
+
+\bigskip
+
+\question{Suggest what provides centripetal force in the following cases. (a) An athlete running on a curved track. (b) An aeroplane banking at a constant altitude. (c) A satellite moving around the earth.}
+
+\bigskip
+
+\question{A turntable that can rotate freely in a horizontal plane is covered by dry mud. When the angular speed of rotation is gradually increased, state and explain whether the mud near edge of the plate or near the mud will first leave the plate?}
+
+\bigskip
+
+\question{A bucket of water is swung at a constant speed and the motion describes a circle of radius $r=1.0 $m in the vertical plane. If the water does not pour down from the bucket even when it is at the highest position, how fast do you need to swing the bucket?}
+
+\bigskip
+
+\question{This question is about the design of a roller-coaster. We consider a slider that starts from rest from a point $P$ and slides along a frictionless circular track as sketched below. $P$ is at the same height as the top of the track $T$. (a) Show that the slider cannot get to $T$. (b) As a designer for a roller-coaster, you have to make sure the slider can reach point $T$ and continue to slide along the track, what is the minimum height for the point of release?}
+
+\bigskip
+
+\section{Gravitational Fields}
+
+\question{Estimate the gravitational force between you and the nearest person to you as you read this...}
+
+\bigskip
+
+\question{Given that it takes about 8.0 minutes for light to travel from the sun to the earth. (a) What is the mass of the sun? (b) At what speed does the earth move around the sun?}
+
+\bigskip
+
+\question{Why astronauts in space stations are said to be \emph{weightless}?}
+
+\bigskip
+
+\question{How do you find the apparent weight of an object at an arbitrary latitude $P$? Does the apparent weight act vertically downwards? Give your reasons.}
+
+\bigskip
+
+\question{A planet of uniform density distribution is of radius $R$ and mass $M$. A rock falls from a height of $3R$ above the surface of the planet. Assume the planet has no atmosphere, show that the speed of the rock when it hits the ground is $v=\sqrt{\frac{3GM}{4R}}$.}
+
+\bigskip
+
+\question{A space probe is travelling around a planet of mass $M$ in a circular orbit of radius $r$. (a) Show that the total mechanical energy (sum of kinetic energy and gravitational energy) of the space probe is $E_\text{total} = -\frac{2GMm}{r}$. (b) If the space probe is subject to small resistive forces, state the change to its orbital radius and its orbiting speed.}
+
+\bigskip
+
+\question{A \emph{black hole} is a region of spacetime where gravitation is so strong that even light can escape from it. For a star of mass $M$ to collapse and form a black hole, it has to be compressed below a certain radius. (a) Show that this radius is given by $R_S = \frac{2GM}{c^2}$, known as the \emph{Schwarzschild radius}\footnote{When you deal with very strong gravitational fields, Newton's law of gravitation breaks down and effects of Einstein's \emph{general theory of relativity} come into play. The radius of a \emph{Newtonian} black hole being equal to the radius of a Schwarzschild black hole is a mere coincidence.}. (b) Show that the Schwarzschild radius for the sun is about 3 km.}
+
+\bigskip
+
+\question{Given that the moon is of radius 1700 km and mass $7.4\times10^{22}$ kg. (a) Find the change in gravitational potential when an object is moved from moon's surface to 800 km above the surface. (b) If a rock is projected vertically upwards with an initial speed of $1800\mps$ from surface, find the rock's speed when it reaches a height of 800 km. (c) Suggest whether the rock can escape from the moon's gravitational field completely.}
+
+\bigskip
+
+\section{Oscillations}
+
+\question{A cylindrical tube of total mass $m$ and cross sectional area $A$ floats upright in a liquid of density $\rho$. When the tube is given a small vertical displacement and released, the magnitude of the resultant force acting on the tube is related to its vertical displacement $y$ by the expression: $\fnet = \rho g A y$. (a) Show that the tube executes simple harmonic motion. (b) Find an expression for the frequency of the oscillation.}
+
+\bigskip
+
+\question{A small glider moves along a horizontal air track and bounces off the buffers at the ends of the track. Assume the track is frictionless and the buffers are perfectly elastic, state and explain whether the glider describes simple harmonic motion.}
+
+\bigskip
+
+\question{Assume the motion of a car engine piston is simple harmonic. The piston completes 3000 oscillations per minute. The amplitude of the oscillation is 4.0 cm. (a) Find the greatest speed. (b) Find the greatest acceleration.}
+
+\bigskip
+
+\question{An oscillator is given an energy of 20 mJ and starts to oscillate, it reaches an amplitude of 8.0 cm. If we want to double the amplitude, find the vibrational energy required.}
+
+\bigskip
+
+\question{A small toy boat of mass 360 g floats on surface of water. It is gently pushed down and then released. During the fist four complete cycles of its oscillation, its amplitude decreased from 5.0 cm to 2.0 cm in a time of 6.0 s. Find the energy loss.}
+
+\bigskip
+
+\section{Ideal Gases}
+
+\question{Find the mass of a sample of uranium-235 that contains $6.0\times10^{20}$ atoms.}
+
+\bigskip
+
+\question{If you pump gas into a bicycle tyre, state and explain how the pressure changes.}
+
+\bigskip
+
+\question{A fixed amount of gas is allowed to expand at constant temperature, state and explain how the pressure changes.}
+
+\bigskip
+
+\question{Containers $A$ has a volume of $2.5\times10^{-2} \text{ m}^3$ contains a gas at a temperature of 17$^\circ$C and pressure of $1.3 \times 10^5 \text{ Pa}$ and . Another container $B$ of same size holds a gas at same temperature and a pressure of $1.9 \times 10^5 \text{ Pa}$. The two containers are initially isolated from each another. (a) Find the total amount of molecules. (b) The two containers are now connected through a tube of negligible volume. Assume the temperature stays unchanged, find the final pressure of the gas.}
+
+\bigskip
+
+\question{The air in a car tyre can be assumed to have a constant volume of $3.0\times10^{-2} \text{ m}^3$}
+
+\bigskip
+
+\question{A fixed mass of gas expands to twice its volume at constant temperature. (a) How does its pressure change? (b) How does mean kinetic energy change?}
+
+\bigskip
+
+\question{In order for a molecule to escape from the gravitational field of the earth, it must have a speed of $1.1\times10^6\mps$ at the top of the atmosphere. (a) Estimate the temperature at which helium-4 atoms could have this speed. (b) Helium atom actually escape from top of the atmosphere at much lower temperatures, explain how this is possible.}
+
+\bigskip
+
+\section{Thermodynamics}
+
+\question{A student designs an experiment to determine the specific latent heat of fusion $L$ of ice. Some ice at $0\OC$ is heated with an electric heater. The experiment is carried out twice and the following data are obtained.
+	
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline  & energy supply from heater (J) & time interval (min) & mass of ice melted (g) \\ 
+		\hline heater off & 0 & 10.0 & 14.3 \\ 
+		\hline heater on & 21000 & 5.0 & 70.0 \\ 
+		\hline 
+	\end{tabular} 
+\end{center}
+
+(a) Suggest why two sets of readings are taken. (b) Find specific latent heat of fusion for ice.}
+
+\bigskip
+
+\question{A mixture contains 5\% silver and 95\% of gold by weight. Some gold is melted and the correct weight of silver is added. The initial temperature of silver is $20^\circ$C. Use the data to calculate the initial temperature of gold so that the final mixture is at melting point of gold.}
+
+\bigskip
+
+\question{For a particular substance, why is the specific latent heat of vaporisation much greater than the specific latent heat of fusion?}
+
+\bigskip
+
+\question{Show that when $n$ mol of gas is heated at a fixed volume, thermal energy required to raise the temperature by 1.0 K is $nR$.}
+
+\bigskip
+
+\question{Two identical balloons $A$ and $B$ hold the same amount of gas at the same initial temperature. They are given the same amount of heat. Suppose volume of $A$ is fixed, while $B$ is allowed to expand, compare the final temperatures of the gases in the two balloons.}
+
+\bigskip
+
+\question{A student thinks that temperature measures the amount of heat in an object. Suggest why this statement is incorrect with examples.}
+
+\bigskip
+
+\section{Electrostatics}
+
+\question{Two protons are separated by a distance $r$. Find the ratio of the electric force to the gravitational force between them.}
+
+\bigskip
+
+\question{When the charge on the Van de Graaff generator is $4.0\times10^{-7} \text{ C}$, the electric field strength at the sphere's surface is $2.4 \times 10^6 \Vpm$. Determine the additional charge added to the sphere if the field strength at the surface becomes $3.0 \times 10^6 \Vpm$.}
+
+\bigskip
+
+\question{Two positively charged particles $A$ and $B$ are situated in a vacuum. Point P lies on the line joining the centres of the two spheres and is a distance $x$ from $A$. Sketch the variation with $x$ of electric field strength $E$ due to the two particles.}
+
+\bigskip
+
+\question{A metal sphere of radius 20 cm carries a charge of $5.0\times10^{-7}$ C. A proton is sent towards the sphere at a speed of $1.8\times10^6 \mps$. Can the proton reach the surface of the sphere?}
+
+\bigskip
+
+\question{Electrical breakdown occurs when electric field strength at surface of a metal sphere exceeds $5.0 \times 10^6 \NpC$. Given that the radius of the sphere is 16 cm. What is the electric potential at the surface when electrical breakdown occurs?}
+
+\bigskip
+
+\question{Two charged particles $A$ and $B$ are separated by 20 cm. $P$ is a point on the line $AB$. Given that particle $A$ carries charge $+7.2 \text{ }\mu\text{C}$, and electric potential is zero where $AP = 5.0$ cm. Find the electric charge of $B$.}
+
+\bigskip
+
+\question{A particle with specific charge (ratio of its electric charge to its mass) $+9.58\times10^7 \text{ C kg}^{-1}$ is moving towards a fixed metal sphere. The sphere has a potential of $+500$ V. The initial speed of the particle is $3.0\times10^5 \mps$ when it is a large distance from the sphere. Determine whether the particle can reach the surface of the sphere.}
+
+\bigskip
+
+\question{State whether the two spheres in Example \ref{ex-V-of-two-pcs} are conductors. State what feature of the potential graph supports your answer.}
+
+\bigskip
+
+\question{You might have the experience that your mobile phone signal gets much weaker when you get into an elevator. Explain why this happens.}
+
+\bigskip
+
+\question{Show that the charged object in Example \ref{ex-grad-pot} behaves like a point charge. Determine the charge it carries, and hence calculate the field strength at $r=5.0$ cm.}
+
+\bigskip
+
+\question{For the electric field due to a charged metal sphere (see Example \ref{ex-metal-sphere}), convince yourself that the field strength equals negative gradient of potential at any point.}
+
+\bigskip
+
+\question{We have seen the statement field strength equals negative potential gradient holds for electric fields. Does it also hold for gravitational fields?}
+
+\bigskip
+
+\question{Convince yourself that field strength is indeed given by negative potential gradient. You may interpret it either graphically (think about gradient of tangent along the curve) or algebraically (think about the derivative of $V$).}
+
+\bigskip
+
+\question{We have looked into the electric field between two positively-charged particles. Discuss the cases where (a) both particles are negatively charged, (b) the two particles carry opposite charges.}
+
+\bigskip
+
+\section{Capacitors}
+
+\question{A capacitor of 2500 $\muF$ is charged to a working voltage of 18 V. (a) What is the magnitude of positive charge on its plate? (b) What is the energy stored?}
+
+\bigskip
+
+\question{A capacitor initially charged to a potential difference of 16 V discharges and loses 40\% of its energy. What is its new p.d.?}
+
+\bigskip
+
+\question{For an isolated metal sphere of radius 30 cm situated in vacuum, what is the electric potential energy stored when charged to a potential of 120 kV?}
+
+\bigskip
+
+\question{A capacitor $A$ of capacitance $C$ and a second capacitor $B$ of capacitance $3C$ are connected in parallel. If a voltage is applied across the network, what is the ratio of energy stored in $A$ to that in $B$? What about the ratio of electric charge?}
+
+\bigskip
+
+\question{Using at most four capacitors of $24 \muF$, design a network that has a combined capacitance of (a) $72 \muF$, (b) $8 \muF$, (c) $36 \muF$, and (d) $18 \muF$.}
+
+\bigskip
+
+\question{If the two networks in Example \ref{ex-Cnet} are both connected to a supply voltage of 15 V, determine the p.d. across each individual capacitor.}
+
+\bigskip
+
+\section{Magnetic Fields}
+
+\question{For two identical bar magnets placed side by side as shown, what does the magnetic field look like? Try sketching the magnetic field lines.}
+
+\bigskip
+
+\question{Describe the magnetic field due to an alternating current through a solenoid.}
+
+\bigskip
+
+\question{If the plane of the rectangular frame is at right angle to the magnetic field, describe the magnetic forces acting on each side and hence state what happens to the frame.}
+
+\bigskip
+
+\question{If the current in Example \ref{ex-mag-balance} is replaced by a current of 6.0 A flowing out of the plane of the paper. What is the reading on the balance?}
+
+\bigskip
+
+\question{A light coil of wire of several loops is suspended from a fixed point. When an electric current is switched on in the coil, state and explain the change in the separation between the loops.}
+
+\bigskip
+
+\question{Two long parallel wires carry currents of $I_1=$3.0 A and $I_2=$5.0 A in the same direction as shown. The flux density at a point at perpendicular distance $r$ from a straight long wire carrying current $I$ is given by $B=\frac{\mu_0 I}{2\pi r}$.}
+
+\bigskip
+
+\question{If the current in one of the two wires in Question \ref{q-pwires} is replaced by an alternating current, then the two wires should begin to vibrate. However, the wires are not observed to move. Make some reasonable estimates and explain why the vibration is not observed.}
+
+\bigskip
+
+\question{For an $\alpha$-particle and a $\beta$-particle entering the same uniform magnetic field at a same speed, compare the radius of their paths.}
+
+\bigskip
+
+\question{For a charged particle undergoing circular motion in a uniform magnetic field, show that its angular velocity is independent of the radius of its path.}
+
+\bigskip
+
+\question{If a charged particle enters a uniform magnetic field at an angle $\theta \neq 90^\circ$, state and explain the path of this particle. (Hint: think about components of its velocity.)}
+
+\bigskip
+
+\question{In the figure above, two paths of deflected particles are shown. Give reasons why the radius of the circular path can be different.}
+
+\bigskip
+
+\question{If the particles sent into the mass spectrometer are positively-charged, in which direction should the magnetic field be applied?}
+
+\bigskip
+
+\question{A particle carrying a charge of $+e$ enters a uniform magnetic field of $8.8$ mT at right angles with an initial speed of $1.4\times10^5 \text{ m s}^{-1}$. It describes a semi-circle with diameter of 66 cm. (a) Find the mass of the particle. (b) Suggest possible composition of this particle.}
+
+\bigskip
+
+\question{Protons are accelerated in a cyclotron where the uniform magnetic field region has a flux density of 1.5 T and the voltage between the gap is 20 kV. (a) Find the frequency of the voltage supply needed. (b) Find the number of circles the protons must make in order to gain an energy of 10 MeV.}
+
+\bigskip
+
+\question{If electrons at speed $v$ are undeflected when they pass through the velocity selector, what about a beam of $\alpha$-particles entering the same region at the same speed $v$?}
+
+\bigskip
+
+\question{A uniform magnetic field with flux density $6.0\times10^{-2} \text{ T}$ is applied out of the plane of the paper. A beam of protons are travelling into this region at a speed of $3.5\times10^4 \text{m s}^{-1}$. (a) In which direction do the protons deflect? (b) A uniform electric field is now applied in the same region so that the protons become undeviated. What is the strength and the direction of this electric field?}
+
+\bigskip
+
+\question{Why is it difficult to detect Hall voltage in a thin slice of copper?}
+
+\bigskip
+
+\question{A Hall probe is placed near to one end of a strong magnet. State and explain the variation in the Hall voltage as the probe is rotated for one complete revolution.}
+
+\bigskip
+
+\section{Electromagnetic Induction}
+
+\question{Explain why the processes mentioned above would give rise to a change in magnetic flux.}
+
+\bigskip
+
+\question{If the magnet is now pulled away from the coil, state ad explain the direction of the induced current.}
+
+\bigskip
+
+\question{In Example \ref{ex-cuttingFL}, can you find alternative arguments to determine the direction of the current induced as the rod cuts through the magnetic field?}
+
+\bigskip
+
+\question{A magnet is suspended from the free end of a spring. When displaced vertically and released, the magnet can oscillate in and out of a coil (see diagram). The switch $S$ is initially open, there is negligible change in the amplitude. However, when the switch is closed, the amplitude is seen to decrease quickly. Explain the reasons.}
+
+\bigskip
+
+\question{State and explain the effect on the voltage generated if the coil rotates faster.}
+
+\bigskip
+
+\question{For the coil rotating at a uniform angular speed in a uniform magnetic field, is the magnetic flux in phase with the e.m.f. generated? If not, what is the phase difference?}
+
+\bigskip
+
+\question{Does the generator output the maximum voltage when the rotating coil is in parallel to the magnetic field or when the coil is at right angle to the field?}
+
+\bigskip
+
+\question{The coil is now connected to a stable d.c. voltage supply. If we quickly insert an iron core into the tube, what might happen to the light copper ring?}
+
+\bigskip
+
+\section{Alternating Currents}
+
+\question{An alternating voltage has a peak value of 16 V and period of 0.10 s. Write down a mathematical equation that describes the variation of this voltage.}
+
+\bigskip
+
+\question{An alternating voltage is produced from a simple generator. If the rotating speed of the coil in the generator doubles, describe quantitatively the change in the peak value and frequency of the alternating voltage.}
+
+\bigskip
+
+\question{A student argues that when an alternating current is driven through a resistor, the mean current is zero, so an alternating current does not produce heating power on the resistor. State and explain whether this is correct.}
+
+\bigskip
+
+\question{An alternating voltage $V$ is represented by the equation: $ V = 310 \sin(100\pi t)$, where $V$ and $t$ are measured in SI units. For this voltage, find (a) the peak voltage, (b) the r.m.s voltage, (c) the frequency, (d) the mean power when it is applied across a resistor of 250 $\Omega$.}
+
+\bigskip
+
+\question{What is the average power dissipated in a resistor when the alternating supply has a peak current of 5.0 A and a peak voltage of 8.0 V?}
+
+\bigskip
+
+\question{The peak value of a sinusoidal alternating current is equal to a steady direct current. When they are applied to the same load, what is the ratio of power dissipation $\frac{P_\text{d.c.}}{P_\text{a.c.}}$?}
+
+\bigskip
+
+\question{In Example \ref{ex-readcro}, if the time-base setting is 5 ms/div and the voltage gain is 2 V/div, write down an equation that represents this alternating voltage.}
+
+\bigskip
+
+\question{An ideal transformer has 6000 turns on its primary coil. It converts a mains supply of 220 V r.m.s. to an a.c. voltage with a peak value of 12.0 V. Find the number of turns on the secondary coil.}
+
+\bigskip
+
+\question{If a \emph{steady} d.c. voltage is applied to the input of a simple transformer, what is the output voltage produced?}
+
+\bigskip
+
+\question{State and explain whether the current in the primary coil of a transformer is in \emph{phase} with the voltage induced in the secondary coil.}
+
+\bigskip
+
+\question{If we want to have terminal $Q$ to be positive with respect to $P$ for load resistor $R$, how should we rebuild the bridge rectifier with the same four diodes?}
+
+\bigskip
+
+\question{If a second capacitor is added in \emph{series} with the first smoothing capacitor, use sketches to show the changes you would expect for the output voltage.}
+
+\bigskip
+
+\section{Quantum Physics Basics}
+
+\question{Calculate the energy, in eV, of a photon of light of wavelength 440 nm.}
+
+\bigskip
+
+\question{If the light source in Example \ref{ex-redlaser} is replaced by a green laser with the same power output, how does the number of emitted photons per unit time change?}
+
+\bigskip
+
+\question{Sodium has a work function of $3.8\times 10^{-19} \text{ J}$. (a) Find the threshold frequecy for sodium. (b) If a light of 500 nm is incident on sodium, determine whether electrons can be emitted from the surface.}
+
+\bigskip
+
+\question{When electromagnetic radiation of wavelength 1200 nm is incident on a metal surface, the maximum kinetic energy of the electrons released is found to be $5.4\times10^{-20} \text{ J}$. What is the work function of this metal?}
+
+\bigskip
+
+\question{When a beam of light of a particular frequency and intensity is shone onto a metal surface, electrons are released. If another beam of light of same intensity but higher frequency is used, what is the effect on the rate of emission of electrons from this surface?}
+
+\bigskip
+
+\question{If a different metal with a greater work function energy is used, describe the change for the line that shows the variation with $f$ of $E_{k,\tmax}$ for this metal.}
+
+\bigskip
+
+\question{Electromagnetic adiation is incident upon a metal plate. The graph shows how maximum kinetic energy $E_k$ of emitted electrons varies with frequency $f$ of the radiation. Use the graph to find (a) the threshold frequency, (b) a value of Planck constant.}
+
+\bigskip
+
+\question{A laser of power $P$ is incident normally on a spot of area $A$, show that the pressure caused by the beam can be given by: $p = \frac{P}{cA}$.}
+
+\bigskip
+
+\question{When an electron and a positron meet together, they will annihilate and produce two $\gamma$-photons: $^{\phantom{+}0}_{-1}e + ^{\phantom{+}0}_{+1}e \longrightarrow \gamma + \gamma$. Assume the electron and the positron have negligible kinetic energy before the interaction, explain why the two photons produced must move off in opposite directions with equal energies.}
+
+\bigskip
+
+\question{An $\alpha$-particle is moving with a kinetic energy of $2.4\times10^{-15} \text{ J}$. Find its speed, and hence find its de Broglie wavelength.}
+
+\bigskip
+
+\question{If a proton and an electron are accelerated through the same voltage, (a) how would their energy compare? (b) how would their wavelength compare?}
+
+\bigskip
+
+\question{If a higher p.d. is applied to accelerate the electron beam in the electron diffraction experiment, how would the pattern change?}
+
+\bigskip
+
+\question{If we only consider the electron energy levels given in Example \ref{ex-hydrogen}, how many different wavelengths can be detected in the emission spectrum of the hydrogen atom ?}
+
+\bigskip
+
+\question{Three lines are observed at wavelengths 486 nm , 656 nm, and 1880 nm in the emission spectrum of hydrogen atoms. (a) Calculate the photon energies for these wavelengths. (b) Draw a diagram with \emph{three} labelled energy levels, and show the energy changes for the three wavelengths produced with arrows in your diagram.}
+
+\bigskip
+
+\question{The relative cool atmosphere of the sun could give rise to dark lines in the spectrum of sunlight.	One particular dark spectral line has a wavelength of 590 nm. By reference to the energy levels of the helium atom, suggest how this dark line provides evidence of the presence of helium in sun's atmosphere. You may draw an arrow to show the possible electron transition that gives rise to this dark line.}
+
+\bigskip
+
+\question{Diamond has a band gap $E_g \approx 6.0 \text{ eV}$. By reference to its electronic band structure, explain why diamond appears \emph{transparent} to visible light?}
+
+\bigskip
+
+\question{Use band theory to explain why an LDR (light-dependent resistor) has a very high resistance in the dark, but its resistance drops dramatically when being exposed to light.}
+
+\bigskip
+
+\section{Nuclear Physics}
+
+\question{The combustion of one mole of solid carbon to form carbon dioxide (CO$_2$) at standard condition is 394 kJ. Find the change in mass for this amount of energy, and hence compare this mass change with the mass of carbon before combustion.}
+
+\bigskip
+
+\question{Given that the specific heat capacity of copper is $380\jpkgk$. When a copper block is heated from 300 K to 1000 K, what is the additional mass as a fraction of its rest mass?}
+
+\bigskip
+
+\question{Show that the energy equivalent of 1.0 u is 934 MeV.}
+
+\bigskip
+
+\question{Given that mass of proton is 1.007 u, mass of neutron is 1.009 u, and mass of uranium-235 nucleus is 234.992 u. Find the binding energy per nucleon of nuclide $^{235}_{\phantom{2}92}\text{U}$.}
+
+\bigskip
+
+\question{What is the binding energy for the hydrogen nucleus $^1_1\text{H}$?}
+
+\bigskip
+
+\question{Why is rest mass of proton slightly larger than the unified atomic mass unit?}
+
+\bigskip
+
+\question{Uranium-235 nuclei can undergo another fission process when being bombarded with neutrons. This is represented by:}
+
+\bigskip
+
+\question{The \emph{proton–proton chain reaction} is a set of nuclear reactions through which stars fuse hydrogen into helium. One intermediate reaction may be summarised as:}
+
+\bigskip
+
+\question{Another fusion reaction in the proton-proton chain is represented by:}
+
+\bigskip
+
+\question{If the total mass of the product particles is greater than that of the original particles in a nuclear reaction, what can you say about the energy of the original particles?}
+
+\bigskip
+
+\question{A sample of polonium-205 has an activity of $6.7\times10^{15}$ Bq. The decay constant of polonium-205 is known to be $1.16\times10^{-4} \text{ s}^{-1}$. (a) Find the number of nuclei needed to give this activity. (b) Find the mass of polonium-205 in this sample. (c) Calculate the time needed for the activity reduce to 1\% of its initial value.}
+
+\bigskip
+
+\question{Technetium-99m is widely used as a radioactive tracer for medical diagnostic procedures. If some of this isotope, with an activity of 900 MBq was injected into a patient. The activity is found to reduce to 56.4 MBq after 24 hours. (a) What is the decay constant of technetium-99m? (b) How many technetium-99m nuclei are stil left in the patient's body?}
+
+\bigskip
+
+\question{The number of uranium-238 nuclei in a rock sample is believed to have decreased from $3.50\times10^{17}$ to $3.27\times10^{17}$ in 480 million years.	Estimate the half-life of uranium-238.}
+
+\bigskip
+
+\question{Plutonium-238 is a powerful alpha emitter with a half-life of 87.7 years. One decay of plutonium-238 releases an energy of about $9.0\times10{-13}$ J. A nuclear battery containing a sealed plutonium source is implanted into patient's body to power heart pacemakers. The battery has an initial activity of $6.0\times10^{10}$ Bq. (a) Calculate the initial power released by the source. (b) Find the mass of plutonium required to produce this power. (c) It is required that power output to the pacemaker is at least 60\% of the initial power. Calculate the time, in years, for which the battery provides sufficient power.}
+
+\bigskip
+
+\question{Show that the variation of the number of undecayed nuclei with time $t$ can be given by: $N(t) = N_0 \left(\frac{1}{2}\right)^{\frac{t}{\halflife}}$, where $N_0$ is the initial number of nuclei.}
+
+\bigskip
+
+\section{Electronics}
+
+\question{In Example \ref{ex-light-sensor}, if the fixed resistor has $R_0 = 8.0$ k$\Omega$, and the LDR is in an environment such that it has a resistance of $12$ k$\Omega$. The voltage supply $V_0 = +15 \text{ V}$. Find $V_\text{out}$.}
+
+\bigskip
+
+\question{Design a sensing circuit that produces a greater output voltage as the temperature of the sensor rises. Explain the operation of your circuit.}
+
+\bigskip
+
+\end{document}
